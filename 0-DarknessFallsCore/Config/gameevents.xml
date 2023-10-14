@@ -1,0 +1,406 @@
+<config> <!--
+	<set xpath="/gameevents/@max_entities">50</set> -->
+	<append xpath="/gameevents">
+		<action_sequence name="spawner_bag_white">
+			<property name="allow_user_trigger" value="false" />
+			<property name="action_type" value="Game" />
+			
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieLabRadiated,zombieLabLegendary,zombieLabMaleRadiated,zombieMaleHazmatRadiated,zombieWightRadiated" param1="zombiename" />
+				<property name="spawn_count" value="5" param1="spawncount" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="spawner_bag_brown">
+			<property name="allow_user_trigger" value="false" />
+			<property name="action_type" value="Game" />
+			
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieSoldierFeral,zombieSoldierRadiated,zombieSoldierBoss" param1="zombiename" />
+				<property name="spawn_count" value="5" param1="spawncount" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="succubus_matriarch_summon">
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+			
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieWightDemon,zombieBoeDemon,zombieFemaleFatDemon,zombieJoeDemon,zombieMoeDemon,zombieArleneDemon,zombieLabDemon,zombieDarleneDemon,zombieMarleneDemon,zombieYoDemon,zombieSteveDemon,zombieBusinessManDemon,zombieSpiderDemon,zombieNurseDemon,zombieFatHawaiianDemon,zombieFatCopDemon,zombieMaleHazmatDemon,zombieUtilityWorkerDemon,zombieSoldierDemon,zombieSkateboarderDemon,zombieCheerleaderDemon,zombieOldTimerDemon,zombieBikerDemon,zombieJanitorDemon,zombiePartyGirlDemon,animalHellwolf,Succubus,Incubus,DemonBehemoth" param1="zombiename" />
+				<property name="spawn_count" value="5" param1="spawncount" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="spider_death_summon">
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+			
+			<action class="SpawnEntity">
+				<property name="entity_names" value="mutantSpider" param1="zombiename" />
+				<property name="spawn_count" value="10" param1="spawncount" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="cop_death_summon">
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+			
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieSpiderFeral,zombieBoeFeral,zombieJoeFeral,zombieSteveFeral,zombieMoeFeral,zombieYoFeral,zombieBusinessManFeral,zombieArleneFeral,zombieDarleneFeral,zombieMarleneFeral,zombieNurseFeral,animalZombieDog,zombieFatCopFeral,zombieBurntFeral,animalZombieBear,zombieWightFeral,zombieMaleHazmat,zombieFatHawaiianFeral,zombieDoctorFemaleFeral,zombieDoctorMaleFeral,zombieSkateboarderFeralFemale,zombieGangstaFeralFemale,zombieGangstaFeralMale,zombiePrepperFeral" param1="zombiename" />
+				<property name="spawn_count" value="5" param1="spawncount" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="action_reconstructor_toolbelt">
+			<action class="PlaySound">
+				<property name="phase" value="0" />
+				<property name="sound" value="twitch_repair" />
+				<property name="inside_head" value="true" />
+			</action>
+
+			<action class="AddItemDurability">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt" />
+				<property name="amount" value="1" />
+				<property name="is_percent" value="true" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="action_reconstructor_equipment">
+			<action class="PlaySound">
+				<property name="phase" value="0" />
+				<property name="sound" value="twitch_repair" />
+				<property name="inside_head" value="true" />
+			</action>
+
+			<action class="AddItemDurability">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Equipment" />
+				<property name="amount" value="1" />
+				<property name="is_percent" value="true" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="boss_tracker">
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+
+			<action class="AddEntitiesToGroup">
+				<property name="phase" value="0" />
+				<property name="entity_tags" value="dfboss" />
+				<property name="group_name" value="boss" />
+				<property name="max_distance" value="10" />
+				<property name="y_height" value="5" />
+			</action>
+			
+			<action class="PlaySound">
+				<property name="sound" value="zombiemalealert" param1="alertsound" />
+				<property name="phase" value="1" />
+			</action>
+			
+			<action class="Delay">
+				<property name="time" value="1" />
+				<property name="phase" value="2" />
+			</action>
+			
+			<action class="SetupBossGroup">
+				<property name="minion_group_name" value="minions" />
+				<property name="boss_group_name" value="boss" />
+				<property name="boss_icon1" value="" param1="bossicon1" />
+				<property name="phase" value="3" />
+			</action>
+
+			<action class="AddBuff">
+				<property name="buff_name" value="twitch_boss_nav" />
+				<property name="phase" value="3" />
+				<property name="target_group" value="boss" />
+			</action>		
+		</action_sequence>
+		
+		<action_sequence name="drink_return_jar">
+			<property name="allow_user_trigger" value="true" />
+			
+			<action class="AddItems">
+				<property name="added_items" value="drinkJarEmpty" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="drink_return_glass">
+			<property name="allow_user_trigger" value="true" />
+			
+			<action class="AddItems">
+				<property name="added_items" value="resourceBrokenGlass" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="spawn_guarded_supply_crate">
+			<property name="allow_user_trigger" value="true" />
+
+			<action class="SpawnContainer">
+				<property name="entity_names" value="sc_General" param1="cratename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="min_distance" value="100" />
+				<property name="max_distance" value="110" />
+				<property name="safe_spawn" value="true" />
+			</action>
+
+			<action class="SpawnEntity">
+				<property name="entity_group" value="SleeperGSList" />
+				<property name="spawn_count" value="6"  />
+				<property name="air_spawn" value="false" />
+				<property name="add_to_group" value="zombies" />
+				<property name="safe_spawn" value="true" />
+				<property name="min_distance" value="100" />
+				<property name="max_distance" value="105" />
+				<property name="spawn_type" value="WanderingHorde" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="repair_bicycle">
+			<property name="allow_user_trigger" value="true" />
+			
+			<action class="AddItems">
+				<property name="added_items" value="vehicleBicyclePlaceable" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="repair_minibike">
+			<property name="allow_user_trigger" value="true" />
+			
+			<action class="AddItems">
+				<property name="added_items" value="vehicleMinibikePlaceable" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="repair_motorcycle">
+			<property name="allow_user_trigger" value="true" />
+			
+			<action class="AddItems">
+				<property name="added_items" value="vehicleMotorcyclePlaceable" />
+				<property name="added_item_counts" value="1" />
+			</action>
+		</action_sequence>
+
+		<!-- TWITCH INTEGRATION STUFF -->	
+		<!-- SINGLE SPAWNS -->		
+		<action_sequence name="spawn_raddog" template="spawn_boom">
+			<variable name="zombiename" value="animalZombieDogRad" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="95" />
+		</action_sequence>
+		
+		<action_sequence name="spawn_sheep" template="spawn_boom">
+			<variable name="zombiename" value="animalSheepMale,animalSheep" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="25" />
+		</action_sequence>
+		
+		<action_sequence name="spawn_cow" template="spawn_boom">
+			<variable name="zombiename" value="animalCow" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="10" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_beefdog" template="spawn_boom">
+			<variable name="zombiename" value="Beefdog" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="50" />
+		</action_sequence>	
+
+		<action_sequence name="spawn_jd" template="spawn_boom">
+			<variable name="zombiename" value="JD" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="175" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_hornet" template="spawn_boom">
+			<variable name="zombiename" value="animalHornet" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="50" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_mutantspider" template="spawn_boom">
+			<variable name="zombiename" value="mutantSpider" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="275" />
+		</action_sequence>	
+
+		<action_sequence name="spawn_mutantbroodmother" template="spawn_boom">
+			<variable name="zombiename" value="mutantSpiderBroodmother" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="350" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_hellwolf" template="spawn_boom">
+			<variable name="zombiename" value="animalHellwolf" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="225" />
+		</action_sequence>
+
+		<action_sequence name="spawn_demonbear" template="spawn_boom">
+			<variable name="zombiename" value="animalZombieBearDemon" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="350" />
+		</action_sequence>
+		
+		<action_sequence name="spawn_mutatedfootballer" template="spawn_boom">
+			<variable name="zombiename" value="zombieFootballPlayerBoss" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="140" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_mutatednurse" template="spawn_boom">
+			<variable name="zombiename" value="zombieNurseBoss" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="140" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_mutatedsoldier" template="spawn_boom">
+			<variable name="zombiename" value="zombieSoldierBoss" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="140" />
+		</action_sequence>	
+
+		<action_sequence name="spawn_toughlab" template="spawn_boom">
+			<variable name="zombiename" value="zombieLabLegendary" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="200" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_wightdemon" template="spawn_boom">
+			<variable name="zombiename" value="zombieWightDemon" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="300" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_labdemon" template="spawn_boom">
+			<variable name="zombiename" value="zombieLabDemon" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="300" />
+		</action_sequence>	
+
+		<action_sequence name="spawn_partygirldemon" template="spawn_boom">
+			<variable name="zombiename" value="zombiePartyGirlDemon" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="300" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_nightstalker" template="spawn_boom">
+			<variable name="zombiename" value="DFNightStalker" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="120" />
+		</action_sequence>	
+
+		<action_sequence name="spawn_nightstalkerboss" template="spawn_boom">
+			<variable name="zombiename" value="DFNightStalkerBoss" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="250" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_behemoth" template="spawn_boom">
+			<variable name="zombiename" value="zombieBehemothFemale" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="175" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_titan" template="spawn_boom">
+			<variable name="zombiename" value="DFzombieTitan" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="300" />
+		</action_sequence>	
+
+		<action_sequence name="spawn_mutateddemo" template="spawn_boom">
+			<variable name="zombiename" value="zombieDemolitionMutated" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="300" />
+		</action_sequence>
+		
+		<action_sequence name="spawn_succubus" template="spawn_boom">
+			<variable name="zombiename" value="Succubus" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="400" />
+		</action_sequence>	
+
+		<action_sequence name="spawn_succubusmatriarch" template="spawn_boom">
+			<variable name="zombiename" value="SuccubusQueen" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="600" />
+		</action_sequence>
+
+		<action_sequence name="spawn_incubus" template="spawn_boom">
+			<variable name="zombiename" value="Incubus" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="550" />
+		</action_sequence>	
+
+		<action_sequence name="spawn_incubusking" template="spawn_boom">
+			<variable name="zombiename" value="IncubusKing" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="750" />
+		</action_sequence>
+
+		<action_sequence name="spawn_behemothdemon" template="spawn_boom">
+			<variable name="zombiename" value="DemonBehemoth" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="675" />
+		</action_sequence>
+		
+		<action_sequence name="spawn_scarecrow" template="spawn_boom">
+			<variable name="zombiename" value="farmScarecrow" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="10" />
+		</action_sequence>	
+		
+		<action_sequence name="spawn_lordofhell" template="spawn_boom">
+			<variable name="zombiename" value="LordOfHell" />
+			<variable name="alertsound" value="hulkalert" />
+			<variable name="gamestage" value="1000" />
+		</action_sequence>	
+		
+		<!-- ATTACK VOTES -->
+		<action_sequence name="vote_minor_gangster" template="vote_minor">
+			<variable name="zombiename" value="zombieGangstaFemale,zombieGangstaMale" />
+			<variable name="spawncount" value="5" />
+			<variable name="alertsound" value="zombiemalealert" />
+		</action_sequence>
+
+		<action_sequence name="vote_minor_fgangster" template="vote_minor">
+			<variable name="zombiename" value="zombieGangstaFeralFemale,zombieGangstaFeralMale" />
+			<variable name="spawncount" value="5" />
+			<variable name="alertsound" value="zombieferalalert" />
+		</action_sequence>
+
+		<action_sequence name="vote_minor_cow" template="vote_minor">
+			<variable name="zombiename" value="animalBull,animalCow,Beefdog" />
+			<variable name="spawncount" value="5" />
+			<variable name="alertsound" value="zombiemalealert" />
+		</action_sequence>
+
+			<!-- BOSS VOTES -->
+		<action_sequence name="vote_h_cow_burn" template="vote_horde_buffed">
+			<variable name="zombiename" value="animalBull,animalCow,Beefdog" />
+			<variable name="enemybuff" value="twitch_enemyburn" />
+			<variable name="alertsound" value="zombiefemalealert" />
+			<variable name="bossicon1" value="ui_game_symbol_twitch_boss_bar_fire" />
+			<variable name="minionbuff" value="twitch_tough1,twitch_minion" />
+			<variable name="bossbuff" value="twitch_tough2,twitch_boss" />
+			<variable name="cratename" value="TwitchAction_VoteRewardT2" />
+		</action_sequence>
+		
+		<!-- Demonic spiders -->
+		<action_sequence name="vote_h_spider_rad" template="vote_horde_buffed">
+			<variable name="zombiename" value="mutantSpider,mutantSpiderBroodmother" />
+			<variable name="enemybuff" value="twitch_enemyrad" />
+			<variable name="alertsound" value="zombiemalealert" />
+			<variable name="bossicon1" value="ui_game_symbol_twitch_boss_bar_radiation" />
+			<variable name="minionbuff" value="twitch_tough1,twitch_minion" />
+			<variable name="bossbuff" value="twitch_tough2,twitch_boss" />
+			<variable name="cratename" value="TwitchAction_VoteRewardT2" />
+		</action_sequence>
+		<!-- END TWITCH INTEGRATION STUFF -->
+	</append>
+</config>

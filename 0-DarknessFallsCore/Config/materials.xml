@@ -1,0 +1,167 @@
+<config>
+	<set xpath="/materials/material[@id='Mbedrock']">
+		<property name="damage_category" value="stone"/>
+		<property name="surface_category" value="stone"/>
+		<property name="Hardness" type="float" value="10000"/>
+		<property name="stepsound" value="stone"/>
+		<property name="stability_glue" value="300"/>
+		<property name="Mass" type="int" value="1"/>
+		<property name="MaxDamage" value="50000"/>
+		<property name="Experience" value="2"/>
+	</set>
+	
+	<insertAfter xpath="/materials/material[@id='MresourceOil']">
+		<material id="MresourceHubcap">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Experience" value="8"/>
+		</material>
+	</insertAfter>
+
+	<insertAfter xpath="/materials/material[@id='Msteel_shapes']">
+		<material id="MstainlessSteel_shapes">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="explosionresistance" value="2"/>
+			<property name="MaxDamage" value="20000"/>
+			<property name="Experience" value="6"/>
+		</material>
+	</insertAfter>
+
+	<append xpath="/materials">
+		<!-- Darkness Falls Content Begins Here -->
+
+		<!-- DF Class Paper Material For Scrapping? -->
+
+		<material id="DFclassPaper">
+			<property name="damage_category" value="cloth" />
+			<property name="surface_category" value="cloth" />
+			<property name="forge_category" value="DFclassPaper" />
+			<property name="Hardness" type="float" value="1" />
+			<property name="stepsound" value="wood" />
+			<property name="stability_glue" value="24" />
+			<property name="Mass" type="int" value="6" />
+			<property name="MaxDamage" value="1" />
+		</material>
+
+		<!-- DF Scrappable Recipes -->
+
+		<material id="DFscrapSkill">
+			<property name="damage_category" value="cloth" />
+			<property name="surface_category" value="cloth" />
+			<property name="forge_category" value="DFscrapSkill" />
+			<property name="Hardness" type="float" value="0.1" />
+			<property name="stepsound" value="wood" />
+			<property name="stability_glue" value="24" />
+			<property name="Mass" type="int" value="6" />
+		</material>
+
+		<!-- DF New Metals -->
+
+		<material id="DFtitanium">
+			<property name="damage_category" value="metal" />
+			<property name="surface_category" value="metal" />
+			<property name="particle_category" value="metal" />
+			<property name="particle_destroy_category" value="metal" />
+			<property name="forge_category" value="titanium" />
+			<property name="Hardness" type="float" value="1" />
+			<property name="stepsound" value="metal" />
+			<property name="stability_glue" value="400" />
+			<property name="Mass" type="int" value="10" />
+			<property name="explosionresistance" value="2.5" />
+			<property name="MaxDamage" value="25000" />
+			<property name="Experience" value="2"/>
+		</material>
+
+		<material id="DFtitanium_shapes">
+			<property name="damage_category" value="metal" />
+			<property name="surface_category" value="metal" />
+			<property name="particle_category" value="metal" />
+			<property name="particle_destroy_category" value="metal" />
+			<property name="forge_category" value="titanium" />
+			<property name="Hardness" type="float" value="1" />
+			<property name="stepsound" value="metal" />
+			<property name="stability_glue" value="400" />
+			<property name="Mass" type="int" value="10" />
+			<property name="explosionresistance" value="2.5" />
+			<property name="MaxDamage" value="45000" />
+			<property name="Experience" value="2"/>
+		</material>
+
+		<material id="DFuranium">
+			<property name="damage_category" value="metal" />
+			<property name="surface_category" value="metal" />
+			<property name="particle_category" value="metal" />
+			<property name="particle_destroy_category" value="metal" />
+			<property name="forge_category" value="uranium" />
+			<property name="Hardness" type="float" value="1" />
+			<property name="stepsound" value="metal" />
+			<property name="stability_glue" value="400" />
+			<property name="Mass" type="int" value="15" />
+			<property name="explosionresistance" value="2" />
+			<property name="MaxDamage" value="1250" />
+			<property name="Experience" value="2"/>
+		</material>
+
+		<material id="DFplutonium">
+			<property name="damage_category" value="metal" />
+			<property name="surface_category" value="metal" />
+			<property name="particle_category" value="metal" />
+			<property name="particle_destroy_category" value="metal" />
+			<property name="forge_category" value="plutonium" />
+			<property name="Hardness" type="float" value="1" />
+			<property name="stepsound" value="metal" />
+			<property name="stability_glue" value="400" />
+			<property name="Mass" type="int" value="15" />
+			<property name="explosionresistance" value="2" />
+			<property name="MaxDamage" value="1250" />
+			<property name="Experience" value="2"/>
+		</material>
+
+		<material id="DFIrrigation">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="explosionresistance" value="1.4"/>
+			<property name="MaxDamage" value="2500"/>
+			<property name="Experience" value="0"/>
+		</material>
+
+		<material id="Mgrowinglight">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="explosionresistance" value="1.4"/>
+			<property name="MaxDamage" value="2500"/>
+			<property name="Experience" value="0"/>
+		</material>
+
+		<material id="MhazmatFiber">
+			<property name="damage_category" value="cloth"/>
+			<property name="surface_category" value="cloth"/>
+			<property name="forge_category" value="DFresourceHazmatFiber"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="cloth"/>
+			<property name="lightopacity" value="4"/>
+			<property name="stability_glue" value="2"/>
+			<property name="Mass" type="int" value="1"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="MaxDamage" value="5"/>
+			<property name="Experience" value="4"/>
+		</material>
+	</append>
+</config>

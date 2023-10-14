@@ -1,0 +1,800 @@
+<config>
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy1']">
+		<AudioSource name="Sounds/AudioSource_Impact" />
+		<Noise ID="0" noise="40" time="3" muffled_when_crouched="0.5" heat_map_strength="1.42" heat_map_time="90" />
+		<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy1" />
+		<LowestPitch name="0.9" />
+		<HighestPitch name="1.0" />
+		<LocalCrouchVolumeScale value="0.5" /> 
+		<CrouchNoiseScale value="0.5" /> 
+		<NoiseScale value="1" /> 
+		<MaxVoices value="10" /> 
+		<MaxRepeatRate value="0.01" />
+	</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy2']">
+		<AudioSource name="Sounds/AudioSource_Impact" />
+		<Noise ID="0" noise="40" time="3" muffled_when_crouched="0.5" heat_map_strength="1.42" heat_map_time="90" />
+		<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy2" />
+		<LowestPitch name="0.9" />
+		<HighestPitch name="1.0" />
+		<LocalCrouchVolumeScale value="0.5" /> 
+		<CrouchNoiseScale value="0.5" /> 
+		<NoiseScale value="1" /> 
+		<MaxVoices value="10" /> 
+		<MaxRepeatRate value="0.01" />
+	</set>
+	
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy3']">
+		<AudioSource name="Sounds/AudioSource_Impact" />
+		<Noise ID="0" noise="40" time="3" muffled_when_crouched="0.5" heat_map_strength="1.42" heat_map_time="90" />
+		<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy3" />
+		<LowestPitch name="0.9" />
+		<HighestPitch name="1.0" />
+		<LocalCrouchVolumeScale value="0.5" /> 
+		<CrouchNoiseScale value="0.5" /> 
+		<NoiseScale value="1" /> 
+		<MaxVoices value="10" /> 
+		<MaxRepeatRate value="0.01" />
+	</set>
+	
+	<set xpath="/Sounds/SoundDataNode[@name='stonedestroy1']">
+		<AudioSource name="Sounds/AudioSource_Impact" />
+		<Noise ID="2" noise="30" time="3" muffled_when_crouched="0.5" heat_map_strength=".25" heat_map_time="45" />
+		<AudioClip ClipName="Sounds/DestroyBlock/stonedestroy1" />
+		<LowestPitch name="0.9" />
+		<HighestPitch name="1.0" />
+		<LocalCrouchVolumeScale value="0.5" /> 
+		<CrouchNoiseScale value="0.5" /> 
+		<NoiseScale value="1" /> 
+		<MaxVoices value="10" /> 
+		<MaxRepeatRate value="0.01" />
+	</set>
+	
+	<set xpath="/Sounds/SoundDataNode[@name='stonedestroy2']">
+		<AudioSource name="Sounds/AudioSource_Impact" />
+		<Noise ID="2" noise="30" time="3" muffled_when_crouched="0.5" heat_map_strength=".25" heat_map_time="45" />
+		<AudioClip ClipName="Sounds/DestroyBlock/stonedestroy2" />
+		<LowestPitch name="0.9" />
+		<HighestPitch name="1.0" />
+		<LocalCrouchVolumeScale value="0.5" /> 
+		<CrouchNoiseScale value="0.5" /> 
+		<NoiseScale value="1" /> 
+		<MaxVoices value="10" /> 
+		<MaxRepeatRate value="0.01" />
+	</set>
+	
+	<set xpath="/Sounds/SoundDataNode[@name='stonedestroy3']">
+		<AudioSource name="Sounds/AudioSource_Impact" />
+		<Noise ID="2" noise="30" time="3" muffled_when_crouched="0.5" heat_map_strength=".25" heat_map_time="45" />
+		<AudioClip ClipName="Sounds/DestroyBlock/stonedestroy3" />
+		<LowestPitch name="0.9" />
+		<HighestPitch name="1.0" />
+		<LocalCrouchVolumeScale value="0.5" /> 
+		<CrouchNoiseScale value="0.5" /> 
+		<NoiseScale value="1" /> 
+		<MaxVoices value="10" /> 
+		<MaxRepeatRate value="0.01" />
+	</set>
+	
+	<append xpath="/Sounds">
+		<SoundDataNode name="df_sniperrifle_s_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="0" noise="24" time="2" muffled_when_crouched="0.8" heat_map_strength="0.35" heat_map_time="180" />
+			<AudioClip ClipName="Sounds/Weapons/Ranged/sniperrifle/sniperrifle_s_fire1" />
+			<AudioClip ClipName="Sounds/Weapons/Ranged/sniperrifle/sniperrifle_s_fire2" />
+			<AudioClip ClipName="Sounds/Weapons/Ranged/sniperrifle/sniperrifle_s_fire3" />
+			<AudioClip ClipName="Sounds/Weapons/Ranged/sniperrifle/sniperrifle_s_fire4" />
+			<AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true" />
+			<AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true" />
+			<AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="20" /> <MaxVoicesPerEntity value="6" /> <MaxRepeatRate value="0.001" /> </SoundDataNode>
+
+		<SoundDataNode name="44ammo_s_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<Noise ID="0" noise="38" time="2" muffled_when_crouched="0.8" heat_map_strength="0.2" heat_map_time="180"/>
+			<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_s_fire1"/>
+			<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_s_fire2"/>
+			<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_s_fire3"/>
+			<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_s_fire4"/>
+			<AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly1" AltSound="true"/>
+			<AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly2" AltSound="true"/>
+			<AudioClip ClipName="Sounds/Twitch/Silly/shotgun_fire_silly3" AltSound="true"/>
+			<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxVoicesPerEntity value="6"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+			
+		<!-- Hornet Sounds -->
+		<SoundDataNode name="hornetalert">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="2" noise="9" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetalert1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetalert2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetalert3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetattack">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="9" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetattack1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetattack2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetattack3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="2" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetdeath">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" noise="9" time="2.5" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetdeath1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetdeath2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetdeath3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="0" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetgiveup">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetroam1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="5" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetpain">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="2" noise="9" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetpain1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetpain2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetpain3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="1" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+			
+		<SoundDataNode name="hornetroam">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetflylp1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+
+		<SoundDataNode name="hornetsense">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" noise="9" time="4" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?hornetsense1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="4" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+
+		<!-- Trader Caitlin -->
+
+		<SoundDataNode name="femaletraderlikegreeting"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_greeting_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_greeting_02.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_greeting_03.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+			
+		<SoundDataNode name="femaletraderlikesaleaccepted"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_sale_accepted_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_sale_accepted_02.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="femaletraderlikesaledeclined"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_sale_declined_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_sale_declined_02.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+			
+		<SoundDataNode name="femaletraderlikequestoffer"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_offer_01" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_offer_02" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_offer_03" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="femaletraderlikequestcomplete"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_complete_01" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_complete_02" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_complete_03" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+			
+		<SoundDataNode name="femaletraderdislikequestaccepted"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_accepted_01" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_accepted_02" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_accepted_03" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_accepted_04" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="femaletraderdislikequestdeclined"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_declined_01" />
+			<AudioClip ClipName="#@modfolder:Assets/CaitlinVoice.unity3d?trader_female_like_quest_declined_02" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="1.111" /> </SoundDataNode>
+			
+		<!-- Eve -->
+
+		<SoundDataNode name="Evelikegreeting"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjengreeting1.mp3" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjengreeting1.mp3" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+			
+		<SoundDataNode name="Evelikesaleaccepted"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjensaleaccepted1.mp3" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjensaleaccepted2.mp3" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="Evelikesaledeclined"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjensaledeclined1.mp3" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjensaledeclined2.mp3" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+			
+		<SoundDataNode name="Evelikequestoffer"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjenquestoffer1.mp3" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjenquestoffer2.mp3" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="Evelikequestcomplete"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="1.5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjenquestcomplete.mp3" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjenquestcomplete2.mp3" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+			
+		<SoundDataNode name="Evelikequestaccepted"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjenquestaccepted.mp3" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="Evelikequestdeclined"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/TraderJenVoice.unity3d?traderjenquestdeclined.mp3" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="1.111" /> </SoundDataNode>	
+			
+		<!-- Female Bandit Sound -->
+			
+		<SoundDataNode name="femalehatealert"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_alert_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_alert_02.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_alert_03.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_alert_04.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="femalehateattack"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="2" noise="11" time="4" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_attack_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_attack_02.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_attack_03.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_attack_04.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="femalehatedeath"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="20" time="2" heat_map_strength="0.2" heat_map_time="90" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_death_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_death_02.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_death_03.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="femalehatepain"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="2" noise="15" time="4" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_pain_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_pain_02.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_pain_03.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_pain_04.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_pain_05.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="femalehateroam"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="2" noise="15" time="5" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_roaming_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_roaming_02.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="femalehatesense"> <AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_sense_01.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_sense_02.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?female_hate_sense_03.wav" />
+			<Channel name="Mouth" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+			
+		<!-- Laser Rifle -->
+		<SoundDataNode name="lasersniper_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.3" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserSniper.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Pistol -->
+		<SoundDataNode name="laserpistol_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.3" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserPistol.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Shotgun -->
+		<SoundDataNode name="lasershotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="81" time="2" muffled_when_crouched="0.8" heat_map_strength="0.3" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserShotgun.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Carbine -->
+		<SoundDataNode name="lasercarbine_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.3" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserAutoRifle.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Rifle Less Heat-->
+		<SoundDataNode name="lasersniperLH_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.1" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserSniper.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Pistol Less Heat-->
+		<SoundDataNode name="laserpistolLH_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.1" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserPistol.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Shotgun Less Heat-->
+		<SoundDataNode name="lasershotgunLH_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="81" time="2" muffled_when_crouched="0.8" heat_map_strength="0.1" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserShotgun.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Carbine Less Heat -->
+		<SoundDataNode name="lasercarbineLH_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.1" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserAutoRifle.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Pistol Silenced -->
+		<SoundDataNode name="lasersilencedp_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="17" time="2" muffled_when_crouched="0.8" heat_map_strength="0.3" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserShoot.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Carbine Silenced -->
+		<SoundDataNode name="lasersilencedc_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="43" time="2" muffled_when_crouched="0.8" heat_map_strength="0.3" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserShoot.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Laser Sniper Silenced -->
+		<SoundDataNode name="lasersilencedr_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="26" time="2" muffled_when_crouched="0.8" heat_map_strength="0.3" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?LaserShoot.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode> 
+			
+		<!-- Scifi Doors -->
+
+		<SoundDataNode name="scifi_door_use"> <AudioSource name="Sounds/AudioSource_UseAction" />
+			<Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/SciFiStuff.unity3d?scifi_door_use.wav" />
+			<LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="0.01" /> </SoundDataNode> 
+			
+		<!-- Combat Shotgun -->
+			
+		<SoundDataNode name="CAWS_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="0" noise="81" time="2" muffled_when_crouched="0.8" heat_map_strength="1.0" heat_map_time="180" />
+			<Sequence />
+			<distantfadestart name="25" />
+			<distantfadeend name="35" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?auto_shotgun_firev2.wav" />
+			<!-- <AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?auto_shotgun_firev2.wav" Loop="true"/>
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?auto_shotgun_end.wav"/>
+			<AudioClip ClipName="#@modfolder:Assets/CShotgun?auto_shotgun_fire"/> -->
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.01" /></SoundDataNode>
+			
+		<SoundDataNode name="CAWS_shotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" noise="81" time="2" muffled_when_crouched="0.8" heat_map_strength="1.0" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?auto_shotgun_fire.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /> </SoundDataNode>
+			
+		<!-- Zombie Behemoth Male -->
+
+		<SoundDataNode name="zombiebehemothalert"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Angry_1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Angry_2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Angry_3.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Angry_4.wav" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="3" /> </SoundDataNode>
+
+		<SoundDataNode name="zombiebehemothattack"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Attack_1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Attack_2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Attack_3.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Attack_4.wav" />
+			<Channel name="Mouth" />
+			<Priority name="2" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.8" /> </SoundDataNode>
+
+		<SoundDataNode name="zombiebehemothdeath"> <AudioSource name="Sounds/AudioSource_Pain" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Death_1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Death_2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Death_3.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Death_4.wav" />
+			<Channel name="Mouth" />
+			<Priority name="0" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="zombiebehemothpain"> <AudioSource name="Sounds/AudioSource_Pain" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Pain_1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Pain_2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Pain_3.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Pain_4.wav" />
+			<Channel name="Mouth" />
+			<Priority name="1" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.8" /> </SoundDataNode>
+
+		<SoundDataNode name="zombiebehemothroam"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Growl_1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Growl_2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Growl_3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="5" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="3" /> </SoundDataNode>
+
+		<SoundDataNode name="zombiebehemothsense"> <AudioSource name="Sounds/AudioSource_Pain" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Growl_1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Growl_2.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?Behemoth_Growl_3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="4" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="3" /> </SoundDataNode>
+			
+		  <!-- A15 and earlier SMG Sound -->
+		  
+		  <SoundDataNode name="a14_mp5_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="2" noise="11" time="4" muffled_when_crouched="0.5" />
+			<Sequence />
+			<distantfadestart name="25" />
+			<distantfadeend name="35" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?mp5_fire_start.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?mp5_fire_lp.wav" Loop="true" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?mp5_fire_end.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxRepeatRate name="0.001" /></SoundDataNode>
+		  
+		  <SoundDataNode name="a14_mp5_reload"> <AudioSource name="Sounds/AudioSource_Interact" />
+			<Noise ID="2" noise="11" time="4" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?mp5_reload.wav" />
+			<LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="0.001" /> </SoundDataNode>
+		  
+		  <!-- A15 and earlier Pistol Sound -->
+		  
+		  <SoundDataNode name="a14_pistol_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.325" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?pistol_fire.wav" />
+			<LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="6" /> <MaxRepeatRate name="0.001" /> </SoundDataNode>
+		  
+		  <SoundDataNode name="a14_pistol_reload"> <AudioSource name="Sounds/AudioSource_Interact" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?pistol_reload.wav" />
+			<LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="0.001" /> </SoundDataNode>
+			
+		  <!-- A15 and earlier AK Sound -->
+		  
+		<SoundDataNode name="a14_ak47_reload"> <AudioSource name="Sounds/AudioSource_Interact" />
+			<Noise ID="2" noise="11" time="4" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?ak47_reload.wav" />
+			<LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="0.001" /> </SoundDataNode>
+
+		<SoundDataNode name="a14_ak47_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.675" heat_map_time="180" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?ak47_fire_start.wav" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="30" /> <MaxVoicesPerEntity value="10" /> <MaxRepeatRate value="0.001" /></SoundDataNode>
+
+		<SoundDataNode name="a14_ak47_fire_end"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Sounds.unity3d?ak47_fire_end.wav" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="30" /> <MaxVoicesPerEntity value="10" /> <MaxRepeatRate value="0.001" /></SoundDataNode>
+			
+		<!-- Night Stalker -->
+
+		<SoundDataNode name="stalkeralert"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert" />
+			<AudioClip ClipName="#@modfolder:Assets/StalkerAudio.unity3d?StalkerAlert1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="3" /> </SoundDataNode>
+
+		<SoundDataNode name="stalkerattack"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<AudioClip ClipName="#@modfolder:Assets/StalkerAudio.unity3d?StalkerAttack1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="2" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.8" /> </SoundDataNode>
+
+		<SoundDataNode name="stalkerdeath"> <AudioSource name="Sounds/AudioSource_Pain" />
+			<AudioClip ClipName="#@modfolder:Assets/StalkerAudio.unity3d?StalkerDie1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="0" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="stalkerpain"> <AudioSource name="Sounds/AudioSource_Pain" />
+			<AudioClip ClipName="#@modfolder:Assets/StalkerAudio.unity3d?StalkerPain1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="1" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="1.8" /> </SoundDataNode>
+
+		<SoundDataNode name="stalkerroam"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<AudioClip ClipName="#@modfolder:Assets/StalkerAudio.unity3d?StalkerRoam1.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/StalkerAudio.unity3d?StalkerRoam2.wav" />
+			<Channel name="Mouth" />
+			<Priority name="5" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="3" /> </SoundDataNode>
+
+		<SoundDataNode name="stalkersense"> <AudioSource name="Sounds/AudioSource_Pain" />
+			<AudioClip ClipName="#@modfolder:Assets/StalkerAudio.unity3d?StalkerSense1.wav" />
+			<Channel name="Mouth" />
+			<Priority name="4" />
+			<LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="10" /> <MaxRepeatRate name="3" /> </SoundDataNode>
+			
+		<!-- DFalls Cows -->
+		<SoundDataNode name="cowalert"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?CowEffectIdle" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<maxVoicesPerEntity value="1" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" /> </SoundDataNode>
+
+		<SoundDataNode name="cowdeath"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<Noise ID="4" noise="60" time="2" heat_map_strength="0.2" heat_map_time="90" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?CowEffectDeath" />
+			<Channel name="Mouth" />
+			<Priority name="0" />
+			<maxVoicesPerEntity value="1" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" /> </SoundDataNode>
+
+		<!-- DFalls Sheep -->
+		<SoundDataNode name="sheepalert"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?SheepEffectIdle" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<maxVoicesPerEntity value="1" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" /> </SoundDataNode>
+
+		<SoundDataNode name="sheepdeath"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<Noise ID="4" noise="60" time="2" heat_map_strength="0.2" heat_map_time="90" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?SheepEffectDeath" />
+			<Channel name="Mouth" />
+			<Priority name="0" />
+			<maxVoicesPerEntity value="1" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" /> </SoundDataNode>
+
+		<!-- DFalls Goats -->
+		<SoundDataNode name="goatalert"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?GoatEffectIdle" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<maxVoicesPerEntity value="1" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" /> </SoundDataNode>
+
+		<SoundDataNode name="goatdeath"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<Noise ID="4" noise="60" time="2" heat_map_strength="0.2" heat_map_time="90" />
+			<AudioClip ClipName="#@modfolder:Assets/Animals.unity3d?GoatEffectDeath" />
+			<Channel name="Mouth" />
+			<Priority name="0" />
+			<maxVoicesPerEntity value="1" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" /> </SoundDataNode>
+			
+		<!-- Xyth's Spider Noises -->
+		<SoundDataNode name="animalspideralert"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspideralert" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<maxVoicesPerEntity value="1" />
+			<LowestPitch name="0.9" />
+			<HighestPitch name="1.0" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" />
+		</SoundDataNode>
+
+		<SoundDataNode name="animalspidersense"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspidersense" />
+			<Channel name="Mouth" />
+			<Priority name="4" />
+			<maxVoicesPerEntity value="1" />
+			<LowestPitch name="0.9" />
+			<HighestPitch name="1.0" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" />
+		</SoundDataNode>
+
+		<SoundDataNode name="animalspiderhurt"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderhurt1" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderhurt2" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderhurt3" />		
+			<Channel name="Mouth" />
+			<Priority name="1" />
+			<maxVoicesPerEntity value="1" />
+			<LowestPitch name="0.9" />
+			<HighestPitch name="1.0" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" />
+		</SoundDataNode>
+				
+		<SoundDataNode name="animalspiderattack"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderattack1" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderattack2" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderattack3" />	
+			<Channel name="Mouth" />
+			<Priority name="2" />
+			<maxVoicesPerEntity value="1" />
+			<LowestPitch name="0.9" />
+			<HighestPitch name="1.0" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" />
+		</SoundDataNode>
+				
+		<SoundDataNode name="animalspiderroam"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderroam" />
+			<Channel name="Mouth" />
+			<Priority name="5" />
+			<maxVoicesPerEntity value="1" />
+			<LowestPitch name="0.9" />
+			<HighestPitch name="1.0" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" />
+		</SoundDataNode>
+				
+		<SoundDataNode name="animalspiderdeath"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderdeath" />
+			<Channel name="Mouth" />
+			<Priority name="5" />
+			<maxVoicesPerEntity value="1" />
+			<LowestPitch name="0.9" />
+			<HighestPitch name="1.0" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" />
+		</SoundDataNode>
+				
+		<SoundDataNode name="animalspiderrandom"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert" />
+			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Assets/Animalspidersounds.unity3d?animalspiderrandom" />
+			<Channel name="Mouth" />
+			<Priority name="5" />
+			<maxVoicesPerEntity value="1" />
+			<LowestPitch name="0.9" />
+			<HighestPitch name="1.0" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.9" />
+		</SoundDataNode>	
+			
+		<!-- Fireball Audio -->
+		<SoundDataNode name="fireballStart"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<AudioClip ClipName="#@modfolder:Assets/Fireball.unity3d?Fly3.wav" />
+			<Channel name="Mouth" />
+			<Priority name="2" />
+			<LowestPitch name="0.95" />
+			<HighestPitch name="1.05" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="1.8" /> </SoundDataNode>
+
+		<SoundDataNode name="fireballRepeat"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<AudioClip ClipName="#@modfolder:Assets/Fireball.unity3d?LoopFire4.wav" />
+			<Channel name="Mouth" />
+			<Priority name="3" />
+			<LowestPitch name="0.95" />
+			<HighestPitch name="1.05" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="1.111" /> </SoundDataNode>
+
+		<SoundDataNode name="fireballEnd"> <AudioSource name="Sounds/AudioSource_Creatures" />
+			<AudioClip ClipName="#@modfolder:Assets/Fireball.unity3d?ExplosionFire1.wav" />
+			<LowestPitch name="0.95" />
+			<HighestPitch name="1.05" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="1.111" /> </SoundDataNode>
+			
+		<!-- Car Alarms -->
+		<SoundDataNode name="carAlarm1"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" range="180" noise="300" time="4" heat_map_strength="25" heat_map_time="100" />
+			<AudioClip ClipName="Sounds/Electricity/Alarms/alarm1_lp" Loop="true" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value=".1" /> </SoundDataNode>
+			
+		<SoundDataNode name="carAlarm2"> <AudioSource name="Sounds/AudioSource_WeaponFire" /> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
+			<Noise ID="5" range="180" noise="300" time="4" heat_map_strength="50" heat_map_time="150" />
+			<AudioClip ClipName="Sounds/Electricity/Alarms/alarm1_lp" Loop="true" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value=".1" /> </SoundDataNode>
+			
+		<!-- Thunder Sounds -->
+		<SoundDataNode name="WastelandThunder"> <AudioSource name="Sounds/AudioSource_WeaponFire" />
+			<Noise ID="1" noise="7" time="1.3" />
+			<AudioClip ClipName="Sounds/Ambient_Oneshots/a_thunder1" />
+			<AudioClip ClipName="Sounds/Ambient_Oneshots/a_thunder2" />
+			<AudioClip ClipName="Sounds/Ambient_Oneshots/a_thunder3" />
+			<AudioClip ClipName="Sounds/Ambient_Oneshots/a_thunder4" />
+			<AudioClip ClipName="Sounds/Ambient_Oneshots/a_thunder5" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="10" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+			
+		<!-- Flamethrower -->
+		<SoundDataNode name="Flamethrower_Start"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource" />
+			<Noise ID="4" noise="60" time="2" heat_map_strength="0.75" heat_map_time="90" />
+			<Sequence />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?df_ft_start.wav" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?df_ft_loop.wav" Loop="true" />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?df_ft_end.wav" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="3" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+			
+		<SoundDataNode name="Flamethrower_Loop"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource" />
+			<Noise ID="4" noise="60" time="2" heat_map_strength="0.75" heat_map_time="90" />
+			<Sequence />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?df_ft_loop.wav" Loop="true" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="3" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+			
+		<SoundDataNode name="Flamethrower_End"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource" />
+			<Noise ID="4" noise="60" time="2" heat_map_strength="0.75" heat_map_time="90" />
+			<Sequence />
+			<AudioClip ClipName="#@modfolder:Assets/NewGuns.unity3d?df_ft_end.wav" />
+			<LocalCrouchVolumeScale value="1" /> <CrouchNoiseScale value="1" /> <NoiseScale value="1" /> <MaxVoices value="3" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+			
+		<SoundDataNode name="Arc_Gun_Start"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource" />
+			<Noise ID="4" noise="60" time="2" heat_map_strength="0.75" heat_map_time="90" />
+			<AudioClip ClipName="Sounds/Electricity/ElectricFence/electric_arc_lp" Loop="false" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="3" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+			
+		<SoundDataNode name="Arc_Gun_Start_Cooling"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource" />
+			<Noise ID="4" noise="30" time="2" heat_map_strength="0.375" heat_map_time="90" />
+			<AudioClip ClipName="Sounds/Electricity/ElectricFence/electric_arc_lp" Loop="false" />
+			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="3" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
+
+		<SoundDataNode name="crowbar_heat_generation"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<Noise ID="0" noise="100" time="0.1" muffled_when_crouched="0.8" heat_map_strength="50.1" heat_map_time="180"/>
+			<AudioClip ClipName="Sounds/Misc/silencefiller"/>
+			<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/></SoundDataNode>
+	</append>
+</config>

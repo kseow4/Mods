@@ -1,0 +1,8 @@
+<config>
+	<append xpath="/doc/tips">
+		<tip key="DFloadingTipStoneHammer" />
+		<tip key="DFloadingTipTraderFaction" />
+		<tip key="DFloadingTipTraderSkills" />
+		<tip key="DFloadingTipWellness" />
+	</append>
+</config>

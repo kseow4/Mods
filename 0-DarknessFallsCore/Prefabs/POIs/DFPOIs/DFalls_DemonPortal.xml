@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="AllowedTownships" value="city,town,rural,wilderness" />
+  <property name="AllowedBiomes" value="wasteland" />
+  <property name="Tags" value="dfwilderness" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="PrefabSize" value="15, 13, 4" />
+  <property name="RotationToFaceNorth" value="0" />
+  <property name="Zoning" value="none" />
+</prefab>

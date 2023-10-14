@@ -1,0 +1,10 @@
+<config>
+	<append xpath="/rwgmixer">
+		<prefab_spawn_adjust partial_name="DFalls_Eves_Camp" min_count="1" max_count="2" bias="10"/>
+		<prefab_spawn_adjust partial_name="DFalls_Military_Bunker" min_count="1" max_count="2" bias="10"/>
+		<prefab_spawn_adjust partial_name="DFalls_Razors_House" min_count="1" max_count="2" bias="10"/>
+		<prefab_spawn_adjust partial_name="DFalls_Resarch_Lab1" min_count="1" max_count="2" bias="10"/>
+		<prefab_spawn_adjust partial_name="DFalls_settlement_caitlin" min_count="1" max_count="2" bias="10"/>
+		<prefab_spawn_adjust partial_name="DFalls_Annas_House" min_count="1" max_count="2" bias="10"/>
+	</append>
+</config>

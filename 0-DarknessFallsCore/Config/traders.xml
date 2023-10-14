@@ -1,0 +1,870 @@
+<config>
+	<set xpath="/traders/@buy_markup">3.5</set>
+	<set xpath="/traders/@quality_mod">1,3</set>
+	<!--
+	<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeAll']">
+	</insertBefore>
+	-->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='clothes']">
+		<item name="apparelCoatPufferCoat"/>
+		<item group="skullCapAll"/>
+		<item group="shirtLongAll"/>
+		<item group="pantsAll"/>
+		<item name="apparelTankTop"/>
+		<item name="apparelBandana"/>
+		<item name="apparelSweatshirt"/>
+		<item name="apparelHoodySweatshirt"/>
+		<item group="cowboyHatAll"/>
+		<item group="ballCapAll"/>
+		<item group="pressboyCapAll"/>
+		<item group="suitAll" prob="0.2"/>
+		<item name="apparelCowboyBoots"/>
+		<item name="apparelTShirtPlain"/>
+		<item name="apparelWornBoots"/>
+		<item name="apparelShades" prob=".7"/>
+		<item name="apparelNerdGlasses" prob=".7"/>
+		<item name="apparelSkiGoggles" prob=".7"/>
+		<item name="apparelAviatorGoggles" prob=".7"/>
+		<item name="modArmorNightvisionGoggles" prob=".7"/>
+		<item name="armorFootballHelmet"/>
+		<item name="apparelCoatLeatherDuster" prob="0.2"/>
+		<item group="hazmatGear" prob="0.1"/>
+		<item name="apparelFacialPiercings" prob="0.1"/>
+		<item name="apparelGothBoots" prob=".3"/>
+		<item name="apparelGothPants" prob=".3"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+		<item group="groupAllAmmo" count="2,4"/>
+		<item name="resourcePotassiumNitratePowder" count="2,5"/>
+		<item name="resourceGunPowder" count="25,25"/>
+		<item group="ammoSupplies" count="2"/>
+		<item group="thrownAmmo" count="2"/>
+		<item name="drinkJarBoiledWater" count="2,4"/>
+		<item group="groupFoodAll" count="1,3"/>
+		<item name="cntVendingMachine" count="1"/>
+	</set>
+
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='perkBooks']">
+		<item name="gunBowT1WoodenBowSchematic"/>
+		<item name="gunHandgunT1PistolSchematic"/>
+		<item name="gunShotgunT1DoubleBarrelSchematic"/>
+		<item name="gunMGT1AK47Schematic"/>
+		<item name="gunRifleT1HuntingRifleSchematic"/>
+		<item name="gunBowT1IronCrossbowSchematic"/>
+		<item name="gunHandgunT2Magnum44Schematic"/>
+		<item name="DFgunP225Schematic"/>
+		<item name="gunShotgunT2PumpShotgunSchematic"/>
+		<item name="gunMGT2TacticalARSchematic"/>
+		<item name="gunRifleT2LeverActionRifleSchematic"/>
+		<item name="gunBowT3CompoundBowSchematic"/>
+		<item name="gunBowT3CompoundCrossbowSchematic"/>
+		<item name="gunHandgunT3DesertVultureSchematic"/>
+		<item name="gunHandgunT3SMG5Schematic"/>
+		<item name="gunShotgunT1DoubleBarrelSchematic"/>
+		<item name="gunShotgunT3AutoShotgunSchematic"/>
+		<item name="gunRifleT3SniperRifleSchematic"/>
+		<item name="DFgunWinchesterRifleSchematic"/>
+		<item name="meleeWpnClubT1BaseballBatSchematic"/>
+		<item name="meleeWpnKnucklesT1IronKnucklesSchematic"/>
+		<item name="meleeWpnBladeT1HuntingKnifeSchematic"/>
+		<item name="meleeWpnSledgeT1IronSledgehammerSchematic"/>
+		<item name="meleeWpnClubT3SteelClubSchematic"/>
+		<item name="meleeWpnSpearT1IronSpearSchematic"/>
+		<item name="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
+		<item name="meleeWpnSledgeT3SteelSledgehammerSchematic"/>
+		<item name="meleeWpnBladeT3MacheteSchematic"/>
+		<item name="meleeWpnSpearT3SteelSpearSchematic"/>
+		<item name="meleeToolSalvageT1WrenchSchematic"/>
+		<item name="meleeWpnBladeT1HuntingKnifeSchematic"/>
+		<item name="meleeWpnSledgeT1IronSledgehammerSchematic"/>
+		<item name="meleeToolSalvageT2RatchetSchematic"/>
+		<item name="meleeToolSalvageT3ImpactDriverSchematic"/>
+		<item name="meleeToolPickT3AugerSchematic"/>
+		<item name="meleeToolAxeT3ChainsawSchematic"/>
+		<item name="meleeToolRepairT3NailgunSchematic"/>
+		<item name="DFforgeAhead"/>
+		<item name="workbenchSchematic"/>
+		<item name="cementMixerSchematic"/>
+		<item name="chemistryStationSchematic"/>
+		<item name="plantedAloe1Schematic"/>
+		<item name="plantedBlueberry1Schematic"/>
+		<item name="plantedChrysanthemum1Schematic"/>
+		<item name="plantedCotton1Schematic"/>
+		<item name="DFseedWheatSchematic"/>
+		<item name="DFseedOrangeSchematic"/>
+		<item name="plantedCorn1Schematic"/>
+		<item name="plantedMushroom1Schematic"/>
+		<item name="DFseedCarrotSchematic"/>
+		<item name="DFseedCannabisSchematic"/>			
+		<item name="DFseedBananaSchematic"/>
+		<item name="plantedCoffee1Schematic"/>
+		<item name="drinkJarRedTeaSchematic"/>
+		<item name="drinkJarGoldenRodTeaSchematic"/>
+		<item name="DFappleJuiceSchematic"/>
+		<item name="DForangeJuiceSchematic"/>
+		<item name="DFdrinkRiceMilkSchematic"/>
+		<item name="foodMeatStewSchematic"/>
+		<item name="foodVegetableStewSchematic"/>
+		<item name="foodBlueberryPieSchematic"/>
+		<item name="foodSteakAndPotatoSchematic"/>
+		<item name="DFvegetableSoupSchematic"/>
+		<item name="DFapplePieSchematic"/>
+		<item name="DForangeMarmaladeSchematic"/>
+		<item name="foodJarBlueberryJamSchematic"/>
+		<item name="DFRicePuddingSchematic"/>
+		<item name="DFChesseSchematic"/>
+		<item name="drinkYuccaJuiceSmoothieSchematic"/>
+		<item name="DFtomatoJuiceSchematic"/>			
+		<item name="DForangeTeaSchematic"/>
+		<item name="DFblueberryPancakesSchematic"/>
+		<item name="DFbananaPancakesSchematic"/>
+		<item name="DFmarmaladeToastSchematic"/>
+		<item name="DFCheesePizzaSchematic"/>
+		<item name="DFminibikeBook"/>
+		<item name="armorLeatherSetSchematic"/>
+		<item name="armorIronSetSchematic"/>
+		<item name="armorSteelSetSchematic"/>
+		<item name="armorMilitarySetSchematic"/>
+		<item name="DFskillAthleticsBook"/>
+		<item name="DFskillMiningBook"/>
+		<item name="DFskillScavengingBook"/>
+		<item name="DFskillArcheryBook"/>
+		<item name="DFskillAutomaticsBook"/>
+		<item name="DFskillBluntBook"/>
+		<item name="DFskillBladesBook"/>
+		<item name="DFskillPistolBook"/>
+		<item name="DFskillShotgunBook"/>
+		<item name="DFskillRiflesBook"/> 
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']">
+		<item name="DFskillAthleticsBook"/>
+		<item name="DFskillMiningBook"/>
+		<item name="DFskillScavengingBook"/>
+		<item name="DFskillArcheryBook"/>
+		<item name="DFskillAutomaticsBook"/>
+		<item name="DFskillBluntBook"/>
+		<item name="DFskillBladesBook"/>
+		<item name="DFskillPistolBook"/>
+		<item name="DFskillShotgunBook"/>
+		<item name="DFskillRiflesBook"/> 
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazinesTraderBob']">
+		<item name="DFminibikeBook"/>
+		<item name="DFlockpickingBook"/>
+		<item name="DFquickerCraftingBook"/>	
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazinesTraderHugh']">
+		<item name="meleeToolSalvageT1WrenchSchematic"/>
+		<item name="meleeWpnBladeT1HuntingKnifeSchematic"/>
+		<item name="meleeWpnSledgeT1IronSledgehammerSchematic"/>
+		<item name="meleeToolSalvageT2RatchetSchematic"/>
+		<item name="meleeToolSalvageT3ImpactDriverSchematic"/>
+		<item name="meleeToolPickT3AugerSchematic"/>
+		<item name="meleeToolAxeT3ChainsawSchematic"/>
+		<item name="meleeToolRepairT3NailgunSchematic"/>
+		<item name="DFforgeAhead"/>
+		<item name="workbenchSchematic"/>
+		<item name="cementMixerSchematic"/>
+		<item name="chemistryStationSchematic"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazinesTraderJoel']">
+		<item name="gunBowT1WoodenBowSchematic"/>
+		<item name="gunHandgunT1PistolSchematic"/>
+		<item name="gunShotgunT1DoubleBarrelSchematic"/>
+		<item name="gunMGT1AK47Schematic"/>
+		<item name="gunRifleT1HuntingRifleSchematic"/>
+		<item name="gunBowT1IronCrossbowSchematic"/>
+		<item name="gunHandgunT2Magnum44Schematic"/>
+		<item name="DFgunP225Schematic"/>
+		<item name="gunShotgunT2PumpShotgunSchematic"/>
+		<item name="gunMGT2TacticalARSchematic"/>
+		<item name="gunRifleT2LeverActionRifleSchematic"/>
+		<item name="gunBowT3CompoundBowSchematic"/>
+		<item name="gunBowT3CompoundCrossbowSchematic"/>
+		<item name="gunHandgunT3DesertVultureSchematic"/>
+		<item name="gunHandgunT3SMG5Schematic"/>
+		<item name="gunShotgunT1DoubleBarrelSchematic"/>
+		<item name="gunShotgunT3AutoShotgunSchematic"/>
+		<item name="gunRifleT3SniperRifleSchematic"/>
+		<item name="DFgunWinchesterRifleSchematic"/>
+		<item name="meleeWpnClubT1BaseballBatSchematic"/>
+		<item name="meleeWpnKnucklesT1IronKnucklesSchematic"/>
+		<item name="meleeWpnBladeT1HuntingKnifeSchematic"/>
+		<item name="meleeWpnSledgeT1IronSledgehammerSchematic"/>
+		<item name="meleeWpnClubT3SteelClubSchematic"/>
+		<item name="meleeWpnSpearT1IronSpearSchematic"/>
+		<item name="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
+		<item name="meleeWpnSledgeT3SteelSledgehammerSchematic"/>
+		<item name="meleeWpnBladeT3MacheteSchematic"/>
+		<item name="meleeWpnSpearT3SteelSpearSchematic"/>
+		<item name="meleeToolSalvageT1WrenchSchematic"/>
+		<item name="meleeWpnBladeT1HuntingKnifeSchematic"/>
+		<item name="meleeWpnSledgeT1IronSledgehammerSchematic"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazinesTraderJen']">
+		<item name="armorLeatherSetSchematic"/>
+		<item name="armorIronSetSchematic"/>
+		<item name="armorSteelSetSchematic"/>
+		<item name="armorMilitarySetSchematic"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazinesTraderRekt']">
+		<item name="plantedAloe1Schematic"/>
+		<item name="plantedBlueberry1Schematic"/>
+		<item name="plantedChrysanthemum1Schematic"/>
+		<item name="plantedCotton1Schematic"/>
+		<item name="DFseedWheatSchematic"/>
+		<item name="DFseedOrangeSchematic"/>
+		<item name="plantedCorn1Schematic"/>
+		<item name="plantedMushroom1Schematic"/>
+		<item name="DFseedCarrotSchematic"/>
+		<item name="DFseedCannabisSchematic"/>			
+		<item name="DFseedBananaSchematic"/>
+		<item name="plantedCoffee1Schematic"/>
+		<item name="drinkJarRedTeaSchematic"/>
+		<item name="drinkJarGoldenRodTeaSchematic"/>
+		<item name="DFappleJuiceSchematic"/>
+		<item name="DForangeJuiceSchematic"/>
+		<item name="DFdrinkRiceMilkSchematic"/>
+		<item name="foodMeatStewSchematic"/>
+		<item name="foodVegetableStewSchematic"/>
+		<item name="foodBlueberryPieSchematic"/>
+		<item name="foodSteakAndPotatoSchematic"/>
+		<item name="DFvegetableSoupSchematic"/>
+		<item name="DFapplePieSchematic"/>
+		<item name="DForangeMarmaladeSchematic"/>
+		<item name="foodJarBlueberryJamSchematic"/>
+		<item name="DFRicePuddingSchematic"/>
+		<item name="DFChesseSchematic"/>
+		<item name="drinkYuccaJuiceSmoothieSchematic"/>
+		<item name="DFtomatoJuiceSchematic"/>			
+		<item name="DForangeTeaSchematic"/>
+		<item name="DFblueberryPancakesSchematic"/>
+		<item name="DFbananaPancakesSchematic"/>
+		<item name="DFmarmaladeToastSchematic"/>
+		<item name="DFCheesePizzaSchematic"/>
+		<item name="DFFarmingBook"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='cannedfood']">
+		<item name="foodCanBeef"/>
+		<item name="foodCanCatfood"/>
+		<item name="foodCanChicken"/>
+		<item name="foodCanChili"/>
+		<item name="foodCanDogfood"/>
+		<item name="foodCanSham"/>
+		<item name="foodCanLamb"/>
+		<item name="foodCanMiso"/>
+		<item name="foodCanPasta"/>
+		<item name="foodCanPeas"/>
+		<item name="foodCanSalmon"/>
+		<item name="foodCanSoup"/>
+		<item name="foodCanStock"/>
+		<item name="foodCanTuna"/>
+		<item name="foodCanPears"/>
+		<item name="foodHoney"/>
+		<item name="DForangeMarmalade"/>
+		<item name="foodJarBlueberryJam"/>
+		<item name="foodBagTrailMix"/>
+		<item name="foodBagOfDriedFruit"/>
+		<item name="foodBagOfPeanuts"/>
+		<item name="foodJarPeanutButter"/>
+		<item name="foodCanBakedBeans"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+		<item name="foodMeatStew" count="1,2"/>
+		<item name="foodVegetableStew" count="1,2"/>
+		<item name="foodSteakAndPotato" count="1,2"/>
+		<item name="foodBlueberryPie" count="1,2"/>
+		<item name="DFvegetableSoup" count="1,2"/>
+		<item name="DFapplePie" count="1,2"/>
+		<item name="DForangeMarmalade" count="1,2"/>
+		<item name="foodJarBlueberryJam" count="1,2"/>
+		<item name="DFRicePudding" count="1,2"/>
+		<item name="DFblueberryPancakes" count="1,2"/>
+		<item name="DFbananaPancakes" count="1,2"/>
+		<item name="DFmarmaladeToast" count="1,2"/>
+		<item name="DFCheesePizza" count="1,2"/>
+		<item name="DFfoodFishPie" count="1,2"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']">
+		<item name="drinkJarBoiledWater" count="2,4"/>
+		<item name="drinkJarRedTea" count="1,2"/>
+		<item name="drinkJarGoldenRodTea" count="1,2"/>
+		<item name="DFappleJuice" count="1,2"/>
+		<item name="DForangeJuice" count="1,2"/>
+		<item name="DFdrinkRiceMilk" count="1,2"/>
+		<item name="drinkJarCoffee" count="1,2"/>
+		<item name="drinkYuccaJuiceSmoothie" count="1,2"/>
+		<item name="DFtomatoJuice" count="1,2"/>
+		<item name="DForangeTea" count="1,2"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']">
+		<item group="groupAllAmmo" count="2,4" prob="2"/>
+		<item name="resourcePaint" count="1,12"/>
+		<item group="clothes" count="2,4"/>
+		<item group="weaponsGunParts" count="1" prob=".4"/>
+		<item name="resourceMilitaryFiber" count="2,3"/>
+		<item name="meleeToolFlashlight02"/>
+		<item group="books" count="1,3" prob="1"/>
+		<item group="ammoSupplies" count="1,3"/>
+		<item group="seeds" count="1,4"/>
+		<item group="cannedfood" count="1,2"/>
+		<item group="foodSupplies" count="2,5"/>
+		<item group="preparedFood" count="1,2"/>
+		<item group="groupDrinks" count="1"/>
+		<item group="landMines" count="1" prob="0.5"/>
+		<item group="constructionSupplies" count="1,3" prob="0.8"/>
+		<item group="rareTools" count="1"/>
+		<item group="rareMedicine" count="1" prob="0.3"/>
+		<item group="medicine" count="1,2" prob="1"/>
+		<item name="drugAntibiotics" count="1,3" prob="0.5"/>
+		<item group="workstations" count="1"/>
+		<item group="groupVehicles" count="1,2"/>
+		<item name="DFGenericSchematic" count="5,30"/>
+	</set>
+
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="meleeToolPickT2SteelPickaxe" quality="30,50"/>
+		<item name="meleeToolShovelT2SteelShovel" quality="30,50"/>
+		<item name="meleeToolPickT3Auger" quality="30,50"/>
+		<item name="meleeToolAxeT2SteelAxe" quality="30,50"/>
+		<item name="meleeToolAxeT3Chainsaw" quality="30,50"/>
+		<item name="meleeToolRepairT3Nailgun" quality="30,50"/>
+		<item name="meleeToolSalvageT2Ratchet" quality="20,40"/>
+		<item name="meleeToolSalvageT3ImpactDriver" quality="30,50"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='tools']">
+		<item name="DFmeleeToolPickaxeScrap" quality="10,30"/>
+		<item name="meleeToolPickT1IronPickaxe" quality="20,40"/>
+		<item name="DFmeleeToolShovelScrap" quality="10,30"/>
+		<item name="meleeToolShovelT1IronShovel" quality="20,40"/>
+		<item name="DFmeleeToolFireaxeScrap" quality="10,30"/>
+		<item name="meleeToolAxeT1IronFireaxe" quality="20,40"/>
+		<item name="resourceRepairKit" count="1,4"/>
+		<item name="meleeToolPaintTool" prob="0.5"/>
+		<item name="meleeToolWireTool"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeAll']">
+		<!-- *** Melee_T1 -->
+		<item name="DFmeleeToolMacheteScrap" quality="10,30"/>
+		<item name="DFmeleeWpnClubScrap" quality="10,30"/>
+		<item name="DFmeleeWpnSpearScrap" quality="10,30"/>
+		<item name="DFmeleeWpnKnucklesScrap" quality="10,30"/>
+		<!-- *** Melee_T2 -->	
+		<item name="meleeWpnBladeT1HuntingKnife" quality="20,40"/>
+		<item name="meleeWpnClubT1BaseballBat" quality="20,40"/>
+		<item name="meleeWpnSpearT1IronSpear" quality="20,40"/>
+		<item name="meleeWpnSledgeT1IronSledgehammer" quality="20,40"/>
+		<item name="meleeWpnKnucklesT1IronKnuckles" quality="20,40"/>
+		<item name="meleeWpnBatonT2StunBaton" quality="20,40"/>
+		<!-- *** Melee_T3 -->
+		<item name="meleeWpnBladeT3Machete" quality="30,50"/>
+		<item name="meleeWpnClubT3SteelClub" quality="30,50"/>
+		<item name="meleeWpnSpearT3SteelSpear" quality="30,50"/>
+		<item name="meleeWpnSledgeT3SteelSledgehammer" quality="30,50"/>
+		<item name="meleeWpnKnucklesT3SteelKnuckles" quality="30,50"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']">
+		<!-- *** Ranged_Weapons_T0 -->
+		<item name="gunBowT0PrimitiveBow" quality="10,30"/>
+		<item name="gunHandgunT0PipePistol" quality="10,30"/>
+		<item name="gunShotgunT0PipeShotgun" quality="10,30"/>
+		<item name="gunRifleT0PipeRifle" quality="10,30"/>
+		<item name="gunMGT0PipeMachineGun" quality="10,30"/>
+		<!-- *** Ranged_Weapons_T1 -->
+		<item name="gunBowT1WoodenBow" quality="10,30"/>
+		<item name="gunHandgunT1Pistol" quality="10,30"/>
+		<item name="gunShotgunT1DoubleBarrel" quality="10,30"/>
+		<item name="gunRifleT1HuntingRifle" quality="10,30"/>
+		<item name="gunMGT1AK47" quality="10,30"/>
+		<item name="gunBotT1JunkSledge" quality="10,30"/>
+		<!-- *** Ranged_Weapons_T2 -->
+		<item name="gunBowT1IronCrossbow" quality="20,40"/>
+		<item name="gunBowT3CompoundBow" quality="20,40"/>
+		<item name="gunHandgunT2Magnum44" quality="20,40"/>
+		<item name="gunShotgunT2PumpShotgun" quality="20,40"/>
+		<item name="gunRifleT2LeverActionRifle" quality="20,40"/>
+		<item name="gunMGT2TacticalAR" quality="20,40"/>
+		<item name="gunBotT2JunkTurret" quality="20,40"/>
+		<!-- *** Ranged_Weapons_T3 -->
+		<item name="gunBowT3CompoundCrossbow" quality="30,50"/>
+		<item name="gunHandgunT3SMG5" quality="30,50"/>
+		<item name="gunMGT3M60" quality="30,50"/>
+		<item name="gunHandgunT2Magnum44" quality="30,50"/>
+		<item name="gunHandgunT3DesertVulture" quality="30,50"/>
+		<item name="gunShotgunT3AutoShotgun" quality="30,50"/>
+		<item name="gunRifleT3SniperRifle" quality="30,50"/>
+		<item name="gunExplosivesT3RocketLauncher" quality="30,50"/>
+	</set>
+
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='weaponsGunParts']">
+		<item name="DFrifleParts"/>
+		<item name="DFrifleBarrel"/>
+		<item name="DFrifleStock"/>
+		<item name="DFhuntingRifleReceiver" prob="0.8"/>
+		<item name="DFwinchesterRifleReceiver" prob="0.5"/>
+		<item name="DFsniperRifleReceiver" prob="0.3"/>
+		<item name="DFshotgunParts"/>
+		<item name="DFshotgunBarrel"/>
+		<item name="DFshotgunStock"/>
+		<item name="DFshotgunReceiver" prob="0.8"/>
+		<item name="DFautoShotgunReceiver" prob="0.3"/>
+		<item name="DFautoRifleParts"/>
+		<item name="DFautoRifleBarrel"/>
+		<item name="DFautoRifleStock"/>
+		<item name="DFAR15Receiver" prob="0.8"/>
+		<item name="DFAK47Receiver" prob="0.5"/>
+		<item name="DFM60Receiver" prob="0.3"/>
+		<item name="DFM4A1Receiver" prob="0.3"/>
+		<item name="DFpistolParts"/>
+		<item name="DFpistolBarrel"/>
+		<item name="DFpistolGrip"/>
+		<item name="DFpistolFrame" prob="0.8"/>
+		<item name="DFP225Frame" prob="0.65"/>
+		<item name="DFmagnumFrame" prob="0.5"/>
+		<item name="DFDEagleFrame" prob="0.3"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='thrownAmmo']">
+		<item name="DFnailBomb" count="5,20"/>
+		<item name="thrownAmmoPipeBomb" count="5,20"/>
+		<item name="thrownGrenadeContact" count="5,20"/>
+		<item name="thrownGrenade" count="5,20"/>
+		<item name="thrownTimedCharge" count="5,20"/>
+		<item name="thrownDynamite" count="5,20"/>
+		<item name="thrownAmmoMolotovCocktail" count="5,20"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT0Light']">
+		<item name="armorClothHat" quality="10,30"/>
+		<item name="armorClothPants" quality="10,30"/>
+		<item name="armorClothJacket" quality="10,30"/>
+		<item name="armorClothBoots" quality="10,30"/>
+		<item name="armorClothGloves" quality="10,30"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT1Light']">
+		<item name="armorLeatherBoots" quality="20,40"/>
+		<item name="armorLeatherPants" quality="20,40"/>
+		<item name="armorLeatherChest" quality="20,40"/>
+		<item name="armorLeatherGloves" quality="20,40"/>
+		<item name="armorLeatherHood" quality="20,40"/>
+		<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" quality="20,40"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT2Light']">
+		<item name="armorMilitaryGloves" quality="30,50"/>
+		<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2" quality="30,50"/>
+		<item name="armorMilitaryBoots" quality="30,50"/>
+		<item name="armorMilitaryLegs" quality="30,50"/>
+		<item name="armorMilitaryVest" quality="30,50"/>
+		<item name="modArmorNightvisionGoggles"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT0Heavy']">
+		<item name="armorScrapBoots" quality="10,30"/>
+		<item name="armorScrapLegs" quality="10,30"/>
+		<item name="armorScrapGloves" quality="10,30"/>
+		<item name="armorScrapChest" quality="10,30"/>
+		<item name="armorScrapHelmet" quality="10,30"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT1Heavy']">
+		<item name="armorIronGloves" quality="20,40"/>
+		<item name="armorIronHelmet" quality="20,40"/>
+		<item name="armorIronBoots" quality="20,40"/>
+		<item name="armorIronLegs" quality="20,40"/>
+		<item name="armorIronChest" quality="20,40"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT2Heavy']">
+		<item name="armorSteelBoots" quality="30,50"/>
+		<item name="armorSteelLegs" quality="30,50"/>
+		<item name="armorSteelChest" quality="30,50"/>
+		<item name="armorSteelGloves" quality="30,50"/>
+		<item name="armorSwatHelmet" mods="modArmorNightvisionGoggles" mod_chance=".2" quality="30,50"/>
+		<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" quality="30,50"/>
+	</set>
+	
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='groupVehicles']">
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+		<!-- *** Bicycle -->
+		<item name="vehicleBicycleChassis"/>
+		<item name="vehicleBicycleHandlebars"/>
+		<!-- *** Minibike -->
+		<item name="vehicleMinibikeChassis"/>
+		<item name="vehicleMinibikeHandlebars"/>
+	</set>
+	
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']">	
+		<trader_item_group name="caitlinResources"> <!-- bundle size -->
+			<item name="resourceOilShale" count="200,600" /> <!-- 50 -->
+			<item name="resourceScrapBrass" count="500,4000" /> <!-- 10 -->
+			<item name="resourceScrapLead" count="500,9000" /> <!-- 5 -->
+			<item name="resourceCloth" count="50,1000" />
+			<item name="resourceMilitaryFiber" count="50,200" prob="0.6" />
+			<item name="resourceCoal" count="2000,6000" /> <!-- 10 -->
+			<item name="resourcePotassiumNitratePowder" count="2000,6000" /> <!-- 10 -->
+			<item name="resourceGunPowder" count="300,3000" /> <!-- 10 -->
+			<item name="resourceOil" count="300,1000" />
+			<item name="bucketEmpty" prob="0.6" />
+			<item name="resourceHeadlight" count="5,20" prob="0.6" />
+			<item name="resourceDuctTape" count="5,20" />
+			<item name="resourceSpring" count="5,30" />
+			<item name="resourceMechanicalParts" count="150,800" prob="0.8" />
+			<item name="resourceElectricParts" count="150,500" prob="0.7" />
+		</trader_item_group>
+		
+		<trader_item_group name="rareconstructionSupplies">
+			<item name="resourceConcreteMix" count="2000,5000" /> <!-- 20 -->
+			<item name="resourceForgedIron" count="2000,8000" />
+			<item name="resourceForgedSteel" count="1000,4000" />
+		</trader_item_group>
+		
+		<trader_item_group name="bookscaitlin" count="1">		
+			<item name="DFFarmerMasteryBook" prob="0.25" />
+			<item name="DFHunterMasteryBook" prob="0.25" />
+			<item name="DFLaborerMasteryBook" prob="0.25" />
+			<item name="DFMechanicMasteryBook" prob="0.25" />
+			<item name="DFScientistMasteryBook" prob="0.25" />
+			<item name="DFSecuritytMasteryBook" prob="0.25" />
+			<item name="DFSurvivalistMasteryBook" prob="0.25" />
+			<item name="DFClassPaper" prob="0.01" />
+		</trader_item_group>
+				
+		<trader_item_group name="GCmedicine">
+			<item name="resourceCropAloeLeaf" count="10,30"/>		
+			<item name="drugPainkillers" />
+			<item name="DFsterileBandage" count="1,5" prob="0.6" />
+			<item name="drugHerbalAntibiotics" />
+			<item name="drugVitamins" />
+			<item name="medicalSplint" />
+			<item name="medicalPlasterCast" count="1,3" prob="0.3" />
+		</trader_item_group>
+		
+		<trader_item_group name="workstationToolsGeneric">
+			<item name="meleeToolRepairT1ClawHammer" quality="10,40"/>
+			<item name="meleeToolSalvageT1Wrench" quality="10,40"/>
+			<item name="resourceForgedIron" count="25,100"/>
+			<item name="resourceForgedSteel" count="5,50" prob="0.6"/>	
+		</trader_item_group>
+
+		<trader_item_group name="workstationToolsRekt">
+			<item name="DFtooltanningRack" count="1"/>
+			<item name="resourceSewingKit" count="1"/>
+			<item name="toolBeaker" count="1"/>
+		</trader_item_group>
+
+		<trader_item_group name="workstationToolsJen">
+			<item name="DFtooltanningRack" count="1"/>
+			<item name="resourceSewingKit" count="1"/>
+			<item name="toolBeaker" count="1"/>
+		</trader_item_group>
+
+		<trader_item_group name="workstationToolsBob">
+			<item name="smallEngine" count="1"/>
+			<item name="DFtoolweldingTorch" count="1"/>
+			<item name="toolForgeCrucible" count="1"/>
+		</trader_item_group>
+
+		<trader_item_group name="workstationToolsHugh">
+			<item name="toolAnvil" count="1"/>
+			<item name="toolBellows" count="1"/>
+			<item name="toolForgeCrucible" count="1"/>
+		</trader_item_group>
+
+		<trader_item_group name="workstationToolsJoel">
+			<item name="toolAndDieSet" count="1"/>
+			<item name="DFtoolCalipers" count="1"/>
+			<item name="toolBellows" count="1"/>
+		</trader_item_group>
+	</insertAfter>
+	
+	<remove xpath="/traders/trader_info[@id='1']" />
+	<remove xpath="/traders/trader_info[@id='6']" />
+	<remove xpath="/traders/trader_info[@id='2']" />
+	<remove xpath="/traders/trader_info[@id='7']" />
+	<remove xpath="/traders/trader_info[@id='8']" />
+
+	<set xpath="/traders/trader_info[@id='4']/@override_buy_markup">4</set>
+	<set xpath="/traders/trader_info[@id='4']">
+		<trader_items>
+			<item group="drinkVending" count="4,8"/>
+		</trader_items>
+	</set>
+	
+	<set xpath="/traders/trader_info[@id='10']/@override_buy_markup">4</set>
+	<set xpath="/traders/trader_info[@id='10']">
+		<trader_items>
+			<item group="foodVending" count="4,8"/>
+		</trader_items>
+	</set>
+	
+	<append xpath="/traders">
+		<!-- *** Trader Joel ID:1 Specialty: Clothes and Armor -->
+		<trader_info id="1" reset_interval="3" full_reset="true">			
+			<!-- *** Specialty -->
+			<trader_items>
+				<item group="clothes" unique_only="true" count="3,6"/>
+				<item group="groupArmorMods" unique_only="true" count="4,6"/>
+				<item group="groupArmorT0Light" unique_only="true" count="3"/>
+				<item group="groupArmorT1Light" unique_only="true" count="3"/>
+				<item group="groupArmorT2Light" unique_only="true" count="3"/>
+				<item group="groupArmorT0Heavy" unique_only="true" count="3"/>
+				<item group="groupArmorT1Heavy" unique_only="true" count="3"/>
+				<item group="groupArmorT2Heavy" unique_only="true" count="3"/>
+				<item name="resourceMilitaryFiber" count="5,20"/>
+				<item group="skillMagazinesTraderJoel" unique_only="true" count="2,3"/>
+				<item group="skillMagazines" unique_only="true" count="2,4"/>
+				<item group="books" unique_only="true" count="2,3"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+				<item name="toolCookingPot" count="1,3"/>
+				<item name="toolCookingGrill" count="1,3"/>
+				<item name="DFLathe" unique_only="true" count="1" prob="0.3"/>
+				<item group="workstationToolsJoel" unique_only="true" count="1,2"/>
+				<item group="workstationToolsGeneric" unique_only="true" count="1,2"/>
+			</trader_items>
+			
+			<!-- *** General -->
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="2,4"/>
+				<item group="generalResources" count="7,10"/>
+				<item group="tools" unique_only="true" count="1,2"/>
+				<item group="groupMeleeAll" count="3,5"/>
+				<item group="groupRangedAll" count="3,5"/>
+				<item group="weaponsGunParts" count="2,4"/>
+				<item group="traderElectrical"  unique_only="true" count="5,10"/>
+				<item group="constructionSupplies" count="2,4"/>
+				<item group="decorativeBlocks" unique_only="true" count="6,10"/>
+			</trader_items>
+		</trader_info>
+		
+		<!-- *** Trader Bob ID:6 Specialty: Tools and Vehicles -->
+		<trader_info id="6" reset_interval="3" full_reset="true">
+			<!-- *** Specialty -->
+			<trader_items count="all">
+				<item group="groupVehicles" unique_only="true" count="2"/>
+				<item group="groupMeleeMods" unique_only="true" count="1,2"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item group="rareTools" unique_only="true" count="1,3"/>
+				<item group="traderElectrical"  unique_only="true" count="8,15"/>
+				<item group="skillMagazinesTraderBob" unique_only="true" count="2,3"/>
+				<item group="books" unique_only="true" count="2,3"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+				<item name="toolCookingPot" count="1,3"/>
+				<item name="toolCookingGrill" count="1,3"/>
+				<item group="workstationToolsBob" unique_only="true" count="1,2"/>
+				<item group="workstationToolsGeneric" unique_only="true" count="1,2"/>
+				<item name="vehicleMD500placeable" count="1" unique_only="true"/>
+			</trader_items>
+			
+			<!-- *** General -->
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="2,4"/>
+				<item group="generalResources" count="7,10"/>
+				<item group="groupModsAll" unique_only="true" count="2,5"/>
+				<item group="tools" unique_only="true" count="1,4"/>
+				<item group="traderElectrical"  unique_only="true" count="2,5"/>
+				<item group="groupMeleeAll" count="3,5"/>
+				<item group="groupRangedAll" count="3,5"/>
+				<item group="weaponsGunParts" count="2,4"/>
+				<item name="resourceMilitaryFiber" count="1,2"/>
+				<item group="clothes" count="1,4"/>
+				<item group="groupArmorAllLight" count="1,2"/>
+				<item group="groupArmorAllHeavy" count="1,2"/>
+				<item group="constructionSupplies" count="2,4"/>
+				<item group="decorativeBlocks" unique_only="true" count="6,10"/>
+			</trader_items>
+		</trader_info>
+
+		<!-- *** Trader Jen ID:2 Specialty: Medical and Books -->
+		<trader_info id="2" reset_interval="3" full_reset="true">
+			<!-- *** Specialty -->
+			<trader_items count="all">
+				<item name="resourceCropAloeLeaf" count="2,5"/>
+				<item name="medicalAloeCream" count="2,5"/>
+				<item group="medicine"  unique_only="true" count="4,6"/>
+				<item group="rareMedicine" count="2,4"/>
+				<item group="skillMagazinesTraderJen" unique_only="true" count="4,6"/>
+				<item group="skillMagazines" unique_only="true" count="2,4"/>
+				<item group="commonBooks" unique_only="true" count="1,2"/>
+				<item group="rareBooks" count="1"/>
+				<item group="perkBooks" count="1"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+				<item name="toolCookingPot" count="1,3"/>
+				<item name="toolCookingGrill" count="1,3"/>
+				<item group="workstationToolsJen" unique_only="true" count="1,2"/>
+				<item group="workstationToolsGeneric" unique_only="true" count="1,2"/>
+				<item name="vehicleMD500placeable" count="1" unique_only="true"/>
+			</trader_items>
+			
+			<!-- *** General -->
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="2,4"/>
+				<item group="generalResources" count="7,10"/>
+				<item group="groupModsAll" unique_only="true" count="2,5"/>
+				<item group="tools" unique_only="true" count="1,2"/>
+				<item group="groupMeleeAll" count="3,5"/>
+				<item group="groupRangedAll" count="3,5"/>
+				<item group="weaponsGunParts" count="2,4"/>
+				<item name="resourceMilitaryFiber" count="1,2"/>
+				<item group="traderElectrical"  unique_only="true" count="5,10"/>
+				<item group="clothes" count="1,4"/>
+				<item group="groupArmorAllLight" count="1,2"/>
+				<item group="groupArmorAllHeavy" count="1,2"/>
+				<item group="constructionSupplies" count="2,4"/>
+				<item group="decorativeBlocks" unique_only="true" count="6,10"/>
+			</trader_items>
+		</trader_info>
+
+		<!-- *** Trader Hugh ID:7 Specialty: Guns & Ammo -->
+		<trader_info id="7" reset_interval="3" full_reset="true">
+			<!-- *** Specialty -->
+			<trader_items count="all">
+				<item group="groupAllAmmo" unique_only="true" count="2,4"/>
+				<item group="ammoSupplies" count="2,3"/>
+				<item group="groupRangedAll" unique_only="true" count="3,5"/>
+				<item group="groupMeleeAll" unique_only="true" count="3,5"/>
+				<item group="weaponsGunParts" unique_only="true" count="2,4"/>
+				<item group="groupRangedMods" count="1,2"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item group="skillMagazinesTraderHugh" unique_only="true" count="2,3"/>
+				<item group="books" unique_only="true" count="2,3"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+				<item name="toolCookingPot" count="1,3"/>
+				<item name="toolCookingGrill" count="1,3"/>
+				<item group="workstationToolsHugh" unique_only="true" count="1,2"/>
+				<item group="workstationToolsGeneric" unique_only="true" count="1,2"/>
+				<item name="vehicleDusterplaceable" count="1" unique_only="true"/>
+			</trader_items>
+			
+			<!-- *** General -->
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="2,4"/>
+				<item group="generalResources" count="7,10"/>
+				<item group="groupModsAll" unique_only="true" count="2,5"/>
+				<item group="groupMeleeAll" count="1,2"/>
+				<item group="groupRangedAll" count="1,2"/>
+				<item group="weaponsGunParts" count="2,4"/>
+				<item name="resourceMilitaryFiber" count="1,2"/>
+				<item group="tools" unique_only="true" count="1,2"/>
+				<item group="traderElectrical"  unique_only="true" count="5,10"/>
+				<item group="clothes" count="1,4"/>
+				<item group="groupArmorAllLight" count="1,2"/>
+				<item group="groupArmorAllHeavy" count="1,2"/>
+				<item group="constructionSupplies" count="2,4"/>
+				<item group="decorativeBlocks" unique_only="true" count="6,10"/>
+			</trader_items>
+		</trader_info>
+
+		<!-- *** Trader Rekt ID:8 Specialty: Food & Farming -->
+		<trader_info id="8" reset_interval="3" full_reset="true">
+			<!-- *** Specialty -->
+			<trader_items count="all">
+				<item group="seeds" unique_only="true" count="2,5" />
+				<item group="cannedfood" count="3,6"/>
+				<item group="foodSupplies" count="2,5"/>
+				<item group="groupFoodAll" count="1,3"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item group="skillMagazinesTraderRekt" unique_only="true" count="2,3"/>
+				<item group="skillMagazines" unique_only="true" count="2,4"/>
+				<item group="books" unique_only="true" count="2,3"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+				<item name="toolCookingPot" count="1,3"/>
+				<item name="toolCookingGrill" count="1,3"/>
+				<item group="workstationToolsRekt" unique_only="true" count="1,2"/>
+				<item group="workstationToolsGeneric" unique_only="true" count="1,2"/>
+				<item name="vehicleDusterplaceable" count="1" unique_only="true"/>
+			</trader_items>
+			
+			<!-- *** General -->
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="2,4"/>
+				<item group="generalResources" count="7,10"/>
+				<item group="groupModsAll" unique_only="true" count="2,5"/>
+				<item group="tools" unique_only="true" count="1,2"/>
+				<item group="groupMeleeAll" count="3,5"/>
+				<item group="groupRangedAll" count="3,5"/>
+				<item group="weaponsGunParts" count="2,4"/>
+				<item name="resourceMilitaryFiber" count="1,2"/>
+				<item group="traderElectrical"  unique_only="true" count="5,10"/>
+				<item group="clothes" count="1,4"/>
+				<item group="groupArmorAllLight" count="1,2"/>
+				<item group="groupArmorAllHeavy" count="1,2"/>
+				<item group="constructionSupplies" count="2,4"/>
+				<item group="decorativeBlocks" unique_only="true" count="6,10"/>
+			</trader_items>
+		</trader_info>	
+		
+		<!-- Trader Caitlin -->
+		<trader_info id="11" full_reset="true" reset_interval="3">
+			<trader_items>
+				<item group="groupArmorMods" unique_only="true" count="4,6"/>
+				<item group="groupArmorT0Light" unique_only="true" count="3"/>
+				<item group="groupArmorT1Light" unique_only="true" count="3"/>
+				<item group="groupArmorT2Light" unique_only="true" count="3"/>
+				<item group="groupArmorT0Heavy" unique_only="true" count="3"/>
+				<item group="groupArmorT1Heavy" unique_only="true" count="3"/>
+				<item group="groupArmorT2Heavy" unique_only="true" count="3"/>
+				<item group="rareTools" unique_only="true" count="1,3"/>
+				<item group="traderElectrical"  unique_only="true" count="8,15"/>
+				<item group="books" unique_only="true" count="2,3"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+				<item group="groupAllAmmo" unique_only="true" count="2,4"/>
+				<item group="ammoSupplies" count="2,3"/>
+				<item name="DFPortalPowerSource" count="1" prob="0.1"/>
+				<item group="workstationToolsRekt" unique_only="true" count="1,2"/>
+				<item group="workstationToolsJoel" unique_only="true" count="1,2"/>
+				<item group="workstationToolsJen" unique_only="true" count="1,2"/>
+				<item group="workstationToolsHugh" unique_only="true" count="1,2"/>
+				<item group="workstationToolsBob" unique_only="true" count="1,2"/>
+				<item group="workstationToolsGeneric" count="1,2"/>
+				<item name="vehicleUH60placeable" count="1" unique_only="true"/>
+			</trader_items>
+			
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="4,8"/>
+				<item group="generalResources" count="5,8"/>
+				<item group="groupModsAll" unique_only="true" count="2,5"/>
+				<item group="groupMeleeAll" count="3,5"/>
+				<item group="groupRangedAll" count="3,5"/>
+				<item name="resourceMilitaryFiber" count="1,2"/>
+				<item group="bookscaitlin" count="1,2"/>
+				<item group="rareconstructionSupplies" count="1,2"/>
+				<item group="constructionSupplies" count="2,4"/>
+				<item group="caitlinResources" unique_only="true" count="6,10"/>
+			</trader_items>
+		</trader_info>
+		
+		<!-- White River Scout -->
+		<trader_info id="12" reset_interval="3" override_buy_markup="2" allow_sell="false" full_reset="true">
+			<trader_items>
+				<item group="GCmedicine" count="10,20"/>
+			</trader_items>
+		</trader_info>
+	</append>
+</config>

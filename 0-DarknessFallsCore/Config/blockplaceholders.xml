@@ -1,0 +1,338 @@
+<config> 
+	<set xpath="/blockplaceholders/placeholder[@name='carsRandomHelper']">
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="cntSedan01White" prob="1"/>
+		<block name="cntSedan01Brown" prob="1"/>
+		<block name="cntSedan01Red" prob="1"/>
+		<block name="cntSedan01Orange" prob="1"/>
+		<block name="cntSedan01Yellow" prob="1"/>
+		<block name="cntSedan01Green" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="cntSedan01Blue" prob="1"/>
+		<block name="cntSedan01Purple" prob="0.5"/>
+		<block name="cntSedan01Grey" prob="1"/>
+		<block name="cntSedan01Black" prob="1"/>
+		<block name="cntSedan01Pink" prob="0.5"/>
+		
+		<block name="cntFrontCrumpledSedan01White" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Brown" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Red" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Orange" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Yellow" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Green" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Blue" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Purple" prob="0.05"/>
+		<block name="cntFrontCrumpledSedan01Grey" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Black" prob=".2"/>
+		<block name="cntFrontCrumpledSedan01Pink" prob="0.05"/>
+		
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="cntMinivan01White" prob="1"/>
+		<block name="cntMinivan01Brown" prob="1"/>
+		<block name="cntMinivan01Red" prob="1"/>
+		<block name="cntMinivan01Orange" prob="1"/>
+		<block name="cntMinivan01Yellow" prob="1"/>
+		<block name="cntMinivan01Green" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="burntSedan01" prob="1"/>
+		<block name="cntMinivan01Blue" prob="1"/>
+		<block name="cntMinivan01Purple" prob="0.5"/>
+		<block name="cntMinivan01Grey" prob="1"/>
+		<block name="cntMinivan01Black" prob="1"/>
+		<block name="cntMinivan01Pink" prob="0.5"/>
+		
+		<block name="abandonedSUV01Brown" prob="1"/>
+		<block name="abandonedSUV01Red" prob="1"/>
+		<block name="abandonedSUV01Orange" prob="1"/>
+		<block name="abandonedSUV01Yellow" prob="1"/>
+		<block name="cntSUV01White" prob="1"/>
+		<block name="cntSUV01Brown" prob="1"/>
+		<block name="cntSUV01Red" prob="1"/>
+		<block name="cntSUV01Orange" prob="1"/>
+		<block name="cntSUV01Yellow" prob="1"/>
+		<block name="abandonedSUV01Blue" prob="1"/>
+		<block name="abandonedSUV01Purple" prob="1"/>
+		<block name="abandonedSUV01Grey" prob="1"/>
+		<block name="abandonedSUV01Pink" prob="1"/>
+		<block name="abandonedSUV01Green" prob="1"/>
+		<block name="cntSUV01Green" prob="1"/>
+		<block name="cntSUV01Blue" prob="1"/>
+		<block name="cntSUV01Purple" prob="0.5"/>
+		<block name="cntSUV01Grey" prob="1"/>
+		<block name="cntSUV01Pink" prob="0.5"/>
+
+		<block name="abandonedSUV01DoorsWhite" prob="1"/>
+		<block name="abandonedSUV01DoorsBrown" prob="1"/>
+		<block name="abandonedSUV01DoorsRed" prob="1"/>
+		<block name="abandonedSUV01DoorsOrange" prob="1"/>
+		<block name="abandonedSUV01DoorsYellow" prob="1"/>
+		<block name="abandonedSUV01DoorsGreen" prob="1"/>
+		<block name="abandonedSUV01DoorsBlue" prob="1"/>
+		<block name="abandonedSUV01DoorsPurple" prob="1"/>
+		<block name="abandonedSUV01DoorsGrey" prob="1"/>
+		<block name="abandonedSUV01DoorsPink" prob="1"/>
+
+		<block name="abandonedPickupTruck01White" prob="1"/>
+		<block name="abandonedPickupTruck01Brown" prob="1"/>
+		<block name="abandonedPickupTruck01Red" prob="1"/>
+		<block name="abandonedPickupTruck01Orange" prob="1"/>
+		<block name="abandonedPickupTruck01Yellow" prob="1"/>
+		<block name="cntPickupTruck01White" prob="1"/>
+		<block name="cntPickupTruck01Brown" prob="1"/>
+		<block name="cntPickupTruck01Red" prob="1"/>
+		<block name="cntPickupTruck01Orange" prob="1"/>
+		<block name="cntPickupTruck01Yellow" prob="1"/>
+		<block name="abandonedPickupTruck01Green" prob="1"/>
+		<block name="abandonedPickupTruck01Blue" prob="1"/>
+		<block name="abandonedPickupTruck01Purple" prob="1"/>
+		<block name="abandonedPickupTruck01Grey" prob="1"/>
+		<block name="abandonedPickupTruck01Pink" prob="1"/>
+		<block name="cntPickupTruck01Green" prob="1"/>
+		<block name="cntPickupTruck01Blue" prob="1"/>
+		<block name="cntPickupTruck01Purple" prob="0.5"/>
+		<block name="cntPickupTruck01Grey" prob="1"/>
+		<block name="cntPickupTruck01Pink" prob="0.5"/>
+
+		<block name="abandonedPickupTruck01DoorWhite" prob="1"/>
+		<block name="abandonedPickupTruck01DoorBrown" prob="1"/>
+		<block name="abandonedPickupTruck01DoorRed" prob="1"/>
+		<block name="abandonedPickupTruck01DoorOrange" prob="1"/>
+		<block name="abandonedPickupTruck01DoorYellow" prob="1"/>
+		<block name="abandonedPickupTruck01DoorGreen" prob="1"/>
+		<block name="abandonedPickupTruck01DoorBlue" prob="1"/>
+		<block name="abandonedPickupTruck01DoorPurple" prob="1"/>
+		<block name="abandonedPickupTruck01DoorGrey" prob="1"/>
+		<block name="abandonedPickupTruck01DoorPink" prob="1"/>
+		
+		<block name="DFcarTaxi" prob="0.15"/>
+		<block name="DFcarTaxiDmg" prob="0.35"/>
+		<block name="cntPoliceCar01" prob="0.15"/>
+		<block name="DFcarMuscleBlack" prob="0.15"/>
+		<block name="DFcarMuscleBlue" prob="0.15"/>
+		<block name="DFcarMuscleBlackDmg" prob="0.35"/>
+		<block name="DFcarMuscleBlueDmg" prob="0.35"/>
+		<block name="DFMotorbike" prob="0.15"/>
+		<block name="DFMotorbikeDmg" prob="0.25"/>
+	</set>
+	
+	<set xpath="/blockplaceholders/placeholder[@name='cntVendingMachine2RandomLootHelper']">
+		<block name="cntVendingMachine2Broken" prob=".20"/> <!-- SODA -->
+		<block name="cntVendingMachineEnergyBroken" prob=".20"/>
+		<block name="cntVendingMachineWaterBroken" prob=".20"/>
+	</set>
+	
+	<set xpath="/blockplaceholders/placeholder[@name='cntVendingMachineSnacksRandomLootHelper']">
+		<block name="cntVendingMachineSnacksFullBroken" prob=".4"/>
+		<block name="cntVendingMachineSnacksEmptyBroken" prob=".1"/>
+	</set>
+	
+	<set xpath="/blockplaceholders/placeholder[@name='cntAllVendingMachinesRandomLootHelper']">
+		<block name="cntVendingMachine2Broken" prob=".15"/>
+		<block name="cntVendingMachineEnergyBroken" prob=".15"/>
+		<block name="cntVendingMachineWaterBroken" prob=".15"/>
+		<block name="cntVendingMachineSnacksFullBroken" prob=".15"/>
+		<block name="cntVendingMachineSnacksEmptyBroken" prob=".05"/>
+	</set>
+	
+	<insertAfter xpath="/blockplaceholders/placeholder[@name='carsRandomHelper']">
+		<placeholder name="carsRandomHelperDF">
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="cntSedan01White" prob="1"/>
+			<block name="cntSedan01Brown" prob="1"/>
+			<block name="cntSedan01Red" prob="1"/>
+			<block name="cntSedan01Orange" prob="1"/>
+			<block name="cntSedan01Yellow" prob="1"/>
+			<block name="cntSedan01Green" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="cntSedan01Blue" prob="1"/>
+			<block name="cntSedan01Purple" prob="0.5"/>
+			<block name="cntSedan01Grey" prob="1"/>
+			<block name="cntSedan01Black" prob="1"/>
+			<block name="cntSedan01Pink" prob="0.5"/>
+			
+			<block name="cntFrontCrumpledSedan01White" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Brown" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Red" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Orange" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Yellow" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Green" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Blue" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Purple" prob="0.05"/>
+			<block name="cntFrontCrumpledSedan01Grey" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Black" prob=".2"/>
+			<block name="cntFrontCrumpledSedan01Pink" prob="0.05"/>
+			
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="cntMinivan01White" prob="1"/>
+			<block name="cntMinivan01Brown" prob="1"/>
+			<block name="cntMinivan01Red" prob="1"/>
+			<block name="cntMinivan01Orange" prob="1"/>
+			<block name="cntMinivan01Yellow" prob="1"/>
+			<block name="cntMinivan01Green" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="burntSedan01" prob="1"/>
+			<block name="cntMinivan01Blue" prob="1"/>
+			<block name="cntMinivan01Purple" prob="0.5"/>
+			<block name="cntMinivan01Grey" prob="1"/>
+			<block name="cntMinivan01Black" prob="1"/>
+			<block name="cntMinivan01Pink" prob="0.5"/>
+			
+			<block name="abandonedSUV01Brown" prob="1"/>
+			<block name="abandonedSUV01Red" prob="1"/>
+			<block name="abandonedSUV01Orange" prob="1"/>
+			<block name="abandonedSUV01Yellow" prob="1"/>
+			<block name="cntSUV01White" prob="1"/>
+			<block name="cntSUV01Brown" prob="1"/>
+			<block name="cntSUV01Red" prob="1"/>
+			<block name="cntSUV01Orange" prob="1"/>
+			<block name="cntSUV01Yellow" prob="1"/>
+			<block name="abandonedSUV01Blue" prob="1"/>
+			<block name="abandonedSUV01Purple" prob="1"/>
+			<block name="abandonedSUV01Grey" prob="1"/>
+			<block name="abandonedSUV01Pink" prob="1"/>
+			<block name="abandonedSUV01Green" prob="1"/>
+			<block name="cntSUV01Green" prob="1"/>
+			<block name="cntSUV01Blue" prob="1"/>
+			<block name="cntSUV01Purple" prob="0.5"/>
+			<block name="cntSUV01Grey" prob="1"/>
+			<block name="cntSUV01Pink" prob="0.5"/>
+
+			<block name="abandonedSUV01DoorsWhite" prob="1"/>
+			<block name="abandonedSUV01DoorsBrown" prob="1"/>
+			<block name="abandonedSUV01DoorsRed" prob="1"/>
+			<block name="abandonedSUV01DoorsOrange" prob="1"/>
+			<block name="abandonedSUV01DoorsYellow" prob="1"/>
+			<block name="abandonedSUV01DoorsGreen" prob="1"/>
+			<block name="abandonedSUV01DoorsBlue" prob="1"/>
+			<block name="abandonedSUV01DoorsPurple" prob="1"/>
+			<block name="abandonedSUV01DoorsGrey" prob="1"/>
+			<block name="abandonedSUV01DoorsPink" prob="1"/>
+
+			<block name="abandonedPickupTruck01White" prob="1"/>
+			<block name="abandonedPickupTruck01Brown" prob="1"/>
+			<block name="abandonedPickupTruck01Red" prob="1"/>
+			<block name="abandonedPickupTruck01Orange" prob="1"/>
+			<block name="abandonedPickupTruck01Yellow" prob="1"/>
+			<block name="cntPickupTruck01White" prob="1"/>
+			<block name="cntPickupTruck01Brown" prob="1"/>
+			<block name="cntPickupTruck01Red" prob="1"/>
+			<block name="cntPickupTruck01Orange" prob="1"/>
+			<block name="cntPickupTruck01Yellow" prob="1"/>
+			<block name="abandonedPickupTruck01Green" prob="1"/>
+			<block name="abandonedPickupTruck01Blue" prob="1"/>
+			<block name="abandonedPickupTruck01Purple" prob="1"/>
+			<block name="abandonedPickupTruck01Grey" prob="1"/>
+			<block name="abandonedPickupTruck01Pink" prob="1"/>
+			<block name="cntPickupTruck01Green" prob="1"/>
+			<block name="cntPickupTruck01Blue" prob="1"/>
+			<block name="cntPickupTruck01Purple" prob="0.5"/>
+			<block name="cntPickupTruck01Grey" prob="1"/>
+			<block name="cntPickupTruck01Pink" prob="0.5"/>
+
+			<block name="abandonedPickupTruck01DoorWhite" prob="1"/>
+			<block name="abandonedPickupTruck01DoorBrown" prob="1"/>
+			<block name="abandonedPickupTruck01DoorRed" prob="1"/>
+			<block name="abandonedPickupTruck01DoorOrange" prob="1"/>
+			<block name="abandonedPickupTruck01DoorYellow" prob="1"/>
+			<block name="abandonedPickupTruck01DoorGreen" prob="1"/>
+			<block name="abandonedPickupTruck01DoorBlue" prob="1"/>
+			<block name="abandonedPickupTruck01DoorPurple" prob="1"/>
+			<block name="abandonedPickupTruck01DoorGrey" prob="1"/>
+			<block name="abandonedPickupTruck01DoorPink" prob="1"/>
+			
+			<block name="DFcarTaxi" prob="0.15"/>
+			<block name="DFcarTaxiDmg" prob="0.35"/>
+			<block name="cntPoliceCar01" prob="0.15"/>
+			<block name="DFcarMuscleBlack" prob="0.15"/>
+			<block name="DFcarMuscleBlue" prob="0.15"/>
+			<block name="DFcarMuscleBlackDmg" prob="0.35"/>
+			<block name="DFcarMuscleBlueDmg" prob="0.35"/>
+			<block name="cntAmbulanceTruck01" prob="0.05"/>
+			<block name="DFcarFireTruck" prob="0.1"/>
+			<block name="DFcarFireTruckDmg" prob="0.05"/>
+			<block name="DFcarSchoolbus" prob="0.1"/>
+			<block name="DFcarSchoolbusDmg" prob="0.05"/>
+			<block name="DFcarMailtruck" prob="0.1"/>
+			<block name="DFcarMailtruckDmg" prob="0.05"/>
+			<block name="DFMotorbike" prob="0.15"/>
+			<block name="DFMotorbikeDmg" prob="0.25"/>
+			<block name="DFAPCLocked" prob="0.02"/>
+			<block name="DFScoutLocked" prob="0.02"/>
+			<block name="DFTruckLocked" prob="0.02"/>
+			<block name="DFcarGarbageTruck" prob="0.15"/>
+			<block name="DFcarGarbageTruckDmg" prob="0.25"/>
+			
+			<block name="cntBrokenBicycle" prob="0.8"/>
+			<block name="cntBrokenMinibike" prob="0.6"/>
+			<block name="cntBrokenMotorcycle" prob="0.4"/>
+		</placeholder>
+	</insertAfter>
+
+	<set xpath="/blockplaceholders/placeholder[@name='cntBookcaseGoodRandomLootHelper']">
+		<block name="cntBookcaseFull" prob=".75"/>
+		<block name="cntBookcaseEmpty" prob=".25"/>
+	</set>
+
+	<set xpath="/blockplaceholders/placeholder[@name='cntGasPumpRandomLootHelper']">
+		<block name="cntGasPumpEmpty" prob=".90"/>
+		<block name="cntGasPumpFull" prob=".11"/>
+	</set>
+
+	<append xpath="/blockplaceholders">
+		<placeholder name="cntScifiLockersHelper">
+			<block name="ScifiLockerEmpty" prob=".33"/>
+			<block name="ScifiLocker" prob=".67"/>
+		</placeholder>
+			
+		<placeholder name="cntScifiCratesHelper">
+			<block name="ScifiCrateEmpty" prob=".33"/>
+			<block name="ScifiCrate" prob=".67"/>
+		</placeholder>
+		
+		<placeholder name="cntForgeBustedRandomLootHelperTrader">
+			<block name="forge" prob="0.3"/>
+			<block name="cntCollapsedForge" prob="0.7"/>
+		</placeholder>
+		
+		<placeholder name="cntWorkbenchBustedRandomLootHelperTrader">
+			<block name="workbench" prob="0.3"/>
+			<block name="cntCollapsedWorkbench" prob="0.7"/>
+		</placeholder>
+		
+		<placeholder name="cntCementMixerBustedRandomLootHelperTrader">
+			<block name="cementMixer" prob="0.15"/>
+			<block name="cntCollapsedCementMixer" prob="0.85"/>
+		</placeholder>
+		
+		<placeholder name="cntChemistryStationBustedRandomLootHelperTrader">
+			<block name="chemistryStation" prob="0.15"/>
+			<block name="cntCollapsedChemistryStation" prob="0.85"/>
+		</placeholder>
+		
+		<placeholder name="bodyBagYellowHelper">
+			<block name="bodyBagYellowSpawner" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="bodyBagBlackHelper">
+			<block name="bodyBagBlackSpawner" prob="1"/>
+		</placeholder>
+	</append>
+</config>

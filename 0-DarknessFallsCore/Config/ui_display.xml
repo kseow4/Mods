@@ -1,0 +1,487 @@
+<config>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletAP']">
+		<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dTargetPenetration" title_key="statTargetPenetration" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dDegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletHP']">
+		<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgun']">
+		<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageShotgun" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="RoundRayCount" title_key="statRoundRayCount" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunSlug']">
+		<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="RoundRayCount" title_key="statRoundRayCount" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dTargetPenetration" title_key="statTargetPenetration" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dDegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretAP']">
+		<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dTargetPenetration" title_key="statTargetPenetration" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="dDegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+		<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingShades']">
+		<display_entry name="dReloadSpeed" title_key="statReloadSpeed" display_type="Percent" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='apparelToughGuySunglasses']">
+		<display_entry name="dReloadSpeed" title_key="statReloadSpeed" display_type="Percent" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingSkiGoggles']">
+		<display_entry name="Mobility" title_key="statMobility" display_type="Percent" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingNerdGlasses']">
+		<display_entry name="dCraftingTime" title_key="statCraftingTime" display_type="Percent" display_leading_plus="true" negative_preferred="true" />
+		<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingCigar']">
+		<display_entry name="BarteringBuying" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='water']">
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterDysentery']">
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+		<display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGoldenrod']">
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+		<display_entry name="dCureDysentery" title_key="statCureDysentery" display_type="Percent" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterRedTea']">
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+		<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGoldenrodRedTea']">
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+		<display_entry name="dCureDysentery" title_key="statCureDysentery" display_type="Percent" />
+		<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterCoffee']">
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+		<display_entry name="dHypothermalResist" title_key="statHypothermalResist" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterMegaCrush']">
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+		<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dEntityDamage" title_key="statEntityDamageMelee" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterBeer']">
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dEntityDamageBrawling" title_key="statEntityDamageBrawling" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGrandpasMoonshine']">
+		<display_entry name="dEntityDamage" title_key="statEntityDamageMelee" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dHealthAmount" title_key="statHealthAmount" display_leading_plus="true" />
+		<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGrandpasAwesomeSauce']">
+		<display_entry name="dBartering" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGrandpasLearningElixir']">
+		<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='food']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="dFoodStaminaBonus" title_key="statFoodStaminaBonus" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodRaw']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="ddummyNoBonus" title_key="statFoodStaminaBonus" display_type="Bool" />
+		<display_entry name="dFoodPoisoningRisk" title_key="statFoodPoisoningRisk" display_type="Percent" negative_preferred="true" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodCureInfection']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="ddummyNoBonus" title_key="statFoodStaminaBonus" display_type="Bool" />
+		<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWater']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dFoodStaminaBonus" title_key="statFoodStaminaBonus" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterRaw']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="ddummyNoBonus" title_key="statFoodStaminaBonus" display_type="Bool" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterNegative']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dFoodStaminaBonus" title_key="statFoodStaminaBonus" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodShamChowder']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dFoodStaminaBonus" title_key="statFoodStaminaBonus" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodPumpkinCheesecake']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="dFoodStaminaBonus" title_key="statFoodStaminaBonus" />
+		<display_entry name="dBartering" title_key="statBarteringBuy" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkYuccaSmoothie']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+		<display_entry name="dHypothermalResist" title_key="statHypothermalResist" display_leading_plus="true" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='medicalVitamins']">
+		<display_entry name="dDiseaseResist" title_key="statDiseaseResist" display_type="Percent" />
+		<display_entry name="dStopsWeakness" title_key="statStopsWeakness" display_type="Percent" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		<display_entry name="dWellness" title_key="statWellness" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='drugSteroids']">
+		<display_entry name="dEntityDamageMelee" title_key="statEntityDamageMelee" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true" />
+		<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true" />
+		<display_entry name="$waterAmountAdd" title_key="statWaterAmount" />
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedShotgun']">
+		<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageShotgun" tags="perkShotgunMessiah" />
+		<display_entry name="RoundRayCount" title_key="statRoundRayCount" tags="perkShotgunMessiah" />
+		<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkShotgunMessiah" />
+		<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkShotgunMessiah" />
+		<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkShotgunMessiah" />
+		<display_entry name="MaxRange" title_key="statMaxRange" tags="perkShotgunMessiah" />
+		<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkShotgunMessiah" />
+		<display_entry name="dStatStunEffect" title_key="statStunEffect" display_type="Time" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterOnlyRaw']">
+		<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+		<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+		<display_entry name="ddummyNoBonus" title_key="statFoodStaminaBonus" display_type="Bool" />
+	</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkYuccaSmoothie']">
+		<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+		<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+		<display_entry name="dHypethermalResist" title_key="statHyperthermalResist" display_leading_plus="true"/>
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+	</set>
+
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="rangedPistol" display_group="groupRanged">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger" />
+			<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger" />
+			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger" />
+			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger" />
+			<display_entry name="WeaponHandling" title_key="statWeaponHandling" display_type="Percent" show_inverted="true" tags="perkGunslinger" />
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger" />
+		</item_display_info>
+		
+		<item_display_info display_type="rangedRifle" display_group="groupRanged">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkDeadEye" />
+			<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkDeadEye" />
+			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkDeadEye" />
+			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkDeadEye" />
+			<display_entry name="MaxRange" title_key="statMaxRange" tags="perkDeadEye" />
+			<display_entry name="WeaponHandling" title_key="statWeaponHandling" display_type="Percent" show_inverted="true" tags="perkDeadEye" />
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkDeadEye" />
+		</item_display_info>
+		
+		<item_display_info display_type="rangedAuto" display_group="groupRanged">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkAutomaticWeapons" />
+			<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkAutomaticWeapons" />
+			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkAutomaticWeapons" />
+			<display_entry name="ReloadSpeedMultiplier" title_key="statReloadSpeedMultiplier" display_type="Percent" tags="perkAutomaticWeapons" />
+			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkAutomaticWeapons" />
+			<display_entry name="WeaponHandling" title_key="statWeaponHandling" display_type="Percent" show_inverted="true" tags="perkAutomaticWeapons" />
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkAutomaticWeapons" />
+		</item_display_info>
+		
+		<item_display_info display_type="rangedAutoM60" display_group="groupRanged">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkAutomaticWeapons" />
+			<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkAutomaticWeapons" />
+			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkAutomaticWeapons" />
+			<display_entry name="ReloadSpeedMultiplier" title_key="statReloadSpeedMultiplier" display_type="Percent" tags="perkAutomaticWeapons" />
+			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkAutomaticWeapons" />
+			<display_entry name="WeaponHandling" title_key="statWeaponHandling" display_type="Percent" show_inverted="true" tags="perkAutomaticWeapons" />
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkAutomaticWeapons" />
+			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false" />
+		</item_display_info>
+		
+		<item_display_info display_type="meleeJasonMachete" display_group="groupMelee">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="dEntityDamageSneak" title_key="statEntityDamageSneak" display_type="Percent" display_leading_plus="true" />
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true" />
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkDeepCuts,admin" />
+			<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" />
+		</item_display_info>
+		
+		<item_display_info display_type="junkDrone" display_group="groupRanged">
+			<display_entry name="DegradationMax" title_key="statDegradationHPMax" tags="perkYeahScience" />
+		</item_display_info>
+		
+		<item_display_info display_type="clothingShadesMyth" display_group="groupAttire">
+			<display_entry name="LootStage" title_key="statLootStage" />
+			<display_entry name="QuestRewardOptionCount" title_key="statQuestRewardOptionCount" />
+			<display_entry name="dQuestBonusItem" title_key="statQuestBonusItemReward" display_type="Percent" />
+		</item_display_info>
+		
+		<item_display_info display_type="foodboiledegg" display_group="groupConsumables">
+			<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+			<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+			<display_entry name="dWellness" title_key="statWellness" />
+		</item_display_info>
+		
+		<item_display_info display_type="foodTrailMix" display_group="groupConsumables">
+			<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+			<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+			<display_entry name="FoodPoisoningRisk" title_key="statFoodPoisoningRisk" display_type="Percent" negative_preferred="true" />
+			<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true" />
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+			<display_entry name="dWellness" title_key="statWellness" />
+		</item_display_info>		
+		
+		<item_display_info display_type="foodCanned" display_group="groupConsumables">
+			<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+			<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+			<display_entry name="FoodPoisoningRisk" title_key="statFoodPoisoningRisk" display_type="Percent" negative_preferred="true" />
+			<display_entry name="dWellness" title_key="statWellness" />
+		</item_display_info>
+		
+		<item_display_info display_type="foodWaterCanned" display_group="groupConsumables">
+			<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+			<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+			<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+			<display_entry name="FoodPoisoningRisk" title_key="statFoodPoisoningRisk" display_type="Percent" negative_preferred="true" />
+			<display_entry name="dWellness" title_key="statWellness" />
+		</item_display_info>
+		
+		<item_display_info display_type="foodCrop" display_group="groupConsumables">
+			<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+			<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+			<display_entry name="RottenFoodChance" title_key="statRottenFoodChance" display_type="Percent" negative_preferred="true" />
+			<display_entry name="dWellness" title_key="statWellness" />
+		</item_display_info>
+		
+		<item_display_info display_type="foodFruit" display_group="groupConsumables">
+			<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+			<display_entry name="dFoodHealthAmount" title_key="statHealthAmount" />
+			<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+			<display_entry name="RottenFoodChance" title_key="statRottenFoodChance" display_type="Percent" negative_preferred="true" />
+		</item_display_info>
+		
+		<item_display_info display_type="waterSmoothie" display_group="groupConsumables">
+			<display_entry name="dFoodAmount" title_key="statFoodAmount" />
+			<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" />
+			<display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true" />
+			<display_entry name="dWellness" title_key="statWellness" />
+		</item_display_info>
+		
+		<item_display_info display_type="drugDiazepam" display_group="groupConsumables">
+			<display_entry name="dEntityDamageRifle" title_key="statEntityDamageRifle" display_type="Percent" display_leading_plus="true" />
+			<display_entry name="dSpreadMultiHip" title_key="statSpreadMultiHip" display_type="Percent" display_leading_plus="false" />
+			<display_entry name="dSpreadMultiAim" title_key="statSpreadMultiAim" display_type="Percent" display_leading_plus="false" />
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount" />
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
+		</item_display_info>
+		
+		<item_display_info display_type="meleeWrench" display_group="groupMelee">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true" />
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin" />
+			<display_entry name="dScrapTimeWorkbench" title_key="statScrapTimeWorkbench" display_type="Percent" display_leading_plus="true" negative_preferred="false" />
+		</item_display_info>
+		
+		<item_display_info display_type="meleeClawhammer" display_group="groupMelee">
+			<display_entry name="EntityDamage" title_key="statEntityDamageMelee" tags="perkMiner69r" />
+			<display_entry name="dBlockRepairAmount" title_key="statBlockRepairAmount" />
+			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkMiner69r" />
+			<display_entry name="StaminaLoss" title_key="statStaminaLoss" negative_preferred="true" />
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r" />
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkAdvancedEngineering,admin" />
+			<display_entry name="dCraftingTimeWorkbench" title_key="statCraftingTimeWorkbench" display_type="Percent" display_leading_plus="true" negative_preferred="false" />
+		</item_display_info>
+		
+		<item_display_info display_type="rangedGunCoil" display_group="groupRanged">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,revolver,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="dDisablesDemonRegen" title_key="statDemonRegenDisable" display_type="Bool"/>
+			<display_entry name="dDisablesEmpoweredRegen" title_key="statEmpoweredRegenDisable" display_type="Bool"/>
+		</item_display_info>
+	</append>
+
+	<append xpath="/ui_display_info/crafting_category_display">
+		<crafting_category_list display_type="DFBigForge">
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+		</crafting_category_list>
+			
+		<crafting_category_list display_type="DFAdvForge">
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+		</crafting_category_list>
+			
+		<crafting_category_list display_type="DFworkingOven">
+			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+		</crafting_category_list>
+			
+		<crafting_category_list display_type="DFworkingWallOven">
+			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+		</crafting_category_list>
+			
+		<crafting_category_list display_type="DFLathe">
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+		</crafting_category_list>
+			
+		<crafting_category_list display_type="DFworkstationMetal">
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+			<crafting_category name="Science" icon="ui_game_symbol_science" display_name="lblCategoryScience" />
+			<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+			<crafting_category name="Clothing" icon="ui_game_symbol_shirt" display_name="lblCategoryClothing" />
+			<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" />
+			<crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc" />
+		</crafting_category_list>
+			
+		<crafting_category_list display_type="DFworkstationTailor">
+			<crafting_category name="" icon="ui_game_symbol_forge" display_name="lblAll" /> 
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+			<crafting_category name="Clothing" icon="ui_game_symbol_shirt" display_name="lblCategoryClothing" />
+			<crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc" />
+		</crafting_category_list>
+			
+		<crafting_category_list display_type="SciFiForge">
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+		</crafting_category_list>
+			
+		<crafting_category_list display_type="ScifiBench">
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+			<crafting_category name="Science" icon="ui_game_symbol_science" display_name="lblCategoryScience" />
+			<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+			<crafting_category name="Clothing" icon="ui_game_symbol_shirt" display_name="lblCategoryClothing" />
+			<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" />
+			<crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc" />
+		</crafting_category_list>
+	</append>
+</config>

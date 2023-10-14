@@ -1,0 +1,52 @@
+<config>
+	<!-- Custom paints are made possible by ocbMaurice's work! https://github.com/OCB7D2D/OcbCustomTextures -->
+	<append xpath="/paints">
+		<opaque id="scifi_wall_all_faces" name="txName_scifi_wall_all_faces" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+			<!-- Albedo/Diffuse texture is absolutely necessary, how else would you want to paint a block? -->
+			<property name="Diffuse" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_2_diffuse.png,assets/scifipainttextures/texture_2_diffuse.png,assets/scifipainttextures/texture_2_diffuse.png,assets/scifipainttextures/texture_2_diffuse.png"/>
+			<!-- Normal texture is also a must, although you may provide a fully neutral one [rgb => 0.5, 0.5, 1] (translating to normal vector [0, 0, 1]) -->
+			<property name="Normal" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_2_normal.png,assets/scifipainttextures/texture_2_normal.png,assets/scifipainttextures/texture_2_normal.png,assets/scifipainttextures/texture_2_normal.png"/>
+			<!-- Specular has the format: Metallic=R, Occlusion=G, Emission=B, Roughness=A -->
+			<property name="Specular" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_2_specular.png,assets/scifipainttextures/texture_2_specular.png,assets/scifipainttextures/texture_2_specular.png,assets/scifipainttextures/texture_2_specular.png"/>
+			<property name="Group" value="txGroupDecoration"/>
+			<property name="GlobalUV" value="False" />
+			<property name="SwitchUV" value="False" />
+			<property name="Color" value="0.4823529,0.3490196,0.2901961"/>
+			<property name="Material" value="metal" />
+			<property name="PaintCost" value="1" />
+			<property name="Hidden" value="false" />
+		</opaque>
+		
+		<opaque id="scifi_wall_line_all_faces" name="txName_scifi_wall_line_all_faces" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+			<!-- Albedo/Diffuse texture is absolutely necessary, how else would you want to paint a block? -->
+			<property name="Diffuse" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_3_diffuse.png,assets/scifipainttextures/texture_3_diffuse.png,assets/scifipainttextures/texture_3_diffuse.png,assets/scifipainttextures/texture_3_diffuse.png"/>
+			<!-- Normal texture is also a must, although you may provide a fully neutral one [rgb => 0.5, 0.5, 1] (translating to normal vector [0, 0, 1]) -->
+			<property name="Normal" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_3_normal.png,assets/scifipainttextures/texture_3_normal.png,assets/scifipainttextures/texture_3_normal.png,assets/scifipainttextures/texture_3_normal.png"/>
+			<!-- Specular has the format: Metallic=R, Occlusion=G, Emission=B, Roughness=A -->
+			<property name="Specular" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_3_specular.png,assets/scifipainttextures/texture_3_specular.png,assets/scifipainttextures/texture_3_specular.png,assets/scifipainttextures/texture_3_specular.png"/>
+			<property name="Group" value="txGroupDecoration"/>
+			<property name="GlobalUV" value="False" />
+			<property name="SwitchUV" value="False" />
+			<property name="Color" value="0.4823529,0.3490196,0.2901961"/>
+			<property name="Material" value="metal" />
+			<property name="PaintCost" value="1" />
+			<property name="Hidden" value="false" />
+		</opaque>
+		
+		<opaque id="scifi_floor_all_faces" name="txName_scifi_floor_all_faces" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+			<!-- Albedo/Diffuse texture is absolutely necessary, how else would you want to paint a block? -->
+			<property name="Diffuse" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_5_diffuse.png,assets/scifipainttextures/texture_5_diffuse.png,assets/scifipainttextures/texture_5_diffuse.png,assets/scifipainttextures/texture_5_diffuse.png"/>
+			<!-- Normal texture is also a must, although you may provide a fully neutral one [rgb => 0.5, 0.5, 1] (translating to normal vector [0, 0, 1]) -->
+			<property name="Normal" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_5_normal.png,assets/scifipainttextures/texture_5_normal.png,assets/scifipainttextures/texture_5_normal.png,assets/scifipainttextures/texture_5_normal.png"/>
+			<!-- Specular has the format: Metallic=R, Occlusion=G, Emission=B, Roughness=A -->
+			<property name="Specular" value="#@modfolder:Assets/SciFiTextures.unity3d?assets/scifipainttextures/texture_5_specular.png,assets/scifipainttextures/texture_5_specular.png,assets/scifipainttextures/texture_5_specular.png,assets/scifipainttextures/texture_5_specular.png"/>
+			<property name="Group" value="txGroupDecoration"/>
+			<property name="GlobalUV" value="False" />
+			<property name="SwitchUV" value="False" />
+			<property name="Color" value="0.4823529,0.3490196,0.2901961"/>
+			<property name="Material" value="metal" />
+			<property name="PaintCost" value="1" />
+			<property name="Hidden" value="false" />
+		</opaque>
+	</append>
+</config>

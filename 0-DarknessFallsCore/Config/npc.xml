@@ -1,0 +1,459 @@
+<config>
+	<set xpath="/npc">
+		<npc_info
+			id="traitorjoel"
+			name="Traitor Joel"
+			name_key="npc_traitorJoel"
+			faction="whiteriver"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="1" dialog_id="traderJoel" quest_faction="1" 
+			localization_id="npcTraderJoel"
+			quest_list="trader_quests_joel"/>
+			
+		<npc_info
+			id="traderjen"
+			name="Trader Jen"
+			name_key="npc_traderJen"
+			faction="whiteriver"
+			portrait="npc_jen"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader_jen"
+			trader_id="2" dialog_id="traderJen" quest_faction="1" 
+			localization_id="npcTraderJen"
+			quest_list="trader_quests_jen"/>
+
+		<npc_info
+			id="traderbob"
+			name="Trader Bob"
+			name_key="npc_traderBob"
+			faction="whiteriver"
+			portrait="npc_bob"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="6" dialog_id="traderBob" quest_faction="1"
+			localization_id="npcTraderBob"
+			quest_list="trader_quests_bob"/>
+
+		<npc_info
+			id="traderhugh"
+			name="Trader Hugh"
+			name_key="npc_traderHugh"
+			faction="whiteriver"
+			portrait="npc_hugh"
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="7" dialog_id="traderHugh" quest_faction="1" 
+			localization_id="npcTraderHugh"
+			quest_list="trader_quests_hugh"/>
+
+		<npc_info
+			id="traderrekt"
+			name="Traitor Rekt"
+			name_key="npc_traderRekt"
+			faction="whiteriver"
+			portrait="npc_rekt"
+			greeting_type="nearby"
+			stance="Dislike" voice_set="trader"
+			trader_id="8" dialog_id="traderRekt" quest_faction="1"
+			localization_id="npcTraderRekt" 
+			quest_list="trader_quests_rekt"/>
+			
+		<npc_info
+			id="traderTest"
+			name="Trader Test"
+			name_key="Trader Test"
+			faction="whiteriver"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			trader_id="1" 
+			stance="Like" voice_set="trader"
+			dialog_id="traderTest"
+			quest_list="test_quests" />
+
+		<npc_info
+			id="NPCjunkDrone"
+			name="Junk Drone"
+			name_key="npc_junkDrone"
+			faction="trader"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			dialog_id="junkDrone"
+			stance="Like" voice_set="trader"
+			trader_id="1"/>
+			
+		<!-- Darkness Falls NPCs -->
+		<npc_info
+			id="tradercaitlin"
+			name="Trader Caitlin"
+			name_key="npc_tradercaitlin"
+			faction="whiteriver"
+			portrait="npc_jen"
+			greeting_type="nearby"
+			stance="Like" voice_set="femaletrader"
+			trader_id="11" dialog_id="traderCaitlin" quest_faction="1"
+			localization_id="npcTraderCaitlin"
+			quest_list="trader_quests_caitlin"/>
+			
+		<npc_info
+			id="guardcaptain"
+			name="Guard Captain"
+			name_key="npc_tradercaitlin"
+			faction="whiteriver"
+			portrait=""
+			greeting_type="nearby"
+			stance="Like" voice_set="femaletrader"
+			trader_id="12" dialog_id="traderScout" quest_faction="2"
+			localization_id="npcWhiteRiverScout"
+			quest_list="trader_quests_gc" />
+			
+		<npc_info
+			id="wanderingtrader"
+			name="Wandering Trader"
+			name_key="npc_traderHugh"
+			faction="survivors"
+			portrait="npc_hugh"
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="7" dialog_id="wantrader"
+			quest_list="trader_quests" />
+			
+		<npc_info
+			id="animalFarmCow"
+			name="NPC"
+			name_key="npc_traitorJoel"
+			faction="farmCows"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="1" dialog_id="animalFarmCow"/>		
+			
+		<npc_info
+			id="animalFarmSheep"
+			name="NPC"
+			name_key="npc_traitorJoel"
+			faction="farmSheep"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="1" dialog_id="animalFarmSheep"/>
+
+		<npc_info
+			id="animalFarmGoat"
+			name="NPC"
+			name_key="npc_traitorJoel"
+			faction="farmGoat"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="1" dialog_id="animalFarmGoat"/>	
+
+		<npc_info
+			id="animalFarmChicken"
+			name="NPC"
+			name_key="npc_traitorJoel"
+			faction="farmChickens"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="1" dialog_id="animalFarmChicken"/>	
+			
+		<npc_info
+			id="animalFarmBoar"
+			name="NPC"
+			name_key="npc_traitorJoel"
+			faction="farmBoar"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="1" dialog_id="animalFarmBoar"/>
+
+		<npc_info
+			id="animalFarmWolf"
+			name="NPC"
+			name_key="npc_traitorJoel"
+			faction="farmWolf"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="1" dialog_id="animalFarmWolf"
+			quest_list="trader_quests" />		
+			
+		<npc_info
+			id="tamewolf"
+			name="NPC"
+			name_key="npc_traitorJoel"
+			faction="farmWolf"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="1" dialog_id="animalWolfHire"
+			quest_list="trader_quests" />
+	<!--		
+		<npc_info
+			id="razornpc"
+			name="NPC"
+			name_key="Survivor Razor"
+			faction="survivors"
+			portrait=""
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="8" dialog_id="razor_quests_dialog" quest_faction="2"
+			localization_id="npcTraderRazor"
+			quest_list="razor_quests" 
+			quests_per_tier="1"/>
+
+		<npc_info
+			id="evenpc"
+			name="NPC"
+			name_key="Survivor Eve"
+			faction="survivors"
+			portrait="npc_eve"
+			greeting_type="nearby"
+			stance="Like" voice_set="Eve"
+			trader_id="8" dialog_id="eve_quests_dialog" quest_faction="3"
+			localization_id="npcTraderEve"
+			quest_list="eve_quests" 
+			quests_per_tier="1"/>
+			
+		<npc_info
+			id="scientistnpc"
+			name="Doctor Anna"
+			name_key="npc_doctorAnna"
+			faction="whiteriver"
+			portrait="npc_jen"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader_jen"
+			trader_id="11" dialog_id="doctorAnna" quest_faction="4"
+			localization_id="npcTraderAnna"
+			quest_list="trader_quests" 
+			quests_per_tier="1"/>
+-->
+		<npc_info
+			id="razornpc"
+			name="NPC"
+			name_key="Survivor Razor"
+			faction="survivors"
+			portrait=""
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="8" dialog_id="razor_quests" quest_faction="2"
+			localization_id="npcTraderRazor"
+			quest_list="trader_quests_gc" />
+
+		<npc_info
+			id="evenpc"
+			name="NPC"
+			name_key="Survivor Eve"
+			faction="survivors"
+			portrait="npc_eve"
+			greeting_type="nearby"
+			stance="Like" voice_set="Eve"
+			trader_id="8" dialog_id="eve_quests" quest_faction="2"
+			localization_id="npcTraderEve"
+			quest_list="trader_quests_gc" />
+			
+		<npc_info
+			id="scientistnpc"
+			name="Doctor Anna"
+			name_key="npc_doctorAnna"
+			faction="whiteriver"
+			portrait="npc_jen"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader_jen"
+			trader_id="11" dialog_id="doctorAnna" quest_faction="2"
+			localization_id="npcTraderAnna"
+			quest_list="trader_quests_gc" />
+			
+		<npc_info
+			id="eveTest"
+			name="NPC"
+			name_key="Survivor Eve"
+			faction="survivors"
+			portrait="npc_eve"
+			greeting_type="nearby"
+			stance="Like" voice_set="Eve"
+			trader_id="8" dialog_id="eve_quests" quest_faction="2"
+			localization_id="npcTraderEve"
+			quest_list="eve_quests" />
+
+		<npc_info
+			id="archernpc"
+			name="NPC"
+			name_key="npc_traitorJoel"
+			faction="survivors"
+			portrait="npc_joel"
+			greeting_type="nearby"
+			stance="Like" voice_set="trader"
+			trader_id="8" dialog_id="archerHire"
+			quest_list="trader_quests" />	
+			
+		<npc_info
+			id="survivorboss"
+			name="NPC"
+			name_key="npc_traderHugh"
+			faction="whiteriver"
+			portrait="npc_hugh"
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="5" dialog_id="razor_quests"
+			quest_list="trader_quests_hugh" />
+			
+		<npc_info
+			id="survivor1female"
+			name="Survivor"
+			name_key="Survivor"
+			faction="survivors"
+			portrait=""
+			greeting_type="nearby"
+			stance="Like" voice_set="Eve"
+			trader_id="15" dialog_id="wantrader"/>
+			
+		<npc_info
+			id="survivor2female"
+			name="Survivor"
+			name_key="Survivor"
+			faction="survivors"
+			portrait=""
+			greeting_type="nearby"
+			stance="Like" voice_set="Eve"
+			trader_id="16" dialog_id="wantrader"/>
+			
+		<npc_info
+			id="survivor3female"
+			name="Survivor"
+			name_key="Survivor"
+			faction="survivors"
+			portrait=""
+			greeting_type="nearby"
+			stance="Like" voice_set="Eve"
+			trader_id="17" dialog_id="wantrader" />
+			
+		<npc_info
+			id="survivor1male"
+			name="Survivor"
+			name_key="Survivor"
+			faction="survivors"
+			portrait=""
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="15" dialog_id="wantrader"/>
+			
+		<npc_info
+			id="survivor2male"
+			name="Survivor"
+			name_key="Survivor"
+			faction="survivors"
+			portrait=""
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="16" dialog_id="wantrader"/>
+			
+		<npc_info
+			id="survivor3male"
+			name="Survivor"
+			name_key="Survivor"
+			faction="survivors"
+			portrait=""
+			greeting_type="nearby"
+			stance="Neutral" voice_set="trader"
+			trader_id="17" dialog_id="wantrader"/>
+			
+		<factions>
+			<faction name="none">
+				<relationship name="*" value="neutral"/>
+			</faction>
+			<faction name="animals">
+				<relationship name="*" value="dislike"/>
+			</faction>
+			<faction name="animalsPrey">
+				<relationship name="*" value="dislike"/>
+			</faction>
+			<faction name="animalsHostile">
+				<relationship name="*" value="hate"/>
+				<relationship name="animals" value="dislike"/>
+				<!--
+				<relationship name="undead" value="hate"/>
+				<relationship name="bandits" value="hate"/>
+				<relationship name="whiteriver" value="hate"/> -->
+			</faction>
+			<faction name="undead">
+				<relationship name="*" value="hate"/>
+				<relationship name="animals" value="dislike"/>
+				<relationship name="animalsHostile" value="dislike"/>
+				<relationship name="animalsPrey" value="dislike"/>
+			</faction>
+			<faction name="bandits">
+				<relationship name="*" value="hate"/>
+			</faction>
+			<faction name="survivors">
+				<relationship name="*" value="neutral"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="bandits" value="hate"/>
+			</faction>
+			<faction name="whiteriver">
+				<relationship name="*" value="neutral"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="bandits" value="hate"/>
+			</faction>
+			<faction name="duke">
+				<relationship name="*" value="neutral"/>
+				<relationship name="whiteriver" value="dislike"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="bandits" value="dislike"/>
+			</faction>
+			<faction name="trader">
+				<relationship name="*" value="neutral"/>
+				<relationship name="bandits" value="dislike"/>
+				<relationship name="undead" value="hate"/>
+			</faction>
+			<faction name="farmCows">
+				<relationship name="*" value="neutral"/>
+				<relationship name="bandits" value="dislike"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="farmWolf" value="hate"/>
+				<relationship name="farmBoar" value="hate"/>
+			</faction>
+			<faction name="farmChickens">
+				<relationship name="*" value="neutral"/>
+				<relationship name="bandits" value="dislike"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="farmWolf" value="hate"/>
+				<relationship name="farmBoar" value="hate"/>
+			</faction>	
+			<faction name="farmSheep">
+				<relationship name="*" value="neutral"/>
+				<relationship name="bandits" value="dislike"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="farmWolf" value="hate"/>
+				<relationship name="farmBoar" value="hate"/>
+			</faction>			
+			<faction name="farmGoat">
+				<relationship name="*" value="neutral"/>
+				<relationship name="bandits" value="dislike"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="farmWolf" value="hate"/>
+				<relationship name="farmBoar" value="hate"/>
+			</faction>	
+			<faction name="farmWolf">
+				<relationship name="*" value="neutral"/>
+				<relationship name="bandits" value="dislike"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="farmCows" value="hate"/>
+				<relationship name="farmChickens" value="hate"/>
+				<relationship name="farmSheep" value="hate"/>
+				<relationship name="farmGoat" value="hate"/>			
+			</faction>	
+			<faction name="farmBoar">
+				<relationship name="*" value="neutral"/>
+				<relationship name="bandits" value="dislike"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="farmCows" value="hate"/>
+				<relationship name="farmChickens" value="hate"/>
+				<relationship name="farmSheep" value="hate"/>
+				<relationship name="farmGoat" value="hate"/>			
+			</faction>			
+		</factions>	
+	</set>
+</config>

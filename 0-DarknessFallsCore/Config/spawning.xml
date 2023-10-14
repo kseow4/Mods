@@ -1,0 +1,87 @@
+<config>
+	<set xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="2" respawndelay="0.3" time="Day" entitygroup="ZombiesDay" tags="commercial,industrial,downtown" />
+		<spawn maxcount="2" respawndelay="0.3" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial,downtown" />
+		
+		<spawn maxcount="2" respawndelay="1.25" time="Day" entitygroup="ZombiesDay" tags="residential,rural,gateway,countryresidential,countrytown" />
+		<spawn maxcount="2" respawndelay="1.25" time="Night" entitygroup="ZombiesNight" tags="residential,rural,gateway,countryresidential,countrytown" />
+			
+		<spawn maxcount="1" respawndelay="2" time="Day" entitygroup="ZombiesDay" notags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+		<spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+			
+		<spawn maxcount="2" respawndelay="10" time="Day" entitygroup="AnimalsForestDay" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential" />
+		<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="AnimalsForestNight" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential" /> 
+	</set>
+	
+	<set xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn maxcount="4" respawndelay="7" time="Any" entitygroup="ZombiesBurntForest" />
+		<spawn maxcount="4" respawndelay="4" time="Night" entitygroup="ZombiesBurntForestNight" />
+			
+		<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="EnemyAnimalsBurntForest" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential" />
+		<spawn maxcount="3" respawndelay="10" time="Any" entitygroup="FriendlyAnimalsBurntForest" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential" /> 
+	</set>
+	
+	<set xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="2" respawndelay="0.2" time="Day" entitygroup="ZombiesDay" tags="commercial,industrial,downtown" />
+		<spawn maxcount="2" respawndelay="0.2" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial,downtown" />
+			
+		<spawn maxcount="2" respawndelay="0.75" time="Day" entitygroup="ZombiesDay" tags="residential,rural,gateway,countryresidential,countrytown" />
+		<spawn maxcount="2" respawndelay="0.75" time="Night" entitygroup="ZombiesNight" tags="residential,rural,gateway,countryresidential,countrytown" />
+			
+		<spawn maxcount="1" respawndelay="2" time="Day" entitygroup="ZombiesDay" notags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+		
+		<spawn maxcount="2" respawndelay="10" time="Day" entitygroup="AnimalsDesertDay" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential" />
+		<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="AnimalsDesertNight" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential" /> 
+	</set>
+		
+	<set xpath="/spawning/biome[@name='snow']">
+		<spawn maxcount="2" respawndelay="0.1" time="Day" entitygroup="ZombiesDay" tags="commercial,industrial,downtown" />
+		<spawn maxcount="2" respawndelay="0.1" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial,downtown" />
+			
+		<spawn maxcount="2" respawndelay="0.5" time="Day" entitygroup="ZombiesDay" tags="residential,rural,gateway,countryresidential,countrytown" />
+		<spawn maxcount="2" respawndelay="0.5" time="Night" entitygroup="ZombiesNight" tags="residential,rural,gateway,countryresidential,countrytown" />
+			
+		<spawn maxcount="1" respawndelay="2" time="Day" entitygroup="ZombiesDay" notags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+		
+		<spawn maxcount="2" respawndelay="10" time="Day" entitygroup="AnimalsSnowDay" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential" />
+		<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="AnimalsSnowNight" spawnDeadChance="0" notags="commercial,industrial,downtown,countryresidential,countrytown,residential" /> 
+	</set>
+	
+	<set xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="2" respawndelay="0.025" time="Day" entitygroup="ZombiesWasteland2" tags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+		<spawn maxcount="2" respawndelay="0.025" time="Night" entitygroup="ZombieDemonsBiome" tags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+			
+		<spawn maxcount="2" respawndelay="0.375" time="Day" entitygroup="ZombiesWasteland2" notags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+		<spawn maxcount="2" respawndelay="0.25" time="Night" entitygroup="ZombiesWastelandNight" notags="commercial,industrial,downtown,residential,rural,gateway,countryresidential,countrytown" />
+
+		<spawn maxcount="1" respawndelay="0.5" time="Day" entitygroup="EnemyAnimalsWasteland" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="0.25" time="Night" entitygroup="EnemyAnimalsWastelandHub" spawnDeadChance="0" />
+	</set>
+	
+	<insertAfter xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']">
+		<!-- Zombie Football Stadium Spawns -->
+		<entityspawner name="Zombie_Football_Stadium_Med_Territorial">
+
+			<day value="*">
+				<property name="ResetToday" value="false" />
+
+				<property name="EntityGroupName" value="ZombieFootballStadiumGroup" />
+				<property name="Time" value="Any" />
+
+				<property name="DelayBetweenSpawns" value="0" />
+				<!-- in seconds -->
+				<property name="TotalAlive" value="6" />
+
+				<property name="TotalPerWave" value="6" />
+			<property name="DaysToRespawnIfPlayerLeft" value="5" /> <!-- in game days -->
+
+				<property name="AttackPlayerAtOnce" value="false" />
+
+				<property name="Territorial" value="false" />
+				<property name="TerritorialRange" value="100" />
+				</day>
+		</entityspawner>
+	</insertAfter>
+</config>
