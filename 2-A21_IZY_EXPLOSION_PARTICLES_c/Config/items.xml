@@ -1,0 +1,39 @@
+<configs>
+
+	<append xpath="/items/item[@name='thrownAmmoPipeBomb']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_Frags_Small.Prefab"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoArrowExploding']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_Frags_Small.Prefab"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoCrossbowBoltExploding']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_Frags_Small.Prefab"/>
+	</append>
+
+	<append xpath="/items/item[@name='thrownGrenadeContact']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_Frags.Prefab"/>
+	</append>
+	
+	<append xpath="/items/item[@name='thrownGrenade']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_Frags.Prefab"/>
+	</append>
+	
+	<append xpath="/items/item[@name='thrownDynamite']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_HE.Prefab"/>
+	</append>
+	
+	<append xpath="/items/item[@name='thrownTimedCharge']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_HE.Prefab"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoRocketHE']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_HE.Prefab"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoRocketFrag']">
+		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Explosion_Cparticles.unity3d?IZY_Explosion_HE.Prefab"/>
+	</append>
+	
+</configs>
