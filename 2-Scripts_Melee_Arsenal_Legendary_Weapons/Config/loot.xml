@@ -1,0 +1,33 @@
+<configs>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Melee']">
+		<item name="SMAAutumnsCall" prob=".05"/>
+		<item name="SMABrasswindBlade" prob="0.25"/>
+		<item name="SMAVoidbreaker" prob="0.25"/>
+		<item name="SMAMjölnirsEcho" prob="0.25"/>
+		<item name="SMAAbyssalReach" prob="0.25"/>
+		<item name="SMAWhisperingDeath" prob="0.25"/>
+		<item name="SMAEarthrendSpade" prob="0.25"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsMeleeScaled']">
+		<item name="SMAAutumnsCall" prob=".05"/>
+		<item name="SMABrasswindBlade" prob="0.25"/>
+		<item name="SMAVoidbreaker" prob="0.25"/>
+		<item name="SMAMjölnirsEcho" prob="0.25"/>
+		<item name="SMAAbyssalReach" prob="0.25"/>
+		<item name="SMAWhisperingDeath" prob="0.25"/>
+		<item name="SMAEarthrendSpade" prob="0.25"/>
+	</append>
+	
+	<!-- <append xpath="/lootcontainers/lootgroup[@name='groupWeaponsMeleeScaledNoStone']">
+		<item name="SMAAutumnsCall" prob=".05"/>
+		<item name="SMABrasswindBlade" prob="0.5"/>
+		<item name="SMAVoidbreaker" prob="0.5"/>
+		<item name="SMAMjölnirsEcho" prob="0.5"/>
+		<item name="SMAAbyssalReach" prob="0.5"/>
+		<item name="SMAWhisperingDeath" prob="0.5"/>
+		<item name="SMAEarthrendSpade" prob="0.5"/>
+	</append> -->
+	
+</configs>

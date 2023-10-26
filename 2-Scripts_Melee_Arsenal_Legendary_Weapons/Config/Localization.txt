@@ -1,0 +1,19 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+SMAAutumnsCall,Items,Weapons,,,"Autumn's Call"
+SMAAutumnsCallDesc,Items,Weapons,,,Forged from leaves of ancient trees and blessed under the harvest moon the katana known as - Autumn's Call - held the essence of the changing seasons within its blade.\nWhen drawn the air would carry the whispers of falling leaves and its strikes would mirror the graceful descent of autumn foliage.\nWarriors who wielded it were imbued with the tranquility of nature's transition and the power to bring forth the beauty of fall in every clash.
+SMABrasswindBlade,Items,Weapons,,,"Brasswind Blade"
+SMABrasswindBladeDesc,Items,Weapons,,,Forged by ingenious engineers the - Brasswind Blade - was a marvel of technology and artistry emitting mesmerizing arcs of crackling energy with each swing.\nWhen it struck a harmonious resonance would surge through the blade temporarily paralyzing foes with a stunning vibration.\nWhispers spread of a lone rogue who utilized the sword to turn the tide of battles leaving adversaries captivated by its dazzling display of both form and function.
+SMAVoidbreaker,Items,Weapons,,,"Voidbreaker"
+SMAVoidbreakerDesc,Items,Weapons,,,Forged in the heart of a collapsing star the colossal - Voidbreaker - harnessed the destructive forces of the cosmos within its obsidian blade.\nLegends spoke of a warrior who dared to wield its immense power rending the very fabric of reality with each swing and shattering the barriers between dimensions.\nAs Voidbreaker cleaved through existence it whispered secrets of the void to its master forever altering the fate of both worlds.
+SMAMjölnirsEcho,Items,Weapons,,,"Mjölnir's Echo"
+SMAMjölnirsEchoDesc,Items,Weapons,,,Forged in the heart of a mountain's fiery embrace by the last of the dwarf kings the legendary warhammer - Mjölnir's Echo - was a symbol of unyielding strength and indomitable will.\nIts handle carved from the ancient oak of the Worldtree absorbed the wisdom of the ages and its head channeled the very essence of the earth.\nWielded by a humble blacksmith turned hero - Mjölnir's Echo - shattered armies and mountains alike echoing with the resilience of a people determined to forge their own destiny.
+SMAAbyssalReach,Items,Weapons,,,"Abyssal Reach"
+SMAAbyssalReachDesc,Items,Weapons,,,Forged from the deep black steel found in the heart of the world's most treacherous chasms - Abyssal Reach - exuded an eerie aura that seemed to draw the shadows closer.\nWielded by a mysterious sentinel its blade cleaved through both armor and enchantments while its wicked spike could pierce the very essence of magical barriers.\nLegends told of battles where Abyssal Reach extended its darkness-infused reach to grasp enemies across the field turning the tide of conflict with a touch from the abyss.
+SMAWhisperingDeath,Items,Weapons,,,"Whispering Death"
+SMAWhisperingDeathDesc,Items,Weapons,,,Forged by a reclusive master bladesmith in the heart of a forgotten forest - Whispering Death - was said to carry the hushed secrets of the woods within its blade.\nWith each swift strike it emitted an otherworldly resonance that echoed the final breaths of fallen leaves.\nPossessed by a rogue guardian the blade became an extension of shadows.\nIts silent dance leaving adversaries breathless and shrouded in the chilling embrace of the forest's whispered tales.
+SMAEarthrendSpade,Items,Weapons,,,"Earthrend Spade"
+SMAEarthrendSpadeDesc,Items,Weapons,,,In the heat of battle the - Earthrend Spade - a military marvel forged from reinforced alloys proved itself as more than a mere tool.\nIts sharpened edge could breach enemy defenses with the precision of a scalpel while its sturdy handle doubled as a rifle stock - unerringly accurate in the hands of a skilled marksman.\nWielding the - Earthrend Spade - a specialized unit turned the battlefield into a symphony of strategic strikes leaving a legacy etched in the annals of warfare.
+
+
+
+
