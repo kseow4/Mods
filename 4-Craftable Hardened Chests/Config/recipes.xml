@@ -1,0 +1,30 @@
+<!--
+	Craftable Hardened Chests by BoxTurtle Games
+	What you can can do:
+		-Change this mod however you want
+		-Redistribute this mod as part of a modpack (give credit :) )
+		-Share with friends
+	What you cannot do:
+		-Reupload to any site and take credit as the original author
+		-Make money from this mod
+-->
+<config>
+<append xpath="/recipes">
+
+<recipe name="cntHardenedChestInsecureT5" count="1" craft_time="120" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="8"/>
+	<ingredient name="resourceElectricParts" count="10"/>
+	<ingredient name="resourceForgedSteel" count="25"/>
+	<ingredient name="resourceSpring" count="4"/>
+</recipe>
+
+<recipe name="cntHardenedChestInsecure" count="1" craft_time="90" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="6"/>
+	<ingredient name="resourceElectricParts" count="8"/>
+	<ingredient name="resourceForgedSteel" count="15"/>
+	<ingredient name="resourceSpring" count="2"/>
+</recipe>
+</append>
+
+
+</config>

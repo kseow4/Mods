@@ -1,0 +1,14 @@
+<!--
+	Craftable Hardened Chests by BoxTurtle Games
+	What you can can do:
+		-Change this mod however you want
+		-Redistribute this mod as part of a modpack (give credit :) )
+		-Share with friends
+	What you cannot do:
+		-Reupload to any site and take credit as the original author
+		-Make money from this mod
+-->
+<config>
+<remove xpath="/blocks/block[@name='cntHardenedChestInsecure']/property[@name='CustomIconTint']" />
+<remove xpath="/blocks/block[@name='cntHardenedChestInsecureT5']/property[@name='CustomIconTint']" />
+</config>
