@@ -1,0 +1,17 @@
+<addnew>
+
+	<append xpath="/recipes">
+
+
+	<recipe name="IZYgunmodSilencerIMS" count="1">
+		<ingredient name="modGunSoundSuppressorSilencer" count="1"/>
+	</recipe>
+	
+	<recipe name="modGunSoundSuppressorSilencer" count="1">
+		<ingredient name="IZYgunmodSilencerIMS" count="1"/>
+	</recipe>
+
+	</append>
+
+
+</addnew>
