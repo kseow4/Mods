@@ -1,0 +1,3 @@
+<configs>
+    <setattribute xpath="//group[@name='S_-_Group_Abandoned_House']" name="emptyChance">0</setattribute>
+</configs>

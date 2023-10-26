@@ -1,0 +1,119 @@
+gamestages.xml - remove empty volume chance to fix low tier clears (practical fix)
+PEP_Library_War3zuk - Fixed size, lowered tier to 2
+PEP_House_AFO3R_37X53_Modabba - Fixed volume
+PEP_UFO_NAGG_Ryan - T4 > T5 chest, locked door with switch
+PEP_Hotel_Construction_Site_01_Zyncosa - fixed stability, removed duplicate quest marker and T4 > T5 chest
+PEP_airport_rundown_gt - fixed volume
+PEP_abandonded_jen_lemonpie - removed invis wall
+PEP_A16_abandoned_house_08 - added quest marker
+PEP_Apaxco_Industrial_(Gouki-KrunchEdit) - fixed volumes, removed elec traps
+PEP_Army_01_Zyncosa - replaced multiple T4 chests with one T5, removed some easy to get to crates and redid sleepers (mostly higher tier)
+PEP_Army_02_Zyncosa - replaced multiple T4 chests with one T5, replaced some crates with cardboard boxes and redid sleepers (mostly higher tier)
+PEP_Army_03_Zyncosa - Moved T4 chest to where the infested loot is, lowered difficulty to 4 and redid sleepers (loot room)
+PEP_Industry_07_Zyncosa - replaced multiple T4 chests with one T5 (near infested loot), removed some easy to get to crates, fixed a volume not spawning and redid sleepers (mostly higher tier)
+PEP_Wank_Bank_Hydroponic - Fixed sleeper volumes, replaced some hidden stashes with worse loot crates
+PEP_Bunker_Pille - removed invulnerable blocks
+PEP_Library_NAGG - redid sleepers (small increase)
+
+Showquestclearcount fixes:
+PEP_4Apartments_TopMinder
+PEP_Adam_House_Z1_DMC
+PEP_Airport_01_Zyncosa
+PEP_airport_rundown_gt
+PEP_AmityvilleHorrorHouse_Swolk
+PEP_AnarchyHighriseLab_NLEagle
+PEP_Apartment_Gertle
+PEP_Apartments_01_Zyncosa
+PEP_Apaxco_Industrial_(Gouki-KrunchEdit)
+PEP_Army_01_Zyncosa
+PEP_Army_02_Zyncosa
+PEP_Army_03_Zyncosa
+PEP_Army_Airport_01_(Krunch-Ouch-Pille-NLBE)
+PEP_Asylum_Wsiegel
+PEP_Badonkadonk_CaptainandMental
+PEP_Bank_Guppycur
+PEP_Bank_Limodor
+PEP_Baskins_Nauti_Angel
+PEP_BoxingGym_KamR
+PEP_bridgesideapartmentsA16_Batman
+PEP_Bunker_Pille
+PEP_Canyon_Cave_War3zuk
+PEP_Cave1_NAGGcommunity
+PEP_ConvenienceStore1_Guppycur
+PEP_Coronado_cornfield_missle_silo_Slaan
+PEP_CountyJail_Volar
+PEP_cult_Evilracc0on
+PEP_Farm_BigC90210
+PEP_flighttower_NLEagle
+PEP_Glass_factory_big_Khyber
+PEP_HarbingerLabs_Riahsaurus_Rex
+PEP_HBW_Metro_Station_Hydroponic
+PEP_Hospital_Wsiegel
+PEP_Hostel_TopMinder
+PEP_Hotel_01_Zyncosa
+PEP_Hotel_Construction_Site_01_Zyncosa
+PEP_House_04_Zyncosa
+PEP_House_05_Zyncosa
+PEP_House_09_Zyncosa
+PEP_House_LastI
+PEP_house_old_tudor_06_Pille
+PEP_Industry_01_Zyncosa
+PEP_Industry_03_Zyncosa
+PEP_Industry_07_Zyncosa
+PEP_InsaneAsylum_Genosis
+PEP_IZEA_market_Genosis
+PEP_KooshieMart_Kayido
+PEP_LakesideLodge_Kam
+PEP_Leisure01_Zyncosa
+PEP_Library_NAGG
+PEP_Mall_DOD
+PEP_Military_Camp_War3zuk
+PEP_MinderManor_TopMinder
+PEP_ModernArtGallery_Pille_TopMinder
+PEP_Multi_Storey_War3zuk
+PEP_nationalparkLodge_Laz_Man
+PEP_NSiteMissileSilo_Ephoie
+PEP_Nuclear_Powerplant_Rocky
+PEP_Nuka_Factory_bdubyah
+PEP_Nuket0wn_Limodor
+PEP_Office_Wsiegel
+PEP_Overlook_Hotel_Master_Quagmire1428
+PEP_Pantilehouse_TopMinder
+PEP_PersianMansion_saeid
+PEP_PetStore_Jackelmyer
+PEP_PG_BusStstion_Dragoness
+PEP_Plant_Wsiegel
+PEP_powerplant_Kam
+PEP_prefabhome1_Riahsaurus_Rex
+PEP_Prison_Limodur
+PEP_Public_Pool_Warsaken
+PEP_QuietPinesSpecial_hernan
+PEP_RaceTrack_Guppycur
+PEP_red_mesa_alpha_labs_Pille
+PEP_Resident_Evil_Mansion__Frantic_Dan
+PEP_RocketLaunchPad_Saeid
+PEP_Roundhouse_TopMinder
+PEP_SC_steakhouse01_Dragoness
+PEP_serial_killer_01_FLESHUS
+PEP_sewer_layout_Evilracc0on
+PEP_ShoppingCenter_Galleria_Laz_Man
+PEP_Shoppingcenter_TopMinder
+PEP_Sky-Twintowers_TopMinder
+PEP_skyhigh_Gobarg_Mana
+PEP_Skyscraper_05_Pepps_Tower_Krunch
+PEP_SlavCo_SuperMarket_Hydroponic
+PEP_Split_Level_CraterCreator
+PEP_Storage_ShoNuff
+PEP_Strip_Mall_Large_shops_Hydroponic
+PEP_Subway_NAGG_Rick
+PEP_Supermarket_01_Zyncosa
+PEP_Supermarket_08_Zyncosa
+PEP_SuperStore_Volar
+PEP_TheMill_MoNKeYest1
+PEP_UFO_NAGG_Ryan
+PEP_Utility_Combo_LuckyStar
+PEP_Walcart_Swolk
+PEP_warehouse_NLEagle
+PEP_warehouse_NLEagle
+PEP_WaterPark1_NAGGcommunity
+PEP_WulftownCD_WereWulfen

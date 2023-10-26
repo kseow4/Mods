@@ -1,0 +1,30 @@
+PEP_airport_rundown_gt - Fixed sleeper volumes
+PEP_LumberMill_IceJudge - Fixed sleeper volumes
+PEP_House_AF03R_37x53_Nodabba - Fixed sleeper volumes
+PEP_timbershop_magoli - Fixed sleeper volumes, lowered to T3 (Not enough zombs to justify T4)
+PEP_Airport_01_Zyncosa - Removed duplicate infested loot, T4 > T5 chest and fixed sleeper volumes
+PEP_Apartments_01_Zyncosa - Downgraded to T4 (Not enough zombs to justify T5)
+PEP_Hotel_01_Zyncosa - Downgraded to T4 (Not enough zombs to justify T5), removed T3 chest
+PEP_Hotel_Construction_Site_01_Zyncosa - Replaced T3 chest with hidden stash crate
+PEP_House_04_Zyncosa - Fixed sleeper volume
+PEP_House_05_Zyncosa - removed multiple T3 chests, downgraded end loot chest to T3 and fixed sleeper volume
+PEP_House_06_Zyncosa - removed multiple high tier chests, added a wooden crate and added infested loot + sleepers
+PEP_House_08_Zyncosa - Fixed sleeper volume and added a wooden crate
+PEP_House_09_Zyncosa - replaced T4 chest with hidden stash
+PEP_House_11_Zyncosa - added a wooden crate and replaced high tier chests with hidden stash
+PEP_Industry_01_Zyncosa - Replaced/removed all T3 and T4 chests, added a T5 chest as end loot, added some fetch satchels and fixed sleeper volumes
+PEP_Industry_02_Zyncosa - Replaced/removed all T3 and T4 chests (except end loot), Increased to T3, placed infested loot at the end loot and fixed sleeper volumes
+PEP_Industry_03_Zyncosa - Replaced/removed all T3 and T4 chests, Decreased to T4 (Not enough zombs to justify T5), placed infested loot at the end loot and fixed infested sleepers
+PEP_Industry_04_Zyncosa - Removed T3 chest, made the roof more easily accessible and added T2 end loot
+PEP_Industry_06_Zyncosa - Added T2 end loot and one sleeper volume change
+PEP_Industry_07_Zyncosa - Replaced all T3 chests with random store crates
+PEP_Leisure01_Zyncosa - Decreased to T4 (Not enough zombs to justify T5), Replaced/removed all T3 and T4 chests and one sleeper volume change (tougher group)
+PEP_Supermarket_01_Zyncosa - Removed T3 chest, replaced some store crates with cardboard boxes and fixed sleeper volumes
+PEP_Supermarket_02_Zyncosa - Replaced infested loot to the right tier, replaced some shamway crates with cardboard and increased sleeper difficulty
+PEP_Supermarket_03_Zyncosa - Reduced sleeper count a bit for a tier 1 POI, to compensate increased sleeper difficulty
+PEP_Supermarket_04_Zyncosa - Reduced sleeper count a bit for a tier 1 POI, to compensate increased sleeper difficulty
+PEP_Supermarket_05_Zyncosa - increased sleeper difficulty
+PEP_Supermarket_06_Zyncosa - changed 1 sleeper volume to better fit the POI theme
+PEP_Supermarket_07_Zyncosa - Replaced T4 chest with T2, removed gunsafes and replaced some crates with cardboard
+PEP_Supermarket_08_Zyncosa - Replaced/removed all T3 and T4 chests, added a T5 chest and fixed sleeper volumes (This POI will need a lot more loot balancing)
+PEP_Apaxco_Industrial_(Gouki-KrunchEdit) - Removed T3 chest
