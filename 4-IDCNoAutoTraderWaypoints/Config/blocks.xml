@@ -1,0 +1,10 @@
+<config>
+	<append xpath="/blocks">
+		<block name="TraderWaypointConfig">
+			<property name="Extends" value="terrDesertGround"/>
+			<property name="BlockAll" value="false"/>
+			<property name="AllowRemoval" value="true"/>
+			<property name="BlacklistedTraders" value="npcWhiteRiverScout"/>
+		</block>
+	</append>
+</config>

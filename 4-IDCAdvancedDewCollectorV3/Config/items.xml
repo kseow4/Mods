@@ -1,0 +1,49 @@
+<config>
+	<append xpath="/items">
+		<item name="adcMineralInfuser">
+			<property name="CustomIcon" value="Mineral_Infuser"/>
+			<property name="DescriptionKey" value="adcMineralInfuserDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		<item name="adcAdvancedFilter">
+			<property name="CustomIcon" value="Advanced_Water_Filter"/>
+			<property name="DescriptionKey" value="adcAdvancedFilterDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		<item name="adcLargeCatcher">
+			<property name="CustomIcon" value="Large_Tarp"/>
+			<property name="DescriptionKey" value="adcLargeCatcherDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="750"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		<item name="adcBigBarrel">
+			<property name="CustomIcon" value="Big_Barrel"/>
+			<property name="DescriptionKey" value="adcBigBarrelDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="750"/>
+			<property name="Group" value="Resources"/>
+		</item>
+	</append>
+</config>

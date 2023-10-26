@@ -1,0 +1,89 @@
+<config>
+	<!-- Available colors 
+		barGreen
+		barPurple
+		barRed
+		barBlue
+		barWhite
+		barLightPurple
+		barDarkGreen
+		barLime
+		barPink
+		barOrange
+		barYellow
+		barCyan
+		barBlack
+		barLightBlue
+
+		You can add your own by creating new sprites. See the UIAtlases folder for examples.
+		
+		Custom icons can be specified by appending the property
+			<property name="health_bar_icon" value="<sprite name>"/>
+		to the entities entity class. Sprites must be placed in the UIAtlases/UIAtlas folder.Vanilla sprites will work as well.
+	-->
+
+	<!-- Vanilla passives -->
+	<csv xpath="/entity_classes/entity_class[@name='animalStag']/property[@name='Tags']/@value" delim="," op="add" >chBar,barGreen</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='Tags']/@value" delim="," op="add" >chBar,barGreen</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='Tags']/@value" delim="," op="add" >chBar,barGreen</csv>
+	
+	<!-- Vanilla neutrals -->
+	<csv xpath="/entity_classes/entity_class[@name='animalBoar']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	
+	<!-- Vanilla hostiles -->
+	<csv xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='Tags']/@value" delim="," op="add" >chBar,barRed</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='Tags']/@value" delim="," op="add" >chBar,barRed</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='Tags']/@value" delim="," op="add" >chBar,barRed</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='Tags']/@value" delim="," op="add" >chBar,barRed</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='Tags']/@value" delim="," op="add" >chBar,barRed</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='Tags']/@value" delim="," op="add" >chBar,barRed</csv>
+	
+	<!-- DF neutrals -->
+	<csv xpath="/entity_classes/entity_class[@name='animalSheepMale']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalSheep']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalBull']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalCow']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalGoat']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	<csv xpath="/entity_classes/entity_class[@name='animalGoatFemale']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	<csv xpath="/entity_classes/entity_class[@name='Beefdog']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	<csv xpath="/entity_classes/entity_class[@name='JD']/property[@name='Tags']/@value" delim="," op="add" >chBar,barYellow</csv>
+	
+	<!-- DF Big bois (and girls) -->
+	<csv xpath="/entity_classes/entity_class[@name='Succubus']/property[@name='Tags']/@value" delim="," op="add" >chBar,barPurple</csv>
+	<csv xpath="/entity_classes/entity_class[@name='SuccubusQueen']/property[@name='Tags']/@value" delim="," op="add" >chBar,barPurple</csv>
+	<csv xpath="/entity_classes/entity_class[@name='Incubus']/property[@name='Tags']/@value" delim="," op="add" >chBar,barPurple</csv>
+	<csv xpath="/entity_classes/entity_class[@name='IncubusKing']/property[@name='Tags']/@value" delim="," op="add" >chBar,barPurple</csv>
+	<csv xpath="/entity_classes/entity_class[@name='LordOfHell']/property[@name='Tags']/@value" delim="," op="add" >chBar,barPurple</csv>
+	<csv xpath="/entity_classes/entity_class[@name='DemonBehemoth']/property[@name='Tags']/@value" delim="," op="add" >chBar,barPurple</csv>
+	
+	<!-- Vanilla animals -->
+	<append xpath="/entity_classes/entity_class[@name='animalStag']"><property name="health_bar_icon" value="ui_sprite_game_track_deer"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalBoar']"><property name="health_bar_icon" value="ui_sprite_game_track_boar"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalBear']"><property name="health_bar_icon" value="ui_sprite_game_track_bear"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalZombieBear']"><property name="health_bar_icon" value="ui_sprite_game_track_bear"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalZombieBearDemon']"><property name="health_bar_icon" value="ui_sprite_game_track_bear"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalRabbit']"><property name="health_bar_icon" value="ui_sprite_game_track_rabbit"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalChicken']"><property name="health_bar_icon" value="ui_sprite_game_track_chicken"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalMountainLion']"><property name="health_bar_icon" value="ui_sprite_game_track_mountain_lion"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalSnake']"><property name="health_bar_icon" value="ui_sprite_game_track_snake"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalWolf']"><property name="health_bar_icon" value="ui_sprite_game_track_wolf"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalDireWolf']"><property name="health_bar_icon" value="ui_sprite_game_track_wolf"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalCoyote']"><property name="health_bar_icon" value="ui_sprite_game_track_wolf"/></append>
+	
+	<append xpath="/entity_classes/entity_class[@name='Succubus']"><property name="health_bar_icon" value="ui_game_symbol_twitch_boss_overhead"/></append>
+	<append xpath="/entity_classes/entity_class[@name='SuccubusQueen']"><property name="health_bar_icon" value="ui_game_symbol_twitch_boss_overhead"/></append>
+	<append xpath="/entity_classes/entity_class[@name='Incubus']"><property name="health_bar_icon" value="ui_game_symbol_twitch_boss_overhead"/></append>
+	<append xpath="/entity_classes/entity_class[@name='IncubusKing']"><property name="health_bar_icon" value="ui_game_symbol_twitch_boss_overhead"/></append>
+	<append xpath="/entity_classes/entity_class[@name='LordOfHell']"><property name="health_bar_icon" value="ui_game_symbol_twitch_boss_overhead"/></append>
+	<append xpath="/entity_classes/entity_class[@name='DemonBehemoth']"><property name="health_bar_icon" value="ui_game_symbol_twitch_boss_overhead"/></append>
+	
+	<append xpath="/entity_classes/entity_class[@name='npcTraderBob']"><property name="health_bar_icon" value="npc_bob"/></append>
+	<append xpath="/entity_classes/entity_class[@name='npcTraderJoel']"><property name="health_bar_icon" value="npc_joel"/></append>
+	<append xpath="/entity_classes/entity_class[@name='npcTraderRekt']"><property name="health_bar_icon" value="npc_rekt"/></append>
+	<append xpath="/entity_classes/entity_class[@name='npcTraderHugh']"><property name="health_bar_icon" value="npc_hugh"/></append>
+	<append xpath="/entity_classes/entity_class[@name='npcTraderJen']"><property name="health_bar_icon" value="npc_jen"/></append>
+	
+	<!-- DF animals -->
+	<append xpath="/entity_classes/entity_class[@name='animalHellwolf']"><property name="health_bar_icon" value="ui_sprite_game_track_wolf"/></append>
+	<append xpath="/entity_classes/entity_class[@name='animalZombieBearDemon']"><property name="health_bar_icon" value="ui_sprite_game_track_bear"/></append>
+</config>

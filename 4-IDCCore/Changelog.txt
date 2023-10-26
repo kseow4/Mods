@@ -1,0 +1,39 @@
+[2.2.0]
+- Add config option to disable progression logging.
+- Add ammo box classes. Capable of refilling turret ammo from its inventory.
+- Add storage machine classes. Capable of storing 65,000 stacks of items in a single block.
+- Add console command to give quests to player.
+- Add ability to set zombie move speeds per biome.
+- Add crop trampling options. Configurable via blocks.xml file. Disabled by default
+- Add multi-output recipe functionality. New tab in crafting UI showing outputs.
+- Add block that gives buffs when collided with. 
+
+- Fixed skill points per level mods breaking if individualized progression was disabled.
+- Fixed speed modifiers on passive collectors not working properly.
+- Fix passive collectors being pickable with modifiers on them.
+
+[2.1.1]
+- Add config option to allow trader talk icons to be disabled.
+- Configurable player levels can now use a set amount increase per level for levels not explicitly defined.
+- Add screamer configuration options. Allows for multiple screamers to be spawned when heat in a chunk hits 100.
+
+[2.1.0]
+- Update for compatilibility with A21.1 stable.
+- Passive collectors can now have their sky checks disabled via an xml property.
+- Allow for scout zombies to be gamestaged.
+- Allow for biome zombie spawns to be gamestaged.
+- Config option to prevent zombie spawns inside landclaims.
+- Allow for player levels to require specific xp amounts and allow for variable skill point rewards per level.
+- Passive Collector V2 released. Old collector will remain for now for compatibility purposes. Will be removed in A22.
+
+- Fix passive collector sometimes sharing recipes with other collectors.
+- Fix occasional NRE when opening passive collector.
+
+[2.0.2]
+- Update for compatibility for A21.1b12.
+
+[2.0.1]
+- Fix occasional NullReferenceException in multiplayer.
+
+[2.0.0]
+- Initial public release.

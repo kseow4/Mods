@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="IDCNoAutoTraderWaypoints" />
+	<DisplayName value="I Dont Care No Auto Trader Waypoints"/>
+	<Description value="Prevents those annoying, unremovable waypoints from appearing." />
+	<Author value="I Don't Care" />
+	<Version value="1.1.0" />
+	<Website value="" />
+</xml>

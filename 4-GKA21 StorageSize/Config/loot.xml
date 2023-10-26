@@ -1,0 +1,8 @@
+<Gouki>
+
+    <!-- PlayerStorage 8x6 - StorageCrate 8x9 - PlayerDrawer 8x9 -->
+    <set xpath="/lootcontainers/lootcontainer[@name='playerStorage']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='storageCrate']/@size">10,9</set>
+    <set xpath="/lootcontainers/lootcontainer[@name='playerDrawer']/@size">10,9</set>
+	
+</Gouki>

@@ -1,0 +1,25 @@
+<config>
+<set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
+	<set xpath="/windows/window[@name='windowTargetBar']">
+		<rect pos="-267,-120" width="725" height="25" visible="{isnotboss}"> 
+			<!-- <sprite depth="1" name="border" color="0,0,0,180" type="sliced" width="400" globalopacity="false"/> -->
+			<sprite pos="60,-45" width="448" depth="1" name="border" color="0,0,0,255" type="sliced"  globalopacity="false"/>
+			<filledsprite pos="60,-45" width="448" depth="2" name="BarContent" type="filled" fill="{fill}" globalopacity="false" sprite="{bar_sprite}" />
+			<sprite depth="3" name="Icon" size="84,84" pos="40,-42" pivot="center" sprite="{variable_sprite}" globalopacity="false" />
+			<sprite depth="4" name="overlay" width="514" height="83" type="sliced" globalopacity="false" sprite="ui_game_symbol_health_bar_idc" />
+			<label depth="5" name="TextContent" pos="515,-13" font_size="25" color="[white]" justify="right" pivot="topright" text="{currentwithmax}" height="30"/>
+			<label depth="5" name="TextContent" pos="83,-13" font_size="25" color="[white]" justify="left" pivot="topleft" text="{name}" height="30" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2"/>
+		</rect>
+		
+		<rect pos="-267,-120" width="725" height="25" visible="{isboss}" >
+			<!-- <sprite depth="1" name="border" color="0,0,0,180" type="sliced" width="400" globalopacity="false"/> -->
+			<sprite pos="60,-45" width="448" depth="1" name="border" color="0,0,0,255" type="sliced"  globalopacity="false"/>
+			<filledsprite pos="60,-45" width="448" depth="2" name="BarContent" type="filled" fill="{fill}" globalopacity="false" sprite="ui_game_symbol_twitch_boss_bar_HP" />
+			<sprite depth="3" name="Icon" size="84,84" pos="45,-42" pivot="center" sprite="{boss_sprite}" globalopacity="false" />
+			<sprite depth="4" name="overlay" width="517" height="84" type="sliced" globalopacity="false" sprite="ui_game_symbol_twitch_boss_bar" />
+			
+			<label depth="5" name="TextContent" pos="100,-13" font_size="30" color="[white]" justify="left" pivot="topleft" text="{name}" height="30" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2"/>
+			<label depth="5" name="MinionCount" pos="482,-13" font_size="30" color="[white]" justify="left" pivot="topleft" text="x{minioncount}" height="30" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
+		</rect>
+	</set>
+</config>

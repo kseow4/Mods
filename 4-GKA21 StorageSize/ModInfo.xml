@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="StorageSize"/>
+	<DisplayName value="GK StorageSize"/>
+    <Description value="Increased secure storage chest and box generic to 90"/>
+    <Author value="Gouki"/>
+    <Version value="0.1"/>
+	<Website value=""/>
+</xml>
