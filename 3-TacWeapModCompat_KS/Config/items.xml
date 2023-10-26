@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+    <append xpath="/items/item/property[@name='Tags' and contains(@value, 'perkGunslinger') and contains(@value, 'ranged') and contains(@value, 'pistol')]/@value">sideAttachments,smallTopAttachments,ammo,brassCatcher,pistolCrafting,drumMagazine,bottomAttachments,fasterFireRate</append>
+    <append xpath="/items/item/property[@name='Tags' and contains(@value, 'perkDeadEye') and contains(@value, 'ranged')]/@value">sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,ammo,brassCatcher,firingMode,drumMagazine,rifleCrafting,fasterFireRate</append>
+    <append xpath="/items/item/property[@name='Tags' and contains(@value, 'perkMachineGunner') and contains(@value, 'ranged')]/@value">sideAttachments,smallTopAttachments,mediumTopAttachments,ammo,brassCatcher,stock,perkAutomaticWeapons,autoCrafting,perkBetterLeadThanDead,firingMode,fasterFireRate</append>
+    <append xpath="/items/item/property[@name='Tags' and contains(@value, 'perkBoomstick') and contains(@value, 'ranged') and contains(@value, 'shotgun')]/@value">sideAttachments,smallTopAttachments,ammo,shotgunCrafting,perkShotgunMessiah</append>
+</configs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="TacticalWeaponsModCompatibility_KS"/>
+        <Description value="Added compatibility with vanilla weapon mods."/>
+        <Author value="Kyle Seow"/>
+        <Version value="1.1.0"/>
+    </ModInfo>
+</xml>

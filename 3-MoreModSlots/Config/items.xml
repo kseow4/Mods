@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MoreModSlots>
+    <!-- Melee Items -->
+    <set xpath="/items/item[starts-with(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots' and @value='1']/@tier">1,10</set>
+    <set xpath="/items/item[starts-with(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots' and @value='2']/@tier">11,20</set>
+    <set xpath="/items/item[starts-with(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots' and @value='3']/@tier">21,30</set>
+    <set xpath="/items/item[starts-with(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots' and @value='4']/@tier">31,40</set>
+    <set xpath="/items/item[starts-with(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots' and @value='5']/@tier">41,50</set>
+    <set xpath="/items/item[starts-with(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots' and @value='6']/@tier">51,60</set>
+    <set xpath="/items/item[starts-with(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots' and @value='7']/@tier">61,70</set>
+    <set xpath="/items/item[starts-with(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots' and @value='8']/@tier">71,80</set>
+
+    <!-- Gun Items -->
+    <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots' and @value='1']/@tier">1,10</set>
+    <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots' and @value='2']/@tier">11,20</set>
+    <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots' and @value='3']/@tier">21,30</set>
+    <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots' and @value='4']/@tier">31,40</set>
+    <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots' and @value='5']/@tier">41,50</set>
+    <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots' and @value='6']/@tier">51,60</set>
+    <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots' and @value='7']/@tier">61,70</set>
+    <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots' and @value='8']/@tier">71,80</set>
+    
+    <!-- Armor Items -->
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots' and @value='1']/@tier">1,10</set>
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots' and @value='2']/@tier">11,20</set>
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots' and @value='3']/@tier">21,30</set>
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots' and @value='4']/@tier">31,40</set>
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots' and @value='5']/@tier">41,50</set>
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots' and @value='6']/@tier">51,60</set>
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots' and @value='7']/@tier">61,70</set>
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots' and @value='8']/@tier">71,80</set>
+
+    <!-- <set xpath="/items/item[starts-with(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2</set>
+    <set xpath="/items/item[starts-with(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6,7,8,9</set> -->
+</MoreModSlots>      
