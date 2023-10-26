@@ -1,0 +1,11 @@
+# ignore .log files
+*.log
+
+
+
+# ***** DarknessFallsCore ***** #
+
+0-DarknessFallsCore/Assets/
+0-DarknessFallsCore/Worlds/
+
+# ***************************** #

@@ -1,0 +1,14 @@
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='1,4']/@tags">,vehicleDirtBikeChassis,vehicleDirtBikeParts,vehicleUAZ452chassis</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='2,4']/@tags">,vehicleNovachassis,vehicleNovaaccessories</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,4']/@tags">,vehicleCruiserChassis,vehicleCruiserbars,vehicleJunkerChassis,vehicleJunkerbars,vehicleRatChassis,vehicleRatbars,vehicleOldSemichassis,vehicleOldSemibody,vehicleWorkTruckchassis,vehicleWorkTruckaccessories</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='4']/@tags">,vehicleChargerchassis,vehicleChargeraccessories,vehiclePickupchassis,vehiclePickupaccessories,vehicleGNXaccessories,vehicleGNXchassis</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterMechanic']/effect_group/passive_effect[@level='1']/@tags">,vehicleBoxTruckbody,vehicleBoxTruckchassis,vehicleBoxTruckPlainplaceable,vehicleBuggychassis,vehicleBuggyaccessories,vehicleBuggyplaceable,vehicleHumveechassis,vehicleHumveebody,vehicleHumveeplaceable,vehicleHumveeToplessplaceable,vehicleStallionchassis,vehicleStallionaccessories,vehicleStalliongreenplaceable,vehicleStallionredplaceable,vehicleStallionblueplaceable,vehicleStallionwhiteplaceable,vehicleMarauderchassis,vehicleMarauderaccessories,vehicleMarauderplaceable,vehicleMarauderblackplaceable</append>
+
+	<append xpath="/progression/perks/perk[@name='perkCraftWeaponBlunt']/effect_group/passive_effect[@level='1']/@tags">,meleeGolfClub</append>
+	<append xpath="/progression/perks/perk[@name='perkCraftWeaponBlunt']/effect_group/passive_effect[@level='2']/@tags">,meleeGolfClub</append>
+	<append xpath="/progression/perks/perk[@name='perkCraftWeaponBlunt']/effect_group/passive_effect[@level='3']/@tags">,meleeGolfClub</append>
+	<append xpath="/progression/perks/perk[@name='perkCraftWeaponBlunt']/effect_group/passive_effect[@level='4']/@tags">,meleeGolfClub</append>
+	<append xpath="/progression/perks/perk[@name='perkCraftWeaponBlunt']/effect_group/passive_effect[@level='5']/@tags">,meleeGolfClub</append>	
+</configs>
