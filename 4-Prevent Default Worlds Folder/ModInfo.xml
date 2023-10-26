@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="PreventDefaultWorldsFolder" />
+	<DisplayName value="Prevent Default Worlds Folder"/>
+	<Description value="Prevents worlds inside Data/Worlds folder from loading." />
+	<Author value="I Don't Care" />
+	<Version value="1.0" />
+	<Website value="" />
+</xml>
