@@ -1,0 +1,8 @@
+# ignore .log files
+*.log
+
+# ignore Assets folder
+Assets/
+
+# ignore Worlds folder
+Worlds/
