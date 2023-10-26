@@ -1,0 +1,9 @@
+<BadKarma>
+	<append xpath="/recipes">
+		<recipe name="Sniper Rifle Turret" count="1"  craft_area="workbench" craft_time="90">
+			<ingredient name="motionsensor" count="1"/>
+			<ingredient name="gunRifleT1HuntingRifleParts" count="4"/>
+		</recipe>
+	</append>
+</BadKarma>
+
