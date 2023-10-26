@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+		<append xpath="/item_modifiers">
+		
+	<item_modifier name="HoloBurrisSightMod" installable_tags="pstscp1" modifier_tags="scope" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="HoloBurrisSightMod"/>
+        <property name="HoldType" value="1"/>
+        <property name="HandMeshfile" value="#@modfolder:Resources/alt?BurrisSightPrefab"/>
+        <property name="UnlockedBy" value="modGunReflexSightSchematic"/>
+        <item_property_overrides name="*">
+            <property name="Zoom_max_out" value="55"/>
+            <property name="Zoom_max_in" value="55"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2MK23">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0105,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT1Colt1911">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0065,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2USP9">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0055,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT1P99">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0055,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3Beretta93R">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0125,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3Glock18c">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0075,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3DesertEagle">
+            <property name="ScopeCameraOffset" value="0,-0.0155,0.1"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3RagingBull">
+            <property name="ScopeCameraOffset" value="0,-0.0072,0.1"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT2M4Super90">
+            <property name="ScopeCameraOffset" value="0,-0.019,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT3Saiga12K">
+            <property name="ScopeCameraOffset" value="0,0.015,0.24"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?BurrisSightPrefab" parent_transform="Attachments/Scope"/>
+        </effect_group>
+        <property name="PickupJournalEntry" value="augmentGunsTip"/>
+    </item_modifier>
+    
+    <item_modifier name="HoloRMRSightMod" installable_tags="pstscp1" modifier_tags="scope" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="HoloRMRSightMod"/>
+        <property name="HoldType" value="1"/>
+        <property name="HandMeshfile" value="#@modfolder:Resources/alt?RMRSightPrefab"/>
+        <property name="UnlockedBy" value="modGunReflexSightSchematic"/>
+        
+        <item_property_overrides name="*">
+            <property name="Zoom_max_out" value="55"/>
+            <property name="Zoom_max_in" value="55"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2MK23">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0095,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT1Colt1911">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0055,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2USP9">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0045,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT1P99">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0045,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3Beretta93R">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0125,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3Glock18c">
+            <property name="ScopeCameraOffset" value="-0.0005,-0.0065,0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3DesertEagle">
+            <property name="ScopeCameraOffset" value="0,-0.0105,0.1"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3RagingBull">
+            <property name="ScopeCameraOffset" value="0,-0.0062,0.1"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT2M4Super90">
+            <property name="ScopeCameraOffset" value="0,-0.018,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT3Saiga12K">
+            <property name="ScopeCameraOffset" value="0,0.016,0.24"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?RMRSightPrefab" parent_transform="Attachments/Scope"/>
+        </effect_group>
+        <property name="PickupJournalEntry" value="augmentGunsTip"/>
+    </item_modifier>
+        
+    <item_modifier name="HoloAimpointCompM3Mod" installable_tags="rifscp1" modifier_tags="scope,rifscp1" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="HoloAimpointCompM3Mod"/>
+        <property name="HoldType" value="1"/>
+        <property name="HandMeshfile" value="#@modfolder:Resources/alt?AimpointM3Prefab"/>
+        <property name="UnlockedBy" value="modGunReflexSightSchematic"/>
+        
+        <item_property_overrides name="*">
+            <property name="Zoom_max_out" value="55"/>
+            <property name="Zoom_max_in" value="55"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT2M4Super90">
+            <property name="ScopeCameraOffset" value="0,-0.0365,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT3Saiga12K">
+            <property name="ScopeCameraOffset" value="0,-0.013,0.24"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5N">
+            <property name="ScopeCameraOffset" value="0,-0.0199,0.15"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5SD">
+            <property name="ScopeCameraOffset" value="0,-0.013,-0.13"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2UMP">
+            <property name="ScopeCameraOffset" value="0,-0.007,-0.1"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3KRISS_Vector">
+            <property name="ScopeCameraOffset" value="0,-0.0258,0.1"/>
+            <property name="ScopeRotation" value="0,0,0">
+                <requirement name="CVarCompare" cvar="_Aiming" operation="NE" value="0"/>
+            </property>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M4A1">
+            <property name="ScopeCameraOffset" value="-0.001,-0.0337,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2HK416">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?hk416FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0302,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2ACR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?acrFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0239,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3AUG_A3">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?AUGA3FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0372,0.37"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3G36KV">
+            <property name="ScopeCameraOffset" value="0,-0.035,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_L">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarLFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0219,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M16A4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M16FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0347,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_H">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarHFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0314,0.32"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SA58OSW">
+            <property name="ScopeCameraOffset" value="0,-0.0119,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M249">
+            <property name="ScopeCameraOffset" value="0,-0.0240,0.3"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M60E4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M60E4FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0765,0.25"/>
+            <!--property name="ScopeCameraOffset" value="0,-0.00765,0.25"/-->
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3Kar98K">
+            <property name="ScopeCameraOffset" value="0,-0.0051,0.0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="ScopeCameraOffset" value="0,-0.0247,0.12"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunExplosivesT3MGL140">
+            <property name="ScopeCameraOffset" value="0,-0.042,0.25"/>
+        </item_property_overrides>
+        
+        <effect_group tiered="false">
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?AimpointM3Prefab" parent_transform="Attachments/Scope" >
+                <requirement name="!HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?AimpointM3Prefab" parent_transform="PicRail/Scope" >
+                <requirement name="HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+        </effect_group>
+    </item_modifier>
+    
+    <item_modifier name="HoloEOTech558Mod" installable_tags="rifscp1" modifier_tags="scope,rifscp1" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="HoloEOTech558Mod"/>
+		<property name="HoldType" value="1"/>
+        <property name="HandMeshfile" value="#@modfolder:Resources/alt?EOTechPrefab"/>
+        <property name="UnlockedBy" value="modGunReflexSightSchematic"/>
+        
+        <item_property_overrides name="*">
+            <property name="Zoom_max_out" value="55"/>
+            <property name="Zoom_max_in" value="55"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT2M4Super90">
+            <property name="ScopeCameraOffset" value="0,-0.0388,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT3Saiga12K">
+            <property name="ScopeCameraOffset" value="0,-0.013,0.24"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5N">
+            <property name="ScopeCameraOffset" value="0,-0.0204,0.15"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5SD">
+            <property name="ScopeCameraOffset" value="0,-0.013,-0.13"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2UMP">
+            <property name="ScopeCameraOffset" value="0,-0.0363,0.15"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3KRISS_Vector">
+            <property name="ScopeCameraOffset" value="0,-0.0258,0.1"/>
+            <property name="ScopeRotation" value="0,0,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M4A1">
+            <property name="ScopeCameraOffset" value="-0.001,-0.0337,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2HK416">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?hk416FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0302,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2ACR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?acrFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0239,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3AUG_A3">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?AUGA3FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0372,0.37"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3G36KV">
+            <property name="ScopeCameraOffset" value="0,-0.035,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_L">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarLFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.022,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M16A4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M16FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0347,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_H">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarHFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.03144,0.32"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SA58OSW">
+            <property name="ScopeCameraOffset" value="0,-0.0121,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M249">
+            <property name="ScopeCameraOffset" value="0,-0.0240,0.3"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M60E4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M60E4FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0765,0.25"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3Kar98K">
+            <property name="ScopeCameraOffset" value="0,-0.0060,0.0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="ScopeCameraOffset" value="0,-0.0252,0.12"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunExplosivesT3MGL140">
+            <property name="ScopeCameraOffset" value="0,-0.0442,0.25"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?EOTechPrefab" parent_transform="Attachments/Scope">
+                <requirement name="!HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?EOTechPrefab" parent_transform="PicRail/Scope" >
+                <requirement name="HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+        </effect_group>
+    </item_modifier>
+        
+    <item_modifier name="AN/WeaponNightvisionGogglesScopePVS22Mod" installable_tags="scope,rifscp3" modifier_tags="rifscp3" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="WeaponNightvisionGogglesScopePVS22Mod"/>
+        <property name="HoldType" value="1"/>
+        <property name="Meshfile" value="#@modfolder:Resources/alt?PVS22Prefab"/>
+        <property name="UnlockedBy" value="AdvancedScopesModSchematic"/>
+        <item_property_overrides name="*">
+            <property name="Zoom_max_out" value="55"/>
+            <property name="Zoom_max_in" value="55"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT2M4Super90">
+            <property name="ScopeCameraOffset" value="0,-0.047,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT3Saiga12K">
+            <property name="ScopeCameraOffset" value="0,-0.013,0.24"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5N">
+            <property name="ScopeCameraOffset" value="0,-0.0199,0.15"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5SD">
+            <property name="ScopeCameraOffset" value="0,-0.0199,0.15"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2UMP">
+            <property name="ScopeCameraOffset" value="0,-0.0383,0.15"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M4A1">
+            <property name="ScopeCameraOffset" value="-0.001,-0.0337,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2HK416">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?hk416FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0302,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2ACR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?acrFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0239,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3AUG_A3">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?AUGA3FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0372,0.37"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3G36KV">
+            <property name="ScopeCameraOffset" value="0,-0.035,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_L">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarLFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.022,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M16A4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M16FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0347,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_H">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarHFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0314,0.32"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SA58OSW">
+            <property name="ScopeCameraOffset" value="0,-0.0121,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M249">
+            <property name="ScopeCameraOffset" value="0,-0.0240,0.3"/>
+        </item_property_overrides>
+        <item_property_overrides name="M60">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M60FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0765,0.35"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3Kar98K">
+            <property name="ScopeCameraOffset" value="0,-0.0051,0.0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="ScopeCameraOffset" value="0,-0.0247,0.12"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunExplosivesT3MGL140">
+            <property name="ScopeCameraOffset" value="0,-0.0442,0.25"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?PVS22Prefab" parent_transform="Attachments/Scope"/>
+            <triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachments" transform_path="NVS"/>
+            <triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachments" transform_path="NVSB"/>
+            <triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="Attachments" transform_path="NVSP"/>
+            <triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="CameraVision"/>
+        </effect_group>
+    </item_modifier>
+        
+    <item_modifier name="Reflex+ScopeEOTech-ECOSMod" installable_tags="rifscp2" modifier_tags="scope,rifscp2" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="Reflex+ScopeEOTech-ECOSMod"/>		
+        <property name="HoldType" value="1"/>
+        <property name="Meshfile" value="#@modfolder:Resources/alt?G33Prefab"/>
+        <property name="UnlockedBy" value="AdvancedScopesModSchematic"/>
+        <property name="Material" value="Mmetal"/>
+        <item_property_overrides name="*">
+            <property name="Zoom_max_out" value="50"/>
+            <property name="Zoom_max_in" value="50"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M4A1">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?m4FSPrefab"/>
+            <property name="ScopeOffset" value="0,0.1105,-0.118"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0337,-0.02"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2HK416">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?hk416FSPrefab"/>
+            <property name="ScopeOffset" value="0,0.107,-0.118"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0302,-0.02"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2ACR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?acrFSPrefab"/>
+            <property name="ScopeOffset" value="0,0.0925,-0.118"/>
+            <property name="ScopeCameraOffset" value="0,-0.0219,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3AUG_A3">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?AUGA3FSPrefab"/>
+            <property name="ScopeOffset" value="0,0.1083,-0.205"/>
+            <property name="ScopeCameraOffset" value="0,-0.0372,0.37"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3G36KV">
+            <property name="ScopeOffset" value="0,0.1032,-0.104"/>
+            <property name="ScopeCameraOffset" value="0,-0.035,0.27"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_L">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarLFSPrefab"/>
+            <property name="ScopeOffset" value="0,0.0914,-0.148"/>
+            <property name="ScopeCameraOffset" value="0,-0.022,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M16A4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M16FSPrefab"/>
+            <property name="ScopeOffset" value="0,0.1115,-0.116"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0347,-0.02"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_H">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarHFSPrefab"/>
+            <property name="ScopeOffset" value="0,0.101,-0.158"/>
+            <property name="ScopeCameraOffset" value="0,-0.0314,0.32"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SA58OSW">
+            <property name="ScopeOffset" value="0,0.0813,-0.145"/>
+            <property name="ScopeCameraOffset" value="0,-0.0119,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="ScopeOffset" value="0,0.089,0.045"/>
+            <property name="ScopeCameraOffset" value="0,-0.0248,0.12"/>
+        </item_property_overrides>
+        <effect_group tiered="false" >
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="G33Mag"/>
+        </effect_group>
+        <!--effect_group tiered="false">
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+            <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.15">
+                <requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+            </passive_effect>
+        </effect_group-->
+        <property name="PickupJournalEntry" value="augmentGunsTip"/>
+        <property name="Group" value="Ammo/Weapons"/>
+    </item_modifier>
+    
+    <item_modifier name="Scope4xACOG_TA31Mod" installable_tags="rifscp1" modifier_tags="scope,rifscp1,rifscp2" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="Scope4xACOG_TA31Mod"/>		
+        <property name="HoldType" value="1"/>
+        <property name="Meshfile" value="#@modfolder:Resources/alt?ACOGTA31Prefab"/>
+        <property name="UnlockedBy" value="modGunScopeMediumSchematic"/>
+        <property class="Action0">
+            <property name="Class" value="Eat"/>
+            <property name="Delay" value="1.0"/>
+            <property name="Use_time" value="..."/>
+            <property name="Sound_start" value=""/>
+            <property name="Create_item" value="Scope2xACOG_TA31_BACMod"/>
+        </property>
+        <property class="Action1">
+            <property name="Class" value="Eat"/>
+            <property name="Delay" value="1.0"/>
+            <property name="Use_time" value="..."/>
+            <property name="Sound_start" value=""/>
+            <property name="Create_item" value="Scope2xACOG_TA31_BACMod"/>
+        </property>
+        <item_property_overrides name="*">
+            <property name="Zoom_overlay" value=""/>
+            <property name="Zoom_max_out" value="50"/>
+            <property name="Zoom_max_in" value="50"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT2M4Super90">
+            <property name="ScopeCameraOffset" value="0,-0.047,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT3Saiga12K">
+            <property name="ScopeCameraOffset" value="0,-0.013,0.24"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5N">
+            <property name="ScopeCameraOffset" value="0,-0.013,-0.13"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5SD">
+            <property name="ScopeCameraOffset" value="0,-0.0219,0.15"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2UMP">
+            <property name="ScopeCameraOffset" value="0,-0.0113,-0.1"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M4A1">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?m4FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0337,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2HK416">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?hk416FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0302,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2ACR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?acrFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0239,0.25"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3AUG_A3">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?AUGA3FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0372,0.34"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3G36KV">
+            <property name="ScopeCameraOffset" value="0,-0.035,0.25"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_L">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarLFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0221,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M16A4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M16FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0347,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_H">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarHFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0314,0.29"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SA58OSW">
+            <property name="ScopeCameraOffset" value="0,-0.0121,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M249">
+            <property name="ScopeCameraOffset" value="0,-0.0240,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M60E4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M60E4FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0765,0.23"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3Kar98K">
+            <property name="ScopeCameraOffset" value="0,-0.0060,0.0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3KRISS_Vector">
+            <property name="ScopeCameraOffset" value="0,-0.025,0.0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="ScopeCameraOffset" value="0,-0.0247,0.09"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.01"/>
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?ACOGTA31Prefab" parent_transform="Attachments/Scope">
+                <requirement name="!HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?ACOGTA31Prefab" parent_transform="PicRail/Scope">
+                <requirement name="HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+        </effect_group>
+    </item_modifier>
+    
+    <item_modifier name="Scope2xACOG_TA01Mod" installable_tags="rifscp1" modifier_tags="scope,rifscp1,rifscp2" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="Scope2xACOG_TA01Mod"/>		
+        <property name="HoldType" value="1"/>
+        <property name="Meshfile" value="#@modfolder:Resources/alt?ACOGTA01Prefab"/>
+        <property name="UnlockedBy" value="modGunScopeSmallSchematic"/>
+        <item_property_overrides name="*">
+            <property name="Zoom_overlay" value=""/>
+            <property name="Zoom_max_out" value="50"/>
+            <property name="Zoom_max_in" value="50"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT2M4Super90">
+            <property name="ScopeCameraOffset" value="0,-0.047,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunShotgunT3Saiga12K">
+            <property name="ScopeCameraOffset" value="0,-0.013,0.24"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5N">
+            <property name="ScopeCameraOffset" value="0,-0.0219,0.15"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3MP5SD">
+            <property name="ScopeCameraOffset" value="0,-0.013,-0.13"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT2UMP">
+            <property name="ScopeCameraOffset" value="0,-0.0113,-0.1"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M4A1">
+            <property name="ScopeCameraOffset" value="-0.001,-0.0337,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2HK416">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?hk416FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0302,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2ACR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?acrFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0238,0.24"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3AUG_A3">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?AUGA3FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0372,0.33"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3G36KV">
+            <property name="ScopeCameraOffset" value="0,-0.0349,0.24"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_L">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarLFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0219,0.27"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M16A4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M16FSPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0347,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_H">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarHFSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0311,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SA58OSW">
+            <property name="ScopeCameraOffset" value="0,-0.0119,0.27"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M249">
+            <property name="ScopeCameraOffset" value="0,-0.0240,0.27"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M60E4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M60E4FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0765,0.23"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3Kar98K">
+            <property name="ScopeCameraOffset" value="0,-0.0060,0.0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunHandgunT3KRISS_Vector">
+            <property name="ScopeCameraOffset" value="0,-0.025,0.0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="ScopeCameraOffset" value="0,-0.0247,0.08"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.01"/>
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?ACOGTA01Prefab" parent_transform="Attachments/Scope">
+                <requirement name="!HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?ACOGTA01Prefab" parent_transform="PicRail/Scope" >
+                <requirement name="HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+        </effect_group>
+    </item_modifier>
+        
+    <item_modifier name="Reflex+ScopeACOGECOSMod" installable_tags="rifscp2" modifier_tags="scope,rifscp1,rifscp2" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="Reflex+ScopeACOGECOSMod"/>		
+        <property name="HoldType" value="1"/>
+        <property name="Meshfile" value="#@modfolder:Resources/alt?ACOGECPrefab"/>
+		<property name="UnlockedBy" value="AdvancedScopesModSchematic"/>
+        <item_property_overrides name="*">
+            <property name="Zoom_overlay" value=""/>
+            <property name="Zoom_max_out" value="50"/>
+            <property name="Zoom_max_in" value="50"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M4A1">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?m4AEPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0337,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2HK416">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?hk416AEPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0302,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2ACR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?acrAEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0651,0.23"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3AUG_A3">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?AUGA3AEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0782,0.32"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3G36KV">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?G36KVAEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0761,0.23"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_L">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarLAEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0632,0.26"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M16A4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?m16AEPrefab"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0347,-0.05"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_H">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarHAEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0722,0.27"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SA58OSW">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?SA58AEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0531,0.26"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?m14AEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0657,0.07"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+        </effect_group>
+        <effect_group tiered="false">
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.05"/>
+            <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.15">
+                <requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+            </passive_effect>
+        </effect_group>
+        <property name="PickupJournalEntry" value="augmentGunsTip"/>
+        <property name="Group" value="Ammo/Weapons"/>
+    </item_modifier>
+        
+    <item_modifier name="SniperReflex+ScopeLeupoldCQBSSMod" installable_tags="rifscp1,snpscp1" blocked_tags="shotgun,smg" modifier_tags="scope,rifscp1,rifscp2,snpscp1" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="SniperReflex+ScopeLeupoldCQBSSMod"/>		
+        <property name="HoldType" value="1"/>
+        <property name="Meshfile" value="#@modfolder:Resources/alt?cqbssPrefab"/>
+        <property name="UnlockedBy" value="modGunScopeLargeSchematic"/>
+        <item_property_overrides name="*">
+            <property name="Zoom_overlay" value=""/>
+            <property name="Zoom_max_out" value="30"/>
+            <property name="Zoom_max_in" value="30"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M4A1">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?m4FSPrefab"/>
+            <property name="ScopeOffset" value="0,0.1135,-0.0326"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0337,-0.08"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2HK416">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?hk416FSPrefab"/>
+            <property name="ScopeOffset" value="0,0.11,-0.0315"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0302,-0.08"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT2ACR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?acrFSPrefab"/>
+            <property name="ScopeOffset" value="0,0.0921,-0.1"/>
+            <property name="ScopeCameraOffset" value="0,-0.0241,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3AUG_A3">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?AUGA3FSPrefab"/>
+            <property name="ScopeOffset" value="0,0.108,-0.19"/>
+            <property name="ScopeCameraOffset" value="0,-0.0373,0.37"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3G36KV">
+            <property name="ScopeOffset" value="0,0.1032,-0.10"/>
+            <property name="ScopeCameraOffset" value="0,-0.0352,0.28"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_L">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarLFSPrefab"/>
+            <property name="ScopeOffset" value="0,0.091,-0.13"/>
+            <property name="ScopeCameraOffset" value="0,-0.0221,0.31"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M16A4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M16FSPrefab"/>
+            <property name="ScopeOffset" value="0,0.1145,-0.03"/>
+            <property name="ScopeCameraOffset" value="-0.001,-0.0347,-0.08"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SCAR_H">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?scarHFSPrefab"/>
+            <property name="ScopeOffset" value="0,0.1005,-0.14"/>
+            <property name="ScopeCameraOffset" value="0,-0.0317,0.32"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3SA58OSW">
+        <property name="ScopeOffset" value="0,0.081,-0.141"/>
+            <property name="ScopeCameraOffset" value="0,-0.0121,0.32"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M60E4">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?M60E4FSPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0765,0.33"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3Kar98K">
+            <property name="ScopeOffset" value="0,0.0865,0.15"/>
+            <property name="ScopeCameraOffset" value="0,-0.007,0.0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="ScopeCameraOffset" value="0,-0.0249,0.18"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3M110">
+            <property name="ScopeCameraOffset" value="0,-0.0414,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT2AWP">
+            <property name="ScopeCameraOffset" value="0,-0.0264,-0.03"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3M82a1">
+            <property name="ScopeCameraOffset" value="0,-0.0568,0.01"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-0.01"/>
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?cqbssPrefab" parent_transform="Attachments/Scope">
+                <requirement name="!HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/alt?cqbssPrefab" parent_transform="PicRail/Scope">
+                <requirement name="HoldingItemHasTags" tags="topr"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Vscope"/>
+        </effect_group>
+    </item_modifier>
+                
+    <item_modifier name="SniperReflex+ScopeCQBSSECOSMod" installable_tags="snpscp2" modifier_tags="scope,rifscp1,rifscp2,snpscp1,snpscp2" type="attachment">
+        <property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="SniperReflex+ScopeCQBSSECOSMod"/>		
+        <property name="HoldType" value="1"/>
+        <property name="Meshfile" value="#@modfolder:Resources/alt?CQBECPrefab"/>
+        <property name="UnlockedBy" value="AdvancedScopesModSchematic"/>
+        <item_property_overrides name="*">
+            <property name="Zoom_overlay" value=""/>
+            <property name="Zoom_max_out" value="30"/>
+            <property name="Zoom_max_in" value="30"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunMGT3M14EBR">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?m14CEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0249,0.18"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT3M110">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?m110CEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0414,0"/>
+        </item_property_overrides>
+        <item_property_overrides name="gunRifleT2AWP">
+            <property name="Meshfile" value="#@modfolder:Resources/alt?awpCEPrefab"/>
+            <property name="ScopeCameraOffset" value="0,-0.0264,-0.03"/>
+        </item_property_overrides>
+        <effect_group tiered="false">
+            <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-0.02">
+                <requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+            </passive_effect>
+            <passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+            <triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="true" parent_transform="CQBEC" transform_path="CameraVision"/>
+            <triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="false" parent_transform="CQBEC" transform_path="CameraVision"/>
+        </effect_group>
+        <property name="Group" value="Ammo/Weapons"/>
+    </item_modifier> 
+		
+	<item_modifier name="WeaponFlashlightLAMMod" installable_tags="pstsid1" modifier_tags="sideAttachments" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="WeaponFlashlightLAMMod"/>		
+		<property name="Material" value="Msteel"/>
+		<property name="LightValue" value="0.7"/>
+		<property name="UnlockedBy" value="AdvancedScopesModSchematic"/>
+		<effect_group tiered="false"><!-- Flashlight and laser models for everything else -->
+			<requirement name="!HoldingItemHasTags" tags="pistol"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="flashlight"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="dust"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="glow"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="dust"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="glow"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="gun_laserS"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="LaserlightS"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="Attachments" transform_path="LaserlightS"/>
+		</effect_group>
+		<effect_group tiered="false"><!-- special combined flashlight and laser model for pistols -->
+			<requirement name="HoldingItemHasTags" tags="pistol"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="gun_laser"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="gun_laser" transform_path="light"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="gun_laser" transform_path="light"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="gun_laser" transform_path="laser"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="gun_laser" transform_path="laser"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="TAFlashLightMod(pistol)" installable_tags="pstsid2" modifier_tags="sideAttachments" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="TAFlashLightMod" />
+		<property name="Material" value="Msteel"/>
+		<property name="LightValue" value="0.7"/>
+		<property name="UnlockedBy" value="modGunFlashlightSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="flashlight"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="dust"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="glow"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="dust"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="glow"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="TALaserSightMod(pistol)" installable_tags="pstsid2" modifier_tags="sideAttachments" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="TALaserSightMod" />
+		<property name="Material" value="Msteel"/>
+		<property name="UnlockedBy" value="modGunLaserSightSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="gun_laserS"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="LaserlightS"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="Attachments" transform_path="LaserlightS"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="TAFlashLightMod(barrel)" installable_tags="brl" modifier_tags="sideAttachment" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="TAFlashLightMod" />
+		<property name="Material" value="Msteel"/>
+		<property name="LightValue" value="0.7"/>
+		<property name="UnlockedBy" value="modGunFlashlightSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="flashlight"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="dust"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="flashlight" transform_path="glow"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="dust"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="flashlight" transform_path="glow"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="TALaserSightMod(barrel)" installable_tags="brl" modifier_tags="sideAttachment" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="TALaserSightMod" />
+		<property name="Material" value="Msteel"/>
+		<property name="UnlockedBy" value="modGunLaserSightSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="gun_laserS"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="LaserlightS"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformActive" active="true" parent_transform="Attachments" transform_path="LaserlightS"/>
+		</effect_group>
+	</item_modifier>
+		
+	<item_modifier name="WeaponLight+LaserANPEQ15Mod" installable_tags="rifsid1" modifier_tags="rifsid1,topr,sideAttachment" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="WeaponLight+LaserANPEQ15Mod"/>		
+		<property name="LightValue" value="0.7"/>
+		<property name="UnlockedBy" value="modGunFlashlightSchematic"/>
+		<item_property_overrides name="gunMGT3M4A1">
+			<property name="SideRotation" value="-3.2,0,0"/>
+			<property name="SideOffset" value="0,0.117,0.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT2HK416">
+			<property name="SideRotation" value="-3.2,0,0"/>
+			<property name="SideOffset" value="0,0.117,0.17"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT2ACR">
+			<property name="SideOffset" value="0,0.088,0.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3AUG_A3">
+			<property name="SideRotation" value="-3.2,0,0"/>
+			<property name="SideOffset" value="0,0.128,0.31"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3G36KV">
+			<property name="SideOffset" value="0,0.079,0.22"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3SCAR_L">
+			<property name="SideOffset" value="0,0.0845,0.09"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3M16A4">
+			<property name="SideOffset" value="0,0.126,0.278"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3SCAR_H">
+			<property name="SideOffset" value="0,0.094,0.128"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3SA58OSW">
+			<property name="SideOffset" value="0,0.0726,0.214"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3M14EBR">
+			<property name="SideOffset" value="0,0.084,0.285"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunRifleT3M110">
+			<property name="SideOffset" value="0,0.1,0.3"/>
+		</item_property_overrides>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/mods.unity3d?ANPEQ15Prefab" parent_transform="Attachments/Side" local_rotation="1.2,0,0"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="gun_laser"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformChildrenActive" active="false" parent_transform="gun_laser" transform_path="Laserlight"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformChildrenActive" active="true" parent_transform="gun_laser" transform_path="Laserlight"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="gun_laser" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="gun_laser" transform_path="lightSource"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="WeaponFlashlightANPEQ2Mod" installable_tags="rifsid1" modifier_tags="rifsid1,sideAttachment" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="WeaponFlashlightANPEQ2Mod"/>		
+		<property name="LightValue" value="0.7"/>
+		<property name="UnlockedBy" value="modGunFlashlightSchematic"/>
+		<item_property_overrides name="gunMGT3M4A1">
+			<property name="SideRotation" value="-3.2,0,0"/>
+			<property name="SideOffset" value="0.048,0.07,0.1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT2HK416">
+			<property name="SideRotation" value="-3.2,0,0"/>
+			<property name="SideOffset" value="0.046,0.07,0.16"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT2ACR">
+			<property name="SideOffset" value="0.042,0.049,0.18"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3AUG_A3">
+			<property name="SideRotation" value="-3.2,0,0"/>
+			<property name="SideOffset" value="0.051,0.09,0.3"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3G36KV">
+			<property name="SideOffset" value="0.05,0.03,0.25"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3SCAR_L">
+			<property name="SideOffset" value="0.04,0.032,0.134"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3M16A4">
+			<property name="SideOffset" value="0.051,0.035,0.3"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3SCAR_H">
+			<property name="SideOffset" value="0.047,0.038,0.16"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3SA58OSW">
+			<property name="SideOffset" value="0.045,0.038,0.22"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3M60E4">
+			<property name="SideOffset" value="0.049,0.086,0.27"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3M14EBR">
+			<property name="SideOffset" value="0.0515,0.0345,0.3"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunRifleT3M110">
+			<property name="SideOffset" value="0.049,0.063,0.35"/>
+		</item_property_overrides>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/mods.unity3d?ANPEQ2Prefab" parent_transform="Attachments/Side" local_rotation="1.2,0,0"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="gun_laser"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="SetTransformChildrenActive" active="false" parent_transform="gun_laser" transform_path="Laserlight"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="SetTransformChildrenActive" active="true" parent_transform="gun_laser" transform_path="Laserlight"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="gun_laser" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="gun_laser" transform_path="lightSource"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="TacticalForegripMod" installable_tags="rifbtn1" modifier_tags="rifbtn1,grips" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="TacticalForegripMod"/>		
+		<property name="UnlockedBy" value="modGunForegripSchematic"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FGrip"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_subtract" value="0.1"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.1"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.1"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="0.2"/>
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_subtract" value="0.2"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_subtract" value="0.2"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_subtract" value="0.3"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_subtract" value="0.3"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+
+	<item_modifier name="TacticalBipodMod" installable_tags="rifbtn2" modifier_tags="accuracy" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="TacticalBipodMod"/>		
+		<property name="UnlockedBy" value="modGunBipodSchematic"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Bipod"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Bipad"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.2">
+				<requirement name="CVarCompare" cvar="_crouching" operation="NE" value="1"/>
+			</passive_effect>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="0.2">
+				<requirement name="CVarCompare" cvar="_crouching" operation="NE" value="1"/>
+			</passive_effect>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1">
+				<requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+			</passive_effect>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_subtract" value="0.2">
+				<requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+			</passive_effect>
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_subtract" value="0.5">
+				<requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+			</passive_effect>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_subtract" value="0.5">
+				<requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+			</passive_effect>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_subtract" value="0.5">
+				<requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+			</passive_effect>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_subtract" value="0.5">
+				<requirement name="CVarCompare" cvar="_crouching" operation="NE" value="0"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" duration="0,9999" value="1.2,1.2" tags="crouching">
+			</passive_effect>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+		
+	<item_modifier name="PistolSuppressorMod" installable_tags="pstmzl0" modifier_tags="barrelAttachment,pstmzl0" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="PistolSuppressorMod"/>		
+		<property name="UnlockedBy" value="modGunSoundSuppressorSilencerSchematic"/>
+		<property name="CustomIcon" value="PistolSilencerMod"/>
+		<item_property_overrides name="*">
+			<property name="Sound_start" value="pistolsup_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT2MK23">
+			<property name="Sound_start" value="mk23_s_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT1Colt1911">
+			<property name="Sound_start" value="pistolsil_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT3Glock18c">
+			<property name="Sound_start" value="pistolsup_fire"/>
+			<property name="Sound_loop" value="pistolsup_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT3Beretta93R">
+			<property name="Sound_start" value="pistolsup_fire"/>
+			<property name="Sound_loop" value="pistolsup_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT3MP5N">
+			<property name="Sound_start" value="smgsil_fire"/>
+			<property name="Sound_loop" value="smgsil_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT2UMP">
+			<property name="Sound_start" value="smgsil_fire"/>
+			<property name="Sound_loop" value="smgsil_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunHandgunT3KRISS_Vector">
+			<property name="Sound_start" value="smgsil_fire"/>
+			<property name="Sound_loop" value="smgsil_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="silencer"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.1"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="0.5"/>
+		</effect_group>
+	</item_modifier>
+		
+	<item_modifier name="RifleSuppressorMod" installable_tags="rifmzl0" modifier_tags="barrelAttachment,rifmzl0" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="RifleSilencerMod"/>
+		<property name="UnlockedBy" value="modGunSoundSuppressorSilencerSchematic"/>
+		<item_property_overrides name="*">
+			<property name="Sound_start" value="556sup_fire"/>
+			<property name="Sound_loop" value="556sup_fire"/>
+			<property name="Sound_end" value=""/>
+			<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunRifleT3M110">
+			<property name="Sound_start" value="762Nsup_fire"/>
+			<property name="Sound_loop" value="762Nsup_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3SCAR_H">
+			<property name="Sound_start" value="762Nsup_fire"/>
+			<property name="Sound_loop" value="762Nsup_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		<item_property_overrides name="gunMGT3SA58OSW">
+			<property name="Sound_start" value="762Nsup_fire"/>
+			<property name="Sound_loop" value="762Nsup_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformChildrenActive" active="true" parent_transform="#HeldItemRoot" transform_path="Barrel"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformChildrenActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleFlash"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.3"/>
+			<passive_effect name="MaxRange" operation="perc_add" value="-.3"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.2"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-0.2"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="0.5"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+		
+	</append>
+	
+</configs>

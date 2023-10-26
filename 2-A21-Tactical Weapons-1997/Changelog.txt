@@ -1,0 +1,36 @@
+2/5/22 - ViperInfinity
+Removed all pop-up chinese text when swapping to any weapon
+some scopes also no longer install the chinese text pop up when equiped
+added proper groups to all weapons in items.xml
+Added vanilla laser sight effects to modded laser sight (non-toggable)
+Added vanilla light effects to modded light attachment (toggable)
+Fixed all weapon animations and added missing ones
+Removed a lot of unused particle effects and animations from all gun animations
+Removed un-needed XML code for attachments
+Removed non-vanilla muzzle flashes
+All ammo and weapons show up in the proper spots in the UI
+Removed metal ammo boxes, ammo bundles, and ammo crates
+Removed TA pad modification, duplicate Scope4xACOG_TA31 modification
+Changed ammo bench icon to avoid confusion on where items need to be crafted
+Removed duplicate/unusable recipes
+Added missing recipes
+
+ToDo: Align some scopes and fix projected laser dot location on some weapons (Mostly assault rifles).
+ToDo: Rework scope attachment system within the mod to bring it in-line with vanilla and remove remaining chinese text popup installation on weapons.
+ToDo: Rework names and descriptions for various items
+
+1/29/22 - ViperInfinity
+Removed multiple version of the M1Garand
+Fixed TacticalAction mods not unlocking properly( bipod, grip, etc...)
+Added proper modifier tags to all TacticalAction mods
+Removed custom stack counts and economic values (all were at 1 for stacks) for mods by adding in the vanilla template
+Removed zeroing mod
+Added appropriate vanilla mods to list of compatible attachments for TacticalAction guns
+Made the XML's a bit more readable
+Raging bull revolver is now considered a revolver
+Added modified traders and loot xml's from Kingston621
+Added a the general silencer schematic to the lootpool
+Added AdvancedScopes schematic to the lootpool
+Removed Bipod from MGT3M60E4 picture
+fixed MP5 and UMP scopes
+Modified hold type for 686 shotgun to help fit it in the hands a little better. Still looks wrong but its not as wrong anymore.

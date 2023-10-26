@@ -1,0 +1,218 @@
+<config>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']">
+	<item name="AdvancedScopesModSchematic"/>
+	</append>
+	
+<!-- Add Ammo Groups -->
+
+<!-- Removing Box Ammo to be craft item only, add 45ammo to match 44ammo numbers-->
+    <append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT0_Gunslinger']">
+        <item name="45ACPAmmo" loot_prob_template="QLTemplateT1" count="6,14" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Gunslinger']">
+        <item name="45ACPAmmo" loot_prob_template="QLTemplateT1" count="8,19" />
+    </append>
+
+<!-- Add to Regular Ammo Groups-->
+    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoSmall']">
+        <item name="556mmAmmo" count="6,12" />
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoMedium']">
+        <item name="556mmAmmo" count="8,17" />
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoLarge']">
+        <item name="556mmAmmo" count="12,25" />
+    </append>
+
+<!-- Add to Advanced Ammo Groups-->
+    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoResourcesMedium']">
+        <item name="AP45ACPAmmo" loot_prob_template="QLTemplateT2" count="8,19" />
+        <item name="HP45ACPAmmo" loot_prob_template="QLTemplateT2" count="6,14"/>
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoResourcesLarge']">
+        <item name="AP556mmAmmo" count="12,25" />
+        <item name="HP556mmAmmo" count="8,19" />
+        <item name="40mmGAmmo" count="1" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupAmmoRocket']">
+		<item name="40mmGAmmo" count="1"/>
+	</append>
+
+<!-- Add to Quests -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestAmmo']">
+		<item name="556mmAmmo" count="60" loot_prob_template="QuestT1Prob"/>
+		<item name="HP556mmAmmo" count="45" loot_prob_template="QuestT2Prob"/>
+		<item name="AP556mmAmmo" count="45" loot_prob_template="QuestT2Prob"/>
+		<item name="45ACPAmmo" count="75" loot_prob_template="QuestT2Prob"/>
+		<item name="HP45ACPAmmo" count="50" loot_prob_template="QuestT2Prob"/>
+		<item name="AP45ACPAmmo" count="50" loot_prob_template="QuestT2Prob"/>
+		<item name="40mmGAmmo" count="5" loot_prob_template="QuestT3Prob"/>
+	</append>
+
+<!-- Not Sure if this will work, but add to A20 Ammo Groups -->
+	<!-- Make 556 ammo numbers match 762 -->
+	<append xpath="/lootcontainers/lootgroup[@name='group762mmSmall']">
+		<item name="556mmAmmo" count="5,7" loot_stage_count_mod="0.01"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='group762mmMedium']">
+		<item name="556mmAmmo" count="12,20" loot_stage_count_mod="0.01"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='group762mmLarge']">
+		<item name="556mmAmmo" count="24,40" loot_stage_count_mod="0.01"/>
+	</append>
+
+	<!-- Make 45 ammo match 44 numbers -->
+	<append xpath="/lootcontainers/lootgroup[@name='group44MagnumSmall']">
+		<item name="45ACPAmmo" count="4,6" loot_stage_count_mod="0.01"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='group44MagnumMedium']">
+		<item name="45ACPAmmo" count="8,12" loot_stage_count_mod="0.01"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='group44MagnumLarge']">
+		<item name="45ACPAmmo" count="16,26" loot_stage_count_mod="0.01"/>
+	</append>
+
+
+<!--Add Guns to Safes-->
+    <append xpath="/lootcontainers/lootgroup[@name='groupWeaponsMedMedMed']">
+        <item name="gunHandgunT1Colt1911" prob="0.05" />
+        <item name="gunHandgunT1Colt_M1873" prob="0.05" />
+        <item name="gunHandgunT1P99" prob="0.05"  />
+        <item name="gunRifleT1WinchesterM1894" prob="0.05"  />
+        <item name="gunShotgunT1s686" prob="0.05"  />
+        <item name="gunHandgunT2MK23" prob="0.04" />
+        <item name="gunHandgunT2USP9" prob="0.04" />
+        <item name="gunHandgunT2UMP" prob="0.04"  />
+        <item name="gunMGT2HK416" prob="0.04"  />
+        <item name="gunMGT2ACR" prob="0.04"  />
+        <item name="gunShotgunT2M4Super90" prob="0.04"  />
+        <item name="gunHandgunT3Beretta93R" prob="0.03" />
+        <item name="gunHandgunT3Glock18c" prob="0.03" />
+        <item name="gunHandgunT3DesertEagle" prob="0.03"  />
+        <item name="gunHandgunT3RagingBull" prob="0.03"  />
+        <item name="gunHandgunT3MP5N" prob="0.30"  />
+        <item name="gunHandgunT3MP5SD" prob="0.03"  />
+        <item name="gunHandgunT3KRISS_Vector" prob="0.03"  />
+        <item name="gunRifleT3Kar98K" prob="0.03" />
+        <item name="gunRifleT3M110" prob="0.03" />
+        <item name="gunRifleT3MSG90A1" prob="0.03"  />
+        <item name="gunRifleT3M82a1" prob="0.03"  />
+        <item name="gunMGT3M4A1" prob="0.03"  />
+        <item name="gunMGT3SCAR_L" prob="0.030"  />
+        <item name="gunMGT3M16A4" prob="0.03"  />
+        <item name="gunMGT3SCAR_H" prob="0.03"  />
+        <item name="gunMGT3SA58OSW" prob="0.03"  />
+        <item name="gunMGT3M249" prob="0.03"  />
+        <item name="gunMGT3M60E4" prob="0.03"  />
+        <item name="gunMGT3Gatling" prob="0.03"  />
+        <item name="gunMGT3M14EBR" prob="0.03"  />
+        <item name="gunShotgunT3SPAS12" prob="0.03"  />
+        <item name="gunShotgunT3Saiga12K" prob="0.03"  />
+        <item name="gunShotgunT3AA12" prob="0.03"  />
+    </append>
+
+<!-- Make the item modifiers lootable -->
+    <append xpath="/lootcontainers/lootgroup[@name='modGunT1']">
+		<item name="TacticalForegripMod"/>
+		<item name="TacticalBipodMod"/>
+		<item name="TAFlashLightMod(pistol)"/>
+		<item name="TALaserSightMod(pistol)"/>
+		<item name="WeaponFlashlightLAMMod"/>
+		<item name="PistolSuppressorMod"/>
+		<item name="HoloBurrisSightMod"/>
+		<item name="HoloRMRSightMod"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modGunT2']">
+		<item name="WeaponLight+LaserANPEQ15Mod" prob=".5"/>
+		<item name="WeaponFlashlightANPEQ2Mod"/>
+		<item name="RifleSuppressorMod"/>
+		<item name="HoloAimpointCompM3Mod"/>
+		<item name="HoloEOTech558Mod"/>
+		<item name="AN/WeaponNightvisionGogglesScopePVS22Mod"/>
+		<item name="Reflex+ScopeEOTech-ECOSMod" prob=".3"/>
+		<item name="Scope2xACOG_TA01Mod"/>
+		<item name="SniperReflex+ScopeLeupoldCQBSSMod" prob=".3"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modGunT3']">
+		<item name="WeaponLight+LaserANPEQ15Mod"/>
+		<item name="Reflex+ScopeEOTech-ECOSMod"/>
+		<item name="SniperReflex+ScopeLeupoldCQBSSMod"/>
+		<item name="modGunSoundSuppressorSilencerSchematic"/>
+	</append>   
+
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">			
+				
+	
+		<lootgroup name="t1TAGunschematics" count="1" >
+	<item name="gunHandgunT1Colt1911Schematic"/>
+	<item name="gunHandgunT1Colt_M1873Schematic"/>
+	<item name="AdvancedScopesModSchematic"/>
+	<item name="gunHandgunT1P99Schematic"/>
+	<item name="gunRifleT1WinchesterM1894Schematic"/>
+	<item name="gunShotgunT1s686Schematic"/>
+	<item name="gunExplosivesT1M79Schematic"/>
+		</lootgroup>
+			
+		<lootgroup name="t2TAGunschematics" count="1" >
+	<item name="gunHandgunT2MK23Schematic"/>
+	<item name="gunHandgunT2UMPSchematic"/>
+	<item name="gunHandgunT2USP9Schematic"/>
+	<item name="gunMGT2ACRSchematic"/>
+	<item name="gunMGT2HK416Schematic"/>
+	<item name="gunRifleT2AWPSchematic"/>
+	<item name="gunRifleT2M1GarandSchematic"/>
+	<item name="gunShotgunT2M4Super90Schematic"/>
+	<item name="gunExplosivesT2ChinaLakeSchematic"/>
+		</lootgroup>
+			
+		<lootgroup name="t3TAGunschematics" count="1" >
+	<item name="gunHandgunT3Beretta93RSchematic"/>
+	<item name="gunHandgunT3Glock18cSchematic"/>
+	<item name="gunHandgunT3MP5NSchematic"/>
+	<item name="gunHandgunT3RagingBullSchematic"/>
+	<item name="gunMGT3GatlingSchematic"/>
+	<item name="gunRifleT3Kar98KSchematic"/>
+	<item name="gunRifleT3M110Schematic"/>
+	<item name="gunRifleT3M82a1Schematic"/>
+	<item name="gunHandgunT3DesertEagleSchematic"/>
+	<item name="gunHandgunT3MP5SDSchematic"/>
+	<item name="gunHandgunT3KRISS_VectorSchematic"/>
+	<item name="gunShotgunT3SPAS12Schematic"/>
+	<item name="gunShotgunT3Saiga12KSchematic"/>
+	<item name="gunShotgunT3AA12Schematic"/>
+	<item name="gunMGT3AUG_A3Schematic"/>
+	<item name="gunMGT3G36KVSchematic"/>
+	<item name="gunMGT3SCAR_LSchematic"/>
+	<item name="gunMGT3M16A4Schematic"/>
+	<item name="gunMGT3SCAR_HSchematic"/>
+	<item name="gunMGT3SA58OSWSchematic"/>
+	<item name="gunMGT3M60E4Schematic"/>
+	<item name="gunMGT3M14EBRSchematic"/>
+	<item name="gunExplosivesT3MGL140Schematic"/>
+	<item name="gunRifleT3MSG90A1Schematic"/>
+		</lootgroup>		
+	</insertAfter>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT0']">
+		<item group="t1TAGunschematics" count="1"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item group="t2TAGunschematics" count="1"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']">
+		<item group="t3TAGunschematics" count="1"/>
+	</append>
+
+</config>

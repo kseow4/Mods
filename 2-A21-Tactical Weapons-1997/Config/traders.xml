@@ -1,0 +1,67 @@
+<config>
+<!-- Add Tier 1 Guns -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']">
+		
+			<item name="gunHandgunT1Colt1911" prob="0.7" quality="2,6"/>
+            <item name="gunHandgunT1Colt_M1873" prob="0.7" quality="2,6"/>
+            <item name="gunHandgunT1P99" prob="0.7" quility="2,6" />
+            <item name="gunRifleT1WinchesterM1894" prob="0.7" quility="2,6" />
+            <item name="gunShotgunT1s686" prob="0.7" quility="2,6" />
+            
+	</append>
+<!-- Add Tier 2 Guns -->
+    <append xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']">
+		
+			<item name="gunHandgunT2MK23" prob="0.6" quality="2,6"/>
+            <item name="gunHandgunT2USP9" prob="0.6" quality="2,6"/>
+            <item name="gunHandgunT2UMP" prob="0.6" quility="2,6" />
+            <item name="gunMGT2HK416" prob="0.6" quility="2,6" />
+            <item name="gunMGT2ACR" prob="0.6" quility="2,6" />
+            <item name="gunShotgunT2M4Super90" prob="0.6" quility="2,6" />
+                  
+	</append>
+<!-- Add Tier 3 Guns -->
+    <append xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']">
+		
+			<item name="gunHandgunT3Beretta93R" prob="0.5" quality="2,6"/>
+            <item name="gunHandgunT3Glock18c" prob="0.5" quality="2,6"/>
+            <item name="gunHandgunT3DesertEagle" prob="0.5" quility="2,6" />
+            <item name="gunHandgunT3RagingBull" prob="0.5" quility="2,6" />
+            <item name="gunHandgunT3MP5N" prob="0.5" quility="2,6" />
+            <item name="gunHandgunT3MP5SD" prob="0.5" quility="2,6" />
+            <item name="gunHandgunT3KRISS_Vector" prob="0.5" quility="2,6" />
+            <item name="gunRifleT3Kar98K" prob="0.5" quality="2,6"/>
+            <item name="gunRifleT3M110" prob="0.5" quality="2,6"/>
+            <item name="gunRifleT3MSG90A1" prob="0.5" quility="2,6" />
+            <item name="gunRifleT3M82a1" prob="0.5" quility="2,6" />
+            <item name="gunMGT3M4A1" prob="0.5" quility="2,6" />
+            <item name="gunMGT3SCAR_L" prob="0.5" quility="2,6" />
+            <item name="gunMGT3M16A4" prob="0.5" quility="2,6" />
+            <item name="gunMGT3SCAR_H" prob="0.5" quility="2,6" />
+            <item name="gunMGT3SA58OSW" prob="0.5" quility="2,6" />
+            <item name="gunMGT3M249" prob="0.5" quility="2,6" />
+            <item name="gunMGT3M60E4" prob="0.5" quility="2,6" />
+            <item name="gunMGT3Gatling" prob="0.5" quility="2,6" />
+            <item name="gunMGT3M14EBR" prob="0.5" quility="2,6" />
+            <item name="gunShotgunT3SPAS12" prob="0.5" quility="2,6" />
+            <item name="gunShotgunT3Saiga12K" prob="0.5" quility="2,6" />
+            <item name="gunShotgunT3AA12" prob="0.5" quility="2,6" />
+                              
+	</append>
+
+<!-- Added nonVanilla Ammo with Low counts-->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoAll']">
+		<item name="556mmAmmo" count="20,80" prob="0.6"/>
+		<item name="45ACPAmmo" count="40,60" prob="0.3" />
+		<item name="45LongColtAmmo" count="20,75" prob="0.6" />
+		<item name="50BMGAmmo" count="10,15" prob="0.1" />
+		<item name="127mmAmmo" count="5,10" prob="0.1" />
+		<item name="40mmGAmmo" count="5,10" prob="0.3" />
+	</append>
+
+    <append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoAP']">
+		<item name="AP556mmAmmo" count="20,45" prob="0.4"/>
+		<item name="AP45ACPAmmo" count="20,45" prob="0.2" />
+	</append>
+	
+</config>

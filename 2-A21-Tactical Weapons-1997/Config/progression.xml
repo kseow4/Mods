@@ -1,0 +1,77 @@
+<configs>
+		
+	
+		
+		
+		<append xpath="/progression/skills">
+		
+		</append>
+		
+		<append xpath="/progression/perks">
+		
+		</append>	
+
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="gunRifleT1WinchesterM1894">
+			</passive_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="gunHandgunT1Colt1911,gunHandgunT1P99,gunHandgunT1Colt_M1873">
+			</passive_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/progression/perks/book[@name='perkPistolPeteComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="Boxof9mmAmmo,Boxof45ACPAmmo,AP45ACPAmmo,BoxofAP45ACPAmmo,Boxof9mmAPAmmo,HP45ACPAmmo,Boxof9mmHPAmmo,BoxofHP45ACPAmmo">
+			</passive_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/progression/perks/book[@name='perkSniperComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="Boxof556mmAmmo,Boxof762mmAmmo,Boxof50BMGAmmo,Boxof45LongColtAmmo,BoxofAP556mmAmmo,BoxofAP762mmAmmo,AP556mmAmmo,HP556mmAmmo,BoxofHP556mmAmmo,BoxofHP762mmAmmo">
+			</passive_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/progression/perks/book[@name='perkEnforcerComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="BoxofMagnumAmmo,BoxofMagnumAmmoHP,BoxofMagnumAmmoAP">
+			</passive_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/progression/perks/book[@name='perkAutoWeaponsMachineGuns']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunMGT3M249,gunMGT3Gatling">
+			</passive_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="40mmGAmmo">
+			</passive_effect>
+		</effect_group>
+	</append>
+				
+	<append xpath="/progression/perks/book[@name='perkShotgunMessiahComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="BoxofShotgunShellAmmo">
+			</passive_effect>
+		</effect_group>
+	</append>
+						
+	<append xpath="/progression/perks/book[@name='perkShotgunMessiahSlugs']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="BoxofShotgunSlugAmmo">
+			</passive_effect>
+		</effect_group>
+	</append>
+		
+</configs>
