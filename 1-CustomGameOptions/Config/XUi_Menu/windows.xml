@@ -1,0 +1,25 @@
+﻿<windows>
+	<!-- Game Options-->
+	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/@cell_width">117</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/@cols">5</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/rect/simplebutton/@width">116</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/rect/simplebutton/@font_size">24</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/rect/sprite/@pos">115,0</set>
+
+	<insertAfter xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']" >
+		<rect tab_key="xuiDF">
+			<grid pos="6,-40" rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical" >
+				
+				<gameoption name="CustomSHZombiesMin" title="goSHZombiesMin" value_wrap="false" value_type="int" values="5,10,15,20,25,30,35,40,45,50,55,60" display_names="" value_localization_prefix="goZombie" default_value="10"/>
+				<gameoption name="CustomSHZombiesMax" title="goSHZombiesMax" value_wrap="false" value_type="int" values="5,10,15,20,25,30,35,40,45,50,55,60" display_names="" value_localization_prefix="goZombie" default_value="20"/>
+				<gameoption name="CustomWHHoursMin" title="goWHHoursMin" value_wrap="false" value_type="int" values="2,4,6,8,10,12,14,16,18,20,22,24,26,28" display_names="" value_localization_prefix="goHour" default_value="24"/>
+				<gameoption name="CustomWHHoursMax" title="goWHHoursMax" value_wrap="false" value_type="int" values="2,4,6,8,10,12,14,16,18,20,22,24,26,28" display_names="" value_localization_prefix="goHour" default_value="28"/>
+				<gameoption name="CustomWHZombiesMin" title="goWHZombiesMin" value_wrap="false" value_type="int" values="5,10,15,20,25,30,35,40,45,50,55,60" display_names="" value_localization_prefix="goZombie" default_value="15"/>
+				<gameoption name="CustomWHZombiesMax" title="goWHZombiesMax" value_wrap="false" value_type="int" values="5,10,15,20,25,30,35,40,45,50,55,60" display_names="" value_localization_prefix="goZombie" default_value="30"/>
+				<!--
+				<gameoption name="CustomSMXDeath2XHairs" title="goKillXHairrs" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" default_value="false" /> -->
+			</grid>
+		</rect> 
+	</insertAfter>
+
+</windows>

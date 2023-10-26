@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="CustomGameOptions" />
+	<DisplayName value="Custom Game Options" />
+	<Description value="Allows custom game options on the main menu." />
+	<Author value="w00kie and IDC" />
+	<Version value="1.1.0.0" />
+	<Website value="" />
+</xml>
