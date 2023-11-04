@@ -1,7 +1,7 @@
 <Config>
   <insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier'][@operation='perc_set'][@value='1'][1]">
-    <passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head,animal,vulture,bear,dog,demon"/>
     <passive_effect name="DamageModifier" operation="perc_set" value="0.2" tags="zombie"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head,animal,vulture,bear,dog,demon,animalRabbit,animalChicken,animalBoar,animalBoarFemale,animalChicken,animalCow,animalBull,animalGoat,animalGoatFemale,animalSheep,animalSheepMale,animalCoyote,animalDireWolf,animalBear,animalStag,animalDoe,animalHornet,animalWolfMale,animalWolfFemale,Beefdog,JD,animalSnake,animalZombieVulture,animalBigSnake,animalMountainLion,animalZombieBear,animalZombieDog,animalZombieDogRad,animalZombieVultureRadiated,animalHellwolf"/>
   </insertAfter>
   <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier'][@operation='perc_add'][@value='1'][@tags='head'][1]/@value">3</set>
 </Config>
