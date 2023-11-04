@@ -408,6 +408,10 @@
 						
 						<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2" value="1" tags="DFLaborerMasteryBook"/>
 					</effect_group>
+					<effect_group>
+						<requirement name="ItemHasTags" tags="perkMotherLode"/>
+							<passive_effect name="HarvestCount" operation="perc_add" value=".25" level="2" tags="oreWoodHarvest"/>
+					</effect_group>
 			</attribute>
 			
 			<attribute name="attClassMechanic" name_key="attClassMechanicName" desc_key="attClassMechanicDesc" icon="ui_game_symbol_wrench" min_level="0" max_level="2">
@@ -466,13 +470,13 @@
 					</effect_group>
 			</attribute>
 
-			<attribute name="attTechnology" name_key="attTechnologyName" desc_key="attTechnologyDesc" icon="ui_game_symbol_chemistry"  min_level="0" max_level="1">
-				<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="75" desc_key="reqLevel75"/></level_requirements>
+			<attribute name="attTechnology" name_key="attTechnologyName" desc_key="attTechnologyDesc" icon="ui_game_symbol_chemistry" min_level="0" max_level="1">
+				<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqPlayerLevel80"/></level_requirements>
 					<effect_group></effect_group>		
 			</attribute> 	
 			<!--
 			<attribute name="attAchievements" name_key="attAchievementsName" desc_key="attAchievementsDesc" icon="ui_game_symbol_trophy"  min_level="1" max_level="1">
-				<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
+				<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerLevel1"/></level_requirements>
 					<effect_group>
 						<effect_description level="1" desc_key="attAchievementsDesc"/>
 					</effect_group>
@@ -2274,9 +2278,9 @@
 					<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>	
 
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="gunBowT1WoodenBow"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="gunBowT1IronCrossbow"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="gunBowT1IronCrossbow,ammoCrossbowBoltFlaming,ammoArrowFlaming"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="gunBowT3CompoundBow"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="gunBowT3CompoundCrossbow"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="gunBowT3CompoundCrossbow,ammoArrowExploding,ammoCrossbowBoltExploding"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="DFgunTitaniumCrossbow,DFammoCrossbowBoltTitanium,DFammoArrowTitanium"/>					
 						
 					<effect_description level="1" desc_key="perkCraftBowsRank1Desc"/>
@@ -2726,7 +2730,7 @@
 				<effect_group>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,3" value="1" tags="plantedCorn1,plantedCotton1,DFmeleeToolHoeScrap,DFMandP"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,3" value="1" tags="DFanimalFeed,DFanimalSnare,DFchickenCoop,cntDewCollector"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3" value="1" tags="plantedBlueberry1,plantedAloe1,beeHiveFull,farmPlotBlockVariantHelper"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3" value="1" tags="plantedBlueberry1,plantedAloe1,DFseedTomato,beeHiveFull,farmPlotBlockVariantHelper"/> 
 					
 					<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 					
@@ -3046,7 +3050,12 @@
 				<effect_group> 
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFforgedTitanium,titaniumShapes:VariantHelper,DFtitaniumClawHammer,DFmeleeToolFireaxeTitanium,DFmeleeToolPickaxeTitanium,DFmeleeToolShovelTitanium,DFmeleeToolAugerTitanium,DFmeleeToolChainsawTitanium,DFtitaniumBladeTrap,advancedGeneratorBank,DFdartTrapTitanium,DFammoDartTitanium,DFelectricfencepostTitanium"/>
 					
-					<passive_effect name="CraftingTier" operation="base_add" level="1" value="10" tags="meleeToolRepairT3Nailgun,DFmeleeToolstoneHammer,meleeToolRepairT1ClawHammer,DFtitaniumClawHammer,meleeToolRepairT0StoneAxe,meleeToolAxeT1IronFireaxe,meleeToolAxeT2SteelAxe,meleeToolShovelT0StoneShovel,meleeToolShovelT1IronShovel,meleeToolShovelT2SteelShovel,meleeToolPickT1IronPickaxe,meleeToolPickT2SteelPickaxe,meleeToolAxeT3Chainsaw,meleeToolPickT3Auger,DFmeleeToolPickaxeScrap,DFmeleeToolFireaxeScrap,DFmeleeToolShovelScrap,DFmeleeToolPickaxeTitanium,DFmeleeToolFireaxeTitanium,DFmeleeToolShovelTitanium,DFmeleeToolChainsawTitanium,DFmeleeToolAugerTitanium"/>	
+					<passive_effect name="CraftingTier" operation="base_add" level="1" value="10" tags="meleeToolRepairT3Nailgun,DFmeleeToolstoneHammer,meleeToolRepairT1ClawHammer,DFtitaniumClawHammer,meleeToolRepairT0StoneAxe,meleeToolAxeT1IronFireaxe,meleeToolAxeT2SteelAxe,meleeToolShovelT0StoneShovel,meleeToolShovelT1IronShovel,meleeToolShovelT2SteelShovel,meleeToolPickT1IronPickaxe,meleeToolPickT2SteelPickaxe,meleeToolAxeT3Chainsaw,meleeToolPickT3Auger,DFmeleeToolPickaxeScrap,DFmeleeToolFireaxeScrap,DFmeleeToolShovelScrap,DFmeleeToolPickaxeTitanium,DFmeleeToolFireaxeTitanium,DFmeleeToolShovelTitanium,DFmeleeToolChainsawTitanium,DFmeleeToolAugerTitanium"/>
+
+					<effect_group>
+						<requirement name="ItemHasTags" tags="perkMotherLode"/>
+							<passive_effect name="HarvestCount" operation="perc_add" value=".25" level="1" tags="oreWoodHarvest"/>
+					</effect_group>			
 					
 					<effect_description level="1" desc_key="perkMasterBuilderName" long_desc_key="perkMasterBuilderRank1Desc"/>
 				</effect_group>
@@ -3070,7 +3079,8 @@
 				<effect_group>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="meleeToolSalvageT1Wrench"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="meleeWpnClubT3SteelClub"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="meleeToolSalvageT2Ratchet"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="meleeToolSalvageT2Ratchet"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="meleeToolSalvageT3ImpactDriver"/>
 					
 					<effect_description level="1" desc_key="perkSalvageOperationsRank1Desc" long_desc_key="perkSalvageOperationsRank1LongDesc"/>
 					<effect_description level="2" desc_key="perkSalvageOperationsRank2Desc" long_desc_key="perkSalvageOperationsRank2LongDesc"/>
@@ -3148,7 +3158,7 @@
 				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="2" desc_key="reqClassQuestComplete"/><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqPlayerLevel40"/></level_requirements>
 
 				<effect_group>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFoilPump,smallEngine,carBattery,DFV8Engine,vehicleGyroCopterAccessories,vehicleGyroCopterChassis,meleeToolSalvageT3ImpactDriver,DFclubTitanium,DFtitaniumSledgehammer,gunHandgunT3SMG5"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFoilPump,smallEngine,carBattery,DFV8Engine,vehicleGyroCopterAccessories,vehicleGyroCopterChassis,DFclubTitanium,DFtitaniumSledgehammer,gunHandgunT3SMG5"/>
 					
 					<passive_effect name="CraftingTier" operation="base_add" level="1" value="10" tags="meleeWpnClubT0WoodenClub,meleeWpnClubT1BaseballBat,DFmeleeWpnClubScrap,DFclubTitanium,DFtitaniumSledgehammer,meleeToolSalvageT1Wrench,meleeWpnClubT3SteelClub,gunBotT1JunkSledge,gunBotT2JunkTurret,meleeWpnSledgeT0StoneSledgehammer,meleeWpnSledgeT1IronSledgehammer,meleeWpnSledgeT3SteelSledgehammer,meleeToolSalvageT2Ratchet,meleeToolSalvageT3ImpactDriver,gunHandgunT3SMG5"/>
 					
@@ -3213,6 +3223,11 @@
 					<effect_description level="3" desc_key="perkYeahScienceRank3Desc" long_desc_key="perkYeahScienceRank3LongDesc"/>
 					<effect_description level="4" desc_key="perkYeahScienceRank4Desc" long_desc_key="perkYeahScienceRank4LongDesc"/>
 					<effect_description level="5" desc_key="perkYeahScienceRank5Desc" long_desc_key="perkYeahScienceRank5LongDesc"/>
+				</effect_group>
+				
+				<effect_group>
+					<requirement name="HoldingItemHasTags" tags="baton"/>
+						<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5"/>
 				</effect_group>
 			</perk>
 
@@ -3285,11 +3300,11 @@
 				<effect_group>
 					<passive_effect name="HealthLoss" operation="perc_subtract" value=".05,.25" level="1,5"/>
 
-					<passive_effect name="BuffResistance" operation="base_add" value="0.20" level="1" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03"/>
-					<passive_effect name="BuffResistance" operation="base_add" value="0.40" level="2" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03"/>
-					<passive_effect name="BuffResistance" operation="base_add" value="0.60" level="3" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03"/>
-					<passive_effect name="BuffResistance" operation="base_add" value="0.80" level="4" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03"/>
-					<passive_effect name="BuffResistance" operation="base_add" value="1" level="5" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.20" level="1" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.40" level="2" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.60" level="3" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.80" level="4" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="1" level="5" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
 
 					<effect_description level="1" desc_key="perkPainToleranceRank1Desc" long_desc_key="perkPainToleranceRank1LongDesc"/>
 					<effect_description level="2" desc_key="perkPainToleranceRank2Desc" long_desc_key="perkPainToleranceRank2LongDesc"/>
@@ -3549,7 +3564,7 @@
 				
 				<effect_group>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4" tags="DFgunLaserM60"/> 
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" tags="SomeKindOfNewVehicle"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4" tags="SomeKindOfNewVehicle"/>
 						
 					<passive_effect name="CraftingTier" operation="base_add" level="1" value="20" tags="DFarmorTechBoots,DFarmorTechVest,DFarmorTechGloves,DFarmorTechHelmet,DFarmorTechLegs,DFgunLaserM60"/>
 					<passive_effect name="CraftingTier" operation="base_add" level="2" value="40" tags="DFarmorTechBoots,DFarmorTechVest,DFarmorTechGloves,DFarmorTechHelmet,DFarmorTechLegs,DFgunLaserM60"/>
@@ -3611,8 +3626,6 @@
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.05, 0.25" level="1,5" tags="perkPummelPete,perkDeepCuts">
 						<requirement name="HoldingItemHasTags" tags="melee"/>
 					</passive_effect>
-					
-					<!-- Don't forget to change localization to state movement speed has been reduced -->
 					
 					<passive_effect name="StaminaChangeOT" operation="perc_add" value="1.55, 1.35" tags="running" level="1,5"/>
 					

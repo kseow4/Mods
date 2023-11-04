@@ -121,6 +121,7 @@
 		<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" display_leading_plus="true" />
 		<display_entry name="dDuration" title_key="statDuration" display_type="Time" />
 		<display_entry name="dWellness" title_key="statWellness" />
+		<display_entry name="dWaterAmountAdd" title_key="statWaterAmount" />
 	</set>
 	
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGrandpasMoonshine']">

@@ -811,7 +811,7 @@
 				<action type="TrackQuest" />
 				
 				<objective type="FetchKeep" id="resourceRockSmall" value="6"/>
-				<objective type="FetchKeep" id="resourceYuccaFibers" value="2"/>
+				<objective type="FetchKeep" id="resourceYuccaFibers" value="3"/>
 				<objective type="FetchKeep" id="resourceWood" value="3"/>
 				<objective type="FetchKeep" id="meleeWpnSpearT0StoneSpear" value="1"/>	
 			
@@ -16130,29 +16130,132 @@
 			</quest>
 			
 			<!-- Quests for testing new things -->
-			<quest id="test_requirementholding" >
-				<property name="group_name_key" value="TEST: Requirement Holding" />
-				<property name="name_key" value="TEST: Requirement Holding" />
-				<property name="subtitle" value="Kill Zombies With A Club" />
-				<property name="subtitle_key" value="Kill Zombies With A Club" />
-				<property name="description_key" value="Kill Zombies With A Club" />
-				<property name="icon" value="ui_game_symbol_armor_iron" />
-				<property name="category_key" value="quest" />
-				<property name="offer_key" value="TEST: Requirement Holding" />
-				<property name="repeatable" value="false" />
-				<property name="difficulty" value="veryeasy" />
-				<property name="shareable" value="false" />
-				<action type="TrackQuest" />
+			<quest id="Eve_Quest3_MPTest">
+				<property name="name_key" value="Eve_Quest3_fetch" />
+				<property name="subtitle_key" value="Eve_Quest3_subtitle" />
+				<property name="description_key" value="Eve_Quest3_description" />
+				<property name="icon" value="ui_game_symbol_quest" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="medium" /> 
+				<property name="difficulty_tier" value="3" /> 
+				<property name="offer_key" value="Eve_Quest3_fetch_offer" />
+				<property name="statement_key" value="Eve_Quest3_statement" />
+				<property name="response_key" value="Eve_Quest3_response" />
+				<property name="login_rally_reset" value="true" />
+				<property name="shareable" value="false"/>
+				<property name="completiontype" value="TurnIn" />
+				<property name="completion_key" value="Eve_Quest3_completion" />		
+				<property name="return_to_quest_giver" value="true" />
+
+				<objective type="GotoPOISDX, SCore" value="5-50000" phase="1">
+					<property name="completion_distance" value="50" />
+					<property name="PrefabName" value="DFalls_Military_Bunker" />
+					<property name="nav_object" value="go_to_trader" />
+				</objective>
+
+				<objective type="RallyPoint">
+					<property name="phase" value="2" />
+					<property name="nav_object" value="rally" />
+				</objective>
 				
-				<objective type="EntityKill">
-					<requirement name="HoldingItemHasTags" tags="perkFlurryOfStrength"/>
-						<property name="needed_count" value="5" />
-						<property name="target_tags" value="zombie" />
-						<property name="objective_name_key" value="ObjectiveZombieKill_Quest" />
-				</objective>					
+				<action type="GameEvent" id="test_POIReset" value="1" phase="3"/>
+
+				<objective type="FetchFromContainer">
+					<property name="phase" value="3" />
+					<property name="quest_item_ID" value="1" />
+					<property name="item_count" value="1" />
+					<property name="default_container" value="cntFetchQuestSatchel" />
+				</objective>
+
+				<objective type="POIStayWithin">
+					<property name="phase" value="3" />
+					<property name="radius" value="25" />
+				</objective>
+				
+				<objective type="ReturnToNPC">
+					<property name="phase" value="4"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+
+				<property name="reward_choices_count" value="5" />				
+				<reward type="GiveCvarDMT, Harmony-0-DarknessFallsCore" id="EveQuestThreeComplete" value="1" />
+				<reward type="LootItem" id="questGCModsT4,questGCSchematicsT4" ischosen="true" isfixed="true" value="50"/>
+				<reward type="LootItem" id="questGCFoodT4,questGCDrinkT4" ischosen="true" value="50"/>
+				<reward type="LootItem" id="questGCAmmoT4" ischosen="true" value="50"/>
+				<reward type="LootItem" id="questGCMedicalT4" ischosen="true" value="50"/>
+				<reward type="LootItem" id="questGCRangedT4" ischosen="true" value="50"/>
+				
+				<reward type="Exp" value="10000" />
+			</quest> 
 			
-				<reward type="SkillPoints" value="1" />
-				<reward type="Exp" value="100" />
-			</quest>
+			<quest id="Anna_Bunker_MPTest">
+				<property name="name_key" value="Anna_Bunker_fetch" />
+				<property name="subtitle_key" value="Anna_Bunker_subtitle" />
+				<property name="description_key" value="Anna_Bunker_description" />
+				<property name="icon" value="ui_game_symbol_quest" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="challenge" />
+				<property name="difficulty" value="medium" /> 
+				<property name="difficulty_tier" value="3" /> 
+				<property name="offer_key" value="Anna_Bunker_fetch_offer" />
+				<property name="statement_key" value="Anna_Bunker_statement" />
+				<property name="response_key" value="Anna_Bunker_response" />
+				<property name="login_rally_reset" value="true" />
+				<property name="shareable" value="false"/>
+				<property name="completiontype" value="TurnIn" />
+				<property name="completion_key" value="Anna_Bunker_completion" />
+				<property name="return_to_quest_giver" value="true" />
+
+				<objective type="GotoPOISDX, SCore" value="5-50000" phase="1">
+					<property name="completion_distance" value="50" />
+					<property name="PrefabName" value="DFalls_Resarch_Lab1" />
+					<property name="nav_object" value="go_to_trader" />
+				</objective>
+
+				<objective type="RallyPoint">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="rally" />
+				</objective>
+				
+				<action type="GameEvent" id="test_POIReset" value="1" phase="3"/>
+
+				<objective type="FetchFromContainer">
+					<property name="phase" value="3" />
+					<property name="quest_item_ID" value="1" />
+					<property name="item_count" value="1" />
+					<property name="default_container" value="cntFetchQuestSatchel" />
+				</objective>
+
+				<objective type="POIStayWithin">
+					<property name="phase" value="3" />
+					<property name="radius" value="25" />
+				</objective>
+				
+				<objective type="ReturnToNPC">
+					<property name="phase" value="4"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+
+				<property name="reward_choices_count" value="5" />			 
+				<reward type="LootItem" id="questGCModsT5,questGCSchematicsT5" ischosen="true" isfixed="true" value="50"/>
+				<reward type="LootItem" id="questGCFoodT5,questGCDrinkT5" ischosen="true" value="50"/>
+				<reward type="LootItem" id="questGCAmmoT5" ischosen="true" value="50"/>
+				<reward type="LootItem" id="questGCMedicalT5" ischosen="true" value="50"/>
+				<reward type="LootItem" id="questGCRangedT5" ischosen="true" value="50"/>
+				<reward type="Item" id="DFPortalPowerSource" value="1" />
+				
+				<reward type="Exp" value="10000" />
+			</quest> 
 	</append>
 </config>

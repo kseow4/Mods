@@ -195,13 +195,7 @@
 			<item_property_overrides name="DFgunCoilSniper">
 				<property name="Sound_start" value="sniperrifle_s_fire"/>
 			</item_property_overrides>
-			
-			<item_property_overrides name="DFgunDEagle">
-				<property name="Sound_start" value="44ammo_s_fire"/>
-				<property name="BarrelOffset" value="0,0.0093,-0.39525"/>
-				<property name="BarrelScale" value="0.6,0.6,0.6"/>
-			</item_property_overrides>
-			
+
 			<item_property_overrides name="DFgunLaserPistol">
 				<property name="Sound_start" value="lasersilencedp_fire"/>
 			</item_property_overrides>
@@ -214,6 +208,10 @@
 				<property name="Sound_start" value="lasersilencedc_fire"/>
 				<property name="Sound_end" value="silencefiller"/>
 				<property name="Sound_loop" value="lasersilencedc_fire"/>
+			</item_property_overrides>
+			
+			<item_property_overrides name="DFgunBlackSky">
+				<property name="Sound_start" value="pump_shotgun_s_fire"/>
 			</item_property_overrides>
 
 			<!-- visible attachment: silencer -->
@@ -1790,7 +1788,7 @@
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		</item_modifier>
 
-		<item_modifier name="modMeleeClubMetalSpikes" installable_tags="club,knuckles" modifier_tags="shaft" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modMeleeClubMetalSpikes" installable_tags="club,knuckles,sledge,baton" modifier_tags="shaft" blocked_tags="noMods" type="attachment">
 			<property name="UnlockedBy" value="perkCraftScience"/>
 			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods,Tool/Weapon Mods"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>

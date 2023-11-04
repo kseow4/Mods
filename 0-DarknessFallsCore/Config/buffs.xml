@@ -4353,6 +4353,24 @@
 			</effect_group>
 		</buff>
 		
+		<buff name="buffShocked3Trigger" hidden="true">
+			<damage_type value="electrical" />
+			<stack_type value="ignore" />
+			<duration value="1" />
+			<update_rate value="0.5" />
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffShocked2">
+					<requirement name="!EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>			
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="other" range="10" target_tags="zombie,animal,human" buff="buffShocked2">
+					<requirement name="!EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>			
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="other" range="10" target_tags="zombie,animal,human" buff="buffShocked2">
+					<requirement name="!EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>			
+			</effect_group>
+		</buff>
+		
 		<buff name="buffShockedTitFenceTrigger" hidden="true">
 			<damage_type value="electrical" />
 			<stack_type value="ignore" />
@@ -5942,7 +5960,7 @@
 			</effect_group>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffCoffeeDisplay" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="4buffCoffeeDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffCoffeeDisplay" operation="set" value="0"/>
 			</effect_group>
 
 			<effect_group>
@@ -5974,7 +5992,7 @@
 
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffCoffee"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.3"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.4"/>
 
 				<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
 			</effect_group>
@@ -5999,7 +6017,7 @@
 			<display_value value="$buffBeerDisplay"/><display_value_format value="time"/>
 			<update_rate value="1"/>
 			<effect_group>
-				<passive_effect name="EntityDamage" operation="perc_add" value="3">
+				<passive_effect name="EntityDamage" operation="perc_add" value="2">
 					<requirement name="HoldingItemHasTags" tags="perkBrawler" />
 				</passive_effect>
 
@@ -6051,7 +6069,7 @@
 
 		<buff name="buffDrunkGrandpasMoonshine2" name_key="buffDrunkGrandpasMoonshineName" description_key="buffDrunkGrandpasMoonshineDesc" tooltip_key="buffDrunkGrandpasMoonshineTooltip" icon="ui_game_symbol_beer">
 			<stack_type value="replace"/>
-			<duration value="45"/>
+			<duration value="300"/>
 			<update_rate value="1"/>
 			<display_value value="$buffGrandpasMoonshineDisplay"/><display_value_format value="time"/>
 			<effect_group>
@@ -6067,7 +6085,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk"/>
 				
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffGrandpasMoonshineDisplay" operation="set" value="45"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffGrandpasMoonshineDisplay" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffGrandpasMoonshineDisplay" operation="subtract" value="1"/>
 
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="buffGrandpasMoonshineDuration" operation="set" value="0"/>
@@ -6077,11 +6095,11 @@
 
 		<buff name="buffDrunkGrandpasAwesomeSauce2" name_key="buffDrunkGrandpasAwesomeSauceName" description_key="buffDrunkGrandpasAwesomeSauceDesc" tooltip_key="buffDrunkGrandpasAwesomeSauceTooltip" icon="ui_game_symbol_beer">
 			<stack_type value="replace"/>
-			<duration value="120"/>
+			<duration value="300"/>
 			<update_rate value="1"/>
 			<display_value value="$buffGrandpasAwesomeSauceDisplay"/><display_value_format value="time"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffGrandpasAwesomeSauceDisplay" operation="set" value="120"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffGrandpasAwesomeSauceDisplay" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffGrandpasAwesomeSauceDisplay" operation="subtract" value="1"/>
 				
 				<passive_effect name="BarteringBuying" operation="base_add" value=".2"/>
@@ -6091,11 +6109,11 @@
 
 		<buff name="buffDrunkGrandpasLearningElixir2" name_key="buffDrunkGrandpasLearningElixirName" description_key="buffDrunkGrandpasLearningElixirDesc" tooltip_key="buffDrunkGrandpasLearningElixirTooltip" icon="ui_game_symbol_beer">
 			<stack_type value="replace"/>
-			<duration value="240"/>
+			<duration value="300"/>
 			<update_rate value="1"/>
 			<display_value value="$buffGrandpasLearningElixirDisplay"/><display_value_format value="time"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDisplay" operation="set" value="240"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDisplay" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDisplay" operation="subtract" value="1"/>
 				
 				<passive_effect name="PlayerExpGain" operation="perc_add" value=".2"/>
@@ -6130,12 +6148,12 @@
 		
 		<buff name="buffFoodLimberUp2" name_key="foodLimberUp" description_key="foodLimberUpDesc" icon="ui_game_symbol_armor_leather">
 			<stack_type value="replace"/>
-			<duration value="120"/>
+			<duration value="300"/>
 			<update_rate value="1"/>
 			<display_value value="$buffFoodLimberUpDisplay"/><display_value_format value="time"/>
 			<!-- Increase overall mobility for a short amount of time -->
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffFoodLimberUpDisplay" operation="set" value="120"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffFoodLimberUpDisplay" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffFoodLimberUpDisplay" operation="subtract" value="1"/>
 				
 				<passive_effect name="Mobility" operation="perc_add" value=".2"/>
@@ -6144,11 +6162,11 @@
 		
 		<buff name="buffDrugHackers2" name_key="drugHackers" description_key="drugHackersDesc" icon="ui_game_symbol_candy_hackers">
 			<stack_type value="replace"/>
-			<duration value="120"/>
+			<duration value="600"/>
 			<update_rate value="1"/>
 			<display_value value="$buffDrugHackersDisplay"/><display_value_format value="time"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugHackersDisplay" operation="set" value="120"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugHackersDisplay" operation="set" value="600"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugHackersDisplay" operation="subtract" value="1"/>
 			</effect_group>
 			<effect_group>
@@ -6160,11 +6178,11 @@
 		
 		<buff name="buffDrugRockBusters2" name_key="drugRockBusters" description_key="drugRockBustersDesc" icon="ui_game_symbol_candy_rock_busters">
 			<stack_type value="replace"/>
-			<duration value="120"/>
+			<duration value="600"/>
 			<update_rate value="1"/>
 			<display_value value="$buffDrugRockBustersDisplay"/><display_value_format value="time"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugRockBustersDisplay" operation="set" value="120"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugRockBustersDisplay" operation="set" value="600"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugRockBustersDisplay" operation="subtract" value="1"/>
 			</effect_group>
 			<effect_group>
@@ -6176,12 +6194,12 @@
 
 		<buff name="buffDrugSkullCrushers2" name_key="drugSkullCrushers" description_key="drugSkullCrushersDesc" icon="ui_game_symbol_candy_skull_crushers">
 			<stack_type value="replace"/>
-			<duration value="120"/>
+			<duration value="600"/>
 			<update_rate value="1"/>
 			<display_value value="$buffDrugSkullCrushersDisplay"/><display_value_format value="time"/>
 			<!-- Rock hard candy that gives you a rock hard punch. Increases melee damage 50% for 2 minutes. -->
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugSkullCrushersDisplay" operation="set" value="120"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugSkullCrushersDisplay" operation="set" value="600"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugSkullCrushersDisplay" operation="subtract" value="1"/>
 				
 				<passive_effect name="EntityDamage" operation="perc_add" value=".5" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler"/>
@@ -6190,12 +6208,12 @@
 
 		<buff name="buffDrugSugarButts2" name_key="drugSugarButts" description_key="drugSugarButtsDesc" icon="ui_game_symbol_candy_sugar_butts">
 			<stack_type value="replace"/>
-			<duration value="120"/>
+			<duration value="600"/>
 			<update_rate value="1"/>
 			<display_value value="$buffDrugSugarButtsDisplay"/><display_value_format value="time"/>
 			<!-- If ifs and butts were candy and nuts every day would be Christmas! Well now it can be with one tasty Sugar Butts Candy. Increases Better Barter one rank for 2 minutes. -->
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugSugarButtsDisplay" operation="set" value="120"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugSugarButtsDisplay" operation="set" value="600"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugSugarButtsDisplay" operation="subtract" value="1"/>
 				
 				<passive_effect name="BarteringBuying" operation="base_add" value="0.1"/>
@@ -6205,12 +6223,12 @@
 		
 		<buff name="buffDrugHealthBar2" name_key="drugHealthBar" description_key="drugHealthBarDesc" icon="ui_game_symbol_candy_health_bar">
 			<stack_type value="replace"/>
-			<duration value="120"/>
+			<duration value="600"/>
 			<update_rate value="1"/>
 			<display_value value="$buffDrugHealthBarDisplay"/><display_value_format value="time"/>
 
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugHealthBarDisplay" operation="set" value="120"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugHealthBarDisplay" operation="set" value="600"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugHealthBarDisplay" operation="subtract" value="1"/>
 				
 				<passive_effect name="BuffResistance" operation="base_add" value=".5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
@@ -6220,12 +6238,12 @@
 		
 		<buff name="buffDrugEyeKandy2" name_key="drugEyeKandy" description_key="drugEyeKandyDesc" icon="ui_game_symbol_candy_eye_candy">
 			<stack_type value="replace"/>
-			<duration value="120"/>
+			<duration value="600"/>
 			<update_rate value="1"/>
 			<display_value value="$buffDrugEyeKandyDisplay"/><display_value_format value="time"/>
 			<!-- Find that sparkling treasure easier with a drop of Eye Kandy. Increases perception 2 points for 2 minutes. Find much better loot. (add 50 to loot stage) -->
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugEyeKandyDisplay" operation="set" value="120"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugEyeKandyDisplay" operation="set" value="600"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugEyeKandyDisplay" operation="subtract" value="1"/>
 				
 				<passive_effect name="LootStage" operation="base_add" value="5"/>
@@ -7069,8 +7087,8 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffSapDisplay" operation="set" value="@$buffSapDuration"/>
 			</effect_group>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffSapDuration" operation="set" value="1800">
-					<requirement name="CVarCompare" cvar="$buffSapDuration" operation="GTE" value="1800"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffSapDuration" operation="set" value="900">
+					<requirement name="CVarCompare" cvar="$buffSapDuration" operation="GTE" value="900"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffSapDisplay" operation="set" value="@$buffSapDuration"/>
 			</effect_group>
@@ -9900,11 +9918,10 @@
 			<stack_type value="replace"/> 
 			<duration value="900"/> 
 			<display_value value="$buffAntiradDisplay"/><display_value_format value="time"/>
-			<update_rate value="1"/>
+			<update_rate value="1"/> <!--
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="900"/>
-				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="add" value="900"/>
-			</effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="900"/> 
+			</effect_group> -->
 			<effect_group>
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiationNew,buffRadiationWeak,buffTwitchRadiation"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.5" tags="buffRadiationStrong"/>
@@ -9912,6 +9929,11 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffRadiationNew2"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffTwitchRadiation"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="subtract" value="1"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
 			</effect_group>
 		</buff>
 		
@@ -9919,10 +9941,10 @@
 			<stack_type value="replace"/> 
 			<duration value="990"/> 
 			<display_value value="$buffAntiradDisplay"/><display_value_format value="time"/>
-			<update_rate value="1"/>
+			<update_rate value="1"/> <!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="990"/>
-			</effect_group>
+			</effect_group> -->
 			<effect_group>
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiationNew,buffRadiationWeak,buffTwitchRadiation"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.5" tags="buffRadiationStrong"/>
@@ -9930,6 +9952,11 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffRadiationNew2"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffTwitchRadiation"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="subtract" value="1"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
 			</effect_group>
 		</buff>
 		
@@ -9937,10 +9964,10 @@
 			<stack_type value="replace"/> 
 			<duration value="1080"/> 
 			<display_value value="$buffAntiradDisplay"/><display_value_format value="time"/>
-			<update_rate value="1"/>
+			<update_rate value="1"/> <!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="1080"/>
-			</effect_group>
+			</effect_group> -->
 			<effect_group>
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiationNew,buffRadiationWeak,buffTwitchRadiation"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.5" tags="buffRadiationStrong"/>
@@ -9948,6 +9975,11 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffRadiationNew2"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffTwitchRadiation"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="subtract" value="1"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
 			</effect_group>
 		</buff>
 		
@@ -9955,10 +9987,10 @@
 			<stack_type value="replace"/> 
 			<duration value="1170"/> 
 			<display_value value="$buffAntiradDisplay"/><display_value_format value="time"/>
-			<update_rate value="1"/>
+			<update_rate value="1"/> <!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="1170"/>
-			</effect_group>
+			</effect_group> -->
 			<effect_group>
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiationNew,buffRadiationWeak,buffTwitchRadiation"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.5" tags="buffRadiationStrong"/>
@@ -9966,6 +9998,11 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffRadiationNew2"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffTwitchRadiation"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="subtract" value="1"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
 			</effect_group>
 		</buff>
 		
@@ -9973,10 +10010,10 @@
 			<stack_type value="replace"/> 
 			<duration value="1260"/> 
 			<display_value value="$buffAntiradDisplay"/><display_value_format value="time"/>
-			<update_rate value="1"/>
+			<update_rate value="1"/> <!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="1260"/>
-			</effect_group>
+			</effect_group> -->
 			<effect_group>
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiationNew,buffRadiationWeak,buffTwitchRadiation"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.5" tags="buffRadiationStrong"/>
@@ -9984,6 +10021,11 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffRadiationNew2"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffTwitchRadiation"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="subtract" value="1"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
 			</effect_group>
 		</buff>
 		
@@ -9991,10 +10033,10 @@
 			<stack_type value="replace"/> 
 			<duration value="1350"/> 
 			<display_value value="$buffAntiradDisplay"/><display_value_format value="time"/>
-			<update_rate value="1"/>
+			<update_rate value="1"/> <!--
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="1350"/>
-			</effect_group>
+			</effect_group> -->
 			<effect_group>
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiationNew,buffRadiationWeak,buffTwitchRadiation"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.5" tags="buffRadiationStrong"/>
@@ -10002,6 +10044,11 @@
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffRadiationNew2"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffTwitchRadiation"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="subtract" value="1"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="0"/>
 			</effect_group>
 		</buff>
 		
@@ -10555,11 +10602,11 @@
 			</effect_group>
 
 			<effect_group> <!-- run particles 
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
 
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc"/>
 				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc" />
@@ -10582,11 +10629,11 @@
 			</effect_group>
 
 			<effect_group> <!-- run particles 
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
 
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc"/>
 				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc" />
@@ -10609,11 +10656,11 @@
 			</effect_group>
 
 			<effect_group> <!-- run particles 
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
 
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc"/>
 				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc" />
@@ -10636,11 +10683,11 @@
 			</effect_group>
 
 			<effect_group> <!-- run particles 
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
 
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc"/>
 				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc" />
@@ -10663,11 +10710,11 @@
 			</effect_group>
 
 			<effect_group> <!-- run particles 
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
 
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc"/>
 				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc" />
@@ -10690,11 +10737,11 @@
 			</effect_group>
 
 			<effect_group> <!-- run particles 
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" target="self" particle="#SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" local_rotation="0,0,0"/> -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
-				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/FrozenEffect.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="#@modfolder:Assets/SciFiStuff.unity3d?ColdProc" local_offset="0,0.5,0" parent_transform="LOD0" shape_mesh="true"/>
 
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc"/>
 				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" target="self" particle="ColdProc" />

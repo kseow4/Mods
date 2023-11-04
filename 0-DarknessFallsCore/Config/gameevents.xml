@@ -184,6 +184,20 @@
 				<property name="added_item_counts" value="1" />
 			</action>
 		</action_sequence>
+		
+		<action_sequence name="DF_POIReset">
+			<property name="allow_user_trigger" value="true" />
+			<property name="action_type" value="Game" />
+			<property name="category" value="poi" />
+			<action class="POIReset">
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="quest_started" />
+				<property name="phase" value="1" />
+			</action>
+			
+		</action_sequence>
 
 		<!-- TWITCH INTEGRATION STUFF -->	
 		<!-- SINGLE SPAWNS -->		

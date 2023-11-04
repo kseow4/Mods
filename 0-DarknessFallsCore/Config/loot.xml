@@ -3873,10 +3873,12 @@
 			<item group="groupNurseMedsT1" loot_prob_template="ProbT1"/>
 			<item group="groupNurseMedsT2" loot_prob_template="ProbT2"/>
 			<item group="groupNurseMedsT3" loot_prob_template="ProbT3"/>
+			<item group="groupNurseMedsT3" loot_prob_template="ProbT4"/>
 			<item group="groupStripperDrugsT0" loot_prob_template="ProbT0"/>
 			<item group="groupStripperDrugsT1" loot_prob_template="ProbT1"/>
 			<item group="groupStripperDrugsT2" loot_prob_template="ProbT2"/>
 			<item group="groupStripperDrugsT3" loot_prob_template="ProbT3"/>
+			<item group="groupStripperDrugsT3" loot_prob_template="ProbT4"/>
 		</lootgroup>
 		
 		<lootgroup name="group44mmCoilSmall">
@@ -4240,7 +4242,7 @@
 		<item name="DFBigForge" loot_prob_template="ProbT2"/>
 		<item name="DFworkstationMetal" loot_prob_template="ProbT2"/>
 		<item name="cementMixer" loot_prob_template="ProbT2"/>
-		<item name="cementMixer" loot_prob_template="ProbT3"/>
+		<item name="cementMixer" loot_prob_template="ProbT3Cap"/>
 		<item name="DFLathe" loot_prob_template="veryLow"/>
 	</set>	
 	
@@ -4294,7 +4296,7 @@
 			<item group="groupWeaponsT1_Electrocutioner" loot_prob_template="ProbT1"/>
 			<item group="groupWeaponsT1_Electrocutioner" loot_prob_template="ProbT2"/>
 			<item group="groupWeaponsT2_Electrocutioner" loot_prob_template="ProbT3"/>
-			<item group="groupWeaponsT3_Electrocutioner" loot_prob_template="ProbT3"/>
+			<item group="groupWeaponsT3_Electrocutioner" loot_prob_template="ProbT3Cap"/>
 		</lootgroup>
 		
 		<lootgroup name="groupStunBaton">
@@ -5501,12 +5503,14 @@
 			<item group="groupArmorT1_Light" loot_prob_template="ProbT0"/>
 			<item group="groupArmorT2_Light" loot_prob_template="ProbT1"/>
 			<item group="groupArmorT3_Light" loot_prob_template="ProbT2"/>
+			<item group="groupArmorT3_Light" loot_prob_template="ProbT3Cap"/>
 		</lootgroup>
 		<lootgroup name="groupArmor_LightTPlus">
 			<item group="groupArmorT1_Light" loot_prob_template="ProbT0"/>
 			<item group="groupArmorT2_Light" loot_prob_template="ProbT1"/>
 			<item group="groupArmorT3_Light" loot_prob_template="ProbT2"/>
-			<item group="groupArmorT3_Light" loot_prob_template="ProbT2"/>
+			<item group="groupArmorT3_Light" loot_prob_template="ProbT3"/>
+			<item group="groupArmorT3_Light" loot_prob_template="ProbT3Cap"/>
 		</lootgroup>
 
 		<lootgroup name="groupArmorT1_Heavy" loot_quality_template="QLTemplateT0">
@@ -7166,7 +7170,7 @@
 			<item group="group_FoodT0" loot_prob_template="ProbT0"/>
 			<item group="group_FoodT1" loot_prob_template="ProbT1"/>
 			<item group="group_FoodT2" loot_prob_template="ProbT2"/>
-			<item group="group_FoodT3" loot_prob_template="ProbT3"/>
+			<item group="group_FoodT3" loot_prob_template="ProbT3Cap"/>
 		</lootgroup>
 
 		<lootgroup name="group_DrinkT0">
@@ -7235,7 +7239,7 @@
 			<item group="group_DrinkT0" loot_prob_template="ProbT0"/>
 			<item group="group_DrinkT1" loot_prob_template="ProbT1"/>
 			<item group="group_DrinkT2" loot_prob_template="ProbT2"/>
-			<item group="group_DrinkT3" loot_prob_template="ProbT3"/>
+			<item group="group_DrinkT3" loot_prob_template="ProbT3Cap"/>
 		</lootgroup>
 		
 		<lootgroup name="meat+hide" count="all">
@@ -7312,9 +7316,10 @@
 			<item group="groupSupplyBooks_T2" loot_prob_template="ProbT1"/>
 			<item group="groupSupplyBooks_T3" loot_prob_template="ProbT2"/>
 			<item group="groupSupplyBooks_T3" loot_prob_template="ProbT3"/>
+			<item group="groupSupplyBooks_T3" loot_prob_template="ProbT4"/>
 		</lootgroup>
 		
-		<lootgroup name="powerArmor">
+		<lootgroup name="powerArmor" loot_quality_template="qualQuestFixed10">
 			<item name="DFarmorTechGloves"/>
 			<item name="DFarmorTechHelmet"/>
 			<item name="DFarmorTechBoots"/>
@@ -7409,6 +7414,8 @@
 			<item group="commonBooks" />
 			<item group="rareBooksNoMaster" loot_prob_template="ProbT2"/>
 			<item group="classMasteryBooks" loot_prob_template="ProbT3" count="1"/>
+			<item group="classMasteryBooks" loot_prob_template="ProbT3Cap" count="1"/>
+			<item group="rareBooksNoMaster" loot_prob_template="ProbT3Cap"/>
 		</lootgroup>
 		
 		<lootgroup name="questSchematicsT1-T2">
@@ -7472,6 +7479,7 @@
 			<item group="groupConstructionResourcesT1" loot_prob_template="ProbT1"/>
 			<item group="groupConstructionResourcesT2" loot_prob_template="ProbT2"/>
 			<item group="groupConstructionResourcesT3" loot_prob_template="ProbT3"/>
+			<item group="groupConstructionResourcesT3" loot_prob_template="ProbT4"/>
 		</lootgroup>
 		
 		<lootgroup name="groupWeaponsT0_CrapShotgun" count="all" loot_quality_template="QLTemplateT0">
@@ -7536,33 +7544,33 @@
 		</lootgroup>
 		
 		<lootgroup name="groupWeaponsT1_FatCop" count="1,2" loot_quality_template="QLTemplateT1">
-			<item group="groupPistolParts" loot_prob_template="ProbT1" count="1,2"/>
-			<item name="gunHandgunT1Pistol" loot_prob_template="ProbT1" count="1"/>
-			<item group="groupP225Parts" loot_prob_template="ProbT2" count="1,2"/>
-			<item name="DFgunP225" loot_prob_template="ProbT2" count="1"/>
+			<item group="groupPistolParts" loot_prob_template="low" count="1,2"/>
+			<item name="gunHandgunT1Pistol" loot_prob_template="low" count="1"/>
+			<item group="groupP225Parts" loot_prob_template="low" count="1,2"/>
+			<item name="DFgunP225" loot_prob_template="low" count="1"/>
 			<item name="ammo9mmBulletBall" count="10,40"/>
 		</lootgroup>
 
 		<lootgroup name="groupWeaponsT2_FatCopFeral" count="1,2" loot_quality_template="QLTemplateT2">
-			<item group="groupP225Parts" loot_prob_template="ProbT2" count="1,2"/>
-			<item name="DFgunP225" loot_prob_template="ProbT2" count="1"/>
-			<item group="groupMagnumParts" loot_prob_template="ProbT3" count="1,2"/>
-			<item name="gunHandgunT2Magnum44" loot_prob_template="ProbT3" count="1"/>
+			<item group="groupP225Parts" loot_prob_template="low" count="1,2"/>
+			<item name="DFgunP225" loot_prob_template="low" count="1"/>
+			<item group="groupMagnumParts" loot_prob_template="veryLow" count="1,2"/>
+			<item name="gunHandgunT2Magnum44" loot_prob_template="veryLow" count="1"/>
 			<item name="ammo9mmBulletBall" count="10,40"/>
 		</lootgroup>
 
 		<lootgroup name="groupWeaponsT3_FatCopRadiated" count="1,2" loot_quality_template="QLTemplateT3">
-			<item group="groupMagnumParts" loot_prob_template="ProbT2" count="1,2"/>
-			<item name="gunHandgunT2Magnum44" loot_prob_template="ProbT2" count="1"/>
-			<item group="groupMagnumParts" loot_prob_template="ProbT3" count="1,2"/>
-			<item name="gunHandgunT2Magnum44" loot_prob_template="ProbT3" count="1"/>
+			<item group="groupMagnumParts" loot_prob_template="low" count="1,2"/>
+			<item name="gunHandgunT2Magnum44" loot_prob_template="low" count="1"/>
+			<item group="groupMagnumParts" loot_prob_template="veryLow" count="1,2"/>
+			<item name="gunHandgunT2Magnum44" loot_prob_template="veryLow" count="1"/>
 			<item name="ammo44MagnumBulletBall" count="4,19"/>
 		</lootgroup>
 		
 		<lootgroup name="groupWeaponsT4_FatCopDemon" count="1,2" loot_quality_template="QLTemplateT3">
-			<item group="groupMagnumParts" loot_prob_template="ProbT3" count="1,2"/>
-			<item name="gunHandgunT2Magnum44" loot_prob_template="ProbT3" count="1"/>
-			<item name="ammo44MagnumBulletBall" count="8,38" loot_prob_template="ProbT3"/>
+			<item group="groupMagnumParts" loot_prob_template="veryLow" count="1,2"/>
+			<item name="gunHandgunT2Magnum44" loot_prob_template="veryLow" count="1"/>
+			<item name="ammo44MagnumBulletBall" count="8,38" loot_prob_template="veryLow"/>
 			<item group="groupCoilpistolParts" loot_prob_template="ProbT4" count="1,2"/>
 			<item name="DFgunCoilpistol" loot_prob_template="ProbT4" count="1"/>
 			<item name="DF44MagCoilround" count="8,38" loot_prob_template="ProbT4"/>
@@ -8034,7 +8042,6 @@
 		<lootgroup name="groupWeaponsRangedSoldierDemon">
 			<item group="groupWeaponsT3_MachinegunnerDemon"/>
 			<item group="groupWeaponsT3_Demolitionist"/>
-			<item group="powerArmor"/>
 		</lootgroup>
 		
 		<lootgroup name="groupWeaponsDemoZombie">
@@ -10004,23 +10011,24 @@
 		</lootcontainer>
 		
 		<!-- zombie cop demon -->
-		<lootcontainer name="zCopDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
-			<item group="groupWeaponsMeleeFatCopDemon" prob="1.1" count="1"/>
+		<lootcontainer name="zCopDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+			<item group="groupWeaponsMeleeFatCopDemon" prob="2" count="1"/>
+			<item group="groupWeaponsMeleeBikerDemon" prob="1.1" count="1"/>
 			<item group="groupAmmoMedium" prob="2" count="2,4"/>
 			<item name="resourceMilitaryFiber" count="1,4" prob="0.3"/>
 			<item name="DFresourceDemonicEssence" prob="0.1"/>
-			<item name="DFgunBlackSky" count="1" prob="0.05"/>
+			<item name="DFgunBlackSky" count="1" prob="0.03"/>
 		</lootcontainer>
 
 		<!-- zombie nurse demon -->
-		<lootcontainer name="zNurseDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zNurseDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupNurseMedsT3" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT4_DeepCuts" prob="0.5" count="1"/>
 		</lootcontainer>
 
 		<!-- fat zombie/boe/female/hawaiian demon -->
-		<lootcontainer name="zFatBoiDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFatBoiDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupFatZombieDemon" count="1,2" prob="1"/>
 			<item group="group_FoodScaled" prob="5"/>
 			<item group="groupAmmoMedium" prob="1"/>
@@ -10028,7 +10036,7 @@
 		</lootcontainer>
 
 		<!-- wight zombie demon -->
-		<lootcontainer name="zWightDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zWightDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item name="resourceBone" count="1,4" prob="1"/>
 			<item group="groupWeaponsRangedGunSafeScaled" prob="0.5"/>
 			<item group="powerArmor" prob="0.1"/>
@@ -10036,7 +10044,7 @@
 		</lootcontainer>
 
 		<!-- zombieMaleHazmat demon -->
-		<lootcontainer name="zHazmatDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zHazmatDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="rareMedicine" prob="0.2"/>
 			<item name="drinkJarGrainAlcohol" count="1,4" prob="0.5"/>
 			<item group="rareBooks"/>	
@@ -10049,7 +10057,7 @@
 		</lootcontainer>
 
 		<!-- Lab zombie demon -->
-		<lootcontainer name="zLabDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLabDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupApparelClothes" prob="1.9"/>
 			<item name="DFScifiAIOT" count="1" loot_prob_template="ProbT4"/>
 			<item name="DFKeycardBlue" count="1" prob="0.6"/>
@@ -10062,7 +10070,7 @@
 		</lootcontainer> 
 
 		<!-- Lab zombie feral -->
-		<lootcontainer name="zLabFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLabFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupNurseFeral" prob="1.9"/>
 			<item name="DFScifiAIOT" count="1" loot_prob_template="ProbT4"/>
 			<item name="DFKeycardGreen" count="1" prob="0.6"/>
@@ -10075,7 +10083,7 @@
 		</lootcontainer> 
 
 		<!-- New geneic zombie demon -->
-		<lootcontainer name="zShitDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zShitDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupCoilweaponsDemon" count="1" prob="0.5"/>
 			<item group="groupAmmoMedium" count="1,2" prob="1"/>
 			<item name="casinoCoin" count="50,1000" prob="0.3"/>
@@ -10085,7 +10093,7 @@
 		</lootcontainer>
 
 		<!-- zombie utility demon -->
-		<lootcontainer name="zUtilDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zUtilDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="group_SupplyConstructionScaled" />
 			<item group="supplyCrateWorkstationToolsScaled" />
 			<item name="DFresourceDemonicEssence" prob="0.1"/>
@@ -10093,7 +10101,7 @@
 		</lootcontainer>
 
 		<!-- ZombieSoldier demon -->
-		<lootcontainer name="zSoldierDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSoldierDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsRangedSoldierDemon" prob="1.1"/>
 			<item name="DFKeycardBlue" count="1" prob="0.6"/>
 			<item name="DFKeycardRed" count="1" prob="0.4"/>
@@ -10101,10 +10109,11 @@
 			<item name="drugDiazepam" count="1" prob="0.25"/>
 			<item name="modTobisBalancingAct" prob=".01"/>
 			<item group="groupArmorScaledTPlus" prob="0.5" count="1,2"/> 
+			<item group="powerArmor" prob="0.1"/>
 		</lootcontainer>
 
 		<!-- ZombieCheerleader demon -->
-		<lootcontainer name="zBimboDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBimboDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item name="apparelTShirtZU" prob="1.5"/>
 			<item name="apparelRunningShoesRegular" prob="1.5"/>
 			<item name="DFresourceDemonicEssence" prob="0.1"/>	
@@ -10112,7 +10121,7 @@
 		</lootcontainer>
 
 		<!-- ZombieSkateboarder demon -->
-		<lootcontainer name="zSkateboarderDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSkateboarderDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsThugDemon" prob="1.1" count="1,2"/>
 			<item group="groupJunk" prob="2"/>
 			<item name="apparelHoodySweatshirt" prob="1"/>
@@ -10125,7 +10134,7 @@
 		</lootcontainer>
 
 		<!-- zombieOldTimer demon -->
-		<lootcontainer name="zFarmhandDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmhandDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeapons_Gunslinger" count="1,2" prob="0.75"/>
 			<item group="groupWeapons_DeadEye" count="1,2" prob="0.9"/>
 			<item group="rareOres" count="1,3" prob="2"/>
@@ -10134,7 +10143,7 @@
 		</lootcontainer>
 
 		<!-- ZombieBiker demon -->
-		<lootcontainer name="zBikerDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBikerDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsMeleeBikerDemon" count="1" prob="1.1"/>
 			<item group="mechanicPartsRare" count="1" prob="1.1"/>
 			<item group="mechanicVehiclesUltraRare" count="1" prob="1.1"/>
@@ -10147,7 +10156,7 @@
 		</lootcontainer>
 
 		<!-- ZombieStripper demon -->
-		<lootcontainer name="zStripperDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zStripperDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupStripperDrugsT3" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT3_DeepCuts" prob="0.5" count="1"/>
@@ -10155,7 +10164,7 @@
 		</lootcontainer>
 
 		<!-- ZombieFarmer demon -->
-		<lootcontainer name="zFarmerDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmerDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="homemadeFood" prob="1"/>
 			<item group="homemadeDrink" prob="1"/>
 			<item name="meleeToolShovelT2SteelShovel" prob="1"/>
@@ -10167,7 +10176,7 @@
 		</lootcontainer>
 		
 		<!-- ZombieBiker Feral-->
-		<lootcontainer name="zBikerFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBikerFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsMeleeBikerFeral" count="1" prob="1.1" />
 			<item group="mechanicPartsUncommon" count="1" prob="1.1"/>
 			<item group="mechanicVehiclesUncommon" count="1" prob="1.1"/>
@@ -10180,7 +10189,7 @@
 		</lootcontainer>
 		
 		<!-- ZombieBiker Feral Rad-->
-		<lootcontainer name="zBikerFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBikerFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsMeleeBikerRadiated" count="1" prob="1.1"/>
 			<item group="mechanicPartsUncommon" count="1" prob="1.1"/>
 			<item group="mechanicVehiclesRare" count="1" prob="1.1"/>
@@ -10193,48 +10202,48 @@
 		</lootcontainer>
 		
 		<!-- Zombie Demo-->
-		<lootcontainer name="zDemo" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zDemo" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsDemoZombie" prob="1.1" count="1,2"/>
 			<item group="groupArmorScaledTPlus" prob="1.1" count="1,2"/> 
 		</lootcontainer>
 		
 		<!-- Zombie Demo Mutated-->
-		<lootcontainer name="zDemoMutated" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zDemoMutated" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsMutatedDemoZombie" prob="1.1" count="1,2"/>
 			<item group="groupArmorScaledTPlus" prob="1.1" count="1,2"/>
 		</lootcontainer>
 		
 		<!-- zombie utility worker feral -->
-		<lootcontainer name="zUtilWorkFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zUtilWorkFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupConstructionZombieFeral" prob="1.1"/>
 		</lootcontainer>
 		
 		<!-- zombie utility worker feral rad -->
-		<lootcontainer name="zUtilWorkFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zUtilWorkFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupConstructionZombieRadiated" prob="1.1"/>
 		</lootcontainer>
 		
 		<!-- zombie utility worker demon -->
-		<lootcontainer name="zUtilWorkDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zUtilWorkDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupConstructionZombieDemon" prob="1.1"/>
 		</lootcontainer>
 		
 		<!-- fatHawaiianZombie, fat zombie female feral-->
-		<lootcontainer name="zFatBoiFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFatBoiFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupFatZombieFeral" count="1,2" prob="1"/>
 			<item group="group_FoodScaled" prob="5"/>
 			<item group="groupAmmoMedium" prob="1"/>
 		</lootcontainer>
 		
 		<!-- fatHawaiianZombie, fat zombie female feral-->
-		<lootcontainer name="zFatBoiFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFatBoiFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupFatZombieRadiated" count="1,2" prob="1"/>
 			<item group="group_FoodScaled" prob="5"/>
 			<item group="groupAmmoMedium" prob="1"/>
 		</lootcontainer>
 		
 		<!-- zombieBusinessMan Feral -->
-		<lootcontainer name="zWallstreetFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zWallstreetFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupTreasureMaps" count="1" prob="2"/>
 			<item group="suitAll" prob="2"/>
 			<item name="oldCash" count="14,60" prob="2"/>
@@ -10243,7 +10252,7 @@
 		</lootcontainer>
 		
 		<!-- zombieBusinessMan Feral Rad -->
-		<lootcontainer name="zWallstreetFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zWallstreetFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupTreasureMaps" count="1" prob="2"/>
 			<item group="suitAll" prob="2"/>
 			<item name="oldCash" count="14,60" prob="2"/>
@@ -10252,7 +10261,7 @@
 		</lootcontainer>		
 		
 		<!-- zombieBusinessMan Demon -->
-		<lootcontainer name="zWallstreetDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zWallstreetDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupTreasureMaps" count="1" prob="2"/>
 			<item group="suitAll" prob="2"/>
 			<item name="oldCash" count="14,60" prob="2"/>
@@ -10261,7 +10270,7 @@
 		</lootcontainer>
 		
 		<!-- zombie stripper feral -->
-		<lootcontainer name="zStripperFeral" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zStripperFeral" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupStripperDrugsT1" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT1_DeepCuts" count="1" prob="0.5"/>
@@ -10269,7 +10278,7 @@
 		</lootcontainer>
 
 		<!-- zombie stripper feral radiated -->
-		<lootcontainer name="zStripperFeralRadiated" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zStripperFeralRadiated" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupStripperDrugsT3" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT3_DeepCuts" count="1" prob="0.5"/>
@@ -10277,7 +10286,7 @@
 		</lootcontainer>
 		
 		<!-- zombie moe -->
-		<lootcontainer name="zBoe" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBoe" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupMoe" prob="1.1" count="1"/>
 			<item group="group_FoodScaled" count="1,2" prob="1"/>
 			<item group="group_DrinksScaled" count="1,2" prob="1"/>
@@ -10287,7 +10296,7 @@
 		</lootcontainer>
 
 		<!-- zombie moe feral -->
-		<lootcontainer name="zBoeFeral" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBoeFeral" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupMoeFeral" prob="1.1" count="1"/>
 			<item group="group_FoodScaled" count="1,2" prob="1"/>
 			<item group="group_DrinksScaled" count="1,2" prob="1"/>
@@ -10297,7 +10306,7 @@
 		</lootcontainer>
 
 		<!-- zombie moe feral radiated -->
-		<lootcontainer name="zBoeFeralRad" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBoeFeralRad" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupMoeRadiated" prob="1.1" count="1"/>
 			<item group="group_FoodScaled" count="1,2" prob="1"/>
 			<item group="group_DrinksScaled" count="1,2" prob="1"/>
@@ -10307,7 +10316,7 @@
 		</lootcontainer>
 
 		<!-- zombie moe demon -->
-		<lootcontainer name="zBoeDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBoeDemon" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupMoeDemon" prob="1.1" count="1"/>
 			<item group="group_FoodScaled" count="1,2" prob="1"/>
 			<item group="group_DrinksScaled" count="1,2" prob="1"/>
@@ -10317,7 +10326,7 @@
 		</lootcontainer>		
 		
 		<!-- Lab zombie feral rad -->
-		<lootcontainer name="zLabFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLabFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupNurseFeral" prob="1.9"/>
 			<item name="DFScifiAIOT" count="1" loot_prob_template="ProbT4"/>
 			<item name="DFKeycardBlue" count="1" prob="0.6"/>
@@ -10330,7 +10339,7 @@
 		</lootcontainer> 
 		
 		<!-- zombie skateboarder radiated -->
-		<lootcontainer name="zSkateboarderR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSkateboarderR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsThugFeral" prob="1.1" count="1,2"/>
 			<item group="groupJunk" prob="1.5"/>
 			<item name="apparelHoodySweatshirt" prob="0.75"/>
@@ -10341,7 +10350,7 @@
 		</lootcontainer>
 
 		<!-- zombie skateboarder feral -->
-		<lootcontainer name="zSkateboarderF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSkateboarderF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsThugRadiated" prob="1.1" count="1,2"/>
 			<item group="groupJunk" prob="1.25"/>
 			<item name="apparelHoodySweatshirt" prob="0.6"/>
@@ -10353,7 +10362,7 @@
 		</lootcontainer>
 		
 		<!-- zombie skateboarder feral radiated -->
-		<lootcontainer name="zSkateboarderFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSkateboarderFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsThugDemon" prob="1.1" count="1,2"/>
 			<item group="groupJunk" prob="1"/>
 			<item name="apparelHoodySweatshirt" prob="0.5"/>
@@ -10365,21 +10374,21 @@
 		</lootcontainer>
 		
 		<!-- zombie prepper -->
-		<lootcontainer name="zPrepper" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zPrepper" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupPrepperFoodDrink" prob="2" count="1,2"/>
 			<item group="groupPrepperMelee" prob="1" count="1,2"/>
 			<item group="groupPrepperRanged" prob="0.5" count="1,2"/>
 		</lootcontainer>
 		
 		<!-- zombie prepper radiated -->
-		<lootcontainer name="zPrepperR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zPrepperR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupPrepperFoodDrink" prob="2" count="1,2"/>
 			<item group="groupPrepperMelee" prob="1" count="1,2"/>
 			<item group="groupPrepperRanged" prob="0.5" count="1,2"/>
 		</lootcontainer>
 		
 		<!-- zombie prepper feral -->
-		<lootcontainer name="zPrepperF" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zPrepperF" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupPrepperFoodDrinkFeral" prob="2" count="1,2"/>
 			<item group="groupPrepperMeleeFeral" prob="1" count="1,2"/>
 			<item group="groupPrepperRangedFeral" prob="0.5" count="1,2"/>
@@ -10388,7 +10397,7 @@
 		</lootcontainer>
 		
 		<!-- zombie prepper feral radiated -->
-		<lootcontainer name="zPrepperFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zPrepperFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupPrepperFoodDrinkRadiated" prob="2" count="1,2"/>
 			<item group="groupPrepperMeleeRadiated" prob="1" count="1,2"/>
 			<item group="groupPrepperRangedRadiated" prob="0.5" count="1,2"/>
@@ -10397,7 +10406,7 @@
 		</lootcontainer>
 		
 		<!-- zombie prepper demon -->
-		<lootcontainer name="zPrepperDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zPrepperDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupPrepperFoodDrinkDemon" prob="2" count="1,2"/>
 			<item group="groupPrepperMeleeDemon" prob="1" count="1,2"/>
 			<item group="groupPrepperRangedDemon" prob="0.5" count="1,2"/>
@@ -10406,7 +10415,7 @@
 		</lootcontainer>
 		
 		<!-- snowzombie, lumberjack demon-->
-		<lootcontainer name="zLumberjackDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLumberjackDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupLumberjackDemon" prob="1.1"/>
 			<item group="groupApparelClothes" prob="1"/>
 			<item group="rareOres" prob="0.1"/>
@@ -10415,72 +10424,74 @@
 		</lootcontainer>
 		
 		<!-- zombie cop-->
-		<lootcontainer name="zCop" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zCop" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsMeleeFatCop" prob="1.1" count="1"/>
 			<item group="groupAmmoMedium" prob="2" count="2,4"/>
 			<item name="resourceMilitaryFiber" count="1,4" prob="0.04"/>
 		</lootcontainer>
 
 		<!-- zombie cop radiated -->
-		<lootcontainer name="zCopR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zCopR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsMeleeFatCop" prob="1.1" count="1"/>
 			<item group="groupAmmoMedium" prob="2" count="2,4"/>
 			<item name="resourceMilitaryFiber" count="1,4" prob="0.1"/>
 		</lootcontainer>
 
 		<!-- zombie cop feral -->
-		<lootcontainer name="zCopF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
-			<item group="groupWeaponsMeleeFatCopFeral" prob="1.1" count="1"/>
+		<lootcontainer name="zCopF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+			<item group="groupWeaponsMeleeFatCopFeral" prob="2" count="1"/>
+			<item group="groupWeaponsMeleeBikerFeral" prob="1.1" count="1"/>
 			<item group="groupAmmoMedium" prob="2" count="2,4"/>			
 			<item name="resourceMilitaryFiber" count="1,4" prob="0.15"/>
-			<item name="DFgunBlackSky" count="1" prob="0.025"/>
+			<item name="DFgunBlackSky" count="1" prob="0.01"/>
 		</lootcontainer>
 
 		<!-- zombie cop feral radiated -->
-		<lootcontainer name="zCopFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
-			<item group="groupWeaponsMeleeFatCopRadiated" prob="1.1" count="1"/>
+		<lootcontainer name="zCopFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+			<item group="groupWeaponsMeleeFatCopRadiated" prob="2" count="1"/>
+			<item group="groupWeaponsMeleeBikerRadiated" prob="1.1" count="1"/>
 			<item group="groupAmmoMedium" prob="2" count="2,4"/>
 			<item name="resourceMilitaryFiber" count="1,4" prob="0.2"/>
-			<item name="DFgunBlackSky" count="1" prob="0.03"/>
+			<item name="DFgunBlackSky" count="1" prob="0.02"/>
 		</lootcontainer>
 
 		<!-- zombie nurse, medical supplies -->
-		<lootcontainer name="zNurse" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zNurse" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupNurseMedsT0" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT0_DeepCuts" prob="0.5" count="1"/>
 		</lootcontainer>
 
 		<!-- zombie nurse radiated -->
-		<lootcontainer name="zNurseR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zNurseR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupNurseMedsT1" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT1_DeepCuts" prob="0.5" count="1"/>
 		</lootcontainer>
 
 		<!-- zombie nurse feral -->
-		<lootcontainer name="zNurseF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zNurseF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupNurseMedsT2" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT3_DeepCuts" prob="0.5" count="1"/>
 		</lootcontainer>
 
 		<!-- zombie nurse feral radiated -->
-		<lootcontainer name="zNurseFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zNurseFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupNurseMedsT3" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT4_DeepCuts" prob="0.5" count="1"/>
 		</lootcontainer>
 
 		<!-- fatHawaiianZombie, fat zombie -->
-		<lootcontainer name="zFatBoi" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFatBoi" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupFatZombie" count="1,2" prob="1"/>
 			<item group="group_FoodScaled" prob="5"/>
 			<item group="groupAmmoMedium" prob="1"/>
 		</lootcontainer>
 
 		<!-- wight zombie loot -->
-		<lootcontainer name="zWight" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zWight" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item name="resourceBone" count="1,4" prob="1"/>
 			<item group="groupWeaponsMeleeScaled" prob="1.1"/>
 			<item group="groupWeaponsRangedScaled" prob="0.75"/>
@@ -10490,7 +10501,7 @@
 		</lootcontainer>
 
 		<!-- zombieMaleHazmat -->
-		<lootcontainer name="zHazmat" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zHazmat" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="hazmatGear" count="1"/>
 			<item group="rareMedicine" prob="0.2"/>
 			<item name="drinkJarGrainAlcohol" count="1,4" prob="0.2"/>
@@ -10504,7 +10515,7 @@
 		</lootcontainer>
 
 		<!-- zombieMaleHazmat Radiated -->
-		<lootcontainer name="zHazmatR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zHazmatR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="hazmatGear" count="1"/>
 			<item group="rareMedicine" prob="0.2"/>
 			<item name="drinkJarGrainAlcohol" count="1,4" prob="0.4"/>
@@ -10514,7 +10525,7 @@
 		</lootcontainer>
 
 		<!-- zombieMaleHazmat Feral -->
-		<lootcontainer name="zHazmatF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zHazmatF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="hazmatGear" count="1"/>
 			<item group="rareMedicine" prob="0.2"/>
 			<item name="drinkJarGrainAlcohol" count="1,4" prob="0.5"/>
@@ -10527,7 +10538,7 @@
 		</lootcontainer>
 
 		<!-- zombieMaleHazmat Feral Radiated -->
-		<lootcontainer name="zHazmatFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zHazmatFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="hazmatGear" count="1"/>
 			<item group="rareMedicine" prob="0.2"/>
 			<item name="drinkJarGrainAlcohol" count="1,4" prob="0.5"/>
@@ -10541,21 +10552,21 @@
 		</lootcontainer>
 
 		<!-- snowzombie, lumberjack zombie loot-->
-		<lootcontainer name="zLumberjack" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLumberjack" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupLumberjack" prob="1.1"/>
 			<item group="groupApparelClothes" prob="1"/>
 			<item group="rareOres" prob="0.02"/>
 		</lootcontainer>
 
 		<!-- snowzombie, lumberjack radioactive zombie loot-->
-		<lootcontainer name="zLumberjackR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLumberjackR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupLumberjack" prob="1.1"/>
 			<item group="groupApparelClothes" prob="1"/>
 			<item group="rareOres" prob="0.02"/>
 		</lootcontainer>
 
 		<!-- snowzombie, lumberjack feral zombie loot-->
-		<lootcontainer name="zLumberjackF" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLumberjackF" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupLumberjackFeral" prob="1.1"/>
 			<item group="groupApparelClothes" prob="1"/>
 			<item group="rareOres" prob="0.02"/>
@@ -10564,7 +10575,7 @@
 		</lootcontainer>
 
 		<!-- snowzombie, lumberjack feral radioactive zombie loot-->
-		<lootcontainer name="zLumberjackFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLumberjackFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupLumberjackRadiated" prob="1.1"/>
 			<item group="groupApparelClothes" prob="1"/>
 			<item group="rareOres" prob="0.02"/>
@@ -10573,7 +10584,7 @@
 		</lootcontainer>
 
 		<!-- ZombieSoldier loot -->
-		<lootcontainer name="zSoldier" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSoldier" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsRangedSoldier" prob="1.1"/>
 			<item name="thrownGrenade" count="2,4" prob="0.5"/>
 			<item name="drugDiazepam" count="1" prob="0.05"/>
@@ -10582,7 +10593,7 @@
 		</lootcontainer>
 
 		<!-- ZombieSoldier Radiated loot -->
-		<lootcontainer name="zSoldierR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSoldierR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsRangedSoldier" prob="1.1"/>
 			<item name="DFKeycardGreen" count="1" prob="0.6"/>
 			<item name="thrownGrenade" count="2,4" prob="0.5"/>
@@ -10591,7 +10602,7 @@
 		</lootcontainer>
 
 		<!-- ZombieSoldier Feral loot -->
-		<lootcontainer name="zSoldierF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSoldierF" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsRangedSoldierFeral" prob="1.1"/>
 			<item name="DFKeycardGreen" count="1" prob="0.6"/>
 			<item name="DFKeycardBlue" count="1" prob="0.4"/>
@@ -10601,7 +10612,7 @@
 		</lootcontainer>
 
 		<!-- ZombieSoldier Feral Radiated loot -->
-		<lootcontainer name="zSoldierFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSoldierFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsRangedSoldierFeralRad" prob="1.1"/>
 			<item name="DFKeycardBlue" count="1" prob="0.4"/>
 			<item name="DFKeycardRed" count="1" prob="0.2"/>
@@ -10611,18 +10622,18 @@
 		</lootcontainer>
 
 		<!-- zombie utility worker / construction worker loot -->
-		<lootcontainer name="zUtilWork" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zUtilWork" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupConstructionZombie" prob="1.1"/>
 		</lootcontainer>
 
 		<!-- ZombieFootballPlayer -->
-		<lootcontainer name="zFutBol" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFutBol" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupJunk" prob="1.5"/>
 			<item group="ZombieFootballPlayer" />
 		</lootcontainer>
 
 		<!-- ZombieCheerleader -->
-		<lootcontainer name="zBimbo" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBimbo" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupJunk" prob="1"/>
 			<item name="apparelTShirtZU" prob="1.5"/>
 			<item name="apparelSkirt" count="1" prob="0.2"/>
@@ -10631,7 +10642,7 @@
 		</lootcontainer>
 
 		<!-- ZombieSkateboarder -->
-		<lootcontainer name="zSkateboarder" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zSkateboarder" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsThug" prob="1.1" count="1,2"/>
 			<item group="groupJunk" prob="2"/>
 			<item name="apparelHoodySweatshirt" prob="1"/>
@@ -10642,7 +10653,7 @@
 		</lootcontainer>
 
 		<!-- zombieOldTimer / zombieCowboy -->
-		<lootcontainer name="zFarmhand" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmhand" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupJunk" prob="10"/>
 			<item group="groupWeapons_DeadEye" prob="1"/>
 			<item name="thrownDynamite" count="1,3" prob="1"/>
@@ -10660,7 +10671,7 @@
 		</lootcontainer>
 
 		<!-- zombieOldTimer / zombieCowboy Radiated -->
-		<lootcontainer name="zFarmhandR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmhandR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeapons_Gunslinger" prob="0.75"/>
 			<item group="groupWeapons_DeadEye" prob="1"/>
 			<item name="thrownDynamite" count="1,3" prob="1"/>
@@ -10678,7 +10689,7 @@
 		</lootcontainer>
 
 		<!-- zombieOldTimer / zombieCowboy Feral -->
-		<lootcontainer name="zFarmhandF" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmhandF" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeapons_Gunslinger" prob="0.75"/>
 			<item group="groupWeapons_DeadEye" prob="1"/>
 			<item name="thrownDynamite" count="1,3" prob="1"/>
@@ -10686,20 +10697,20 @@
 			<item name="drinkJarGrainAlcohol" count="1,3" prob="1"/>
 			<item name="oldCash" count="2,15" prob="1"/>
 			<item group="groupTreasureMaps" count="1" prob="1"/>
-			<item name="DFgunBlackSky" count="1" prob="0.025"/>
+			<item name="DFgunBlackSky" count="1" prob="0.01"/>
 		</lootcontainer>
 
 		<!-- zombieOldTimer / zombieCowboy Feral Radiated -->
-		<lootcontainer name="zFarmhandFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmhandFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeapons_Gunslinger" prob="0.75"/>
 			<item group="groupWeapons_DeadEye" prob="1"/>
 			<item group="rareOres" count="1,3" prob="2"/>
 			<item name="drinkJarGrainAlcohol" count="1,3" prob="1"/>
-			<item name="DFgunBlackSky" count="1" prob="0.05"/>
+			<item name="DFgunBlackSky" count="1" prob="0.02"/>
 		</lootcontainer>
 
 		<!-- ZombieBiker -->
-		<lootcontainer name="zBiker" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBiker" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsMeleeBiker" count="1" prob="1.1"/>
 			<item group="mechanicPartsCommon" count="1" prob="1.1"/>
 			<item group="mechanicVehiclesCommon" count="1" prob="1.1"/>
@@ -10712,7 +10723,7 @@
 		</lootcontainer>
 
 		<!-- ZombieStripper -->
-		<lootcontainer name="zStripper" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zStripper" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupStripperDrugsT0" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
 			<item group="groupWeaponsT0_DeepCuts" prob="0.5" count="1"/>
@@ -10720,7 +10731,7 @@
 		</lootcontainer>
 
 		<!-- ZombieFarmer -->
-		<lootcontainer name="zFarmer" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmer" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupJunk" prob="2"/>
 			<item group="farmCrops" count="1,2" prob="1"/>
 			<item group="seeds" count="1,2" prob="1"/>
@@ -10731,7 +10742,7 @@
 		</lootcontainer>
 
 		<!-- ZombieFarmer Radiated -->
-		<lootcontainer name="zFarmerR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmerR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="farmCrops" count="1,2" prob="1"/>
 			<item group="seeds" count="1,2" prob="1"/>
 			<item group="groupToolsTiered" count="1" prob="0.75"/>
@@ -10741,7 +10752,7 @@
 		</lootcontainer>
 
 		<!-- ZombieFarmer Feral -->
-		<lootcontainer name="zFarmerF" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmerF" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="group_FoodScaled" count="1,2" prob="0.75"/>
 			<item group="group_DrinksScaled" count="1,2" prob="1"/>
 			<item group="groupToolsTiered" count="1" prob="0.75"/>
@@ -10750,7 +10761,7 @@
 		</lootcontainer>
 
 		<!-- ZombieFarmer Feral Radiated -->
-		<lootcontainer name="zFarmerFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFarmerFR" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="group_FoodScaled" count="1,2" prob="1"/>
 			<item group="group_DrinksScaled" count="1,2"/>
 			<item group="groupToolsTiered" count="1" prob="0.75"/>
@@ -10759,7 +10770,7 @@
 		</lootcontainer>
 
 		<!-- zombieBusinessMan -->
-		<lootcontainer name="zWallstreet" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zWallstreet" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupTreasureMaps" count="1" prob="2"/>
 			<item group="suitAll" prob="2"/>
 			<item name="oldCash" count="14,60" prob="2"/>
@@ -10768,7 +10779,7 @@
 		</lootcontainer>
 
 		<!-- Zombie Businesswoman Loot List -->
-		<lootcontainer name="zFWallstreet" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zFWallstreet" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupTreasureMaps" count="1" prob="2"/>
 			<item group="suitAll" prob="2"/>
 			<item name="oldCash" count="14,60" prob="2"/>
@@ -10777,7 +10788,7 @@
 		</lootcontainer>
 
 		<!-- Zombie Trader Drops -->
-		<lootcontainer name="zTrader" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zTrader" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item name="gunHandgunT1Pistol" count="1,2" prob="0.15"/>
 			<item name="ammo9mmBulletBall" count="10,20" prob="0.15"/>
 			<item name="casinoCoin" count="50,1000" prob="0.3"/>
@@ -10787,7 +10798,7 @@
 		</lootcontainer>
 
 		<!-- Behemoth Loot -->
-		<lootcontainer name="zBehemoth" count="2,6" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zBehemoth" count="2,6" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupWeaponsAllScaledNoStone" count="1" prob="0.8"/>
 			<item group="rareBooks" count="1,2" prob="0.5"/>
 			<item group="rareMedicine" prob="0.5"/>
@@ -10796,7 +10807,7 @@
 		</lootcontainer>
 
 		<!-- Scientist zombie loot -->
-		<lootcontainer name="zLab" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zLab" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupApparelClothes" prob="1.9"/>
 			<item name="DFScifiAIOT" count="1" loot_prob_template="ProbT4"/>
 			<item name="DFKeycardGreen" count="1" prob="0.6"/>
@@ -10806,7 +10817,7 @@
 		</lootcontainer> 
 
 		<!-- generic zombie loot-->
-		<lootcontainer name="zShitZombie" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+		<lootcontainer name="zShitZombie" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupAmmoMedium" prob="10"/>
 			<item group="group_SupplyConstructionScaled" prob="7"/>
 			<item group="groupApparelClothes" prob="5"/>

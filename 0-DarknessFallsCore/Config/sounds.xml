@@ -793,7 +793,7 @@
 			<LocalCrouchVolumeScale value="1.0" /> <CrouchNoiseScale value="0.5" /> <NoiseScale value="1" /> <MaxVoices value="3" /> <MaxRepeatRate value="0.01" /> </SoundDataNode>
 
 		<SoundDataNode name="crowbar_heat_generation"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-			<Noise ID="0" noise="100" time="0.1" muffled_when_crouched="0.8" heat_map_strength="50.1" heat_map_time="180"/>
+			<Noise ID="0" noise="1000" time="0.1" muffled_when_crouched="0.8" heat_map_strength="75.1" heat_map_time="180"/>
 			<AudioClip ClipName="Sounds/Misc/silencefiller"/>
 			<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxVoicesPerEntity value="10"/> <MaxRepeatRate value="0.001"/></SoundDataNode>
 	</append>

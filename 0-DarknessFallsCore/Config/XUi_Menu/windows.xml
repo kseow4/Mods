@@ -26,28 +26,6 @@
 	
 	<set xpath="/windows/window[@name='mainMenuLogo']">
 		<texture depth="3" color="[white]" texture="@modfolder:/UI/MainMenu/7DTD_logo.png" name="gameLogo" anchor_left="#cam,0.5,-20" anchor_bottom="#cam,0.5,70" anchor_right="#cam,0.5,-20" anchor_top="#cam,0.5,490" pivot="center" keep_aspect_ratio="BasedOnHeight" aspect_ratio="2.3" />
-		<label name="DFallsVersion" pos="200, 125" depth="0" size="250,33" text="V5.0.0-DEV-B26" font_size="42" effect="outline" color="[white]" justify="center" />
+		<label name="DFallsVersion" pos="200, 125" depth="0" size="250,33" text="V5.0.0-DEV-B28" font_size="42" effect="outline" color="[white]" justify="center" />
 	</set>
-<!--	
-	<set xpath="/windows/window[@name='spawnselection']">
-		<rect visible="{progressVisible}" >
-			<panel name="noclick" depth="2" createuipanel="true" pos="-20,20" width="440" height="140" clipping="softclip" clippingsoftness="20,20" disableautobackground="true">
-				<sprite depth="0" name="backgroundMain" sprite="menu_empty" color="0,0,0,190" type="sliced" fillcenter="true" />
-			</panel>
-
-			<panel depth="10" createuipanel="true" disableautobackground="true" >
-				<label name="lblProgress" pos="200,-50" width="380" height="80" font_size="32" justify="center" pivot="center" />
-			</panel>
-		</rect>
-
-		<rect visible="{buttonsVisible}" pos="0,40" >
-			<panel name="header" pos="0,0" height="43" depth="2" createuipanel="true" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
-				<label style="header.name" pos="6,-6" width="550" text_key="respawnTitleMessage" />
-			</panel>
-			
-			<simplebutton name="btnOption1" depth="3" pos="200,-70" pivot="center" width="400" height="42" font_size="36" caption_key="lblSpawnOnBedroll" />
-			<simplebutton name="btnOption2" depth="3" pos="200,-130" pivot="center" width="400" height="42" font_size="36" caption_key="lblSpawnNearBedroll" />
-		</rect>
-	</set>
-	-->
 </config>

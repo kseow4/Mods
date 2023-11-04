@@ -354,7 +354,7 @@
 			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,-130" width="153" height="216" color="[black]" type="sliced" fillcenter="false" />
 			<rect pos="3,-133" width="147" height="100%" visible="{shownormaloptions}" >
 				<grid name="itemActions" rows="6" cols="1" pos="0,0" width="147" height="100%" cell_width="147" cell_height="35" controller="ItemActionList" repeat_content="true" visible="false">
-					<item_action_entry />
+					<df_item_action_entry />
 				</grid>
 			</rect>
 
@@ -1232,7 +1232,7 @@
 				<label style="header.name" text="COMBINE" text_key="xuiCombine"/>
 			</panel>
 
-			<rect pos="0, -46" height="230" width="228" controller="CombineGridSDX, Harmony-0-DarknessFallsCore">
+			<rect pos="0, -46" height="230" width="228" controller="CombineGridSDX, Harmony-0-DarknessFallsCore" max_quality="39" denied_localization_string="ttCombineLimitExceededWorkbench">
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,1" width="228" height="230" color="[black]" type="sliced" fillcenter="false" />
 				<sprite name="background" color="[darkGrey]" pos="0,1" type="sliced"/>
 
@@ -1338,7 +1338,7 @@
 		<!-- Custom Logo Mod -->		
 		<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 			<texture name="DFalls" depth="0" size="888,666" texture="@modfolder:/UI/MainMenu/darknessfallsLogo.png" material="Materials/Transparent Colored" pos="-299,255" />
-			<label name="DFallsVersion" pos="0, -240" depth="0" size="250,33" text="V5.0.0-DEV-B26" font_size="42" effect="outline" color="[white]" justify="center" />
+			<label name="DFallsVersion" pos="0, -240" depth="0" size="250,33" text="V5.0.0-DEV-B28" font_size="42" effect="outline" color="[white]" justify="center" />
 			<grid name="buttons" pos="0, -275" cols="1" width="250" cell_width="250" cell_height="48" arrangement="vertical" repeat_content="false" >
 				<simplebutton name="btnInvite" depth="3" width="250" height="38" caption_key="xuiMenuInvite" font_size="32" />
 				<simplebutton name="btnOptions" depth="3" width="250" height="38" caption_key="xuiMenuOptions" font_size="32" />
@@ -1422,7 +1422,7 @@
 
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-				required_tools="toolAnvil,toolForgeCrucible,toolAndDieSet,toolBellows,DFtoolImprovedElement" required_tools_only="true">
+				required_tools="toolAnvil,toolForgeCrucible,toolAndDieSet,toolBellows,DFtoolImprovedElement,emptySlot" required_tools_only="true">
 					<item_stack controller="RequiredItemStack" name="0"/>
 				</grid>
 			</rect>
@@ -1550,7 +1550,7 @@
 
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-				required_tools="toolAnvil,toolForgeCrucible,toolAndDieSet,toolBellows,DFtoolImprovedElement" required_tools_only="true">
+				required_tools="toolAnvil,toolForgeCrucible,toolAndDieSet,toolBellows,DFtoolImprovedElement,emptySlot" required_tools_only="true">
 					<df_item_stack controller="RequiredItemStack" name="0"/>
 				</grid>
 			</rect>
@@ -1769,7 +1769,7 @@
 				<label style="header.name" text="COMBINE" text_key="xuiCombine"/>
 			</panel>
 			
-			<rect pos="0, -40" height="230" width="228" controller="CombineGridLaser, Harmony-0-DarknessFallsCore">
+			<rect pos="0, -46" height="230" width="228" controller="CombineGridSDX, Harmony-0-DarknessFallsCore" max_quality="80" denied_localization_string="ttCombineLimitExceededScifi">
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,1" width="228" height="230" color="[black]" type="sliced" fillcenter="false" />
 				<sprite name="background" color="[darkGrey]" pos="0,1" type="sliced"/>
 
@@ -1791,7 +1791,7 @@
 
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-				required_tools="meleeToolSalvageT1Wrench,meleeToolRepairT1ClawHammer,DFScifiAIOT,DFtoolweldingTorch,DFtoolCalipers" required_tools_only="true">
+				required_tools="meleeToolSalvageT1Wrench,meleeToolRepairT1ClawHammer,DFScifiAIOT,DFtoolweldingTorch,DFtoolCalipers,emptySlot" required_tools_only="true">
 					<item_stack controller="RequiredItemStack" name="0"/>
 				</grid>
 			</rect>

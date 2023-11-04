@@ -512,6 +512,35 @@
 	</set>
 	
 	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']">	
+		<trader_item_group name="traderResources">
+			<item name="resourceWood" count="1000,5000" /> <!-- 50 -->
+			<item name="resourceRockSmall" count="500,1000" /> <!-- 50 -->			
+			<item name="resourceCrushedSand" count="500,1000" /> <!-- 50 -->
+			<item name="resourceScrapIron" count="100,250" /> <!-- 10 -->
+			<item name="resourceScrapPolymers" count="10,25" />
+			<item name="resourceMetalPipe" count="5,10" />
+			<item name="resourceOilShale" count="10,100" /> <!-- 50 -->
+			<item name="resourceLeather" count="5,25" />
+			<item name="resourceScrapBrass" count="100,500" /> <!-- 10 -->
+			<item name="resourceClayLump" count="1000,5000" /> <!-- 150 -->
+			<item name="resourceScrapLead" count="100,500" /> <!-- 5 -->
+			<item name="resourceCloth" count="25,100" />
+			<item name="resourceMilitaryFiber" count="5,50" prob="0.1" />
+			<item name="resourceCoal" count="100,500" /> <!-- 10 -->
+			<item name="resourcePotassiumNitratePowder" count="50,250" /> <!-- 10 -->
+			<item name="resourceGunPowder" count="10,100" /> <!-- 10 -->
+			<item name="resourceOil" count="5,50" />
+			<item name="resourceHeadlight" count="1,10" prob="0.6" />
+			<item name="resourceDuctTape" count="5,25" />
+			<item name="resourceSpring" count="5,25" />
+			<item name="resourceMechanicalParts" count="5,25" prob="0.3" />
+			<item name="resourceElectricParts" count="5,25" prob="0.2" />
+			<item name="resourceDuctTape" count="10,30" />
+			<item name="resourceGlue" count="5,15" />
+			<item name="ammoGasCan" count="100,500" /> <!-- 5 -->
+			<item name="resourceForgedIron" count="5,50"/>
+		</trader_item_group>
+		
 		<trader_item_group name="caitlinResources"> <!-- bundle size -->
 			<item name="resourceOilShale" count="200,600" /> <!-- 50 -->
 			<item name="resourceScrapBrass" count="500,4000" /> <!-- 10 -->
@@ -645,14 +674,14 @@
 			<trader_items count="all">
 				<item group="traderAlways"/>
 				<item group="traderGeneral" count="2,4"/>
-				<item group="generalResources" count="7,10"/>
+				<item group="traderResources" count="7,10"/> 
 				<item group="tools" unique_only="true" count="1,2"/>
 				<item group="groupMeleeAll" count="3,5"/>
 				<item group="groupRangedAll" count="3,5"/>
 				<item group="weaponsGunParts" count="2,4"/>
 				<item group="traderElectrical"  unique_only="true" count="5,10"/>
 				<item group="constructionSupplies" count="2,4"/>
-				<item group="decorativeBlocks" unique_only="true" count="6,10"/>
+				<item group="decorativeBlocks" unique_only="true" count="6,10"/>		
 			</trader_items>
 		</trader_info>
 		
@@ -679,7 +708,7 @@
 			<trader_items count="all">
 				<item group="traderAlways"/>
 				<item group="traderGeneral" count="2,4"/>
-				<item group="generalResources" count="7,10"/>
+				<item group="traderResources" count="7,10"/>
 				<item group="groupModsAll" unique_only="true" count="2,5"/>
 				<item group="tools" unique_only="true" count="1,4"/>
 				<item group="traderElectrical"  unique_only="true" count="2,5"/>
@@ -721,7 +750,7 @@
 			<trader_items count="all">
 				<item group="traderAlways"/>
 				<item group="traderGeneral" count="2,4"/>
-				<item group="generalResources" count="7,10"/>
+				<item group="traderResources" count="7,10"/>
 				<item group="groupModsAll" unique_only="true" count="2,5"/>
 				<item group="tools" unique_only="true" count="1,2"/>
 				<item group="groupMeleeAll" count="3,5"/>
@@ -762,7 +791,7 @@
 			<trader_items count="all">
 				<item group="traderAlways"/>
 				<item group="traderGeneral" count="2,4"/>
-				<item group="generalResources" count="7,10"/>
+				<item group="traderResources" count="7,10"/>
 				<item group="groupModsAll" unique_only="true" count="2,5"/>
 				<item group="groupMeleeAll" count="1,2"/>
 				<item group="groupRangedAll" count="1,2"/>
@@ -802,7 +831,7 @@
 			<trader_items count="all">
 				<item group="traderAlways"/>
 				<item group="traderGeneral" count="2,4"/>
-				<item group="generalResources" count="7,10"/>
+				<item group="traderResources" count="7,10"/>
 				<item group="groupModsAll" unique_only="true" count="2,5"/>
 				<item group="tools" unique_only="true" count="1,2"/>
 				<item group="groupMeleeAll" count="3,5"/>

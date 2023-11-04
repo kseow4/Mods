@@ -535,9 +535,9 @@ perkCraftAutosRank5Desc,"Unlocks the Coilcarbine and all 7.62mm coilround recipe
 perkCraftBowsName,Bow Crafting
 perkCraftBowsDesc,"Want to make better quality bows? This is the perk for you. Bows are the Primitive Bow, Wooden Bow, Compound Bow, Iron Crossbow, Compound Crossbow and Titanium Crossbow. Unlocks various recipes at each level."
 perkCraftBowsRank1Desc,"Unlocks the Wooden Bow recipe.\nCrafting Tier: 11 for bows. Bow below quality 11 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 5"
-perkCraftBowsRank2Desc,"Unlocks the Iron Crossbow recipe.\nCrafting Tier: 21 for bows. Bow below quality 21 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 10"
+perkCraftBowsRank2Desc,"Unlocks the Iron Crossbow recipe.\nUnlocks flaming arrow and flaming bolt recipes.\nCrafting Tier: 21 for bows. Bow below quality 21 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 10"
 perkCraftBowsRank3Desc,"Unlocks the Compound Bow recipe.\nCrafting Tier: 31 for bows. Bow below quality 31 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 20"
-perkCraftBowsRank4Desc,"Unlocks the Compound Crossbow recipe.\nCrafting Tier: 41 for bows. Bow below quality 41 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 40"
+perkCraftBowsRank4Desc,"Unlocks the Compound Crossbow recipe.\nUnlocks explosive arrow and explosive bolt recipes.\nCrafting Tier: 41 for bows. Bow below quality 41 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 40"
 perkCraftBowsRank5Desc,"Unlocks the Titanium Crossbow, Titanium Arrow and Titanium Bolt recipes.\nCrafting Tier: 51 for bows. Bow below quality 51 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 60"
 perkCraftPistolsName,Pistol Crafting
 perkCraftPistolsDesc,"Want to make better quality pistol? This is the perk for you. Pistols are the Pipe Pistol, Pistol, Advanced Pistol, Magnum, Desert Vulture, SMG and Coilpistol."
@@ -674,7 +674,7 @@ attclasslaborer,Class: Laborer
 attClassLaborerName,Class: Laborer
 attClassLaborerDesc,This attribute tracks your class quest progress and shows your unique perks.
 attClassLaborerRank1Desc,Rank 1 is gained when you complete your first class quest.
-attClassLaborerRank2Desc,Rank 2 is gained when you finish your last class quest. Increase crafting tier by 10 for mining tools. Unlocks the nailgun recipe.
+attClassLaborerRank2Desc,Rank 2 is gained when you finish your last class quest. Increase crafting tier by 10 for mining tools.\nUnlocks the nailgun recipe.\nIncrease harvest count with mining tools by 25%
 attclassmechanic,Class: Mechanic
 attClassMechanicName,Class: Mechanic
 attClassMechanicDesc,This attribute tracks your class quest progress and shows your unique perks.
@@ -730,7 +730,7 @@ perkMasterHunterDesc,Advanced hunting for the true masters.
 perkMasterHunterName,Master Hunter
 perkMasterBuilderName,Master Laborer
 perkMasterBuilderDesc,Advanced building for the true masters.
-perkMasterBuilderRank1Desc,Unlocks titanium building block recipes. Unlock titanium tool recipes. Unlocks various titanium trap recipes. Increase crafting tier by 10 for tools.
+perkMasterBuilderRank1Desc,Unlocks titanium building block recipes.\nUnlock titanium tool recipes. Unlocks various titanium trap recipes.\nIncrease crafting tier by 10 for tools.\nIncrease harvest count with mining tools by 25%
 perkMasterMechanicDesc,Advanced mechanics for the true masters.
 perkMasterMechanicName,Master Mechanic
 perkMasterScientistName,Master Scientist
@@ -743,8 +743,8 @@ perkMasterSurvivalistDesc,Advanced survival techniques for the true masters.
 perkMasterSurvivalistRank1Desc,"Unlocks large backpack, mega crush, signal flare, survival torch, biofuel, gas can, gunpowder bundle, titanium crossbow and bolts recipes.\nIncreases crafting tier by 10 for all pistols but not the SMG, all knuckles and all bows."
 perkMasterScavengerRank1Desc,Unlocks the desert vulture and titanium knuckles recipes.\nIncreases loot quantity bonuses from Lucky Looter by 10%.\nIncreases loot drop chance of all enemies by 10%.\nIncrease crafting tier by 10 for pistols and knuckles.
 perkMasterFarmerRank1Desc,Learn how to craft growing lights and modified plant seeds for underground farms. Learn grandpa's secret recipes that boost stats and attributes along with black strap coffee and multiple other foods. Increase crafting tier by 10 for shotguns and hoes.
-perkMasterHunterRank1Desc,"Unlock the advanced extended magazine mod, sniper rifle, ghillie suit, titanium knives and titanium ammo recipes. Increase crafting tier by 10 for rifles and stealth armor. Increases the range and duration of your tracking ability."
-perkMasterMechanicRank1Desc,"Unlock the impact driver, oil pump, smg, titanium club, titanium sledgehammer, car battery, engine, gyrocopter, box truck, buggy, humvee, stallion, and marauder recipes.\nIncreases crafting tier by 10 for clubs and sledges, salvaging tools, SMG, robotic turret and junk turret."
+perkMasterHunterRank1Desc,"Unlock the advanced extended magazine mod, sniper rifle, ghillie suit and titanium knives recipes. Increase crafting tier by 10 for rifles and stealth armor. Increases the range and duration of your tracking ability."
+perkMasterMechanicRank1Desc,"Unlock the oil pump, smg, titanium club, titanium sledgehammer, car battery, engine, gyrocopter, box truck, buggy, humvee, stallion, and marauder recipes.\nIncreases crafting tier by 10 for clubs and sledges, salvaging tools, SMG, robotic turret and junk turret."
 perkMasterScientistRank1Desc,"Unlocks the plasma baton, titanium hunting knife, advanced healing items, anti-rad meds, crowbar, military tablet and titanium machete recipes.\nIncreases stun chance of all stun batons.\nIncrease crafting tier by 10 for bladed weapons (including spears), batons, crowbars, flamethrower, rocket launcher and the robotic drone."
 perkCraftFutureTechName,Technology Crafting
 perkCraftFutureTechDesc,"The future is now! Learn to craft laser weapons, new workbenches and special perks."
@@ -769,11 +769,11 @@ perkAcceleratedHealingRank4Desc,"Regenerate 8hp per second, for 30 seconds, up t
 perkAcceleratedHealingRank5Desc,"Regenerate 10hp per second, for 30 seconds, up to 50% of your max health when injured by an enemy. 50% chance to heal broken arms, legs and bleeding while regeneration is active.\n[DECEA3]Level Requirements:[-] Must make and use the Accelerated Healing Shot learned at Tech Crafting 3.\nPlayer Level: 140"
 perkGottaGoFastName,Gotta Go Fast
 perkGottaGoFastDesc,"Somehow, and you have no idea how, you can move way faster than a normal human."
-perkGottaGoFastRank1Desc,"Increases Mobility by 3%. Increase stamina regen while running by 5%. Increases the attack speed of all melee weapons (but not tools) by 5%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 110"
-perkGottaGoFastRank2Desc,"Increases Mobility by 6%. Increase stamina regen while running by 10%. Increases the attack speed of all melee weapons (but not tools) by 10%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 110"
-perkGottaGoFastRank3Desc,"Increases Mobility by 9%. Increase stamina regen while running by 15%. Increases the attack speed of all melee weapons (but not tools) by 15%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 125"
-perkGottaGoFastRank4Desc,"Increases Mobility by 12%. Increase stamina regen while running by 20%. Increases the attack speed of all melee weapons (but not tools) by 20%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 140"
-perkGottaGoFastRank5Desc,"Increases Mobility by 15%. Increase stamina regen while running by 25%. Increases the attack speed of all melee weapons (but not tools) by 25%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 140"
+perkGottaGoFastRank1Desc,"Increases Walk/Run speed and Mobility by 3%. Increase stamina regen while running by 5%. Increases the attack speed of all melee weapons (but not tools) by 5%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 110"
+perkGottaGoFastRank2Desc,"Increases Walk/Run speed and Mobility by 6%. Increase stamina regen while running by 10%. Increases the attack speed of all melee weapons (but not tools) by 10%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 110"
+perkGottaGoFastRank3Desc,"Increases Walk/Run speed and Mobility by 9%. Increase stamina regen while running by 15%. Increases the attack speed of all melee weapons (but not tools) by 15%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 125"
+perkGottaGoFastRank4Desc,"Increases Walk/Run speed and Mobility by 12%. Increase stamina regen while running by 20%. Increases the attack speed of all melee weapons (but not tools) by 20%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 140"
+perkGottaGoFastRank5Desc,"Increases Walk/Run speed and Mobility by 15%. Increase stamina regen while running by 25%. Increases the attack speed of all melee weapons (but not tools) by 25%.\n[DECEA3]Level Requirements:[-] Must make and use the Gotta Go Fast Shot learned at Tech Crafting 3.\nPlayer Level: 140"
 attRecipesName,Crafting Perks
 attRecipesDesc,Here you will find perks to unlock recipes for crafting.
 perkAgility,Agility
@@ -931,7 +931,7 @@ perkSousChefRank1LongDesc,"The Basics of Cooking. Unlocks Red tea, Goldenrod tea
 perkSousChefRank2LongDesc,"Meals fit for a king. Unlocks stew, steak and potato, blueberry pie, soup, apple pie, coffee, orange marmalade, blueberry jam, rice pudding and cheese recipes."
 perkSousChefRank3LongDesc,"Drinks Special! Unlocks Yucca Juice smoothe, tomato juice, orange tea recipes, marmalade toast, blueberry pancakes, banana pancakes, cheese pizza and fish pie recipes."
 perkSousChefRank4LongDesc,"Holistic Hearth fire. Unlocks Sham Chowder, Hobo Stew, Fish Tacos, Chili Dog, Meat Pizza, Meat Burrito and Fruit Smoothie recipes."
-perkSousChefRank5LongDesc,"MacDyers secret survival recipes. Unlocks coffee and beer recipes, pumpkin pie, pumpkin cheesecake, pumpkin bread, philly cheesesteak and coffee cake recipes."
+perkSousChefRank5LongDesc,"MacDyers secret survival recipes. Unlocks beer, pumpkin pie, pumpkin cheesecake, pumpkin bread, philly cheesesteak and coffee cake recipes."
 perkSousChefRank1Desc,Bachelor
 perkSousChefRank2Desc,Grandma
 perkSousChefRank3Desc,Short Order Cook
@@ -956,11 +956,11 @@ perkPainToleranceRank2Desc,Rugged
 perkPainToleranceRank3Desc,Durable
 perkPainToleranceRank4Desc,Masochist
 perkPainToleranceRank5Desc,Iron Chin
-perkPainToleranceRank1LongDesc,Reduce HP loss by 5%. 20% less chance to get stunned.
-perkPainToleranceRank2LongDesc,Reduce HP loss by 10%. 40% less chance to get stunned.
-perkPainToleranceRank3LongDesc,Reduce HP loss by 15%. 60% less chance to get stunned.
-perkPainToleranceRank4LongDesc,Reduce HP loss by 20%. 80% less chance to get stunned.
-perkPainToleranceRank5LongDesc,Reduce HP loss by 25%. Iron Chin: No chance to get stunned.
+perkPainToleranceRank1LongDesc,Reduce HP loss by 5%. 20% reduced chance to get stunned or become fatigued.
+perkPainToleranceRank2LongDesc,Reduce HP loss by 10%. 40% reduced chance to get stunned or become fatigued.
+perkPainToleranceRank3LongDesc,Reduce HP loss by 15%. 60% reduced chance to get stunned or become fatigued.
+perkPainToleranceRank4LongDesc,Reduce HP loss by 20%. 80% reduced chance to get stunned or become fatigued.
+perkPainToleranceRank5LongDesc,Reduce HP loss by 25%. Iron Chin: No chance to get stunned or become fatigued.
 perkPhysicianDesc,Treat medical conditions and craft advanced medicines.
 perkPhysicianName,Physician
 perkPhysicianRank1Desc,Quack
@@ -983,8 +983,8 @@ perkSalvageOperationsRank5Desc,Master Scavenger
 perkSalvageOperationsRank1LongDesc,Salvaging items (like the wrench) harvest 10% faster and gain 20% more resources. Unlocks the wrench recipe.
 perkSalvageOperationsRank2LongDesc,Salvaging items (like the wrench) harvest 20% faster and gain 40% more resources.
 perkSalvageOperationsRank3LongDesc,Salvaging items (like the wrench) harvest 30% faster and gain 60% more resources. Unlocks the steel club recipe.
-perkSalvageOperationsRank4LongDesc,Salvaging items (like the wrench) harvest 40% faster and gain 80% more resources.
-perkSalvageOperationsRank5LongDesc,Salvaging items (like the wrench) harvest 50% faster and gain 100% more resources. Unlocks the ratchet recipe.
+perkSalvageOperationsRank4LongDesc,Salvaging items (like the wrench) harvest 40% faster and gain 80% more resources. Unlocks the ratchet recipe.
+perkSalvageOperationsRank5LongDesc,Salvaging items (like the wrench) harvest 50% faster and gain 100% more resources. Unlocks the impact driver recipe.
 perkSelfMedicated,Self Medicated
 perkSelfMedicatedDesc,Specialize in boosting the benefits of mixing up your meds while not sweating the side effects.
 perkSelfMedicatedRank1Desc,"Trash Pills, Best Pills"
@@ -1055,11 +1055,11 @@ perkYeahScienceRank2Desc,Professor
 perkYeahScienceRank3Desc,Chemist
 perkYeahScienceRank4Desc,Research Scientist
 perkYeahScienceRank5Desc,Quantum Physicist
-perkYeahScienceRank1LongDesc,"You can craft gas cans, grain alcohol, acid, normal ammo, chemistry station, junk batons, tnt, hub cap and cooking pot mines.\nCrafting Tier: 11 for drones."
-perkYeahScienceRank2LongDesc,"You can craft flaming arrows and bolts, air filter mines, scrap iron plate mines and military fiber.\nCrafting Tier: 21 for drones."
-perkYeahScienceRank3LongDesc,"You can craft advanced firearm ammunition and stun batons.\nCrafting Tier: 31 for drones."
-perkYeahScienceRank4LongDesc,"You can craft exploding arrows and bolts.\nCrafting Tier: 41 for drones."
-perkYeahScienceRank5LongDesc,"You can craft battery banks and the Broadcast Upgrade for containers.\nCrafting Tier: 51 for drones."
+perkYeahScienceRank1LongDesc,"You can craft gas cans, grain alcohol, acid, normal ammo, chemistry station, junk batons, tnt, hub cap and cooking pot mines.\nIncreases damage for all batons by 10%"
+perkYeahScienceRank2LongDesc,"You can craft flaming arrows and bolts, air filter mines, scrap iron plate mines and military fiber.\nIncreases damage for all batons by 20%"
+perkYeahScienceRank3LongDesc,"You can craft advanced firearm ammunition and stun batons.\nIncreases damage for all batons by 30%"
+perkYeahScienceRank4LongDesc,"You can craft exploding arrows and bolts.\nIncreases damage for all batons by 40%"
+perkYeahScienceRank5LongDesc,"You can craft battery banks and the Broadcast Upgrade for containers.\nIncreases damage for all batons by 50%"
 perkStealthAssassinDesc,Specialize in getting around sight unseen and sound unheard. Increases the quickness of your sneaking and sneak damage.
 perkStealthAssassinName,Stealth Assassin
 perkStealthAssassinRank1LongDesc,Increase sneak movement speed by 10%. Sneak attacks deal an extra 50% damage. Actions make 5% less noise.
@@ -1247,7 +1247,7 @@ perkBasicFarmingRank2Title,Basic Farming Tips 2
 perkBasicFarmingRank3Title,Basic Farming Tips 3
 perkBasicFarmingRank1Desc,"Unlocks the mortar and pestle, scrap hoe, corn seed and cotton seed recipes.  [DECEA3]Level Requirements:[-] Player Level 5"
 perkBasicFarmingRank2Desc,"Unlocks animal feed, animal snare, chicken coop and dew collector recipes.  [DECEA3]Level Requirements:[-] Player Level 5"
-perkBasicFarmingRank3Desc,Unlocks blueberry and aloe seed recipes. Unlocks the Farm Plot recipe. [DECEA3]Level Requirements:[-] Player Level 5
+perkBasicFarmingRank3Desc,"Unlocks blueberry, tomato and aloe seed recipes. Unlocks the Farm Plot and Beehive recipies. [DECEA3]Level Requirements:[-] Player Level 5"
 perkScrapToolCraftingName,Scrap Tool Crafting
 perkScrapToolCraftingDesc,MacDyver will show you the way to using scrap iron as functional tools.
 perkScrapToolCraftingRank1Title,Scrap Tool Crafting
@@ -3152,7 +3152,7 @@ resourceCoalBundle,Stack of Coal (10000)
 modAblativeArmor,Ablative Armor
 modAblativeArmorDesc,Reduces your chance of being set on fire by 10% per mod piece installed
 modMeleeLaserBattery,Laser Battery
-modMeleeLaserBatteryDesc,Melee and archery weapon mod. Disables demonic regeneration on hit.
+modMeleeLaserBatteryDesc,"Melee, archery and junk turret weapon mod. Disables demonic regeneration on hit."
 quest_tier3_buried_supplies,Tier 3 Buried Supplies
 quest_tier4_buried_supplies,Tier 4 Buried Supplies
 quest_tier5_buried_supplies,Tier 5 Buried Supplies
@@ -3360,7 +3360,7 @@ DFantivenomDesc,Used to remove the animal poison debuff.
 modArmorInsulatedLinerAdv,Advanced Insulated Liner
 modArmorCoolingMeshAdv,Advanced Cooling Mesh
 perkBarBrawling8CompleteLongDesc,The 7th Curse: Unleash your inner chi with this ancient martial arts technique. The 7th melee strike landed in a short time does 300% damage.
-buffRadResistDisplayName,Radiation Resitance
+buffRadResistDisplayName,Radiation Resistance
 buffRadResistDisplayDesc,Total radiation resistance you currently have.
 buffWatchTimeName,Watch
 buffWatchTimeDesc,You are wearing a watch mod item in your gloves. It tells you the time.
@@ -3577,7 +3577,7 @@ modArmorInsulatedLinerDesc,This armor mod gives you insulation from the cold.\nM
 modArmorImprovedFittingsDesc,Decreases movement and stamina penalties from armor.\nMod Tier: 1
 modArmorStoragePocketDesc,Decrease encumbrance penalty by 1 by installing this modification into your clothing or coat.\nMod Tier: 1
 modArmorHelmetLightDesc,A light source that can be installed into any head armor. Use your Light Source action (F) to activate.\nMod Tier: 1
-modMeleeClubBurningShaftDesc,A melee item can double as a light source and set enemies on fire.\nCan be installed in melee tools and weapons that have a long shaft or blade.\nMod Tier: 2
+modMeleeClubBurningShaftDesc,A melee item can double as a light source and set enemies on fire.\nCan be installed in melee weapons that have a long shaft or blade.\nMod Tier: 2
 modGunSoundSuppressorSilencerDesc,A sound suppressor greatly reduces the firing sound but reduces maximum range and damage.\nWorks best with small calibers and guns with a low rate of fire.\nMod Tier: 2
 modGunBarrelExtenderDesc,"Increases damage, range and aimed accuracy but makes the weapon more unwieldy when fired from the hip.\nMod Tier: 2"
 modGunLaserSightDesc,Helps with aiming quickly and increases accuracy when firing from the hip.\nInstalls into any firearm or crossbow.\n\nPress F to activate. Hold F to activate multiple items.\nMod Tier: 2
@@ -4183,7 +4183,7 @@ concreteFrameShapes:VariantHelper,Concrete Frame Shapes
 concreteFrameShapesDesc,Shapes made out of concrete that can be picked up and easily moved for building. Upgrades into the full version with concrete.
 steelFrameShapes:VariantHelper,Steel Frame Shapes
 steelFrameShapesDesc,Shapes made out of steel that can be picked up and easily moved for building. Upgrades into the full version with steel.
-drugVitaminsDesc,"These vitamins cure Fatigue and prevent you from catching ailments like Dysentery or Fatigue."
+drugVitaminsDesc,"These vitamins cure Fatigue and prevent you from catching ailments like Dysentery or Fatigue. They do NOT prevent food poisoning, because it's not a disease, believe it or not."
 MLSLockableMaster,Lockable Master Block
 MLSLockableToolBox,Lockable Toolbox
 MLSLockableToolBoxInsecure,Insecure Toolbox
@@ -4509,7 +4509,6 @@ modCrossbowAutoloader,Crossbow Autoloader
 modCrossbowAutoloaderDesc,A mod for crossbows that allows the user to fire more than 1 bolt before needing to reload. This version allows a total of 5 bolts before reload.\nMod Tier: 2
 idcXuiModifiers,MODIFIERS
 idcXuiBait,Food
-idcXuiAnimalSnare,Honey
 idcXuiChickenCoop,Eggs
 idcXuiAnimalSnare,Contents
 idcXuiBait,Animal Feed
@@ -4535,3 +4534,6 @@ ttPistolLevelUpBook,Your Skill In Pistols Has Increased By 2!
 ttShotgunLevelUpBook,Your Skill In Shotguns Has Increased By 2!
 ttRiflesLevelUpBook,Your Skill In Rifles Has Increased By 2!
 ttBarterLevelUpBook,Your Skill In Bartering Has Increased By 2!
+xuiCombineItemA,Original Item
+xuiCombineItemB,Repair Item
+xuiResult,Output

@@ -1270,7 +1270,7 @@
 			<property name="TraderStageTemplate" value="baseTier2"/>
 			<property name="Material" value="Msteel"/>
 			<property name="Weight" value="10"/>
-			<property name="UnlockedBy" value="perkCraftTools"/><!-- meleeToolSalvageT3ImpactDriverSchematic, -->
+			<property name="UnlockedBy" value="perkCraftTools,perkSalvageOperations"/><!-- meleeToolSalvageT3ImpactDriverSchematic, -->
 			<property name="ShowQuality" value="true"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Tools/Traps"/>
@@ -1703,7 +1703,7 @@
 			</property>
 
 			<effect_group name="meleeWpnBladeT3Machete">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="100" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="18,10" tier="1,80" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="300,1600" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -2094,7 +2094,7 @@
 		<!-- *** Batons (perkElectrocutioner) -->
 
 		<item name="meleeWpnBatonT0PipeBaton">
-			<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,noStunEffect,attIntellect,perkPummelPete,canHaveCosmetic,1HandBlunt,noBlades,perkCraftWeapons,weaponBluntCrafting"/>
+			<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,noStunEffect,attIntellect,perkPummelPete,canHaveCosmetic,1HandBlunt,noBlades,perkCraftWeapons,weaponBluntCrafting,baton"/>
 			<!-- <property name="Tags" value="longShaft"/> with the way the baton is held there is no good place to put the burning shaft particles -->
 			<property name="DisplayType" value="melee"/>
 			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
@@ -2189,7 +2189,7 @@
 		<item name="meleeWpnBatonT1JunkBaton">
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnBatonT2StunBaton"/><property name="CustomIconTint" value="a0a0ff"/>
-			<property name="Tags" value="melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attIntellect,perkElectrocutioner,shockbaton,canHaveCosmetic,blunt,1HandBlunt,weaponBluntCrafting,perkCraftWeapons"/>
+			<property name="Tags" value="melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attIntellect,perkElectrocutioner,shockbaton,canHaveCosmetic,blunt,1HandBlunt,weaponBluntCrafting,perkCraftWeapons,baton"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="HoldType" value="58"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab"/>
@@ -2325,7 +2325,7 @@
 		</item>
 
 		<item name="meleeWpnBatonT2StunBaton">
-			<property name="Tags" value="melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attIntellect,perkElectrocutioner,shockbaton,canHaveCosmetic,blunt,1HandBlunt,weaponBluntCrafting,noBlades,perkCraftWeapons"/>
+			<property name="Tags" value="melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attIntellect,perkElectrocutioner,shockbaton,canHaveCosmetic,blunt,1HandBlunt,weaponBluntCrafting,noBlades,perkCraftWeapons,baton"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="HoldType" value="58"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab"/>
@@ -2466,7 +2466,7 @@
 		<item name="meleeWpnBatonT3PlasmaBaton">
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="plasmabaton"/>
-			<property name="Tags" value="melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attIntellect,perkElectrocutioner,shockbaton,canHaveCosmetic,blunt,1HandBlunt,weaponBluntCrafting,noBlades,perkCraftWeapons,laserTier"/>
+			<property name="Tags" value="melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attIntellect,perkElectrocutioner,shockbaton,canHaveCosmetic,blunt,1HandBlunt,weaponBluntCrafting,noBlades,perkCraftWeapons,laserTier,baton"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="HoldType" value="58"/> 
 			<property name="Meshfile" value="#@modfolder:Assets/SciFiStuff.unity3d?PlasmaBaton.prefab"/>
@@ -3887,7 +3887,7 @@
 		</item>
 
 		<item name="gunHandgunT3SMG5">
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,selfLoading,bottomAttachments,attAgility,perkAutomaticWeapons,9mmGun,attachmentsIncluded,canHaveCosmetic,brassCatcher,ammo,pistolCrafting,perkGunslinger,smg,perkBookAutoWeapons"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,selfLoading,bottomAttachments,attAgility,perkAutomaticWeapons,9mmGun,attachmentsIncluded,canHaveCosmetic,brassCatcher,ammo,pistolCrafting,perkGunslinger,smg,perkBookAutoWeapons,stock"/>
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="HoldType" value="6"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/SMG/smgPrefab.prefab"/>
@@ -5083,7 +5083,7 @@
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletFMJSteel,ammo762mmBulletSteelHP,ammo762mmBulletSteelA"/>
+				<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletFMJSteel,ammo762mmBulletSteelHP,ammo762mmBulletSteelAP"/>
 				<property name="Sound_start" value="pipe_smg_fire"/>
 				<property name="Sound_loop" value="pipe_smg_fire"/>
 				<property name="Sound_empty" value="dryfire"/>
@@ -5171,7 +5171,7 @@
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletFMJSteel,ammo762mmBulletSteelHP,ammo762mmBulletSteelA"/>
+				<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletFMJSteel,ammo762mmBulletSteelHP,ammo762mmBulletSteelAP"/>
 				<property name="Sound_start" value="ak47_fire"/>
 				<property name="Sound_loop" value="ak47_fire"/>
 				<property name="Sound_empty" value="dryfire"/>
@@ -5370,7 +5370,7 @@
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletFMJSteel,ammo762mmBulletSteelHP,ammo762mmBulletSteelA"/>
+				<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletFMJSteel,ammo762mmBulletSteelHP,ammo762mmBulletSteelAP"/>
 				<property name="Sound_start" value="m60_fire"/>
 				<property name="Sound_loop" value="m60_fire"/>
 				<property name="Sound_empty" value="dryfire"/>
@@ -7947,7 +7947,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="HoldType" value="0"/>
 			<property class="Action0">
-				<property name="DamageEntity" value="75"/>
+				<property name="DamageEntity" value="80"/>
 				<property name="DamageBlock" value="100"/>
 				<property name="Range" value="1.7"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
@@ -12329,7 +12329,7 @@
 
 		<item name="armorLeatherHood">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="head,armor,armorHead,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group name="leather armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12360,7 +12360,7 @@
 
 		<item name="armorLeatherChest">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting,armorRigging"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting,armorRigging"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group name="leather armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12389,7 +12389,7 @@
 
 		<item name="armorLeatherGloves"> <!-- item name directly referenced in the code -->
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Hands"/>
 			<effect_group name="leather armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12418,7 +12418,7 @@
 
 		<item name="armorLeatherPants">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Legs"/>
 			<effect_group name="leather armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12447,7 +12447,7 @@
 
 		<item name="armorLeatherBoots">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group name="leather armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12496,7 +12496,7 @@
 
 		<item name="armorMilitaryHelmet">
 			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
-			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="head,armor,armorHead,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group name="military armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12527,7 +12527,7 @@
 
 		<item name="armorMilitaryVest">
 			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting,armorRigging"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting,armorRigging"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group name="military armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12557,7 +12557,7 @@
 
 		<item name="armorMilitaryGloves">
 			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Hands"/>
 			<effect_group name="military armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12587,7 +12587,7 @@
 
 		<item name="armorMilitaryLegs">
 			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Legs"/>
 			<effect_group name="military armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12617,7 +12617,7 @@
 
 		<item name="armorMilitaryBoots">
 			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group name="military armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -12647,7 +12647,7 @@
 		
 		<item name="armorMilitaryStealthHelmet"> 
 			<property name="Extends" value="armorMilitaryHelmet" param1="DescriptionKey"/> 
-			<property name="Tags" value="lowerbody,head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting,head"/>
+			<property name="Tags" value="lowerbody,head,armor,armorHead,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting,head"/>
 			<property name="CustomIcon" value="armorMilitaryHelmet"/>
 			<property name="UnlockedBy" value="perkMasterHunter"/>
 			<property name="DisplayType" value="armorLightStealth"/>
@@ -12670,7 +12670,7 @@
 		
 		<item name="armorMilitaryStealthVest">
 			<property name="Extends" value="armorMilitaryVest" param1="DescriptionKey"/> 
-			<property name="Tags" value="lowerbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting,armorRigging"/>
+			<property name="Tags" value="lowerbody,chest,armor,armorChest,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting,armorRigging"/>
 			<property name="CustomIcon" value="armorMilitaryVest"/>
 			<property name="UnlockedBy" value="perkMasterHunter"/>
 			<property name="DisplayType" value="armorLightStealth"/>
@@ -12693,7 +12693,7 @@
 
 		<item name="armorMilitaryStealthGloves"> 
 			<property name="Extends" value="armorMilitaryGloves" param1="DescriptionKey"/>
-			<property name="Tags" value="lowerbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,hands,armor,armorHands,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="CustomIcon" value="armorMilitaryGloves"/>
 			<property name="UnlockedBy" value="perkMasterHunter"/>
 			<property name="DisplayType" value="armorLightStealth"/>
@@ -12716,7 +12716,7 @@
 		
 		<item name="armorMilitaryStealthLegs"> 
 			<property name="Extends" value="armorMilitaryLegs" param1="DescriptionKey"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="CustomIcon" value="armorMilitaryLegs"/>
 			<property name="UnlockedBy" value="perkMasterHunter"/>
 			<property name="DisplayType" value="armorLightStealth"/>
@@ -12739,7 +12739,7 @@
 
 		<item name="armorMilitaryStealthBoots">
 			<property name="Extends" value="armorMilitaryBoots" param1="DescriptionKey"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,armorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="CustomIcon" value="armorMilitaryBoots"/>
 			<property name="UnlockedBy" value="perkMasterHunter"/>
 			<property name="DisplayType" value="armorLightStealth"/>
@@ -12766,7 +12766,7 @@
 			<property name="CustomIcon" value="armorMilitaryHelmet"/>
 			<property name="CustomIconTint" value="A0A0A0"/>
 			<property name="DescriptionKey" value="kevlarArmorDesc"/>
-			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="head,armor,armorHead,lightArmor,armorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Head"/>
 			<property name="UnlockedBy" value="perkCraftArmorLight"/>
 			<property name="Group" value="Armor,TCArmor"/>
@@ -12804,7 +12804,7 @@
 			<property name="CustomIcon" value="armorMilitaryVest"/>
 			<property name="CustomIconTint" value="A0A0A0"/>
 			<property name="DescriptionKey" value="kevlarArmorDesc"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,armorRigging,lightArmorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,armorRigging,armorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Chest"/>
 			<property name="UnlockedBy" value="perkCraftArmorLight"/>
 			<property name="Group" value="Armor,TCArmor"/>
@@ -12841,7 +12841,7 @@
 			<property name="CustomIcon" value="armorMilitaryGloves"/>
 			<property name="CustomIconTint" value="A0A0A0"/>
 			<property name="DescriptionKey" value="kevlarArmorDesc"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,armorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Hands"/>
 			<property name="UnlockedBy" value="perkCraftArmorLight"/>
 			<property name="Group" value="Armor,TCArmor"/>
@@ -12878,7 +12878,7 @@
 			<property name="CustomIcon" value="armorMilitaryLegs"/>
 			<property name="CustomIconTint" value="A0A0A0"/>
 			<property name="DescriptionKey" value="kevlarArmorDesc"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,armorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Legs"/>
 			<property name="UnlockedBy" value="perkCraftArmorLight"/>
 			<property name="Group" value="Armor,TCArmor"/>
@@ -12915,7 +12915,7 @@
 			<property name="CustomIcon" value="armorMilitaryBoots"/>
 			<property name="CustomIconTint" value="A0A0A0"/>
 			<property name="DescriptionKey" value="kevlarArmorDesc"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,armorPenalty,titaniumarmor,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
 			<property name="EquipSlot" value="Feet"/>
 			<property name="UnlockedBy" value="perkCraftArmorLight"/>
 			<property name="Group" value="Armor,TCArmor"/>
@@ -12967,7 +12967,7 @@
 
 		<item name="armorScrapHelmet">
 			<property name="Extends" value="armorScrapMaster" param1="CustomIcon"/>
-			<property name="Tags" value="head,armor,armorHead,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="head,armor,armorHead,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group name="scrap armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13005,7 +13005,7 @@
 
 		<item name="armorScrapChest">
 			<property name="Extends" value="armorScrapMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting,armorRigging"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting,armorRigging"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group name="scrap armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13035,7 +13035,7 @@
 
 		<item name="armorScrapGloves">
 			<property name="Extends" value="armorScrapMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Hands"/>
 			<effect_group name="scrap armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13065,7 +13065,7 @@
 
 		<item name="armorScrapLegs">
 			<property name="Extends" value="armorScrapMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Legs"/>
 			<effect_group name="scrap armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13095,7 +13095,7 @@
 
 		<item name="armorScrapBoots">
 			<property name="Extends" value="armorScrapMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group name="scrap armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13145,7 +13145,7 @@
 
 		<item name="armorIronHelmet">
 			<property name="Extends" value="armorIronMaster" param1="CustomIcon"/>
-			<property name="Tags" value="head,armor,armorHead,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="head,armor,armorHead,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group name="iron armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13185,7 +13185,7 @@
 
 		<item name="armorIronChest">
 			<property name="Extends" value="armorIronMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting,armorRigging"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting,armorRigging"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group name="iron armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13217,7 +13217,7 @@
 
 		<item name="armorIronGloves">
 			<property name="Extends" value="armorIronMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Hands"/>
 			<effect_group name="iron armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13249,7 +13249,7 @@
 
 		<item name="armorIronLegs">
 			<property name="Extends" value="armorIronMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Legs"/>
 			<effect_group name="iron armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13281,7 +13281,7 @@
 
 		<item name="armorIronBoots">
 			<property name="Extends" value="armorIronMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group name="iron armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13334,7 +13334,7 @@
 
 		<item name="armorSteelHelmet">
 			<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
-			<property name="Tags" value="head,armor,armorHead,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="head,armor,armorHead,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group name="steel armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13380,7 +13380,7 @@
 
 		<item name="armorSteelChest"> <!-- item name directly referenced in the code -->
 			<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting,armorRigging"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting,armorRigging"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group name="steel armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13419,7 +13419,7 @@
 
 		<item name="armorSteelGloves">
 			<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Hands"/>
 			<effect_group name="steel armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13458,7 +13458,7 @@
 
 		<item name="armorSteelLegs"> <!-- item name directly referenced in the code -->
 			<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Legs"/>
 			<effect_group name="steel armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13491,7 +13491,7 @@
 
 		<item name="armorSteelBoots">
 			<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,armorPenalty,canHaveCosmetic,heavyArmorDeg,armorHeavySkill,heavyArmorCrafting"/>
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group name="steel armor">
 				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
@@ -13753,7 +13753,7 @@
 
 		<item name="armorMiningHelmet">
 			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,lightArmorCrafting"/>
-			<property name="DisplayType" value="armorLight"/>
+			<property name="DisplayType" value="armorHeavy"/>
 			<property name="Waterproof" value=".15"/>
 			<property name="UnlockedBy" value="perkCraftScience,perkAdvancedEngineering"/>
 			<property name="Material" value="Mplastics"/>
@@ -15687,6 +15687,7 @@
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$bleedAmount" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$bleedAmount" operation="set" value="0"/>
+				<display_value name="dStopsBleeding" value="1"/>
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -18630,7 +18631,7 @@
 					
 					<display_value name="dWellness" value="5"/> <!-- small wellness -->
 					<display_value name="dWaterAmountAdd" value="25"/>
-					<display_value name="dStaminaRegen" value=".3"/>
+					<display_value name="dStaminaRegen" value=".4"/>
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -18666,7 +18667,7 @@
 			<effect_group tiered="false">
 				<requirement name="!HasBuff" buff="buffIsOnFire"/>
 					<display_value name="dStaminaRegen" value=".4"/>
-					<display_value name="dEntityDamageBrawling" value="3"/>
+					<display_value name="dEntityDamageBrawling" value="2"/>
 					<display_value name="dStunResist" value="1"/>
 					<display_value name="dDuration" value="45"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="65"/>
@@ -18678,6 +18679,9 @@
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer2"/>
 					<display_value name="dWellness" value="5"/> <!-- small wellness -->
 					<display_value name="dStressReduction" value="3"/> <!-- small stress reduction -->
+					<!--
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-20"/>
+					<display_value name="dWaterAmountAdd" value="-20"/> -->
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -18727,8 +18731,8 @@
 				<display_value name="dHealthLoss" value=".25"/>
 				<display_value name="dHealthAmount" value="600"/>
 				<display_value name="dStaminaRegen" value=".5"/>
-				<display_value name="dDuration" value="45"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasMoonshineDuration" operation="set" value="45"/>
+				<display_value name="dDuration" value="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasMoonshineDuration" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffWellnessFive,buffExcellentDrink">
 					<requirement name="!HasBuff" buff="buffExcellentDrink"/>
 				</triggered_effect>
@@ -18762,8 +18766,8 @@
 			</property>
 			<effect_group tiered="false">
 				<display_value name="dBartering" value=".2"/>
-				<display_value name="dDuration" value="120"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasAwesomeSauceDuration" operation="set" value="120"/>
+				<display_value name="dDuration" value="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasAwesomeSauceDuration" operation="set" value="300"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffWellnessFive,buffExcellentDrink">
 					<requirement name="!HasBuff" buff="buffExcellentDrink"/>
 				</triggered_effect>
@@ -18806,10 +18810,10 @@
 			</property>
 			<effect_group tiered="false">
 				<display_value name="dPlayerExpGain" value=".2"/>
-				<display_value name="dDuration" value="240"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" operation="add" value="243"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" operation="set" value="723">
-					<requirement name="CVarCompare" cvar="$buffGrandpasLearningElixirDuration" operation="GT" value="723"/></triggered_effect>
+				<display_value name="dDuration" value="300"/> <!--
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" operation="add" value="243"/> -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" operation="set" value="300">
+					<requirement name="CVarCompare" cvar="$buffGrandpasLearningElixirDuration" operation="GT" value="300"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffWellnessFive,buffExcellentDrink">
 					<requirement name="!HasBuff" buff="buffExcellentDrink"/>
 				</triggered_effect>
@@ -25500,6 +25504,7 @@
 			<property name="EconomicValue" value="200"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="ShowQuality" value="true"/>
+			<property name="Stacknumber" value="1"/>
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Sphere" value="0.1"/>
@@ -25897,7 +25902,7 @@
 			</property>
 			
 			<effect_group name="DFmeleeToolMacheteScrap">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="50" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="20,10" tier="1,80" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -27112,7 +27117,7 @@
 				</property>
 			</property>
 			<effect_group name="DFmeleeWeaponLaserSword">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="50" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="75" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="25,10" tier="1,80" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="800,3000" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -27145,6 +27150,9 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffLaserWeapon">
 					<requirement name="EntityTagCompare" target="other" tags="empowered"/>
 				</triggered_effect>
+				
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			<effect_group name="Power Attack">
 				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -27257,6 +27265,9 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffLaserWeapon">
 					<requirement name="EntityTagCompare" target="other" tags="empowered"/>
 				</triggered_effect>
+				
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			<effect_group name="Power Attack">
 				<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
@@ -27365,6 +27376,9 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffLaserWeapon">
 					<requirement name="EntityTagCompare" target="other" tags="empowered"/>
 				</triggered_effect>
+				
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			
 			<effect_group name="Power Attack" tiered="false">
@@ -27467,6 +27481,9 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffLaserWeapon">
 					<requirement name="EntityTagCompare" target="other" tags="empowered"/>
 				</triggered_effect>
+				
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			<effect_group name="Power Attack">
 				<passive_effect name="EntityDamage" operation="perc_add" value="1.7" tags="secondary"/>
@@ -27566,6 +27583,9 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffLaserWeapon">
 					<requirement name="EntityTagCompare" target="other" tags="empowered"/>
 				</triggered_effect>
+
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			<effect_group name="Power Attack">
 				<passive_effect name="EntityDamage" operation="perc_add" value="1.5" tags="secondary"/>
@@ -27692,7 +27712,7 @@
 			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammer" />
 			<property name="CustomIconTint" value="74,93,134"/>
 			<property name="DescriptionKey" value="titaniumSledgehammerDesc"/>
-			<property name="Tags" value="blunt,melee,heavy,titaniumsledge,weapon,meleeWeapon,perkHeavyMetal,canHaveCosmetic,grunting,2HandBlunt,weaponBluntCrafting,longShaft,noBlades,noBlades,perkCraftWeapons"/>
+			<property name="Tags" value="blunt,melee,heavy,titaniumsledge,weapon,meleeWeapon,perkHeavyMetal,canHaveCosmetic,grunting,2HandBlunt,weaponBluntCrafting,longShaft,noBlades,noBlades,perkCraftWeapons,sledge"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="HoldType" value="33"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Melee/SledgeHammer/steelSledgehammerPrefab.prefab"/>
@@ -28303,9 +28323,9 @@
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="FuelValue" value="75"/>
-			<property name="EconomicValue" value="5"/>
+			<property name="EconomicValue" value="100"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="true"/>	
 			<property name="Damage_type" value="Piercing"/>
 			<property name="ShowQuality" value="true"/>
 			<property name="UnlockedBy" value="perkCraftWeaponBladed,perkMasterScientist"/>
@@ -29325,6 +29345,9 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffLaserWeapon">
 					<requirement name="EntityTagCompare" target="other" tags="empowered"/>
 				</triggered_effect>
+				
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 		</item>
 
@@ -30193,6 +30216,9 @@
 				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="otherAOE" buff="buffLaserWeapon" target_tags="empowered"/>
 				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="otherAOE" buff="buffShocked2" target_tags="zombie,animal,demon"/>
 				<display_value name="dExRadius" value="10"/>
+				
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			
 			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
@@ -30298,6 +30324,8 @@
 					<requirement name="!EntityTagCompare" target="self" tags="player"/>
 				</triggered_effect>
 				<display_value name="dExRadius" value="5"/>
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			
 			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
@@ -30388,6 +30416,8 @@
 				<display_value name="dExRadius" value="5"/>
 				
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5"/>
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			
 			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
@@ -30478,6 +30508,8 @@
 				<display_value name="dExRadius" value="5"/>
 				
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5"/>
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
 			</effect_group>
 			
 			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
@@ -30875,7 +30907,7 @@
 			<property name="Material" value="Mwood"/>
 			<property name="HoldType" value="45"/>
 			<property name="Stacknumber" value="6000"/> 
-			<property name="FuelValue" value="200"/>
+			<property name="FuelValue" value="300"/>
 			<property name="DropScale" value="1"/>
 			<property name="EconomicValue" value="10"/>
 			<property name="EconomicBundleSize" value="10"/>
@@ -31031,6 +31063,25 @@
 					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/> </triggered_effect>
 				<!-- Physician 5 -->
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffAntiradPhys5">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/> </triggered_effect>
+				
+				<!-- No Physician -->				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="900">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="LT" value="1"/> </triggered_effect>				
+				<!-- Physician 1 -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="990">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/> </triggered_effect>				
+				<!-- Physician 2 -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="1080">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/> </triggered_effect>				
+				<!-- Physician 3 -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="1170">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/> </triggered_effect>				
+				<!-- Physician 4 -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="1260">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/> </triggered_effect>				
+				<!-- Physician 5 -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffAntiradDisplay" operation="set" value="1350">
 					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/> </triggered_effect>
 			</effect_group>
 		</item>
@@ -31725,7 +31776,7 @@
 			</property>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="DFbuffTreeSap">
-					<requirement name="CVarCompare" cvar="$buffSapDuration" operation="LTE" value="1800"/>
+					<requirement name="CVarCompare" cvar="$buffSapDuration" operation="LTE" value="900"/>
 				</triggered_effect>
 				<display_value name="staminaAmount" value=".25" />
 				<display_value name="dDuration" value="60"/>
@@ -33634,7 +33685,7 @@
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1"/>
 				<property name="Use_time" value="..."/>
-				<property name="Sound_start" value="player_drinking"/>
+				<property name="Sound_start" value="player_eating"/>
 			</property>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
@@ -33743,7 +33794,7 @@
 			<property name="EconomicValue" value="200"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="bowlSoup"/>
-			<property name="Unlocks" value="bowlSoup"/>
+			<property name="Unlocks" value="DFvegetableSoup"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="DFvegetableSoup" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -39957,24 +40008,24 @@
 			<property name="EconomicValue" value="500"/>
 			<property name="ShowQuality" value="true"/>
 			<property name="SellableToTrader" value="false"/>
-
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,ammo44MagnumBulletSteel,ammo44MagnumBulletSteelHP,ammo44MagnumBulletSteelAP"/>
-				<property name="Reload_time" value="4"/>
 				<property name="Sound_start" value="44magnum_fire"/>
-				<property name="Sound_repeat" value=""/>
+				<property name="Sound_loop" value="44magnum_fire"/>
 				<property name="Sound_end" value=""/>
 				<property name="Sound_empty" value="dryfire"/>
-				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="AutoReload" value="false"/> 
 				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
 				<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
 				<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
-				<property name="AutoReload" value="true"/>
-				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
-				<property name="Particles_muzzle_fire_fpv" value="gunfire_pistol_fpv"/>
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+					<property name="triggerEffectTriggerPullDualsense" value="PistolTrigger"/>
+					<property name="triggerEffectTriggerPullXbox" value="PistolTrigger"/>
+					<property name="triggerEffectShootDualsense" value="PistolShoot"/>
+					<property name="triggerEffectShootXbox" value="PistolShoot"/>
 			</property>
+			
 			<property class="Action1">
 				<property name="Class" value="Zoom"/>
 				<property name="Zoom_max_out" value="55"/>
@@ -40263,7 +40314,7 @@
 				</property>
 			</property>
 			<effect_group name="DFJasonMachete" tiered="true">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="75" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="3000" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -44684,6 +44735,13 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="EconomicValue" value="0"/>
 			<property name="Group" value="Resources"/>
+		</item>
+		
+		<!-- Empty Item to stop players sticking stuff in empty tool slots -->
+		<item name="emptySlot">
+			<property name="CreativeMode" value="None"/>
+			<property name="Material" value="MresourceOil"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 		</item>
 
 		<item name="AnimalEntityLoadingHack">
