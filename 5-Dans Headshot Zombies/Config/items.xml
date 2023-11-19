@@ -6,4 +6,28 @@
   <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='20']/@value">50</set>
   <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='24']/@value">60</set>
   <set xpath="/items/item[starts-with(@name,'meleeHandZombie')]//property[@name='DamageEntity'][@value='40']/@value">100</set> -->
+  
+  <!-- Turret Damage Modifiers -->
+  
+  <!-- Sledge Turret -->
+  <set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">35</set>
+  <set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group/passive_effect[@name='EntityDamage'][@operation='perc_add']/@value">0,5</set>
+  <insertAfter xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group/passive_effect[@name='EntityDamage'][@operation='base_set']">
+    <passive_effect name="DamageModifier" operation="perc_set" value="1" tags="zombie"/> 
+    <passive_effect name="DamageModifier" operation="perc_add" value="3" tags="head"/>  
+    <passive_effect name="DismemberChance" operation="base_set" value=".15"/>
+  </insertAfter> 
+  
+  <!-- Junk Ammo Turret -->
+  <set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">15</set>
+  <set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group/passive_effect[@name='EntityDamage'][@operation='perc_add']/@value">0,2.5</set>
+  <set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group/passive_effect[@name='MaxRange'][@operation='base_set']/@value">25</set>
+  <set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group/passive_effect[@name='DamageFalloffRange'][@operation='base_set']/@value">18</set>
+
+  <insertAfter xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group/passive_effect[@name='EntityDamage'][@operation='perc_add']">
+    <passive_effect name="DamageModifier" operation="perc_set" value="1" tags="zombie"/> 
+    <passive_effect name="DamageModifier" operation="perc_add" value="3" tags="head"/>  
+    <passive_effect name="DismemberChance" operation="base_set" value=".05"/>
+  </insertAfter>
+
 </Config>
