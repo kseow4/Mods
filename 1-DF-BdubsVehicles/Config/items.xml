@@ -1237,7 +1237,7 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
 			</effect_group>
 		</item>
-		<item name="vehicleStallionchassis"Z>
+		<item name="vehicleStallionchassis">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="UnlockedBy" value="perkMasterMechanic"/>
 			<property name="CustomIcon" value="Schassis"/>
