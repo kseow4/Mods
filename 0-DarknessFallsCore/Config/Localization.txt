@@ -209,7 +209,7 @@ perkASArchery3Desc,+0.75% fire speed to bow weapons. Caps at +75% at level 100. 
 perkASArchery4Desc,+0.75% fire speed to bow weapons. Caps at +75% at level 100. +20% damage to this weapon class. Increases at skill level 81. Arrows ignore 40% of targets armor. Leg shots slow down opponents. Sneak attack shots have a 20% chance of causing knockdown. \nBows and Crossbows do 150% extra damage on headshots.
 perkASArchery5Desc,+0.75% fire speed to bow weapons. Caps at +75% at level 100. +25% damage to this weapon class. Arrows ignore 40% of targets armor. Leg shots slow down opponents. Sneak attack shots have a 20% chance of causing knockdown. \nBows and Crossbows do 200% extra damage on headshots.
 perkASWeapons1Desc,Increase damage by 5% for this weapon class. Increase reload speed by 5%. Increases at skill level 21.
-perkASWeapons2Desc,Increase damage by 10% for this weapon class. Increase reload speed by 10%. Increases at skill level 41. Increases run speed by 20% while holding an automatic weapon.
+perkASWeapons2Desc,Increase damage by 10% for this weapon class. Increase reload speed by 10%. Increases at skill level 41. 
 perkASWeapons3Desc,Increase damage by 15% for this weapon class. Increase reload speed by 15%. Increases at skill level 61. Increases run speed by 20% while holding an automatic weapon.
 perkASWeapons4Desc,Increase damage by 20% for this weapon class. Increase reload speed by 20%. Increases at skill level 81. Increases run speed by 20% while holding an automatic weapon. 4% chance per shot to make an enemy ragdoll. +1% damage per successful hit until you miss.
 perkASWeapons5Desc,Increase damage by 25% for this weapon class. Increase reload speed by 25%. Increases run speed by 20% while holding an automatic weapon. 4% chance per shot to make an enemy ragdoll. +1% damage per successful hit until you miss.
@@ -561,7 +561,7 @@ perkCraftShotgunsRank3Desc,"Crafting Tier: 31 for shotguns. Shotguns below quali
 perkCraftShotgunsRank4Desc,"Unlocks the Auto Shotgun recipe.\nCrafting Tier: 41 for shotguns. Shotguns below quality 41 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 40"
 perkCraftShotgunsRank5Desc,"Unlocks the Coilshotgun and all coilshotgun round recipes.\nCrafting Tier: 51 for shotguns. Shotguns below quality 51 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 60"
 perkCraftToolsName,Tool Crafting
-perkCraftToolsDesc,"Want to make better quality tools? This is the perk for you. Tools are all wrenches, ratches, hammers, pickaxes, shoves, axes, augers and chainsaws."
+perkCraftToolsDesc,"Want to make better quality tools? This is the perk for you. Tools are all wrenches, ratches, hammers, pickaxes, shovels, axes, augers and chainsaws."
 perkCraftToolsRank1Desc,"Unlocks all scrap tool recipes.\nCrafting Tier: 11 for tools. Tools below quality 11 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 5"
 perkCraftToolsRank2Desc,"Unlocks the clawhammer, wrench and all iron tool recipes.\nCrafting Tier: 21 for tools. Tools below quality 21 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 10"
 perkCraftToolsRank3Desc,"Unlocks the ratchet and all steel tool recipes.\nCrafting Tier: 31 for tools. Tools below quality 31 will no longer degrade on repair.\n[DECEA3]Level Requirements:[-] Player Level 20"
@@ -689,7 +689,7 @@ attclasssecurity,Class: Security
 attClassSecurityName,Class: Security
 attClassSecurityDesc,This attribute tracks your class quest progress and shows your unique perks.
 attClassSecurityRank1Desc,Rank 1 is gained when you complete your first class quest.
-attClassSecurityRank2Desc,"Rank 2 is gained when you finish your last class quest. Increase crafting tier by 10 for all automatic weapons and all armor."
+attClassSecurityRank2Desc,"Rank 2 is gained when you finish your last class quest. Increase crafting tier by 10 for all automatic weapons and all armor (excluding power)."
 attclasssurvivalist,Class: Survivalist
 attClassSurvivalistName,Class: Survivalist
 attClassSurvivalistDesc,This attribute tracks your class quest progress and shows your unique perks.
@@ -737,7 +737,7 @@ perkMasterScientistName,Master Scientist
 perkMasterScientistDesc,Advanced scientific methods for the true masters.
 perkMasterSecurityName,Master Security
 perkMasterSecurityDesc,Advanced security techniques for the true masters.
-perkMasterSecurityRank1Desc,"Unlocks advanced tactical rigging, titanium club and advanced brass catcher recipes. Increase crafting tier by 10 for all automatic weapons and all armor. (excluding light)"
+perkMasterSecurityRank1Desc,"Unlocks advanced tactical rigging, titanium club and advanced brass catcher recipes. Increase crafting tier by 10 for all automatic weapons and all armor. (excluding power)"
 perkMasterSurvivalistName,Master Survivalist
 perkMasterSurvivalistDesc,Advanced survival techniques for the true masters.
 perkMasterSurvivalistRank1Desc,"Unlocks large backpack, mega crush, signal flare, survival torch, biofuel, gas can, gunpowder bundle, titanium crossbow and bolts recipes.\nIncreases crafting tier by 10 for all pistols but not the SMG, all knuckles and all bows."
@@ -1622,11 +1622,11 @@ DFShotgunReceiverDesc,A part of the long-barrel shotgun. Assemble with other par
 DFautoShotgunReceiverDesc,A part of the combat shotgun. Assemble with other parts to create a complete combat shotgun once you've read the schematic.
 DFshotgunComponentsDesc,A part for shotguns. Assemble with other parts to create a complete shotgun once you've read the appropriate schematic.
 DFgunCoilpistol,Coilpistol
-gunCoilpistolDesc,Advanced magnum pistol that uses electrically powered magnets to launch a projectile. Uses 44 Magnum Coilrounds.
+gunCoilpistolDesc,Advanced magnum pistol that uses electrically powered magnets to launch a projectile. Uses 44 Magnum Coilrounds.\nDisables Demonic Regeneration.
 DFgunCoilSniper,Coilsniper
-gunCoilSniperDesc,Advanced sniper rifle that uses electrically powered magnets to launch a projectile. Uses 7.62mm Coilrounds.
+gunCoilSniperDesc,Advanced sniper rifle that uses electrically powered magnets to launch a projectile. Uses 7.62mm Coilrounds.\nDisables Demonic Regeneration.
 DFgunCoilrifle,Coilcarbine
-gunCoilRifleDesc,Advanced carbine that uses electrically powered magnets to launch a projectile. Uses 7.62mm Coilrounds.
+gunCoilRifleDesc,Advanced carbine that uses electrically powered magnets to launch a projectile. Uses 7.62mm Coilrounds.\nDisables Demonic Regeneration.
 DFcoilgunParts,Coilgun Parts
 DFcoilgunGrip,Coilgun Grip
 DFcoilpistolReceiver,Coilpistol Receiver
@@ -1823,7 +1823,7 @@ pwdDrawBridge,Powered DrawBridge
 ConcreteDoorControl,Concrete Door Control
 DoorControlRelay,Door Control Relay
 DFgunLaserM60,Laser M60
-DFgunLaserM60Desc,"Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses energy cells and is a laser weapon, so it's very good at killing demons.\n\nRepair with a Repair Kit.\nDisables Demonic Regeneration."
+DFgunLaserM60Desc,"Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses energy cells and is a laser weapon, so it's very good at killing demons.\n\nRepair with a Repair Kit.\nDisables Demonic and Empowered Regeneration."
 rScrapIronLogSpike5,R Iron Log Spike 5
 rWoodLogSpike2,Reinforced Wood Log Spike 2
 rWoodMetalLogSpike3,Reinforced Wood Metal Log Spike 3
@@ -1929,13 +1929,13 @@ ScifiBenchDesc,Everything is better with lasers! Can be used to craft items made
 SciFiForge,Fusion Forge
 SciFiForgeDesc,Advanced crafting station. Used to craft Plutonium and Uranium into useable materials. Can also craft Advanced Forge and Chemistry Station recipes.
 DFmeleeWeaponLaserSword,Laser-Bladed Sword
-laserSwordDesc,Everything is better with lasers! Good for slicing and dicing zombies. Can also be used to butcher meat.\nDisables Demonic Regeneration.
+laserSwordDesc,Everything is better with lasers! Good for slicing and dicing zombies. Can also be used to butcher meat.\nDisables Demonic and Empowered Regeneration.
 DFresourceEnergyCell,Energy Cell
 energyCellDesc,"Used as ammo for laser weapons and repairing other laser-related items.\nRecipe makes 20."
 DFgunLaserPistol,Laser Pistol
-LaserPistolDesc,Everything is better with lasers! Pew pew! Uses Energy Cells as ammo and can be assembled with the right skill.\nDisables Demonic Regeneration.
+LaserPistolDesc,Everything is better with lasers! Pew pew! Uses Energy Cells as ammo and can be assembled with the right skill.\nDisables Demonic and Empowered Regeneration.
 DFgunLaserSniper,Laser Rifle
-DFgunLaserSniperDesc,Everything is better with lasers! Pew pew! Has a scope built in. Uses Energy Cells as ammo and can be assembled with the right skill.\nDisables Demonic Regeneration.
+DFgunLaserSniperDesc,Everything is better with lasers! Pew pew! Has a scope built in. Uses Energy Cells as ammo and can be assembled with the right skill.\nDisables Demonic and Empowered Regeneration.
 DFLaserWeaponParts,Laser Weapon Parts
 DFLaserPistolGrip,Laser Pistol Grip
 DFLaserPistolReceiver,Laser Pistol Receiver
@@ -2975,8 +2975,8 @@ wellnessTip_title,Wellness
 DFmeleeTazasSpear,Taza's Spear
 DFmeleeTazasSpearDesc,"Rumoured to originally belong to the legendary native american hunter, this spear looks and feels like a fairly ornate stone spear. However it seems to have some kind of power coursing through it that takes effect when you attack zombies.  Repaired with small stones."
 DFgunTazasBow,Taza's Bow
-DFgunTazasBowDesc,"Rumoured to originally belong to the legendary native american hunter, this bows looks and feels like a fairly ornate iron bow. However it seems to have some kind of power coursing through it that takes effect when you attack zombies.  Repaired with wood."
-tutorialTipQuest01,"Welcome to Darkness Falls!\n\nThank you everyone for all the support over the past couple of years. I never expected the mod to be popular, but it is, and I feel that thank you isn't enough to express my feelings on that.\n\nExtra special thanks to my testers, to Mythixdino for the custom Harmony patches to make the mod work, SphereII for advice and guidance on C# matters, Xyth for his amazing animation tutorials and to my Patreons who's financial support allow me to buy all sorts of models and assets to torment you all with.\n\n[FF0000]Please make sure to check your journal, as I will be using this to detail class information and mod-specific changes where possible.[-]\n\nGood Luck!"
+DFgunTazasBowDesc,"Rumoured to originally belong to the legendary native american hunter, this bows looks and feels like a fairly ornate iron bow. However it seems to have some kind of power coursing through it that takes effect when you attack zombies.\n\nRepaired with wood."
+tutorialTipQuest01,"Welcome to Darkness Falls!\n\nThank you everyone for all the support over the past few years. I never expected the mod to be popular, but it is, and I feel that thank you isn't enough to express my feelings on that.\n\nExtra special thanks to SphereII for advice and guidance on C# matters, Xyth for his amazing animation tutorials, and to my Patreons who's financial support allow me to buy all sorts of models and assets to torment you all with.\n\nSuper extra special thanks to all of the testers! Mythix and I Don't Care for help with C# patches, TobiC for various bits of artwork (like the main menu and UI), Dobbers for being insane on DPS numbers for balance reasons, Rizzo for MP and twitch integration testing, KySoto and Puck for MP testing, Grumpybeard, Torqqed, Erik and Morde for general SP testing, Falaffel for generic testing and the german localization, and MC for bad jokes to keep our morale up!\n\n[FF0000]Please make sure to check your journal, as I will be using this to detail class information and mod-specific changes where possible.[-]\n\nGood Luck!"
 tutorialTipQuest01_title,Welcome To Darkness Falls
 tutorialTipQuest02,"No one expected the end of the world. Zombie movies, shows and games always portrayed it starting off with a few unwell people that just snowballed out of control. You remember the sky going dark and zombies bursting out of the sewer system.\n\nThen the military came. They tried to hold back the tides while people ran for evacuation. You remember falling, hitting your head and your world turning to darkness. Waking up, you heard gun fire and explosions, and your blurred vision eventually cleared to reveal a medical tent. Other survivors were around you, and you had been stripped to your undergarments to dress your wounds.\n\nOne of the other survivors explained this was a stopping point, a temporary safe zone until you could all be moved to the more permanent one, but it seemed the zombies found you first. You noticed the other survivors had backpacks of stuff, planning to make their escape, and one was passed to you. With no other plan, you snuck out of the camp with the other survivors, and then you all broke and ran in seperate directions so the zombies wouldn't notice you.\n\nNow, you have no memory, no clothes and no idea where you are. Maybe the backpack will have something of use?"
 tutorialTipQuest02_title,End of the Road
@@ -3152,7 +3152,7 @@ resourceCoalBundle,Stack of Coal (10000)
 modAblativeArmor,Ablative Armor
 modAblativeArmorDesc,Reduces your chance of being set on fire by 10% per mod piece installed
 modMeleeLaserBattery,Laser Battery
-modMeleeLaserBatteryDesc,"Melee, archery and junk turret weapon mod. Disables demonic regeneration on hit."
+modMeleeLaserBatteryDesc,"Melee, archery and junk turret weapon mod. Disables empowered demonic regeneration on hit. Cannot be installed in laser weapons."
 quest_tier3_buried_supplies,Tier 3 Buried Supplies
 quest_tier4_buried_supplies,Tier 4 Buried Supplies
 quest_tier5_buried_supplies,Tier 5 Buried Supplies
@@ -3335,9 +3335,9 @@ DFmeleeWpnClubScrapDesc,A lump of metal with bits of iron hammered into it. Make
 meleeWpnBatonT1JunkBaton,Junk Baton
 meleeWpnBatonT1JunkBatonDesc,This baton crafted from junk is light weight but still packs a decent punch.
 DFmeleeWpnPowerHammer,Power Hammer
-DFmeleeWpnPowerHammerDesc,Laser-tier weapon. Disables the regeneration of demons. Could possibly be used as a golf club.\nDisables Demonic Regeneration.
+DFmeleeWpnPowerHammerDesc,Laser-tier weapon. Could possibly be used as a golf club.\nDisables Demonic and Empowered Regeneration.
 DFmeleeWpnPlasmaAxe,Plasma Axe
-DFmeleeWpnPlasmaAxeDesc,Laser-tier weapon. Disables the regeneration of demons. Great at removing limbs but not very good at cutting down trees.\nDisables Demonic Regeneration.
+DFmeleeWpnPlasmaAxeDesc,Laser-tier weapon. Great at removing limbs but not very good at cutting down trees.\nDisables Demonic and Empowered Regeneration.
 DFresourceArrowHeadScrapIron,Scrap Iron Arrowhead
 DFresourceArrowHeadScrapIronDesc,Arrowhead made from random bits of iron found in the wasteland. Used to make Scrap Iron Arrows.
 DFammoArrowScrapIron,Scrap Iron Arrow
@@ -3408,11 +3408,11 @@ perkASPistols2Desc,Increases damage by 10%. Increases rate of fire by 10%. Reloa
 perkASPistols3Desc,Increases damage by 15%. Increases rate of fire by 15%. Reload 15% faster. This increases at level 61. Reduce zombie movement speed on leg shot. Pistols now cause bleed.
 perkASPistols4Desc,Increases damage by 20%. Increases rate of fire by 20%. Reload 20% faster. This increases at level 81. Reduce zombie movement speed on leg shot. Pistols now cause bleed. Pistols ignore 30% armor if the target is within 5 blocks.
 perkASPistols5Desc,Increases damage by 25%. Increases rate of fire by 25%. Reload 25% faster. Reduce zombie movement speed on leg shot. Pistols now cause bleed. Pistols ignore 30% armor if the target is within 5 blocks.
-perkASShotguns1Desc,Increases damage by 5%. Increases rate of fire by 5%. Reload 5% faster. This increases at level 21.
-perkASShotguns2Desc,Increases damage by 10%. Increases rate of fire by 10%. Reload 10% faster. This increases at level 41. Increases damage to wood by 300%
-perkASShotguns3Desc,Increases damage by 15%. Increases rate of fire by 15%. Reload 15% faster. This increases at level 61. Increases damage to wood by 300%
-perkASShotguns4Desc,Increases damage by 20%. Increases rate of fire by 20%. Reload 20% faster. This increases at level 81. Increases damage to wood by 300%. Gain an extra 20% damage with shotguns.
-perkASShotguns5Desc,Increases damage by 25%. Increases rate of fire by 25%. Reload 25% faster. Increases damage to wood by 300%. Gain an extra 20% damage with shotguns. Increase dismemberment chance by 30% if your target is within 3 blocks.
+perkASShotguns1Desc,Increases damage by 5%. Increases rate of fire by 5%. Reload 5% faster. This increases at level 21.\nLowers zombie movement speeds to walk on injury.
+perkASShotguns2Desc,Increases damage by 10%. Increases rate of fire by 10%. Reload 10% faster. This increases at level 41. Increases damage to wood by 300%\nLowers zombie movement speeds to walk on injury.
+perkASShotguns3Desc,Increases damage by 15%. Increases rate of fire by 15%. Reload 15% faster. This increases at level 61. Increases damage to wood by 300%\nLowers zombie movement speeds to walk on injury.
+perkASShotguns4Desc,Increases damage by 20%. Increases rate of fire by 20%. Reload 20% faster. This increases at level 81. Increases damage to wood by 300%. Gain an extra 20% damage with shotguns.\nLowers zombie movement speeds to walk on injury.
+perkASShotguns5Desc,Increases damage by 25%. Increases rate of fire by 25%. Reload 25% faster. Increases damage to wood by 300%. Gain an extra 20% damage with shotguns. Increase dismemberment chance by 30% if your target is within 3 blocks.\nLowers zombie movement speeds to walk on injury.
 perkASRifles1Desc,Increases damage by 5%. Increases rate of fire by 5%. Reload 5% faster. This increases at level 21.
 perkASRifles2Desc,Increases damage by 10%. Increases rate of fire by 10%. Reload 10% faster. This increases at level 41.
 perkASRifles3Desc,Increases damage by 15%. Increases rate of fire by 15%. Reload 25% faster. This increases at level 61. Reduce zombie movement on leg shot.
@@ -3530,7 +3530,7 @@ cntServiceTruckMoPower,Mo Power Service Truck
 cntServiceTruckWorkingStiffTools,Working Stiff Tools Service Truck
 cntAmbulanceTruck01,Ambulance
 DFlockpickingBook,Safe Cracking For Dumbshits
-DFlockpickingBookDesc,Teaches you how to lockpick safes and doors. Increases thelockpicking perk by 1.
+DFlockpickingBookDesc,Teaches you how to lockpick safes and doors. Increases the lockpicking perk by 1.
 DFquickerCraftingBook,Crafting From The Masters
 DFquickerCraftingBookDesc,Teaches you how to save time while crafting. Increases the Quicker Crafting perk by 1.
 ammoSteelCasedGroupDesc,Steel-cased ammunition is a cheap alternative to using brass but decreases range and accuracy.
@@ -3841,12 +3841,12 @@ adobePeachShapes:VariantHelper,Adobe Peach Shapes
 adobeWhiteShapes:VariantHelper,Adobe White Shapes
 adobeTanShapes:VariantHelper,Adobe Tan Shapes
 DFgunLaserShotgun,Laser Shotgun
-DFgunLaserShotgunDesc,Close range weapon that fires a barrage of lasers in multiple directions. Not very effective vs armored targets but good for room clearance.\nDisables Demonic Regeneration.
+DFgunLaserShotgunDesc,Close range weapon that fires a barrage of lasers in multiple directions. Not very effective vs armored targets but good for room clearance.\nDisables Demonic and Empowered Regeneration.
 DFLaserShotgunReceiver,Laser Shotgun Receiver
 DFLaserShotgunStock,Laser Shotgun Stock
 DFLaserShotgunBarrel,Laser Shotgun Barrel
 DFgunLaserAutoRifle,Laser Carbine
-DFgunLaserAutoRifleDesc,Experimental fully automatic laser weapon. Spits death at 375 rounds per minute. May or may not explode.\nDisables Demonic Regeneration.
+DFgunLaserAutoRifleDesc,Experimental fully automatic laser weapon. Spits death at 375 rounds per minute. May or may not explode.\nDisables Demonic and Empowered Regeneration.
 DFLaserCarbineReceiver,Laser Carbine Receiver
 DFLaserCarbineStock,Laser Carbine Stock
 DFLaserCarbineBarrel,Laser Carbine Barrel
@@ -3958,7 +3958,7 @@ ammoBundle762mmBulletFMJSteel,Box of 7.62mm Steel Bullets (300)
 ammoBundle762mmBulletSteelHP,Box of 7.62mm Steel HP Bullets (300)
 ammoBundle762mmBulletSteelAP,Box of 7.62mm Steel AP Bullets (300)
 ammoRocketPulse,Pulse Rocket
-ammoRocketPulseDesc,A reasonably high damage rocket that disables the regeneration of any demons caught within it's blast.
+ammoRocketPulseDesc,A reasonably high damage rocket that disables the regeneration of any demons and empowered demons caught within it's blast.
 modKnucklesBrokenGlass,Broken Glass
 modKnucklesBrokenGlassDesc,Stick some broken glass to your knuckle weapons for added bleed damage.\nMod Tier: 1
 modKnucklesExtraPadding,Extra Padding
@@ -4153,9 +4153,9 @@ quest_dishonorabledischarge_completion,Dishonorable Discharge
 MasteryText,Do you know any class masteries?
 MasteryOffer,"I most certainly do. I can teach you any class mastery."
 DFmeleeSpearLaser,Laser Spear
-DFmeleeSpearLaserDesc,Everything is better with Lasers! Especially spears.\nDisables Demonic Regeneration.
+DFmeleeSpearLaserDesc,Everything is better with Lasers! Especially spears.\nDisables Demonic and Empowered Regeneration.
 DFmeleeWpnPowerFist,Power Fist
-DFmeleeWpnPowerFistDesc,Everything is better with Lasers! Now you can power your fists with advanced technology to crush your enemies.\nDisables Demonic Regeneration.
+DFmeleeWpnPowerFistDesc,Everything is better with Lasers! Now you can power your fists with advanced technology to crush your enemies.\nDisables Demonic and Empowered Regeneration.
 buffElementHypothermiaName,Hypothermia
 buffElementHypothermiaDesc,"You're experiencing Hypothermia. Find better clothing, shelter or a campfire or you will die soon. With hypothermia you will burn more calories, move slower and slowly take damage."
 buffElementHypothermiaTooltip,"You're experiencing Hypothermia."
@@ -4175,7 +4175,7 @@ drinkYuccaJuiceSmoothieDesc,This smoothie helps you survive in severely hot envi
 mutantSpiderBroodmother,Mutated Broodmother
 ammoArrowExplodingPulse,Pulse Arrow (Ammo)
 ammoCrossbowBoltExplodingPulse,Pulse Bolt (Ammo)
-ammoExplodingPulseDesc,An improved version of explosive arrows and bolts.\nDisables demonic regeneration.
+ammoExplodingPulseDesc,An improved version of explosive arrows and bolts.\nDisables demonic and empowered regeneration.
 loadingTipBaseUpgrading,"Building blocks can be upgraded to stronger versions using material and a stone hammer.\nThe most common upgrade materials are: wood, cobblestone rocks, concrete mix and forged steel. The stone hammer cannot upgrade beyond concrete."
 cobblestoneFrameShapes:VariantHelper,Cobblestone Frame Shapes
 cobblestoneFrameShapesDesc,Shapes made out of cobblestone that can be picked up and easily moved for building. Upgrades into the full version with cobblestone.
@@ -4537,3 +4537,7 @@ ttBarterLevelUpBook,Your Skill In Bartering Has Increased By 2!
 xuiCombineItemA,Original Item
 xuiCombineItemB,Repair Item
 xuiResult,Output
+ammoRocketFusion,Fusion Rocket
+ammoRocketFusionDesc,"A super-powerful nuke. What more do you need to know?\n\n[FF0000]WARNING:[-] This does a LOT of block damage, a LOT of entity damage and has a BIG radius. If you fire it in your horde base and completely destroy the horde, your base and yourself, don't cry to me."
+DFdrinkJarUnleashHell,"[FF0000]Unleash Hell[-]"
+DFdrinkJarUnleashHellDesc,"Drinking this item will [FF0000]PERMANENTLY[-] increase your gamestage by 100%\nThis cannot be undone.\nYou have been warned."

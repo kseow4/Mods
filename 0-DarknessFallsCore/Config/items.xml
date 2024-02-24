@@ -1703,7 +1703,7 @@
 			</property>
 
 			<effect_group name="meleeWpnBladeT3Machete">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="18,10" tier="1,80" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="300,1600" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -4405,7 +4405,7 @@
 		</item>
 
 		<item name="gunShotgunT2PumpShotgun">
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,canHaveCosmetic,perkShotgunMessiah,ammo,shotgunCrafting,attachmentsIncluded"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,canHaveCosmetic,perkShotgunMessiah,ammo,shotgunCrafting,attachmentsIncluded,magazine,armorshredder"/>
 			<property name="DisplayType" value="rangedShotgun"/>
 			<property name="HoldType" value="5"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Pump Shotgun/pumpShotgunPrefab.prefab"/>
@@ -4503,7 +4503,7 @@
 		</item>
 
 		<item name="gunShotgunT3AutoShotgun">
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunCrafting,noScopes,perkShotgunMessiah,ammo,selfLoading,modGunShotgunTubeExtenderMagazine"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunCrafting,noScopes,perkShotgunMessiah,ammo,selfLoading,modGunShotgunTubeExtenderMagazine,armorshredder"/>
 			<property name="DisplayType" value="rangedShotgun"/>
 			<property name="HoldType" value="76"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Auto Shotgun/autoShotgunPrefab.prefab"/>
@@ -4568,9 +4568,9 @@
 				<passive_effect name="EntityDamage" operation="base_add" value="6" tags="perkShotgunMessiah"/>
 
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-				
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkShotgunMessiah"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="999" tags="perkShotgunMessiah"/>
+
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="90" tags="perkShotgunMessiah"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1000" tags="perkShotgunMessiah"/>
 				
 				<passive_effect name="MaxRange" operation="base_add" value="5"/>
 				<passive_effect name="DamageFalloffRange" operation="base_add" value="5" tags="perkShotgunMessiah"/>
@@ -4578,13 +4578,13 @@
 				<passive_effect name="MagazineSize" operation="base_set" value="16" tags="perkShotgunMessiah"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkShotgunMessiah"/> <!-- 2.3s -->
 				
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="4.2" tags="perkShotgunMessiah"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="4.2" tags="perkShotgunMessiah"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="3.15" tags="perkShotgunMessiah"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="3.15" tags="perkShotgunMessiah"/>
 
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-2.5" tags="perkShotgunMessiah"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="2.5" tags="perkShotgunMessiah"/>		
 				
-				<display_value name="dRecoil" value="42" />
+				<display_value name="dRecoil" value="31" />
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkShotgunMessiah"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="1.7" tags="perkShotgunMessiah"/>
 
@@ -5114,7 +5114,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.2" tags="perkAutomaticWeapons"/> <!-- damage offset -->
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.2" tags="perkAutomaticWeapons"/> <!-- damage offset -->
 
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="340" tags="perkAutomaticWeapons"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="300" tags="perkAutomaticWeapons"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1000" tags="perkAutomaticWeapons"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="20" tags="perkAutomaticWeapons"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkAutomaticWeapons"/> <!-- 3.8s -->
@@ -5202,7 +5202,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.30" tier="1,80" tags="perkAutomaticWeapons"/>
 				<passive_effect name="MaxRange" operation="perc_add" value="0,.30" tier="1,80" tags="perkAutomaticWeapons"/>
 
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="300" tags="perkAutomaticWeapons"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="340" tags="perkAutomaticWeapons"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1000" tags="perkAutomaticWeapons"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="30" tags="perkAutomaticWeapons"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkAutomaticWeapons"/> <!-- 2.85s -->
@@ -5221,7 +5221,7 @@
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1" tags="perkAutomaticWeapons"/>
 
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.5" tags="perkAutomaticWeapons"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".27" tags="perkAutomaticWeapons"/> <!-- ak47 -->
+				<passive_effect name="WeaponHandling" operation="base_set" value=".35" tags="perkAutomaticWeapons"/> <!-- ak47 -->
 
 				<passive_effect name="DegradationMax" operation="base_set" value="250,1000" tier="1,80" tags="perkAutomaticWeapons"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkAutomaticWeapons"/>
@@ -5480,7 +5480,7 @@
 				<property name="Class" value="Launcher"/>
 				<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
 				<!-- <property name="Range" value="200"/> -->
-				<property name="Magazine_items" value="ammoRocketHE,ammoRocketFrag,ammoRocketPulse"/>
+				<property name="Magazine_items" value="ammoRocketHE,ammoRocketFrag,ammoRocketPulse,ammoRocketFusion"/>
 				<!-- <property name="Reload_time" value="2"/> -->
 				<property name="Sound_start" value="m136_fire"/>
 				<property name="Sound_repeat" value=""/>
@@ -7111,7 +7111,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="Degradation" value="99999" param1="true"/>
 			<property class="Action0">
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<property name="DamageEntity" value="20"/>
 				<property name="DamageBlock" value="100"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
@@ -7158,7 +7158,7 @@
 			<property name="Extends" value="meleeHandzombieMutated"/>
 			<property name="CreativeMode" value="None"/>
 			<property class="Action0">
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<property name="DamageEntity" value="25"/>
 				<property name="DamageBlock" value="140"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
@@ -7205,7 +7205,7 @@
 			<property name="Extends" value="meleeHandzombieMutated"/>
 			<property name="CreativeMode" value="None"/>
 			<property class="Action0">
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<property name="DamageEntity" value="30"/>
 				<property name="DamageBlock" value="180"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
@@ -7640,7 +7640,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="40"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrong" tiered="false">
@@ -7686,7 +7686,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="25"/>
 				<property name="DamageBlock" value="50"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrong" tiered="false">
@@ -7730,7 +7730,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="35"/>
 				<property name="DamageBlock" value="60"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrong" tiered="false">
@@ -7774,7 +7774,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="45"/>
 				<property name="DamageBlock" value="70"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrongFeral" tiered="false">
@@ -7818,7 +7818,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="55"/>
 				<property name="DamageBlock" value="80"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrongFeral" tiered="false">
@@ -7862,7 +7862,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="65"/>
 				<property name="DamageBlock" value="90"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrongFeral" tiered="false">
@@ -7906,7 +7906,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="75"/>
 				<property name="DamageBlock" value="100"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrongFeral" tiered="false">
@@ -7928,7 +7928,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="65"/>
 				<property name="DamageBlock" value="90"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.3"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrongFeral" tiered="false">
@@ -7949,7 +7949,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="80"/>
 				<property name="DamageBlock" value="100"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.3"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
 			</property>
 			<effect_group name="meleeHandZombieStrongFeral" tiered="false">
@@ -8538,6 +8538,8 @@
 				<property name="DamageEntity" value="100"/>
 				<property name="DamageBlock" value="500"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
+				<property name="Buff" value="buffFatiguedTrigger" />
+				<property name="Buff_chance" value="1" />
 			</property>
 			<property class="Action1"> <!-- UseAction -->
 				<property name="Class" value="Vomit"/>
@@ -8567,8 +8569,8 @@
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="30"/>
 				<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-					buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-					weights=".11,.07,.07,.05,.29,.36,.11"/>
+					buff="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+					weights=".07,.07,.05,.29,.36,.11"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="25"><!--InfectionDemon-->
 					<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="4000"/><!--AbrasionDemon-->
@@ -8618,6 +8620,8 @@
 				<property name="DamageEntity" value="150"/>
 				<property name="DamageBlock" value="750"/>
 				<requirement name="CVarCompare" cvar="_stunned" operation="LT" value="1"/>
+				<property name="Buff" value="buffFatiguedTrigger" />
+				<property name="Buff_chance" value="1" />
 			</property>
 			<property class="Action1"> <!-- UseAction -->
 				<property name="Class" value="Vomit"/>
@@ -8646,8 +8650,8 @@
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="30"/>
 				<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-					buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-					weights=".11,.07,.07,.05,.29,.36,.11"/>
+					buff="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+					weights=".07,.07,.05,.29,.36,.11"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="25"><!--InfectionDemon-->
 					<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="4000"/><!--AbrasionDemon-->
@@ -9055,7 +9059,7 @@
 			<property name="HoldType" value="35"/>
 			<property class="Action0">
 				<property name="Delay" value=".6"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<property name="DamageEntity" value="14"/>
 				<property name="DamageBlock" value="16"/>
 			</property>
@@ -9185,8 +9189,8 @@
 			<effect_group name="ammo9mmBulletHP" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="41.6" tags="perkGunslinger,revolver,perkDeadEye,perkAutomaticWeapons"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkGunslinger,revolver,perkDeadEye,perkAutomaticWeapons"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="1" tags="perkGunslinger,revolver,perkDeadEye,perkAutomaticWeapons"/>
-				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="0.5" tags="perkGunslinger,revolver,perkDeadEye,perkAutomaticWeapons"/>
+				<display_value name="dTargetArmor" value="0.5"/>
 
 				<!-- Not supported at this time. If you ask it will be a long answer. It's complicated. <passive_effect name="PiercingProtection" target="other" operation="perc_set" value=".5"/> -->
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
@@ -9278,7 +9282,8 @@
 				<passive_effect name="EntityDamage" operation="base_set" value="91" tags="perkGunslinger,revolver,perkDeadEye"/>
 
 				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger,perkDeadEye"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value=".9" tags="perkGunslinger,perkDeadEye"/><display_value name="dTargetArmor" value=".9"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="0.5" tags="perkGunslinger,perkDeadEye"/>
+				<display_value name="dTargetArmor" value="0.5"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 				
@@ -9369,8 +9374,9 @@
 			<effect_group name="ammo762mmBulletHP" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="65" tags="perkDeadEye,perkMachineGunner,perkAutomaticWeapons"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="4" tags="perkDeadEye,perkMachineGunner,perkAutomaticWeapons"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="1" tags="perkDeadEye,perkMachineGunner,perkAutomaticWeapons"/>
-				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="0.5" tags="perkDeadEye,perkMachineGunner,perkAutomaticWeapons"/>
+				<display_value name="dTargetArmor" value="0.5"/>
+				
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 				
@@ -11805,7 +11811,7 @@
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="RepairTools" value="resourceRepairKit"/> <!-- 1 resourceRepairKit is worth 2000 -->
-			<property name="Stacknumber" value="50"/>
+			<property name="Stacknumber" value="5"/>
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="EconomicValue" value="750"/>
 			<!-- <property name="PickupJournalEntry" value="gunAssemblyTip"/> -->
@@ -15435,6 +15441,7 @@
 		</item>
 		
 		<item name="backpackSmall">
+			<property name="Tags" value="backpackSmall"/>
 			<property name="CustomIcon" value="backpackMedium" />
 			<property name="DescriptionKey" value="backpackSmallDesc" />
 			<property name="CreativeMode" value="Player"/>
@@ -15459,9 +15466,10 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 				<passive_effect name="CarryCapacity" operation="base_add" value="15"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBackpackSmall"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffBackpackSmall"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffBackpackMedium"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffBackpackLarge"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="remove_backpack_item_small" allow_client_call="true"/>
 				<display_value name="dCarryCapacity" value="15"/>
 			</effect_group>
 			<property class="UMA">
@@ -15474,6 +15482,7 @@
 		</item>
 
 		<item name="backpackMedium">
+			<property name="Tags" value="backpackMedium"/>
 			<property name="CustomIcon" value="backpackMedium" />
 			<property name="CustomIconTint" value="42C234"/>
 			<property name="DescriptionKey" value="backpackMediumDesc" />
@@ -15499,9 +15508,10 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 				<passive_effect name="CarryCapacity" operation="base_add" value="30"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBackpackMedium"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffBackpackMedium"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffBackpackSmall"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffBackpackLarge"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="remove_backpack_item_medium" allow_client_call="true"/>
 				<display_value name="dCarryCapacity" value="30"/>
 			</effect_group>
 			<property class="UMA">
@@ -15514,6 +15524,7 @@
 		</item>
 
 		<item name="backpackLarge">
+			<property name="Tags" value="backpackLarge"/>
 			<property name="CustomIcon" value="backpackMedium" />
 			<property name="CustomIconTint" value="B2001B"/>
 			<property name="DescriptionKey" value="backpackLargeDesc" />
@@ -15540,9 +15551,10 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 				<passive_effect name="CarryCapacity" operation="base_add" value="45"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBackpackLarge"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffBackpackLarge"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffBackpackSmall"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffBackpackMedium"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="remove_backpack_item_large" allow_client_call="true"/>
 				<display_value name="dCarryCapacity" value="45"/>
 			</effect_group>
 			<property class="UMA">
@@ -16740,7 +16752,7 @@
 			</effect_group>
 
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18250,7 +18262,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18288,7 +18300,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18341,7 +18353,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18377,7 +18389,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18426,7 +18438,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18475,7 +18487,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18526,7 +18538,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18559,7 +18571,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18606,7 +18618,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18640,7 +18652,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18690,7 +18702,7 @@
 			</effect_group>
 
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18784,7 +18796,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -18827,7 +18839,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -25902,7 +25914,7 @@
 			</property>
 			
 			<effect_group name="DFmeleeToolMacheteScrap">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="20,10" tier="1,80" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -26483,7 +26495,7 @@
 			<property name="DisplayType" value="melee"/>
 			<property name="HoldType" value="12"/>
 			<property name="Meshfile" value="#@modfolder:Assets/MeleeTools.unity3d?TitaniumPickaxe.prefab"/>
-			<property name="RepairTools" value="DFforgedTitanium"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="EconomicValue" value="912"/>
 			<property name="ShowQuality" value="true"/>
 			<property name="UnlockedBy" value="perkCraftTools,perkMasterBuilder"/>
@@ -26782,7 +26794,7 @@
 				</property>
 			</property>
 			<effect_group name="DFmeleeToolMacheteTitanium">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="75" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="25,10" tier="1,80" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="600,2400" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -27117,7 +27129,7 @@
 				</property>
 			</property>
 			<effect_group name="DFmeleeWeaponLaserSword">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="75" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="100" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="25,10" tier="1,80" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="800,3000" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -27876,7 +27888,7 @@
 				</property>
 			</property>
 			<effect_group name="DFtitaniumHuntingKnife">
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="100" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="25,10" tier="1,80" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="600,2400" tier="1,80" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
@@ -28824,7 +28836,7 @@
 			<property name="CustomIcon" value="gunCoilpistol" />
 			<property name="DescriptionKey" value="gunCoilpistolDesc"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,selfLoading,attAgility,perkGunslinger,perkCoilguns,9mmGun,canHaveCosmetic,ammo,fasterFireRate,pistolCrafting,attachmentsIncluded"/>
-			<property name="DisplayType" value="rangedGunCoil"/> 
+			<property name="DisplayType" value="rangedGun"/> 
 			<property name="HoldType" value="44"/>
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?Coilpistol.prefab"/>
 			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="20"/>
@@ -28927,8 +28939,8 @@
 		<item name="DFCoilshotgun">
 			<property name="CustomIcon" value="gunCAWSShotgun" />
 			<property name="DescriptionKey" value="DFCoilshotgunDesc"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,perkCoilguns,modGunShotgunTubeExtenderMagazine,canHaveCosmetic,perkShotgunMessiah,ammo,shotgunCrafting,attachmentsIncluded"/>
-			<property name="DisplayType" value="rangedGunCoil"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,perkCoilguns,modGunShotgunTubeExtenderMagazine,canHaveCosmetic,perkShotgunMessiah,ammo,shotgunCrafting,attachmentsIncluded,magazine,armorshredder"/>
+			<property name="DisplayType" value="rangedShotgun"/>
 			<property name="HoldType" value="5"/>
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?CombatShotgun.prefab"/>
 			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
@@ -28984,19 +28996,22 @@
 				
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.5" tier="1,80"/>
 				
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="70" tags="perkShotgunMessiah"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkShotgunMessiah"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="999" tags="perkShotgunMessiah"/>
 
 				<passive_effect name="MagazineSize" operation="base_set" value="16" tags="perkShotgunMessiah"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkShotgunMessiah"/> <!-- 2.3s -->
 				
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="4.2" tags="perkShotgunMessiah"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="4.2" tags="perkShotgunMessiah"/>
+				<passive_effect name="MaxRange" operation="base_add" value="5"/>
+				<passive_effect name="DamageFalloffRange" operation="base_add" value="5" tags="perkShotgunMessiah"/>
+				
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="3.15" tags="perkShotgunMessiah"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="3.15" tags="perkShotgunMessiah"/>
 
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-2.5" tags="perkShotgunMessiah"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="2.5" tags="perkShotgunMessiah"/>		
 				
-				<display_value name="dRecoil" value="42" />
+				<display_value name="dRecoil" value="31" />
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkShotgunMessiah"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="1.7" tags="perkShotgunMessiah"/>
 
@@ -29027,7 +29042,7 @@
 			<property name="CustomIcon" value="gunCoilRifle" />
 			<property name="DescriptionKey" value="gunCoilRifleDesc"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkMachineGunner,perkCoilguns,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic,perkAutomaticWeapons,ammo,autoCrafting,perkBetterLeadThanDead,attachmentsIncluded"/>
-			<property name="DisplayType" value="rangedGunCoil"/>
+			<property name="DisplayType" value="rangedAuto"/>
 			<property name="HoldType" value="48"/>
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?Coilrifle.prefab"/>
 			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
@@ -29134,7 +29149,7 @@
 			<property name="CustomIcon" value="CoilSniper" />
 			<property name="DescriptionKey" value="gunCoilSniperDesc"/> 
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,perkDeadEye,perkCoilguns,ammo,canHaveCosmetic,rifleCrafting,attachmentsIncluded,magazine"/>
-			<property name="DisplayType" value="rangedGunCoil"/>
+			<property name="DisplayType" value="rangedGun"/>
 			<property name="HoldType" value="48"/>
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?Coilsniper.prefab"/>
 			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="67"/>
@@ -29246,7 +29261,7 @@
 			<property name="CustomIcon" value="LaserPistol" />
 			<property name="DescriptionKey" value="LaserPistolDesc"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,selfLoading,attAgility,perkGunslinger,perkCraftFutureTech,9mmGun,canHaveCosmetic,ammo,fasterFireRate,gunCrafting,attachmentsIncluded,noSilencer,thermalCooling,laserTier,laserCraftng"/>
-			<property name="DisplayType" value="rangedGunCoil"/>
+			<property name="DisplayType" value="rangedGun"/>
 			<property name="HoldType" value="1"/>
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?ScifiPistol.prefab"/>
 			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="20"/>
@@ -29277,9 +29292,9 @@
 				<property name="Sound_loop" value="laserpistol_fire"/>
 				<property name="Sound_end" value=""/>
 				<property name="Sound_empty" value="weapon_empty"/>
-				<property name="Sound_reload" value="a14_pistol_reload"/>
+				<property name="Sound_reload" value="a14_pistol_reload"/> <!--
 				<property name="Particles_muzzle_fire" value="nozzleflash"/>
-				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/> -->
 				<property name="AutoReload" value="true"/>
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
 			</property>
@@ -29355,7 +29370,7 @@
 			<property name="CustomIcon" value="LaserSniper" />
 			<property name="DescriptionKey" value="DFgunLaserSniperDesc"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,perkDeadEye,perkCraftFutureTech,ammo,canHaveCosmetic,gunCrafting,attachmentsIncluded,magazine,noSilencer,thermalCooling,laserTier,laserCraftng"/>
-			<property name="DisplayType" value="rangedGunCoil"/>
+			<property name="DisplayType" value="rangedGun"/>
 			<property name="HoldType" value="77"/> 
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?ScifiSniperRifle.prefab"/> 
 			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="67"/>
@@ -29388,9 +29403,9 @@
 				<property name="Sound_loop" value="lasersniper_fire"/>
 				<property name="Sound_end" value=""/>
 				<property name="Sound_empty" value="weapon_empty"/>
-				<property name="Sound_reload" value="sniperrifle_reload"/>
+				<property name="Sound_reload" value="sniperrifle_reload"/> <!--
 				<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
-				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/> -->
 				<property name="AutoReload" value="true"/>
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
 			</property>
@@ -29472,7 +29487,7 @@
 			<property name="CustomIcon" value="lasercarbine" />
 			<property name="DescriptionKey" value="DFgunLaserAutoRifleDesc"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkMachineGunner,perkCraftFutureTech,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic,perkAutomaticWeapons,ammo,gunCrafting,perkBetterLeadThanDead,attachmentsIncluded,noSilencer,thermalCooling,laserTier,laserCraftng"/>
-			<property name="DisplayType" value="rangedGunCoil"/>
+			<property name="DisplayType" value="rangedAuto"/>
 			<property name="HoldType" value="48"/> 
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?ScifiAssaultRifle.prefab"/>
 			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
@@ -29502,9 +29517,9 @@
 				<property name="Sound_start" value="lasercarbine_fire"/>
 				<property name="Sound_loop" value="lasercarbine_fire"/>
 				<property name="Sound_empty" value="dryfire"/> 
-				<property name="Sound_reload" value="ak47_reload"/>
+				<property name="Sound_reload" value="ak47_reload"/> <!--
 				<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
-				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/> -->
 				<property name="AutoReload" value="true"/>
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
 				<property name="AutoReload" value="True"/>
@@ -29578,8 +29593,8 @@
 		<item name="DFgunLaserShotgun">
 			<property name="CustomIcon" value="lasershotgun" />
 			<property name="DescriptionKey" value="DFgunLaserShotgunDesc"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,perkCraftFutureTech,modGunShotgunTubeExtenderMagazine,canHaveCosmetic,perkShotgunMessiah,ammo,gunCrafting,attachmentsIncluded,noSilencer,thermalCooling,laserTier,laserCraftng"/>
-			<property name="DisplayType" value="rangedGunCoil"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,perkCraftFutureTech,modGunShotgunTubeExtenderMagazine,canHaveCosmetic,perkShotgunMessiah,ammo,gunCrafting,attachmentsIncluded,noSilencer,thermalCooling,laserTier,laserCraftng,magazine,armorshredder"/>
+			<property name="DisplayType" value="rangedShotgun"/>
 			<property name="HoldType" value="5"/> 
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?SciFiShotgun.prefab"/> 
 			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
@@ -29613,9 +29628,9 @@
 				<property name="Sound_loop" value="lasershotgun_fire"/>
 				<property name="Sound_end" value="#CShotgun?auto_shotgun_end"/>
 				<property name="Sound_empty" value="weapon_empty"/>
-				<property name="Sound_reload" value="shotgun_reload"/>
+				<property name="Sound_reload" value="shotgun_reload"/> <!--
 				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
-				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/> -->
 				<property name="AutoReload" value="true"/>
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
 			</property>
@@ -29680,7 +29695,7 @@
 			<property name="CustomIcon" value="laserm60" />
 			<property name="DescriptionKey" value="DFgunLaserM60Desc"/> 
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,bottomAttachments,attFortitude,perkMachineGunner,perkCraftFutureTech,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic,perkAutomaticWeapons,brassCatcher,ammo,gunCrafting,perkBetterLeadThanDead,attachmentsIncluded,noSilencer,thermalCooling,laserTier,laserCraftng"/>
-			<property name="DisplayType" value="rangedGunCoil"/> 
+			<property name="DisplayType" value="rangedAuto"/> 
 			<property name="HoldType" value="60"/> <!--
 			<property name="HoldType" value="48"/> -->
 			<property name="Meshfile" value="#@modfolder:Assets/NewGuns.unity3d?ScifiM60.prefab"/>
@@ -29710,11 +29725,11 @@
 				<property name="Sound_start" value="lasercarbine_fire"/>
 				<property name="Sound_loop" value="lasercarbine_fire"/>
 				<property name="Sound_empty" value="dryfire"/> 
-				<property name="Sound_reload" value="m60_reload"/>
+				<property name="Sound_reload" value="m60_reload"/> <!--
 				<property name="Particles_muzzle_fire" value="gunfire_m60"/>
 				<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
 				<property name="Particles_muzzle_fire_fpv" value="gunfire_m60_fpv"/>
-				<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+				<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/> -->
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
 				<property name="AutoReload" value="True"/>
 			</property>
@@ -30149,7 +30164,7 @@
 				</triggered_effect>
 				-->
 				
-				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" range="10" target_tags="zombie,animal,human" buff="buffShocked3Trigger">
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" range="10" target_tags="zombie,animal,human" buff="buffShockedTitFence">
 					<requirement name="!HoldingItemBroken"/>
 					<requirement name="!EntityTagCompare" target="other" tags="player"/>
 					<requirement name="RoundsInMagazine" operation="GTE" value="1"/>
@@ -30256,6 +30271,85 @@
 				<requirement name="!IsAlive" target="other"/>
 				<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
 					<passive_effect name="EntityDamage" operation="base_add" value="500"/>
+			</effect_group>
+		</item>
+		
+		<item name="ammoRocketFusion">
+			<property name="Tags" value="ammo,perkDemolitionsExpert"/>
+			<property name="CustomIcon" value="ammoRocketFusion"/>
+			<property name="DescriptionKey" value="ammoRocketFusionDesc"/>
+			<property name="DisplayType" value="ammoLauncher"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mlead_scrap"/>
+			<property name="Stacknumber" value="20"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+			<property name="UnlockedBy" value="perkCraftFutureTech"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="5"/> <!-- which Prefab/particle is used -->
+				<property name="Explosion.RadiusBlocks" value="25"/> <!-- damage radius for blocks -->
+				<property name="Explosion.RadiusEntities" value="25"/> <!-- damage radius for entities -->
+				<property name="Explosion.DamageBonus.water" value="0"/>
+				<property name="Explosion.BlastPower" value="100"/> <!-- (int,100) how far ragdolls and such are flung -->
+				<property name="Explosion.Buff" value="buffLaserWeapon"/> <!-- molotovs have a ExplosiveDamageArea script that runs this buff for their ground effect -->
+				<property name="Gravity" value="-6"/>
+				<property name="FlyTime" value=".2"/>
+				<property name="LifeTime" value="120"/>
+
+				<property name="Explosion.BlockDamage" value="10000"/> <!-- workaround, not affected by perks at all -->
+				<property name="Explosion.EntityDamage" value="25000"/> <!-- workaround, not affected by perks at all -->
+			</property>
+			<effect_group name="ammoRocketPulse" tiered="false">
+				<passive_effect name="BlockDamage" operation="base_set" value="10000" tags="perkDemolitionsExpert"/><display_value name="dExDamageBlock" value="10000"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="25000" tags="perkDemolitionsExpert"/><display_value name="dExDamageEntity" value="25000"/> 
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="100" tags="perkDemolitionsExpert"/>
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="otherAOE" buff="buffLaserWeapon" target_tags="demon"/>
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="otherAOE" buff="buffLaserWeapon" target_tags="empowered"/>
+				<display_value name="dExRadius" value="25"/>
+				
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
+			</effect_group>
+			
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="1"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".1"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".05"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="2"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".2"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".1"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="3"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".3"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".3"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".2"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="4"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".4"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".4"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".3"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".5"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".45"/>
+			</effect_group>
+			
+			<effect_group tiered="false" name="corpseRemoval">
+				<requirement name="!IsAlive" target="other"/>
+				<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="50000"/>
 			</effect_group>
 		</item>
 
@@ -31229,7 +31323,7 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="100" />
 				<passive_effect name="ModSlots" operation="base_set" value="0" />
 			</effect_group>
-			<property name="Group" value="Food/Cooking" />
+			<property name="Group" value="Resources,Chemicals"/>
 		</item>
 
 		<item name="DFparamadicKit">
@@ -31448,9 +31542,11 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="90">
 					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/> </triggered_effect>
 
-				<display_value name="dInstantHealth" value="60" />
-				<display_value name="dHealthLoss" value=".1" />
-				<display_value name="waterAmount" value="-20" />
+				<display_value name="dInstantHealth" value="60"/>
+				<display_value name="dHealthLoss" value=".1"/>
+				<display_value name="$waterAmountAdd" value="-20"/>
+				<display_value name="dStunResist" value="1"/>
+				<display_value name="dDuration" value="180"/>
 			</effect_group>
 		</item>
 		
@@ -32194,7 +32290,7 @@
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -32240,7 +32336,7 @@
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -32286,7 +32382,7 @@
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -32334,7 +32430,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -32372,7 +32468,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -32430,7 +32526,7 @@
 			</effect_group>	
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -32472,7 +32568,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -33747,7 +33843,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -34102,7 +34198,7 @@
 			</effect_group>
 			
 			<effect_group tiered="false" name="Return Jar or Glass">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="drink_return_jar" allow_client_call="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
 			</effect_group>
@@ -34598,6 +34694,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxAthletics"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34617,6 +34714,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxMining"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34636,6 +34734,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxScavenging"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34655,6 +34754,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxArchery"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34674,6 +34774,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxAutomatics"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34693,6 +34794,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxBlunt"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34712,6 +34814,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxBlades"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34731,6 +34834,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxPistol"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34750,6 +34854,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxShotgun"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -34769,6 +34874,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Unlocks" value="maxRifles"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -35693,7 +35799,7 @@
 				<property name="Create_item" value="DFcoilBattery"/>
 				<property name="Create_item_count" value="50"/>
 			</property>
-			<property name="UnlockedBy" value="perkCraftAutos"/>
+			<property name="UnlockedBy" value="perkCraftAutos,perkCraftPistols,perkCraftRifles,perkCraftShotguns"/>
 		</item>
 
 		<item name="DF44MagCoilround">
@@ -35746,8 +35852,8 @@
 			<effect_group name="ammo44MagnumBulletHP" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="85"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="1"/>
-				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="0.5"/>
+				<display_value name="dTargetArmor" value="0.5"/>
 				
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffCoilWeapon">
 					<requirement name="EntityTagCompare" target="other" tags="demon"/>
@@ -35839,8 +35945,8 @@
 			<effect_group name="ammo762mmBulletHP" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="65"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="4"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="1"/>
-				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="0.5"/>
+				<display_value name="dTargetArmor" value="0.5"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 				
@@ -38035,7 +38141,7 @@
 				<property name="Use_time" value="..."/>
 			</property>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_reconstructor_toolbelt"/> 
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_reconstructor_toolbelt" allow_client_call="true"/> 
 			</effect_group>
 		</item>
 		
@@ -38058,7 +38164,7 @@
 				<property name="Use_time" value="..."/>
 			</property>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_reconstructor_equipment"/> 
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_reconstructor_equipment" allow_client_call="true"/> 
 			</effect_group>
 		</item>
 
@@ -38166,8 +38272,8 @@
 			<effect_group name="ammo9mmBulletSteelHP" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="38" tags="perkGunslinger,revolver,perkDeadEye,perkAutomaticWeapons"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkGunslinger,revolver,perkDeadEye,perkAutomaticWeapons"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="1" tags="perkGunslinger,revolver,perkDeadEye,perkAutomaticWeapons"/>
-				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="0.5" tags="perkGunslinger,revolver,perkDeadEye,perkAutomaticWeapons"/>
+				<display_value name="dTargetArmor" value="0.5"/>
 
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
@@ -38283,8 +38389,9 @@
 			<effect_group name="ammo44MagnumBulletSteelHP" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="88" tags="perkGunslinger,revolver,perkDeadEye"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="7" tags="perkGunslinger,perkDeadEye"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="0.5" tags="perkGunslinger,perkDeadEye"/>
+				<display_value name="dTargetArmor" value="0.5"/>
 				
-				<passive_effect name="TargetArmor" operation="perc_add" value=".9" tags="perkGunslinger,perkDeadEye"/><display_value name="dTargetArmor" value=".9"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger,perkDeadEye">
 					<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
 				</passive_effect>
@@ -38405,8 +38512,8 @@
 			<effect_group name="ammo762mmBulletSteelHP" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="62" tags="perkDeadEye,perkMachineGunner,perkAutomaticWeapons"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkDeadEye,perkMachineGunner,perkAutomaticWeapons"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="1" tags="perkDeadEye,perkMachineGunner,perkAutomaticWeapons"/>
-				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="0.5" tags="perkDeadEye,perkMachineGunner,perkAutomaticWeapons"/>
+				<display_value name="dTargetArmor" value="0.5"/>
 				
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
@@ -41371,7 +41478,7 @@
 			<property name="Weight" value="2"/>
 			<property name="Group" value="Basics,Resources" />
 			<effect_group tiered="false" name="Summon Guarded Supply Crate">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="spawn_guarded_supply_crate"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="spawn_guarded_supply_crate" allow_client_call="true"/>
 			</effect_group>
 		</item>		
 
@@ -44270,7 +44377,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="30"/>
 				<property name="DamageBlock" value="15"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh" />
 			</property>
@@ -44308,7 +44415,7 @@
 				<property name="Delay" value="1.2"/> 
 				<property name="DamageEntity" value="10"/>
 				<property name="DamageBlock" value="5"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh" />
 			</property>
@@ -44383,7 +44490,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="30"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh" />
 			</property>
@@ -44421,7 +44528,7 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="30"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="1.7"/>
+				<property name="Range" value="1.6"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh" />
 			</property>
@@ -44644,8 +44751,7 @@
 		
 		<item name="DFdrinkJarUnleashHell">
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="drinkJarBoiledWater" />
-			<property name="CustomIconTint" value="b3c1d4"/>
+			<property name="CustomIcon" value="drinkunleashhelldf" />
 			<property name="DescriptionKey" value="DFdrinkJarUnleashHellDesc"/>
 			<property name="HoldType" value="3"/>
 			<property name="DisplayType" value="waterDysentery"/>
