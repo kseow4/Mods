@@ -198,6 +198,36 @@
 			</action>
 			
 		</action_sequence>
+		
+		<action_sequence name="remove_backpack_item_small">
+			<property name="allow_user_trigger" value="true" />
+			
+			<action class="RemoveItems">
+				<property name="items_location" value="Toolbelt,Backpack,Equipment,Held" />
+				<property name="items_tags" value="backpackSmall" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="remove_backpack_item_medium">
+			<property name="allow_user_trigger" value="true" />
+			
+			<action class="RemoveItems">
+				<property name="items_location" value="Toolbelt,Backpack,Equipment,Held" />
+				<property name="items_tags" value="backpackMedium" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="remove_backpack_item_large">
+			<property name="allow_user_trigger" value="true" />
+			
+			<action class="RemoveItems">
+				<property name="items_location" value="Toolbelt,Backpack,Equipment,Held" />
+				<property name="items_tags" value="backpackMedium" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
 
 		<!-- TWITCH INTEGRATION STUFF -->	
 		<!-- SINGLE SPAWNS -->		

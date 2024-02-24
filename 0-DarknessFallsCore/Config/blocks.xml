@@ -1737,6 +1737,7 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Industrial/landClaimBlockPrefab"/>
 			<property name="PlacementDistance" value="25"/>
+			<property name="AllowedRotations" value="No45"/>
 			<property name="Weight" value="0"/>
 			<property name="EconomicValue" value="1"/>
 			<property name="SellableToTrader" value="false"/>
@@ -15898,7 +15899,7 @@
 			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Model" value="Entities/Electrical/lightWallPrefab"/>
-			<property name="HandleFace" value="South"/>
+			<property name="HandleFace" value="Top"/>
 			<property name="RequiredPower" value="7"/>
 			<property name="SortOrder1" value="B202"/>
 			<property name="SortOrder2" value="2902"/>
@@ -15915,7 +15916,7 @@
 			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Model" value="Entities/Electrical/lightIndustrialPrefab"/>
-			<property name="HandleFace" value="Bottom"/>
+			<property name="HandleFace" value="Top"/>
 			<property name="SortOrder1" value="B202"/>
 			<property name="SortOrder2" value="2903"/>
 			<property name="Tags" value="electricianSkill"/>
@@ -22564,7 +22565,8 @@
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="birdNest"/>
 			<property name="IndexName" value="quest_feather"/>
-			<property name="Material" value="Mwood_weak"/>
+			<property name="Material" value="MclothStable"/>
+			<property name="MaxDamage" value="50"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Entities/LootContainers/birdnestPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
@@ -23231,6 +23233,24 @@
 			<property name="Model" value="Entities/Debris/pileEmberBurntLogs4NoEmissivePrefab"/>
 			<property name="SortOrder1" value="B277"/>
 			<property name="SortOrder2" value="0007"/>
+		</block>
+		
+		<block name="emberPileTwitch01">
+			<property name="Extends" value="emberPileDeco1"/>
+			<property name="CustomIconTint" value="6441A5"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningHazardPlayer"/>
+			<dropextendsoff/>
+			<drop event="Destroy" count="0"/>
+			<property name="CreativeMode" value="None"/>
+		</block>
+
+		<block name="emberPileTwitch02">
+			<property name="Extends" value="emberPileDeco2"/>
+			<property name="CustomIconTint" value="6441A5"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningHazardPlayer"/>
+			<dropextendsoff/>
+			<drop event="Destroy" count="0"/>
+			<property name="CreativeMode" value="None"/>
 		</block>
 
 		<block name="emberPileLightPOI1">
@@ -41356,9 +41376,9 @@
 				<property name="resourceScrapIron" value="20"/>
 			</property>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<drop event="Harvest" name="resourceCloth" count="2,4"/>
-			<drop event="Destroy" name="resourceScrapIron" count="1,10"/>
-			<drop event="Destroy" name="resourceMilitaryFiber" count="1" prob="0.1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceCloth" count="2,4" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="1,10" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceMilitaryFiber" count="1" prob="0.1" tag="salvageHarvest"/>
 			<drop event="Destroy" name="resourceMilitaryFiber" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
 			<drop event="Fall" count="0"/>
 			<property name="SortOrder1" value="B414"/>
@@ -52687,7 +52707,6 @@
 				<property name="resourceForgedSteel" value="4"/>
 			</property>
 			<property name="UpgradeSound" value="place_block_metal"/>
-			<property name="DowngradeBlock" value="ladderMetal"/>
 			<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="SortOrder1" value="B500"/>
@@ -60371,12 +60390,6 @@
 		<block name="trapSpikesIronDmg0">
 			<property name="Extends" value="trapSpikesScrapIronMaster"/>
 			<property name="CustomIcon" value="trapSpikesScrapIronMaster"/>
-			<property class="UpgradeBlock">
-				<property name="ToBlock" value="trapSpikesSteelDmg0"/>
-				<property name="Item" value="resourceForgedSteel"/>
-				<property name="ItemCount" value="4"/>
-				<property name="UpgradeHitCount" value="4"/>
-			</property> 
 			<property name="DowngradeBlock" value="trapSpikesIronDmg1"/>
 			<property name="SortOrder2" value="0003"/>
 		</block>
@@ -68031,6 +68044,33 @@
 			<property name="SortOrder1" value="B909"/>
 			<property name="SortOrder2" value="0005"/>
 		</block>
+		
+		<block name="treeCactusTwitch01">
+			<property name="Extends" value="treeCactus01"/>
+			<property name="Damage" value="15"/>
+			<property name="CustomIconTint" value="6441A5"/>
+			<dropextendsoff/>
+			<drop event="Destroy" count="0"/>
+			<property name="CreativeMode" value="None"/>
+		</block>
+
+		<block name="treeCactusTwitch02">
+			<property name="Extends" value="treeCactus03"/>
+			<property name="Damage" value="15"/>
+			<property name="CustomIconTint" value="6441A5"/>
+			<dropextendsoff/>
+			<drop event="Destroy" count="0"/>
+			<property name="CreativeMode" value="None"/>
+		</block>
+
+		<block name="treeCactusTwitch03">
+			<property name="Extends" value="treeCactus05"/>
+			<property name="Damage" value="15"/>
+			<property name="CustomIconTint" value="6441A5"/>
+			<dropextendsoff/>
+			<drop event="Destroy" count="0"/>
+			<property name="CreativeMode" value="None"/>
+		</block>
 
 			<!-- *** GRASS -->
 		<!-- snow biome -->
@@ -74925,7 +74965,7 @@
 		</block>
 
 		<block name="DFworkingGraniteSink">
-			<property name="CustomIcon" value="utilitySink" />
+			<property name="CustomIcon" value="pedestalSink" />
 			<property name="Class" value="Loot"/>
 			<property name="DescriptionKey" value="workingGraniteSinkDesc"/>
 			<property name="Material" value="Mmetal"/>
@@ -76510,7 +76550,7 @@
 			<property name="Class" value="PlantGrowing"/>
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.Next" value="DFRainCatcher"/>
-			<property name="PlantGrowing.GrowthRate" value="2"/>
+			<property name="PlantGrowing.GrowthRate" value="6"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
 			<property name="PlantGrowing.LightLevelStay" value="0"/> <!--
 			<property name="PlantGrowing.GrowOnTop" value="waterMovingBucket"/> -->
@@ -76758,6 +76798,29 @@
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1"/>
 			<property name="Group" value="Building"/>
 		</block>
+		
+		<block name="SciFiDoubleDoorLarge">
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Mbedrock"/>
+			<property name="MaxDamage" value="50000"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Collide" value="movement,melee,rocket,bullet"/> 
+			<property name="Tag" value="Door"/>
+			<property name="Place" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Model" value="#@modfolder:Assets/BigDoor.unity3d?SciFiDoubleDoorBehemoth.prefab"/> <property name="ModelOffset" value=".5,.5,0"/>
+			<property name="MultiBlockDim" value="4,4,1"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="OpenSound" value="scifi_door_use"/>
+			<property name="CloseSound" value="scifi_door_use"/>
+			<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+			<drop event="Harvest" name="resourceScrapIron" count="10"  tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1"/>
+			<property name="Group" value="Building"/>
+			<property name="Pickable" value="false"/>
+		</block>
 
 		<block name="SciFiDoor">
 			<property name="DescriptionKey" value="doorGroupDesc"/>
@@ -76997,6 +77060,32 @@
 			<property name="FilterTags" value="MC_building,SC_commercial,fdecor,fother,ffurniture"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
 		</block>
+		
+		<block name="SciFiDeskNoLoot">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Assets/SciFiStuff.unity3d?ScifiDesk.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ModelOffset" value="0.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="PlacementDistance" value="6"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="147"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property class="RepairItems">
+				<property name="DFforgedTitanium" value="3"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMechanicalParts" count="2,4"/>
+			<drop event="Harvest" name="DFscrapTitanium" count="20" tool_category="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceYuccaFibers" count="0" stick_chance="0"/>
+			<property name="EconomicValue" value="570"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,fdecor,fother,ffurniture"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+		</block>
 
 		<block name="cntScifiCratesHelper">
 			<property name="Extends" value="cntLuggageMediumRandomLootHelper"/>
@@ -77102,38 +77191,40 @@
 		<block name="DFpulseMine">
 			<property name="CustomIcon" value="pulseMine" />
 			<property name="DescriptionKey" value="DFpulseMineDesc"/>
-			<property name="Class" value="Mine"/>
+			<property name="Class" value="Mine"/> <!-- a mine destroyed by an *explosion* only has a 33% chance to detonate -->
 			<property name="Tags" value="Mine"/>
-			<property name="ItemTypeIcon" value="explosion"/>
-			<property name="UnlockedBy" value="perkCraftFutureTech"/>
-			<property name="Material" value="MLandMine"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="#Other/Items?Weapons/Explosive/trapMineTinCan_01Prefab.prefab"/>
-			<property name="LODCullMin" value=".1"/>
-			<property name="IsTerrainDecoration" value="true"/>
-			<property name="OnlySimpleRotations" value="true"/>
-			<property name="Collide" value="melee,bullet,arrow,rocket"/>
-			<property name="Stacknumber" value="25"/> <!-- STK explosives -->
-			<property name="MaxDamage" value="4"/>
+			<property name="DisplayType" value="blockLandmine"/>
 			<property name="TriggerDelay" value="0.5"/>
 			<property name="TriggerSound" value="landmine_trigger"/>
 			<property name="Explosion.ParticleIndex" value="11"/>
-			<property name="Explosion.RadiusBlocks" value="1"/>
-			<property name="Explosion.RadiusEntities" value="10"/>
+			<property name="Explosion.RadiusBlocks" value="2"/>
 			<property name="Explosion.BlockDamage" value="1"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
 			<property name="Explosion.EntityDamage" value="1200"/> <!-- damage for entities in the center of the explosion. -->
-			<property name="Explosion.BlastPower" value="100"/> <!-- (int,100) how far ragdolls and such are flung -->
-			<property name="Explosion.DamageBonus.stone" value="0"/>
-			<property name="Explosion.DamageBonus.metal" value="0"/>
+			<property name="Explosion.DamageBonus.stone" value="0.1"/>
+			<property name="Explosion.DamageBonus.metal" value="0.1"/>
 			<property name="Explosion.DamageBonus.earth" value="0"/>
 			<property name="Explosion.DamageBonus.wood" value="0"/>
 			<property name="Explosion.DamageBonus.water" value="0"/>
+			<property name="ItemTypeIcon" value="explosion"/>
+			<property name="Stacknumber" value="25"/> <!-- STK explosives -->
+			<property name="Material" value="MLandMine"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Explosive/trapMineTinCan_01Prefab.prefab"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="EconomicValue" value="97"/>
+			<property name="MaxDamage" value="100"/>
 			<property name="CanPickup" value="false"/>
 			<drop event="Destroy" count="0"/>
-			<property name="Group" value="Tools/Traps"/>
-			<property name="EconomicValue" value="97"/>
+			<property name="SortOrder1" value="B757"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Science,TCScience"/>
 			<property name="FilterTags" value="MC_building,SC_traps"/>
-			<property name="SortOrder1" value="70g0"/>
+			<property name="BuffsWhenWalkedOn" value="buffLaserWeapon"/>
 		</block>
 		
 		<!-- Player scifi doors -->
@@ -78168,6 +78259,9 @@
 			<property name="FilterTags" value="MC_building,fbuilding,fdecor,fother"/>
 			<property name="SortOrder1" value="7000"/>
 			<property name="SortOrder2" value="0002"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="AllowedRotations" value="No45"/>
 		</block>
 
 		<block name="irrigationPipeCornerEmpty">
@@ -78212,6 +78306,10 @@
 			<property name="FilterTags" value="MC_building,fbuilding,fdecor,fother"/>
 			<property name="SortOrder1" value="7000"/>
 			<property name="SortOrder2" value="0002"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="AllowedRotations" value="No45"/>
+
 		</block>
 
 		<block name="irrigationPipeCornerFull">
@@ -78282,7 +78380,9 @@
 			<property name="DescriptionKey" value="irrigationPipeVariantHelperDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="OnlySimpleRotations" value="true"/>
+			<property name="AllowedRotations" value="No45"/>
 			<property name="PlaceAltBlockValue" value="irrigationPipeStraightEmpty,irrigationPipeCapEmpty,irrigationPipeJointEmpty"/>
 			<property name="Group" value="Building,advBuilding"/>
 			<property name="PickupJournalEntry" value="shapeMenuTip"/>
@@ -78812,7 +78912,7 @@
 
 		<block name="plantedGraceCorn1Underground"> <!-- growing, stage 1, seed -->
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
-			<property name="CustomIcon" value="plantedCorn1"/> <property name="CustomIconTint" value="a060ff"/>
+			<property name="CustomIcon" value="plantedCorn1"/> <property name="CustomIconTint" value="ff9f9f"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="DescriptionKey" value="undergroundPlantDesc"/>
 			<property name="UnlockedBy" value="perkMasterFarmer"/>
@@ -80438,6 +80538,7 @@
 			<property name="CustomIcon" value="recessedLight"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Model" value="Entities/Lighting/lightCanFlushPrefab"/>
+			<property name="HandleFace" value="Top"/>
 		</block>
 
 		<block name="wallLight01_player">
@@ -80445,6 +80546,7 @@
 			<property name="CustomIcon" value="wallLight01"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Model" value="Entities/Electrical/lightWallPrefab"/>
+			<property name="HandleFace" value="Top"/>
 		</block>
 
 		<block name="fluorescentLight_player">
@@ -80455,6 +80557,7 @@
 			<property name="Model" value="Entities/Electrical/lightCeiling2Prefab"/>	
 			<property name="MultiBlockDim" value="1,1,2"/><property name="DisplayType" value="blockMulti"/>
 			<property name="OnlySimpleRotations" value="true"/>
+			<property name="HandleFace" value="Top"/>
 		</block>
 
 		<block name="trackLight_player">
@@ -80476,6 +80579,7 @@
 			<property name="Extends" value="porchLight01_player"/>
 			<property name="CustomIcon" value="industrialLight02Red"/>
 			<property name="Model" value="Entities/Electrical/lightIndustrialRedPrefab"/>
+			<property name="HandleFace" value="Top"/>
 		</block>
 
 		<block name="ceilingFanLight_player">
@@ -80490,6 +80594,7 @@
 			</property>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+			<property name="HandleFace" value="Top"/>
 		</block>
 
 		<block name="endTableLamp_player">
@@ -80518,8 +80623,8 @@
 		</block>
 		
 		<block name="playerLightBlockVariantHelper">
-			<property name="Extends" value="porchLight01_player"/>
-			<property name="CustomIcon" value="ceilingLight01_player"/>
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="ceilingFanLight"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
