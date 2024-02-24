@@ -125,7 +125,7 @@
 		<item name="armorLeatherSetSchematic"/>
 		<item name="armorIronSetSchematic"/>
 		<item name="armorSteelSetSchematic"/>
-		<item name="armorMilitarySetSchematic"/>
+		<item name="armorMilitarySetSchematic"/> <!--
 		<item name="DFskillAthleticsBook"/>
 		<item name="DFskillMiningBook"/>
 		<item name="DFskillScavengingBook"/>
@@ -135,7 +135,7 @@
 		<item name="DFskillBladesBook"/>
 		<item name="DFskillPistolBook"/>
 		<item name="DFskillShotgunBook"/>
-		<item name="DFskillRiflesBook"/> 
+		<item name="DFskillRiflesBook"/>  -->
 	</set>
 	
 	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']">
@@ -893,6 +893,85 @@
 		<trader_info id="12" reset_interval="3" override_buy_markup="2" allow_sell="false" full_reset="true">
 			<trader_items>
 				<item group="GCmedicine" count="10,20"/>
+			</trader_items>
+		</trader_info>
+		
+		<!-- Razor -->
+		<trader_info id="13" reset_interval="3" allow_sell="false" full_reset="true">
+			<trader_items count="all">
+				<item group="seeds" unique_only="true" count="2,5" />
+				<item group="cannedfood" count="3,6"/>
+				<item group="foodSupplies" count="2,5"/>
+				<item group="groupFoodAll" count="1,3"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item group="skillMagazinesTraderRekt" unique_only="true" count="2,3"/>
+				<item group="skillMagazines" unique_only="true" count="2,4"/>
+				<item group="books" unique_only="true" count="2,3"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+			</trader_items>
+			
+			<!-- *** General -->
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="2,4"/>
+				<item group="traderResources" count="7,10"/>
+				<item group="traderElectrical" unique_only="true" count="5,10"/>
+				<item group="clothes" count="1,4"/>
+				<item group="groupArmorAllLight" count="1,2"/>
+				<item group="groupArmorAllHeavy" count="1,2"/>
+				<item group="constructionSupplies" count="8,12"/>
+			</trader_items>
+		</trader_info>
+		
+		<!-- Eve -->
+		<trader_info id="14" reset_interval="3" allow_sell="false" full_reset="true">
+			<!-- *** Specialty -->
+			<trader_items count="all">
+				<item group="groupAllAmmo" unique_only="true" count="2,4"/>
+				<item group="ammoSupplies" count="2,3"/>
+				<item group="groupRangedAll" unique_only="true" count="3,5"/>
+				<item group="groupMeleeAll" unique_only="true" count="3,5"/>
+				<item group="weaponsGunParts" unique_only="true" count="2,4"/>
+				<item group="groupRangedMods" count="1,2"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item group="skillMagazinesTraderHugh" unique_only="true" count="2,3"/>
+				<item group="books" unique_only="true" count="2,3"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+				<item name="DFLathe" unique_only="true" count="1" prob="0.3"/>
+			</trader_items>
+			
+			<!-- *** General -->
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="2,4"/>
+				<item group="traderResources" count="7,10"/>
+				<item name="resourceMilitaryFiber" count="1,2"/>
+			</trader_items>
+		</trader_info>
+		
+		<!-- Anna -->
+		<trader_info id="15" reset_interval="3" allow_sell="false" full_reset="true">
+			<!-- *** Specialty -->
+			<trader_items count="all">
+				<item name="resourceCropAloeLeaf" count="2,5"/>
+				<item name="medicalAloeCream" count="2,5"/>
+				<item group="medicine"  unique_only="true" count="4,6"/>
+				<item group="rareMedicine" count="2,4"/>
+				<item group="skillMagazinesTraderJen" unique_only="true" count="4,6"/>
+				<item group="skillMagazines" unique_only="true" count="2,4"/>
+				<item group="commonBooks" unique_only="true" count="1,2"/>
+				<item group="rareBooks" count="1"/>
+				<item group="perkBooks" count="1"/>
+				<item group="tools" unique_only="true" count="4"/>
+				<item name="resourceWaterFilter" count="3,5"/>
+			</trader_items>
+			
+			<!-- *** General -->
+			<trader_items count="all">
+				<item group="traderAlways"/>
+				<item group="traderGeneral" count="2,4"/>
+				<item group="traderResources" count="7,10"/>
+				<item name="DFresourceHazmatFiber" count="1,2"/>
 			</trader_items>
 		</trader_info>
 	</append>

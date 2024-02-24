@@ -1762,7 +1762,7 @@
 				<effect_group>
 					<requirement name="ItemHasTags" tags="perkDeepCuts"/>
 					<requirement name="!ItemHasTags" tags="perkJavelinMaster"/>
-						<passive_effect name="HealthLoss" operation="perc_add" value=".05" level="1,5"/> <!-- Bladed Defense: Reduces incoming damage by 10% -->
+						<passive_effect name="GeneralDamageResist" operation="perc_add" value=".05" level="1,5"/> <!-- Bladed Defense: Reduces incoming damage by 10% -->
 						
 						<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"> <!-- Thousand Cuts: Adds guaranteed stacks of bleed on primary attacks -->
 							<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
@@ -2772,7 +2772,7 @@
 						<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value="-1" tags="wood"/> 
 						
 						<!-- You Damn Kids!: Reduces incoming damage by 5% while holding a shotgun -->
-						<passive_effect name="HealthLoss" operation="perc_add" value=".05" level="2,5"/> 
+						<passive_effect name="GeneralDamageResist" operation="perc_add" value=".05" level="2,5"/> 
 						
 						<!-- Git Out!: Increase run speed by 10% while holding a shotgun -->
 						<passive_effect name="RunSpeed" operation="perc_add" value=".1" level="3,5"/>
@@ -3081,7 +3081,9 @@
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="meleeWpnClubT3SteelClub"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="meleeToolSalvageT2Ratchet"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="meleeToolSalvageT3ImpactDriver"/>
-					
+					<!-- disabled for now as need to test scrap time with quicker crafting and wrench in the workbench first
+					<passive_effect name="ScrappingTime" operation="perc_add" level="1,2,3,4,5" value="-0.05,-0.1,-0.15,-0.2,-0.25"/> 
+					-->
 					<effect_description level="1" desc_key="perkSalvageOperationsRank1Desc" long_desc_key="perkSalvageOperationsRank1LongDesc"/>
 					<effect_description level="2" desc_key="perkSalvageOperationsRank2Desc" long_desc_key="perkSalvageOperationsRank2LongDesc"/>
 					<effect_description level="3" desc_key="perkSalvageOperationsRank3Desc" long_desc_key="perkSalvageOperationsRank3LongDesc"/>
@@ -3300,11 +3302,11 @@
 				<effect_group>
 					<passive_effect name="HealthLoss" operation="perc_subtract" value=".05,.25" level="1,5"/>
 
-					<passive_effect name="BuffResistance" operation="base_add" value="0.20" level="1" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
-					<passive_effect name="BuffResistance" operation="base_add" value="0.40" level="2" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
-					<passive_effect name="BuffResistance" operation="base_add" value="0.60" level="3" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
-					<passive_effect name="BuffResistance" operation="base_add" value="0.80" level="4" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
-					<passive_effect name="BuffResistance" operation="base_add" value="1" level="5" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.20" level="1" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued,buffFatiguedTrigger"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.40" level="2" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued,buffFatiguedTrigger"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.60" level="3" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued,buffFatiguedTrigger"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="0.80" level="4" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued,buffFatiguedTrigger"/>
+					<passive_effect name="BuffResistance" operation="base_add" value="1" level="5" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffFatigued,buffFatiguedTrigger"/>
 
 					<effect_description level="1" desc_key="perkPainToleranceRank1Desc" long_desc_key="perkPainToleranceRank1LongDesc"/>
 					<effect_description level="2" desc_key="perkPainToleranceRank2Desc" long_desc_key="perkPainToleranceRank2LongDesc"/>
@@ -3539,7 +3541,7 @@
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="DFmeleeWeaponLaserSword,DFmeleeWpnPowerHammer,DFmeleeWpnPlasmaAxe,DFmeleeSpearLaser,DFmeleeWpnPowerFist"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="DFresourceNanites,DFgunLaserPistol,DFLaserPistolBarrel,DFLaserPistolReceiver,DFLaserPistolGrip,DFLaserWeaponParts,DFgunLaserSniper,DFLaserRifleBarrel,DFLaserRifleReceiver,DFLaserRifleStock,DFpulseGrenade,ammoRocketPulse,DFtechPhysical,DFbioGoFast,DFtechOxygen,DFtechHealing,gunSpecialArcGun,ammoArrowExplodingPulse,ammoCrossbowBoltExplodingPulse,DFpulseMine"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="DFgunLaserShotgun,DFLaserShotgunReceiver,DFLaserShotgunStock,DFLaserShotgunBarrel,DFgunLaserAutoRifle,DFLaserCarbineReceiver,DFLaserCarbineStock,DFLaserCarbineBarrel,modGunLaserThermalCooling,laserShotgunTurret"/> 
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="DFarmorTechBoots,DFarmorTechVest,DFarmorTechGloves,DFarmorTechHelmet,DFarmorTechLegs,DFresourceOverchargedEnergyCell,modOverchargedPowerSource,DFmolecularReconstructorToolbelt,DFmolecularReconstructorEquipment,laserCarbineTurret"/>							
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="DFarmorTechBoots,DFarmorTechVest,DFarmorTechGloves,DFarmorTechHelmet,DFarmorTechLegs,DFresourceOverchargedEnergyCell,modOverchargedPowerSource,DFmolecularReconstructorToolbelt,DFmolecularReconstructorEquipment,laserCarbineTurret,ammoRocketFusion"/>							
 					<passive_effect name="CraftingTier" operation="base_add" level="1" value="10" tags="DFScifiAIOT,DFmeleeWeaponLaserSword,DFgunLaserPistol,DFgunLaserSniper,DFarmorTechBoots,DFarmorTechVest,DFarmorTechGloves,DFarmorTechHelmet,DFarmorTechLegs,DFmeleeWpnPowerHammer,DFmeleeWpnPlasmaAxe,DFgunLaserShotgun,DFgunLaserAutoRifle,gunSpecialArcGun,DFmeleeSpearLaser,DFmeleeWpnPowerFist"/>
 					<passive_effect name="CraftingTier" operation="base_add" level="2" value="20" tags="DFScifiAIOT,DFmeleeWeaponLaserSword,DFgunLaserPistol,DFgunLaserSniper,DFarmorTechBoots,DFarmorTechVest,DFarmorTechGloves,DFarmorTechHelmet,DFarmorTechLegs,DFmeleeWpnPowerHammer,DFmeleeWpnPlasmaAxe,DFgunLaserShotgun,DFgunLaserAutoRifle,gunSpecialArcGun,DFmeleeSpearLaser,DFmeleeWpnPowerFist"/>
 					<passive_effect name="CraftingTier" operation="base_add" level="3" value="30" tags="DFScifiAIOT,DFmeleeWeaponLaserSword,DFgunLaserPistol,DFgunLaserSniper,DFarmorTechBoots,DFarmorTechVest,DFarmorTechGloves,DFarmorTechHelmet,DFarmorTechLegs,DFmeleeWpnPowerHammer,DFmeleeWpnPlasmaAxe,DFgunLaserShotgun,DFgunLaserAutoRifle,gunSpecialArcGun,DFmeleeSpearLaser,DFmeleeWpnPowerFist"/>
@@ -3588,12 +3590,17 @@
 				<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="140" desc_key="reqPlayerLevel125"/><requirement name="ProgressionLevel" progression_name="attTechnology" operation="Equals" value="1" desc_key="reqattTechnology"/><requirement name="CVarCompare" cvar="$bioboosts" operation="Equals" value="0" desc_key="reqNoBioBoost"/></level_requirements>
 				<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="140" desc_key="reqPlayerLevel140"/><requirement name="ProgressionLevel" progression_name="attTechnology" operation="Equals" value="1" desc_key="reqattTechnology"/><requirement name="CVarCompare" cvar="$bioboosts" operation="Equals" value="0" desc_key="reqNoBioBoost"/></level_requirements>
 
-				<effect_group>
+				<effect_group> <!--
 					<passive_effect name="PhysicalDamageResist" operation="base_add" value="2" level="1"/>
 					<passive_effect name="PhysicalDamageResist" operation="base_add" value="4" level="2"/>
 					<passive_effect name="PhysicalDamageResist" operation="base_add" value="6" level="3"/>
 					<passive_effect name="PhysicalDamageResist" operation="base_add" value="8" level="4"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10" level="5"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10" level="5"/> -->
+					<passive_effect name="GeneralDamageResist" operation="base_add" value="0.02" level="1"/>
+					<passive_effect name="GeneralDamageResist" operation="base_add" value="0.04" level="2"/>
+					<passive_effect name="GeneralDamageResist" operation="base_add" value="0.06" level="3"/>
+					<passive_effect name="GeneralDamageResist" operation="base_add" value="0.08" level="4"/>
+					<passive_effect name="GeneralDamageResist" operation="base_add" value="0.1" level="5"/>
 					<passive_effect name="HypothermalResist" operation="base_add" value="2,10" level="1,5"/>
 					<passive_effect name="HyperthermalResist" operation="base_add" value="2,10" level="1,5"/>
 					
@@ -3644,15 +3651,7 @@
 				<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="140" desc_key="reqPlayerLevel125"/><requirement name="ProgressionLevel" progression_name="attTechnology" operation="Equals" value="1" desc_key="reqattTechnology"/><requirement name="CVarCompare" cvar="$techboosts" operation="Equals" value="0" desc_key="reqNoTechBoost"/></level_requirements>
 				<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="140" desc_key="reqPlayerLevel140"/><requirement name="ProgressionLevel" progression_name="attTechnology" operation="Equals" value="1" desc_key="reqattTechnology"/><requirement name="CVarCompare" cvar="$techboosts" operation="Equals" value="0" desc_key="reqNoTechBoost"/></level_requirements>
 
-				<effect_group> <!-- Moved to Physical Conditioning
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="2" level="1"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="4" level="2"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="6" level="3"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="8" level="4"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10" level="5"/>
-					<passive_effect name="HypothermalResist" operation="base_add" value="2,10" level="1,5"/>
-					<passive_effect name="HyperthermalResist" operation="base_add" value="2,10" level="1,5"/> -->
-
+				<effect_group>
 					<effect_description level="1" desc_key="perkTranshumanRank1Desc"/>
 					<effect_description level="2" desc_key="perkTranshumanRank2Desc"/>
 					<effect_description level="3" desc_key="perkTranshumanRank3Desc"/>
