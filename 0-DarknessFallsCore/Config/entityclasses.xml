@@ -1877,6 +1877,7 @@
 	
 	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,Hips0,radiatedtracking,demontracking</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/property[@name='PainResistPerHit']/@value">0.8</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/property[@name='HandItem']/@value">meleeHandZombieRangedRadiated</set>
 	<insertBefore xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/effect_group[@name='Base Effects']">
 		<property name="Class" value="EntityZombieCop"/>
 		<property name="AITask" value="
@@ -2190,6 +2191,7 @@
 	
 	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,Hips0,radiatedtracking,demontracking,female</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='PainResistPerHit']/@value">0.8</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='HandItem']/@value">meleeHandZombieRangedRadiated</set>
 	<insertBefore xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/effect_group[@name='Base Effects']">
 		<property name="Class" value="EntityZombieCop"/>
 		<property name="AITask" value="
@@ -8111,7 +8113,6 @@
 		
 		<!-- SLIM STRIPPER ZOMBIES -->
 		<entity_class name="zombieCheerleader" extends="zombieTemplateMale">
-			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,zombietracking,feraltracking,radiatedtracking,demontracking"/>
 			<property name="Mesh" value="#@modfolder:Assets/Entities.unity3d?zombieCheerleader" />
 			<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
@@ -8781,7 +8782,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -8854,7 +8855,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -8927,7 +8928,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9000,7 +9001,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9073,7 +9074,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9146,7 +9147,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9215,7 +9216,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9289,7 +9290,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9359,7 +9360,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9432,7 +9433,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9505,7 +9506,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9578,7 +9579,7 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9651,7 +9652,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9725,7 +9726,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9808,7 +9809,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9882,7 +9883,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -9962,7 +9963,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10035,7 +10036,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10107,7 +10108,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10180,7 +10181,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10253,7 +10254,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10327,7 +10328,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10402,7 +10403,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10476,7 +10477,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10551,7 +10552,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10625,7 +10626,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10706,7 +10707,7 @@
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffBurning,buffIsOnFire,buffBurningWeapon,buffRadiationNew,buffInjuryBleeding"/>
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10758,7 +10759,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10827,7 +10828,7 @@
 				<passive_effect name="HealthLoss" operation="perc_add" value="-0.25"/>
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -10902,7 +10903,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -10973,7 +10974,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11044,7 +11045,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11115,7 +11116,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11186,7 +11187,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11257,7 +11258,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11324,7 +11325,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11396,7 +11397,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11464,7 +11465,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11535,7 +11536,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11606,7 +11607,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11677,7 +11678,7 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11748,7 +11749,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11820,7 +11821,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11901,7 +11902,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -11973,7 +11974,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12051,7 +12052,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12122,7 +12123,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12192,7 +12193,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12263,7 +12264,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12334,7 +12335,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12406,7 +12407,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12478,7 +12479,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12549,7 +12550,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12621,7 +12622,7 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -12692,7 +12693,7 @@
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -13274,6 +13275,10 @@
 			
 			<property name="Buffs" value="IsStalker"/> 
 			
+			<!--
+			<property name="Buffs" value="IsStalkerBoss"/>  
+			-->
+			
 			<property name="AIPathCostScale" value="0.9, 1"/>
 			<property name="AITask" value="
 			BreakBlock|
@@ -13292,10 +13297,15 @@
 			SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityBandit,0,-10|
 			"/>
 			
+			<!-- <property name="AITask-3" value="RunawayWhenHurt" data="runChance=0.5;healthPer=0.3;healthPerMax=0.6"/> -->
+			
 			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,zombietrackertwo" />
 
 			<effect_group name="Base Effects">
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="IsStalker"/>
+				<!--
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="IsStalkerBoss"/>
+				-->
 				
 				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 				<passive_effect name="HealthMax" operation="perc_add" value="0,.25"/>
@@ -13332,7 +13342,7 @@
 				<passive_effect name="BlockDamage" operation="perc_add" value="1"/> 
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="200">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
 					<requirement name="!HasBuff" buff="buffCoilWeapon"/>
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
@@ -13373,7 +13383,7 @@
 				<passive_effect name="BlockDamage" operation="perc_add" value="2"/> 
 				
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="150"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="300">
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="500">
 					<requirement name="!HasBuff" buff="buffLaserWeapon"/>
 				</triggered_effect>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffIsEmpoweredMinion">
@@ -13928,8 +13938,8 @@
 			<property name="RootMotion" value="true"/>
 			<property name="HasDeathAnim" value="false"/>
 			<property name="HasRagdoll" value="true"/>
-			<property name="HandItem" value="meleeHandZombieStrongDemon"/>
-			<property name="HandItemCrawler" value="meleeHandZombieStrongDemonCrawler"/>
+			<property name="HandItem" value="meleeHandIncubusEmpowered"/>
+			<property name="HandItemCrawler" value="meleeHandZombieStrongEmpoweredCrawler"/>
 			
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 			<!--

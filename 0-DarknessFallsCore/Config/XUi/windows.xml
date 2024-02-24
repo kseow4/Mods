@@ -487,17 +487,18 @@
 		<panel name="header" width="807" height="43" pos="0,88" depth="1" backgroundspritename="ui_game_panel_header">
 			<label depth="3" name="windowName" pos="355,-6" width="250" height="32" text="INVENTORY" text_key="xuiInventory" font_size="32" />
 			
-			<rect pos="21,0" width="300" controller="ContainerStandardControls" move_start_bottom_left="true">
+			<rect pos="21,0" width="300" controller="ContainerStandardControls" move_start_bottom_left="true" is_backpack="true">
 				<button depth="3" name="btnSort" sprite="ui_game_symbol_sort"  tooltip_key="lblSortContainer"  pos="0, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 					
 				<rect pos="0, 0" visible="{always}">
 					<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_down"     tooltip_key="lblStashAll" pos="80, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 					<button   depth="3" name="btnMoveFillAndSmart" sprite="ui_game_symbol_store_similar_down" tooltip_key="lblStashFillAndSmart" pos="40, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
-					<combobox depth="3" name="cbxLockedSlots" pos="435,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" visibility="always"/>
 					
 					<sprite depth="4" name="searchIcon" style="icon30px" pos="120,-22" sprite="ui_game_symbol_search" pivot="center"/>
 					<textfield depth="5" name="searchInput" pos="140,-7" width="140" height="30" virtual_keyboard_prompt="vkPromptSearchTerm" search_field="true"/> 
 				</rect>
+				
+				<combobox depth="3" name="cbxLockedSlots" pos="435,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" visibility="always"/>
 			</rect>
 			<label depth="2" pos="670,-8" width="100" height="28" text="{currencyamount}" color="[mediumGrey]" justify="right" />
 			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="775,-10" color="[white]" foregroundlayer="true" />
@@ -511,6 +512,7 @@
 				</grid>
 		</panel>
 	</set>
+	
 	<set xpath="/windows/window[@name='windowToolsForge']">
 		<panel style="header.panel" pos="0,77">
 			<sprite style="header.icon" sprite="ui_game_symbol_wrench"/>
@@ -519,7 +521,9 @@
 
 		<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 			<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" required_tools="toolAnvil,toolAndDieSet" required_tools_only="true">
-				<item_stack controller="RequiredItemStack" name="0"/>
+				<!--
+				<item_stack controller="RequiredItemStack" name="0"/> -->
+				<item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>				
 			</grid>
 		</rect>
 	</set>
@@ -531,7 +535,9 @@
 
 		<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true">
 			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" required_tools="toolCookingPot,toolCookingGrill,toolBeaker" required_tools_only="true">
-				<item_stack controller="RequiredItemStack" name="0"/>
+				<!--
+				<item_stack controller="RequiredItemStack" name="0"/> -->
+				<item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 			</grid>
 		</rect>
 	</set>
@@ -644,7 +650,7 @@
 			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Trader Jen Faction" valuecontent="{cvar(traderJenFaction:0)}" />
 			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="Trader Joel Faction" valuecontent="{cvar(traderJoelFaction:0)}" />
 			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Trader Rekt Faction" valuecontent="{cvar(traderRektFaction:0)}" />
-			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="White River Survivors Faction" valuecontent="{cvar(whiteRiverSurvivorsFaction:0)}" />
+			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="White River Faction" valuecontent="{cvar(whiteRiverSurvivorsFaction:0)}" />
 			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="" valuecontent="" />
 			<player_stats_entry backgroundcolor="[darkGrey]" 	textcontent="" valuecontent="" />
 			<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="" valuecontent="" />
@@ -1338,7 +1344,7 @@
 		<!-- Custom Logo Mod -->		
 		<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 			<texture name="DFalls" depth="0" size="888,666" texture="@modfolder:/UI/MainMenu/darknessfallsLogo.png" material="Materials/Transparent Colored" pos="-299,255" />
-			<label name="DFallsVersion" pos="0, -240" depth="0" size="250,33" text="V5.0.0-DEV-B28" font_size="42" effect="outline" color="[white]" justify="center" />
+			<label name="DFallsVersion" pos="0, -240" depth="0" size="250,33" text="V5.0.1" font_size="42" effect="outline" color="[white]" justify="center" />
 			<grid name="buttons" pos="0, -275" cols="1" width="250" cell_width="250" cell_height="48" arrangement="vertical" repeat_content="false" >
 				<simplebutton name="btnInvite" depth="3" width="250" height="38" caption_key="xuiMenuInvite" font_size="32" />
 				<simplebutton name="btnOptions" depth="3" width="250" height="38" caption_key="xuiMenuOptions" font_size="32" />
@@ -1408,7 +1414,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="meleeToolSalvageT1Wrench,meleeToolRepairT1ClawHammer" required_tools_only="true">
-					<item_stack controller="RequiredItemStack" name="0"/>
+				<!--
+				<item_stack controller="RequiredItemStack" name="0"/> -->
+				<item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>
 			</rect>
 		</window>
@@ -1423,7 +1431,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="toolAnvil,toolForgeCrucible,toolAndDieSet,toolBellows,DFtoolImprovedElement,emptySlot" required_tools_only="true">
-					<item_stack controller="RequiredItemStack" name="0"/>
+				<!--
+				<item_stack controller="RequiredItemStack" name="0"/> -->
+				<item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>
 			</rect>
 		</window>
@@ -1551,7 +1561,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="toolAnvil,toolForgeCrucible,toolAndDieSet,toolBellows,DFtoolImprovedElement,emptySlot" required_tools_only="true">
-					<df_item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>
 			</rect>
 		</window>
@@ -1660,7 +1672,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="DFtoolweldingTorch,DFtoolCalipers" required_tools_only="true">
-					<df_item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>		
 			</rect>
 		</window>
@@ -1674,7 +1688,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="resourceSewingKit,DFtooltanningRack" required_tools_only="true">
-					<df_item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>	
 			</rect>
 		</window>
@@ -1688,7 +1704,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="carBattery" required_tools_only="true">
-					<df_item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>
 			</rect>
 		</window>
@@ -1702,7 +1720,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="smallEngine" required_tools_only="true">
-					<df_item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>		
 			</rect>
 		</window>
@@ -1716,7 +1736,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="carBattery,DFtoolImprovedElement" required_tools_only="true">
-					<df_item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>
 			</rect>
 		</window>
@@ -1792,7 +1814,9 @@
 			<rect name="content" depth="0" pos="0,32" height="75" disablefallthrough="true" >
 				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 				required_tools="meleeToolSalvageT1Wrench,meleeToolRepairT1ClawHammer,DFScifiAIOT,DFtoolweldingTorch,DFtoolCalipers,emptySlot" required_tools_only="true">
-					<item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>
 			</rect>
 		</window>
@@ -1824,7 +1848,9 @@
 			<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
 				<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="PassiveCollectorToolGrid, IDCCoreV2" repeat_content="true"
 				required_tools="idcBetterAnimalBait" required_tools_only="true">
-					<item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>
 			</rect>
 
@@ -1893,7 +1919,9 @@
 			<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
 				<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="PassiveCollectorToolGrid, IDCCoreV2" repeat_content="true"
 				required_tools="idcEnhancedSkinningDevice,idcUpgradedStorage,idcBetterAnimalBait" required_tools_only="true">
-					<item_stack controller="RequiredItemStack" name="0"/>
+					<!--
+					<item_stack controller="RequiredItemStack" name="0"/> -->
+					<df_item_stack controller="RequiredToolStack, Harmony-0-DarknessFallsCore" name="0"/>	
 				</grid>
 			</rect>
 		</window>

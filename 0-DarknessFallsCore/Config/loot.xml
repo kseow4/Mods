@@ -3407,6 +3407,15 @@
 				</qualitytemplate>
 			</lootqualitytemplate>
 		</lootqualitytemplates>
+		
+
+		<lootqualitytemplates>		
+			<lootqualitytemplate name="qualLegendaryFixed80">
+				<qualitytemplate level="1,99999" default_quality="80">
+					<loot quality="80" prob="1"/>
+				</qualitytemplate>
+			</lootqualitytemplate>
+		</lootqualitytemplates>
 
 		<lootqualitytemplates>
 			<lootqualitytemplate name="QLTemplateT0Max60">
@@ -4658,7 +4667,7 @@
 		<item group="groupModAllScaled"/>
 		<item group="booksAllScaled"/>
 		<item group="booksRareOnlyScaled"/>
-		<item group="classMasteryBooks" loot_prob_template="veryLow"/>		
+		<item group="classMasteryBooks" loot_prob_template="veryLow" count="1"/>
 	</set>
 	
 	<set xpath="/lootcontainers/lootgroup[@name='twitch_perkBooks']"> 
@@ -7011,7 +7020,7 @@
 			<item group="groupDFAmmoT4" count="1,2" loot_prob_template="ProbT4"/>
 		</lootgroup>
 		
-		<lootgroup name="groupLegendaryItems" count="1">
+		<lootgroup name="groupLegendaryItems" count="1" loot_quality_template="qualLegendaryFixed80">
 			<item name="DFmeleeToolAshsChainsaw"/>
 			<item name="DFJasonMachete"/>	
 			<item name="DFmeleeWpnMCsHumanSkinKnuckles"/>
@@ -7319,7 +7328,7 @@
 			<item group="groupSupplyBooks_T3" loot_prob_template="ProbT4"/>
 		</lootgroup>
 		
-		<lootgroup name="powerArmor" loot_quality_template="qualQuestFixed10">
+		<lootgroup name="powerArmor" loot_quality_template="qualQuestFixed20">
 			<item name="DFarmorTechGloves"/>
 			<item name="DFarmorTechHelmet"/>
 			<item name="DFarmorTechBoots"/>
@@ -7399,7 +7408,7 @@
 
 		<lootgroup name="rareBooks">	
 			<item group="perkBooks" prob="2"/>
-			<item group="classMasteryBooks" prob="0.1"/>	
+			<item group="classMasteryBooks" prob="0.1" count="1"/>	
 			<item name="DFskillGenericBook" prob="0.5"/>
 			<item name="DFClassPaper" prob="0.05"/>
 		</lootgroup>
@@ -7413,8 +7422,7 @@
 		<lootgroup name="group_SupplyBooksScaled" count="1,2">
 			<item group="commonBooks" />
 			<item group="rareBooksNoMaster" loot_prob_template="ProbT2"/>
-			<item group="classMasteryBooks" loot_prob_template="ProbT3" count="1"/>
-			<item group="classMasteryBooks" loot_prob_template="ProbT3Cap" count="1"/>
+			<item group="classMasteryBooks" loot_prob_template="veryLow" count="1"/>
 			<item group="rareBooksNoMaster" loot_prob_template="ProbT3Cap"/>
 		</lootgroup>
 		
@@ -8755,12 +8763,12 @@
 			<item group="group_FoodScaled" count="1,2" prob="1"/>
 			<item group="group_DrinksScaled" count="1,2" prob="1"/>
 			<item group="groupToolsTiered" count="1" prob="1"/>	
-			<item group="group_SupplyBooksScaled" count="1,2" prob="1"/>	
+			<item group="group_SupplyBooksScaled" count="1" loot_prob_template="veryLow"/>	
 			<item group="group_SupplyMedsScaled" count="1,2" prob="1.5"/>	
 			<item group="group_SupplyConstructionScaled" count="2,4" prob="2"/>
 			<item name="DFLathe" loot_prob_template="low" count="1"/>
 			<item name="farmPlotBlockVariantHelper" loot_prob_template="low" count="1,4"/>
-			<item group="groupLegendaryItems" prob=".05" count="1"/>
+			<item group="groupLegendaryItems" prob=".005" count="1"/>
 		</lootcontainer>
 
 		<!-- suitcase / luggage -->
@@ -9738,9 +9746,8 @@
 			<item group="groupWeaponsBunkersScaled" count="1" prob="10"/>
 			<item group="groupLaserOther" count="1" prob="10"/>
 			<item group="groupDFAmmoT4" count="1" prob="10"/>
-			<item name="DFKeycardGreen" count="1" prob="0.6"/>
-			<item name="DFKeycardBlue" count="1" prob="0.4"/>
-			<item name="DFKeycardRed" count="1" prob="0.2"/>
+			<item name="DFKeycardBlue" count="1" prob="0.6"/>
+			<item name="DFKeycardRed" count="1" prob="0.4"/>
 			<item name="DFresearchNotes" count="1" prob="0.3"/>	
 			<item group="rareBooks" count="1,2" prob="0.1"/>
 		</lootcontainer> 
@@ -9748,6 +9755,7 @@
 		<!-- Scifi Desk -->
 		<lootcontainer name="scifiDesk" count="2,4" size="12,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
 			<item name="DFresourceEnergyCell" count="10,50" loot_prob_template="med"/>
+			<item name="DFKeycardGreen" count="1" prob="0.8"/>
 			<item name="DFKeycardBlue" count="1" prob="0.6"/>
 			<item name="DFKeycardRed" count="1" prob="0.4"/>
 			<item name="DFresearchNotes" count="1" prob="0.6"/>	
@@ -9783,7 +9791,7 @@
 			<item name="thrownGrenade" count="2,4" prob="0.5"/>
 			<item name="ammoGasCan" count="100,500" prob="0.25"/>
 			<item group="groupAmmoAdvanced" count="1,4" prob="1"/>
-			<item group="groupLegendaryItems" prob=".05" count="1"/>
+			<item group="groupLegendaryItems" prob=".005" count="1"/>
 		</lootcontainer>
 
 		<!-- military truck -->
@@ -10017,7 +10025,7 @@
 			<item group="groupAmmoMedium" prob="2" count="2,4"/>
 			<item name="resourceMilitaryFiber" count="1,4" prob="0.3"/>
 			<item name="DFresourceDemonicEssence" prob="0.1"/>
-			<item name="DFgunBlackSky" count="1" prob="0.03"/>
+			<item name="DFgunPorkinsShotgun" count="1" prob="0.1"/>
 		</lootcontainer>
 
 		<!-- zombie nurse demon -->
@@ -10041,6 +10049,7 @@
 			<item group="groupWeaponsRangedGunSafeScaled" prob="0.5"/>
 			<item group="powerArmor" prob="0.1"/>
 			<item name="DFresourceDemonicEssence" prob="0.1"/>
+			<item name="DFJasonMachete" prob=".1" count="1"/>
 		</lootcontainer>
 
 		<!-- zombieMaleHazmat demon -->
@@ -10097,7 +10106,6 @@
 			<item group="group_SupplyConstructionScaled" />
 			<item group="supplyCrateWorkstationToolsScaled" />
 			<item name="DFresourceDemonicEssence" prob="0.1"/>
-			<item name="DFEriksHammer" prob="0.015"/>
 		</lootcontainer>
 
 		<!-- ZombieSoldier demon -->
@@ -10107,7 +10115,7 @@
 			<item name="DFKeycardRed" count="1" prob="0.4"/>
 			<item name="DFresourceDemonicEssence" prob="0.1"/>
 			<item name="drugDiazepam" count="1" prob="0.25"/>
-			<item name="modTobisBalancingAct" prob=".01"/>
+			<item name="modTobisBalancingAct" prob=".075"/>
 			<item group="groupArmorScaledTPlus" prob="0.5" count="1,2"/> 
 			<item group="powerArmor" prob="0.1"/>
 		</lootcontainer>
@@ -10151,8 +10159,8 @@
 			<item name="apparelGothPants" count="1"/>
 			<item name="apparelGothBoots" count="1"/>
 			<item name="drinkJarBeer" count="1,2"/>
-			<item name="DFMythShades" count="1" prob="0.03"/>	
-			<item name="DFgunPorkinsShotgun" count="1" prob="0.03"/>
+			<item name="DFMythShades" count="1" prob="0.1"/>	
+			<item name="DFmeleeWpnMCsHumanSkinKnuckles" count="1" prob="0.1"/>
 		</lootcontainer>
 
 		<!-- ZombieStripper demon -->
@@ -10184,8 +10192,8 @@
 			<item name="apparelGothPants" count="1"/>
 			<item name="apparelGothBoots" count="1"/>
 			<item name="drinkJarBeer" count="1,2"/>
-			<item name="DFMythShades" count="1" prob="0.01"/>	
-			<item name="DFgunPorkinsShotgun" count="1" prob="0.01"/>
+			<item name="DFMythShades" count="1" prob="0.03"/>	
+			<item name="DFmeleeWpnMCsHumanSkinKnuckles" count="1" prob="0.03"/>
 		</lootcontainer>
 		
 		<!-- ZombieBiker Feral Rad-->
@@ -10197,8 +10205,8 @@
 			<item name="apparelGothPants"/>
 			<item name="apparelGothBoots"/>
 			<item name="drinkJarBeer"/>
-			<item name="DFMythShades" count="1" prob="0.02"/>	
-			<item name="DFgunPorkinsShotgun" count="1" prob="0.02"/>
+			<item name="DFMythShades" count="1" prob="0.06"/>	
+			<item name="DFmeleeWpnMCsHumanSkinKnuckles" count="1" prob="0.06"/>
 		</lootcontainer>
 		
 		<!-- Zombie Demo-->
@@ -10212,20 +10220,30 @@
 			<item group="groupWeaponsMutatedDemoZombie" prob="1.1" count="1,2"/>
 			<item group="groupArmorScaledTPlus" prob="1.1" count="1,2"/>
 		</lootcontainer>
-		
+
 		<!-- zombie utility worker feral -->
 		<lootcontainer name="zUtilWorkFeral" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+			<item group="group_SupplyConstructionScaled" />
+			<item group="supplyCrateWorkstationToolsScaled" />
 			<item group="groupConstructionZombieFeral" prob="1.1"/>
+			<item name="DFEriksHammer" prob="0.03"/>
 		</lootcontainer>
 		
 		<!-- zombie utility worker feral rad -->
 		<lootcontainer name="zUtilWorkFeralRad" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+			<item group="group_SupplyConstructionScaled" />
+			<item group="supplyCrateWorkstationToolsScaled" />
 			<item group="groupConstructionZombieRadiated" prob="1.1"/>
+			<item name="DFEriksHammer" prob="0.06"/>
 		</lootcontainer>
 		
 		<!-- zombie utility worker demon -->
 		<lootcontainer name="zUtilWorkDemon" count="1,2" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+			<item group="group_SupplyConstructionScaled" />
+			<item group="supplyCrateWorkstationToolsScaled" />
 			<item group="groupConstructionZombieDemon" prob="1.1"/>
+			<item name="DFEriksHammer" prob="0.1"/>
+			<item name="DFresourceDemonicEssence" prob="0.1"/>
 		</lootcontainer>
 		
 		<!-- fatHawaiianZombie, fat zombie female feral-->
@@ -10419,7 +10437,6 @@
 			<item group="groupLumberjackDemon" prob="1.1"/>
 			<item group="groupApparelClothes" prob="1"/>
 			<item group="rareOres" prob="0.1"/>
-			<item name="DFEriksHammer" prob="0.1"/>
 			<item name="DFmeleeToolAshsChainsaw" prob="0.1"/>
 		</lootcontainer>
 		
@@ -10443,7 +10460,7 @@
 			<item group="groupWeaponsMeleeBikerFeral" prob="1.1" count="1"/>
 			<item group="groupAmmoMedium" prob="2" count="2,4"/>			
 			<item name="resourceMilitaryFiber" count="1,4" prob="0.15"/>
-			<item name="DFgunBlackSky" count="1" prob="0.01"/>
+			<item name="DFgunPorkinsShotgun" count="1" prob="0.03"/>
 		</lootcontainer>
 
 		<!-- zombie cop feral radiated -->
@@ -10452,7 +10469,7 @@
 			<item group="groupWeaponsMeleeBikerRadiated" prob="1.1" count="1"/>
 			<item group="groupAmmoMedium" prob="2" count="2,4"/>
 			<item name="resourceMilitaryFiber" count="1,4" prob="0.2"/>
-			<item name="DFgunBlackSky" count="1" prob="0.02"/>
+			<item name="DFgunPorkinsShotgun" count="1" prob="0.06"/>
 		</lootcontainer>
 
 		<!-- zombie nurse, medical supplies -->
@@ -10480,7 +10497,7 @@
 		<lootcontainer name="zNurseFR" count="2,4" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
 			<item group="groupNurseMedsT3" prob="1.1" count="1,2"/>
 			<item name="oldCash" count="1,20" prob="0.75"/>
-			<item group="groupWeaponsT4_DeepCuts" prob="0.5" count="1"/>
+			<item group="groupWeaponsT3_DeepCuts" prob="0.5" count="1"/>
 		</lootcontainer>
 
 		<!-- fatHawaiianZombie, fat zombie -->
@@ -10570,7 +10587,6 @@
 			<item group="groupLumberjackFeral" prob="1.1"/>
 			<item group="groupApparelClothes" prob="1"/>
 			<item group="rareOres" prob="0.02"/>
-			<item name="DFEriksHammer" prob="0.03"/>
 			<item name="DFmeleeToolAshsChainsaw" prob="0.03"/>
 		</lootcontainer>
 
@@ -10579,7 +10595,6 @@
 			<item group="groupLumberjackRadiated" prob="1.1"/>
 			<item group="groupApparelClothes" prob="1"/>
 			<item group="rareOres" prob="0.02"/>
-			<item name="DFEriksHammer" prob="0.06"/>
 			<item name="DFmeleeToolAshsChainsaw" prob="0.06"/>
 		</lootcontainer>
 
@@ -10609,6 +10624,7 @@
 			<item name="DFresourceNanites" prob="0.05"/>
 			<item name="drugDiazepam" count="1" prob="0.15"/>
 			<item group="groupArmorScaledTPlus" prob="0.5" count="1,2"/> 
+			<item name="modTobisBalancingAct" prob=".025"/>
 		</lootcontainer>
 
 		<!-- ZombieSoldier Feral Radiated loot -->
@@ -10619,6 +10635,7 @@
 			<item name="DFresourceNanites" prob="0.1"/>
 			<item name="drugDiazepam" count="1" prob="0.2"/>
 			<item group="groupArmorScaledTPlus" prob="0.5" count="1,2"/> 
+			<item name="modTobisBalancingAct" prob=".05"/>
 		</lootcontainer>
 
 		<!-- zombie utility worker / construction worker loot -->
@@ -10697,7 +10714,7 @@
 			<item name="drinkJarGrainAlcohol" count="1,3" prob="1"/>
 			<item name="oldCash" count="2,15" prob="1"/>
 			<item group="groupTreasureMaps" count="1" prob="1"/>
-			<item name="DFgunBlackSky" count="1" prob="0.01"/>
+			<item name="DFgunBlackSky" count="1" prob="0.03"/>
 		</lootcontainer>
 
 		<!-- zombieOldTimer / zombieCowboy Feral Radiated -->
@@ -10706,7 +10723,7 @@
 			<item group="groupWeapons_DeadEye" prob="1"/>
 			<item group="rareOres" count="1,3" prob="2"/>
 			<item name="drinkJarGrainAlcohol" count="1,3" prob="1"/>
-			<item name="DFgunBlackSky" count="1" prob="0.02"/>
+			<item name="DFgunBlackSky" count="1" prob="0.06"/>
 		</lootcontainer>
 
 		<!-- ZombieBiker -->
@@ -10803,7 +10820,7 @@
 			<item group="rareBooks" count="1,2" prob="0.5"/>
 			<item group="rareMedicine" prob="0.5"/>
 			<item group="groupArmorScaledTPlus" count="1,2" prob="0.5"/>
-			<item group="groupLegendaryItems" prob=".05" count="1"/>
+			<item group="groupLegendaryItems" prob=".005" count="1"/>
 		</lootcontainer>
 
 		<!-- Scientist zombie loot -->

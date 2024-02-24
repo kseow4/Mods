@@ -442,7 +442,39 @@
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="ForgeAhead" operation="set" value="1">
 				<requirement name="CVarCompare" cvar="ForgeAheadTracking" operation="Equals" value="3"/>
-			</triggered_effect>			
+			</triggered_effect>	
+
+			<!-- Code to set action skill books to 'open' once skill hits 100 -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxRifles" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASRifles" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxShotgun" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASShotguns" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxPistol" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASPistols" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxBlades" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASBladed" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxBlunt" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASBlunt" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxAutomatics" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASAutomatics" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxArchery" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASArchery" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxScavenging" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASScavenging" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxMining" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASMiningTools" operation="Equals" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="maxAthletics" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkASAthletics" operation="Equals" value="100"/>
+			</triggered_effect>
 		</effect_group>
 
 		<effect_group name="Power Attack Grunt">
@@ -8326,7 +8358,7 @@
 		<buff name="buffSpawnSpidersOnDeath" icon="ui_game_symbol_agility" icon_color="132,0,155">
 			<stack_type value="replace"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="spider_death_summon"/>
+				<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="spider_death_summon" allow_client_call="true"/>
 			</effect_group>
 		</buff>
 		
@@ -8334,7 +8366,7 @@
 			<stack_type value="replace"/>
 			<update_rate value="60"/>
 			<effect_group>							
-				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="succubus_matriarch_summon"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="succubus_matriarch_summon" allow_client_call="true"/> 
 			</effect_group>
 			
 			<effect_group>
@@ -8348,6 +8380,26 @@
 			</effect_group>
 		</buff> 
 		
+		<buff name="stalker_buffResurrect" name_key="Resurrect" description_key="ResurrectDesc" icon="ui_game_symbol_twitch_resurrect" icon_color="255,175,175" remove_on_death="false">
+			<update_rate value="15"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" target="otherAOE" range="5" event="buff_rez" sequence_link="resurrect" allow_client_call="true" >
+					<requirement name="EntityTagCompare" target="other" tags="zombie,demon"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="UnregisterSequenceLink" sequence_link="resurrect" />
+			</effect_group>
+		</buff>
+		
+		<buff name="lordofhell_buffResurrect" name_key="Resurrect" description_key="ResurrectDesc" icon="ui_game_symbol_twitch_resurrect" icon_color="255,175,175" remove_on_death="false">
+			<update_rate value="5"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" target="otherAOE" range="5" event="buff_rez" sequence_link="resurrect" allow_client_call="true" >
+					<requirement name="EntityTagCompare" target="other" tags="zombie,demon"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="UnregisterSequenceLink" sequence_link="resurrect" />
+			</effect_group>
+		</buff>
+		
 		<buff name="buffBodyBagSpawnerWhite" icon="ui_game_symbol_agility" icon_color="132,0,155">
 			<stack_type value="replace"/>
 			<update_rate value="5"/>
@@ -8358,7 +8410,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="SpawnEntities, Harmony-0-DarknessFallsCore" target="selfAOE" range="3" SpawnGroup="SmallBunkerScientists" target_tags="spawntargetwhite"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="SpawnEntities, Harmony-0-DarknessFallsCore" target="selfAOE" range="3" SpawnGroup="SmallBunkerScientists" target_tags="spawntargetwhite"/> -->
 				
-				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="spawner_bag_white"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="spawner_bag_white" allow_client_call="true"/> 
 			</effect_group>
 		</buff> 		
 		
@@ -8366,7 +8418,7 @@
 			<stack_type value="replace"/>
 			<update_rate value="5"/>
 			<effect_group>						
-				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="spawner_bag_brown"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="spawner_bag_brown" allow_client_call="true"/> 
 			</effect_group>
 		</buff> 		
 		
@@ -8383,7 +8435,7 @@
 			<stack_type value="replace"/>
 			<update_rate value="3"/>
 			<effect_group>				
-				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="spawner_bag_white"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="spawner_bag_white" allow_client_call="true"/>
 			</effect_group>
 		</buff> 
 		
@@ -10336,7 +10388,7 @@
 		
 		<buff name="buffIsDemonMinion" name_key="buffRadiatedRegenDesc" description_key="buffRadiatedRegenDesc" tooltip_key="buffRadiatedRegenDesc" icon="ui_game_symbol_radiation" icon_color="255,0,0">
 			<stack_type value="ignore"/>
-			<duration value="10"/>
+			<duration value="60"/>
 			<update_rate value="1.5"/>
 <!--
 			<effect_group>
@@ -10358,7 +10410,7 @@
 		
 		<buff name="buffIsDemonBoss" name_key="buffRadiatedRegenDesc" description_key="buffRadiatedRegenDesc" tooltip_key="buffRadiatedRegenDesc" icon="ui_game_symbol_radiation" icon_color="255,0,0">
 			<stack_type value="duration"/>
-			<duration value="10"/>
+			<duration value="60"/>
 			<update_rate value="2.5"/>
 
 			<effect_group>
@@ -11856,8 +11908,8 @@
 		</buff>	
 		
 		<buff name="buffPlayerRegen" name_key="buffPlayerRegenDesc" description_key="buffPlayerRegenDesc" tooltip_key="buffPlayerRegenTooltip" icon="ui_game_symbol_infection" icon_color="0,153,0">
-			<stack_type value="ignore"/>
-			<duration value="60"/>
+			<stack_type value="ignore"/> <!--
+			<duration value="60"/> -->
 			<update_rate value="1"/>
 
 			<effect_group name="1 health per second">
@@ -13310,7 +13362,8 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="buffArmorPlayer" target_tags="player"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="buffHealingPlayer" target_tags="player"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="buffSpeedPlayer" target_tags="player"/>
-				
+								<!--
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="lordofhell_buffResurrect" />				 -->
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="IsIncubus"/>
 			</effect_group>
 		</buff>
@@ -13521,6 +13574,20 @@
 			<effect_group name="attackUNghosting">
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="GhostBlink"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" buff="GhostBlink2"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="IsStalkerBoss" icon="ui_game_symbol_radiation" icon_color="75,255,125" hidden="true"><stack_type value="replace"/><duration value="0"/>
+			<effect_group name="startghosting">
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetFloat" property="Ghost" value="0.2"/>
+				<triggered_effect trigger="onSelfDied" action="AnimatorSetFloat" property="Ghost" value="1.0"/>
+			</effect_group>
+			<effect_group name="attackUNghosting">
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="GhostBlink"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" buff="GhostBlink2"/>
+			</effect_group>
+			<effect_group name="Boss Effect">
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="stalker_buffResurrect"/>
 			</effect_group>
 		</buff>
 		

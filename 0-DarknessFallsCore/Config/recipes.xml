@@ -4650,26 +4650,25 @@
 			<ingredient name="resourceCloth" count="2"/>
 		</recipe>
 
-		<recipe name="armorClothBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorClothBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceCloth" count="5"/>
 		</recipe>
 
-		<recipe name="armorClothGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorClothGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceCloth" count="5"/>
 		</recipe>
 
-		<recipe name="armorClothHat" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorClothHat" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceCloth" count="5"/>
 		</recipe>
 
-		<recipe name="armorClothJacket" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorClothJacket" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceCloth" count="5"/>
 		</recipe>
 
-		<recipe name="armorClothPants" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorClothPants" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceCloth" count="5"/>
 		</recipe>
-
 		<recipe name="armorScrapBoots" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
 			<ingredient name="resourceScrapIron" count="120"/>
 			<ingredient name="resourceLeather" count="3"/>
@@ -4699,165 +4698,254 @@
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceDuctTape" count="2"/>
 		</recipe>
-
-		<recipe name="armorMilitaryBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceLeather" count="3"/>
 		</recipe>
 
-		<recipe name="armorMilitaryVest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryVest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceLeather" count="3"/>
 		</recipe>
 
-		<recipe name="armorMilitaryGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceLeather" count="3"/>
 		</recipe>
 
-		<recipe name="armorMilitaryHelmet" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryHelmet" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceLeather" count="3"/>
 		</recipe>
 
-		<recipe name="armorMilitaryLegs" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryLegs" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceLeather" count="3"/>
 		</recipe>
 		
-		<recipe name="armorMilitaryStealthHelmet" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryStealthHelmet" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceScrapPolymers" count="5"/>
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 		</recipe>
 		
-		<recipe name="armorMilitaryStealthVest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryStealthVest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceScrapPolymers" count="5"/>
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 		</recipe>
 		
-		<recipe name="armorMilitaryStealthGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryStealthGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceScrapPolymers" count="5"/>
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 		</recipe>
 		
-		<recipe name="armorMilitaryStealthLegs" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryStealthLegs" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceScrapPolymers" count="5"/>
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 		</recipe>
 		
-		<recipe name="armorMilitaryStealthBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorMilitaryStealthBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceScrapPolymers" count="5"/>
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 		</recipe>
 		
-		<recipe name="armorKevlarBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable">
+		<recipe name="armorKevlarBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="10"/>
 			<ingredient name="DFforgedTitanium" count="10" />
 			<ingredient name="resourceLeather" count="6" />
 		</recipe>
 
-		<recipe name="armorKevlarVest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable">
+		<recipe name="armorKevlarVest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="10"/>
 			<ingredient name="DFforgedTitanium" count="10" />
 			<ingredient name="resourceLeather" count="6" />
 		</recipe>
 
-		<recipe name="armorKevlarGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable">
+		<recipe name="armorKevlarGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="10"/>
 			<ingredient name="DFforgedTitanium" count="10" />
 			<ingredient name="resourceLeather" count="6" />
 		</recipe>
 			
-		<recipe name="armorKevlarHelmet" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable">
+		<recipe name="armorKevlarHelmet" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="10"/>
 			<ingredient name="DFforgedTitanium" count="10" />
 			<ingredient name="resourceLeather" count="6" />
 		</recipe>
 				
-		<recipe name="armorKevlarLegs" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable">
+		<recipe name="armorKevlarLegs" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="10"/>
 			<ingredient name="DFforgedTitanium" count="10" />
 			<ingredient name="resourceLeather" count="6" />
 		</recipe>
 
-		<recipe name="armorIronBoots" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedIron" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorIronChest" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedIron" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorIronGloves" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedIron" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorIronHelmet" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedIron" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorIronLegs" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedIron" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorSteelBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedSteel" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorSteelChest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedSteel" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorSteelGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedSteel" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorSteelHelmet" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedSteel" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorSteelLegs" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
-			<ingredient name="resourceForgedSteel" count="24"/>
-			<ingredient name="resourceLeather" count="4"/>
-		</recipe>
-
-		<recipe name="armorLeatherBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorLeatherBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceLeather" count="7"/>
 		</recipe>
 
-		<recipe name="armorLeatherGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorLeatherGloves" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceLeather" count="7"/>
 		</recipe>
 
-		<recipe name="armorLeatherHood" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorLeatherHood" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceLeather" count="7"/>
 		</recipe>
 
-		<recipe name="armorLeatherChest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorLeatherChest" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceLeather" count="7"/>
 		</recipe>
 
-		<recipe name="armorLeatherPants" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor">
+		<recipe name="armorLeatherPants" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceLeather" count="7"/>
+		</recipe>
+		
+		<recipe name="armorScrapBoots" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+
+		<recipe name="armorScrapChest" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+
+		<recipe name="armorScrapGloves" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+
+		<recipe name="armorScrapHelmet" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+
+		<recipe name="armorScrapLegs" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+
+		<recipe name="armorIronBoots" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+
+		<recipe name="armorIronChest" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+
+		<recipe name="armorIronGloves" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+
+		<recipe name="armorIronHelmet" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+
+		<recipe name="armorIronLegs" count="1" craft_area="workbench" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+		
+		<recipe name="armorSteelBoots" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+
+		<recipe name="armorSteelChest" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+
+		<recipe name="armorSteelGloves" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+
+		<recipe name="armorSteelHelmet" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+
+		<recipe name="armorSteelLegs" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="24"/>
+			<ingredient name="resourceLeather" count="12"/>
+		</recipe>
+		
+		<recipe name="armorScrapBoots" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="80"/>
+		</recipe>
+
+		<recipe name="armorScrapChest" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="80"/>
+		</recipe>
+
+		<recipe name="armorScrapGloves" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="80"/>
+		</recipe>
+
+		<recipe name="armorScrapHelmet" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="80"/>
+		</recipe>
+
+		<recipe name="armorScrapLegs" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="80"/>
+		</recipe>
+
+		<recipe name="armorIronBoots" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="18"/>
+		</recipe>
+
+		<recipe name="armorIronChest" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="18"/>
+		</recipe>
+
+		<recipe name="armorIronGloves" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="18"/>
+		</recipe>
+
+		<recipe name="armorIronHelmet" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="18"/>
+		</recipe>
+
+		<recipe name="armorIronLegs" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="18"/>
+		</recipe>
+
+		<recipe name="armorSteelBoots" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="18"/>
+		</recipe>
+
+		<recipe name="armorSteelChest" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="18"/>
+		</recipe>
+
+		<recipe name="armorSteelGloves" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="18"/>
+		</recipe>
+
+		<recipe name="armorSteelHelmet" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="18"/>
+		</recipe>
+
+		<recipe name="armorSteelLegs" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="18"/>
 		</recipe>
 
 		<recipe name="apparelHazmatBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit">
@@ -6813,6 +6901,13 @@
 			<ingredient name="resourceRocketCasing" count="1"/>
 		</recipe>
 		
+		<recipe name="ammoRocketFusion" count="1" craft_area="ScifiBench" craft_tool="DFScifiAIOT" tags="learnable">
+			<ingredient name="DFenrichedUranium" count="1000"/>
+			<ingredient name="DFresourceEnergyCell" count="500"/>
+			<ingredient name="resourceElectricParts" count="50"/>
+			<ingredient name="resourceRocketCasing" count="1"/>
+		</recipe>
+		
 		<recipe name="DFpulseMine" count="1" craft_area="ScifiBench" craft_tool="DFScifiAIOT" tags="learnable,workbenchCrafting">
 			<ingredient name="DFforgedTitanium" count="10"/>
 			<ingredient name="resourceElectricParts" count="5"/>
@@ -7625,51 +7720,51 @@
 		</recipe>
 
 		<!-- Recipes for Loot Only items so they can be searched in the recipe list -->
-		<recipe name="DFLathe" count="1">
+		<recipe name="DFLathe" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 
-		<recipe name="DFtoolCalipers" count="1">
+		<recipe name="DFtoolCalipers" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 
-		<recipe name="DFtoolweldingTorch" count="1">
+		<recipe name="DFtoolweldingTorch" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 
-		<recipe name="DFtooltanningRack" count="1">
+		<recipe name="DFtooltanningRack" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 
-		<recipe name="toolAndDieSet" count="1">
+		<recipe name="toolAndDieSet" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 
-		<recipe name="toolBeaker" count="1">
+		<recipe name="toolBeaker" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 		
-		<recipe name="DFEriksHammer" count="1">
+		<recipe name="DFEriksHammer" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 		
-		<recipe name="DFgunPorkinsShotgun" count="1">
+		<recipe name="DFgunPorkinsShotgun" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 		
-		<recipe name="DFMythShades" count="1">
+		<recipe name="DFMythShades" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 		
-		<recipe name="DFgunBlackSky" count="1">
+		<recipe name="DFgunBlackSky" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 		
-		<recipe name="DFLucile" count="1">
+		<recipe name="DFLucile" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 		
-		<recipe name="DFmeleeToolAshsChainsaw" count="1">
+		<recipe name="DFmeleeToolAshsChainsaw" count="1" tags="learnable">
 			<ingredient name="invisibleRecipesForRepairCost" count="100"/>
 		</recipe>
 	</set>

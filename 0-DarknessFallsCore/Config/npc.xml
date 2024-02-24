@@ -238,7 +238,7 @@
 			portrait=""
 			greeting_type="nearby"
 			stance="Neutral" voice_set="trader"
-			trader_id="8" dialog_id="razor_quests" quest_faction="2"
+			trader_id="13" dialog_id="razor_quests" quest_faction="2"
 			localization_id="npcTraderRazor"
 			quest_list="trader_quests_gc" />
 
@@ -250,7 +250,7 @@
 			portrait="npc_eve"
 			greeting_type="nearby"
 			stance="Like" voice_set="Eve"
-			trader_id="8" dialog_id="eve_quests" quest_faction="2"
+			trader_id="14" dialog_id="eve_quests" quest_faction="2"
 			localization_id="npcTraderEve"
 			quest_list="trader_quests_gc" />
 			
@@ -262,7 +262,7 @@
 			portrait="npc_jen"
 			greeting_type="nearby"
 			stance="Like" voice_set="trader_jen"
-			trader_id="11" dialog_id="doctorAnna" quest_faction="2"
+			trader_id="15" dialog_id="doctorAnna" quest_faction="2"
 			localization_id="npcTraderAnna"
 			quest_list="trader_quests_gc" />
 			
@@ -274,7 +274,7 @@
 			portrait="npc_eve"
 			greeting_type="nearby"
 			stance="Like" voice_set="Eve"
-			trader_id="8" dialog_id="eve_quests" quest_faction="2"
+			trader_id="13" dialog_id="eve_quests" quest_faction="2"
 			localization_id="npcTraderEve"
 			quest_list="eve_quests" />
 
