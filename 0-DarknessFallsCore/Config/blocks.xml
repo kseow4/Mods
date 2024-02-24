@@ -52707,6 +52707,7 @@
 				<property name="resourceForgedSteel" value="4"/>
 			</property>
 			<property name="UpgradeSound" value="place_block_metal"/>
+			<property name="DowngradeBlock" value="ladderMetal"/>
 			<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="SortOrder1" value="B500"/>
@@ -60390,6 +60391,12 @@
 		<block name="trapSpikesIronDmg0">
 			<property name="Extends" value="trapSpikesScrapIronMaster"/>
 			<property name="CustomIcon" value="trapSpikesScrapIronMaster"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="trapSpikesSteelDmg0"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property> 
 			<property name="DowngradeBlock" value="trapSpikesIronDmg1"/>
 			<property name="SortOrder2" value="0003"/>
 		</block>

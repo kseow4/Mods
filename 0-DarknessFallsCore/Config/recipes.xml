@@ -4669,7 +4669,35 @@
 		<recipe name="armorClothPants" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceCloth" count="5"/>
 		</recipe>
+		<recipe name="armorScrapBoots" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
 
+		<recipe name="armorScrapChest" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+
+		<recipe name="armorScrapGloves" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+
+		<recipe name="armorScrapHelmet" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+
+		<recipe name="armorScrapLegs" count="1" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable,perkCraftArmor">
+			<ingredient name="resourceScrapIron" count="120"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
 		<recipe name="armorMilitaryBoots" count="1" craft_area="workstationTailor" craft_tool="resourceSewingKit" tags="learnable,perkCraftArmor,workbenchCrafting">
 			<ingredient name="resourceMilitaryFiber" count="12"/>
 			<ingredient name="resourceLeather" count="3"/>

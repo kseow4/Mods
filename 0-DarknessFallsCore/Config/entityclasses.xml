@@ -1877,6 +1877,7 @@
 	
 	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,Hips0,radiatedtracking,demontracking</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/property[@name='PainResistPerHit']/@value">0.8</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/property[@name='HandItem']/@value">meleeHandZombieRangedRadiated</set>
 	<insertBefore xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/effect_group[@name='Base Effects']">
 		<property name="Class" value="EntityZombieCop"/>
 		<property name="AITask" value="
@@ -2190,6 +2191,7 @@
 	
 	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,Hips0,radiatedtracking,demontracking,female</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='PainResistPerHit']/@value">0.8</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='HandItem']/@value">meleeHandZombieRangedRadiated</set>
 	<insertBefore xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/effect_group[@name='Base Effects']">
 		<property name="Class" value="EntityZombieCop"/>
 		<property name="AITask" value="

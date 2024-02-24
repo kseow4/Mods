@@ -196,6 +196,12 @@
 				<property name="Sound_start" value="sniperrifle_s_fire"/>
 			</item_property_overrides>
 
+			<item_property_overrides name="DFgunDEagle">
+				<property name="Sound_start" value="44ammo_s_fire"/>
+				<property name="BarrelOffset" value="0,0.0093,-0.39525"/>
+				<property name="BarrelScale" value="0.6,0.6,0.6"/>
+			</item_property_overrides>
+
 			<item_property_overrides name="DFgunLaserPistol">
 				<property name="Sound_start" value="lasersilencedp_fire"/>
 			</item_property_overrides>
